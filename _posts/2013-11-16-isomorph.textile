@@ -1,0 +1,977 @@
+---
+layout: post
+title: Изоморфизм в графах
+author: Ivan Reshetnikov
+---
+
+_Рассматривается эвристический алгоритм проверки графов на изоморфность. Проведён анализ работы алгоритма и проверка корректности на персональном компьютере._
+
+Граф или неориентированный граф G — это упорядоченная пара G := (V,E), для которой выполнены следующие условия:
+
+* V это непустое множество вершин или узлов,
+* E это множество пар (в случае неориентированного графа — неупорядоченных) вершин, называемых рёбрами.
+
+Один из способов представления графов – матрица смежности. Пусть граф имеет N вершин. Тогда матрица смежности будет иметь размер N x N, где значение ячейки в i-ой строке и j-ом столбце равно единице в случае достижимости j-ой вершины из i-той через одно ребро или нулю, если i-ая вершина не связана ребром с j-ой вершиной.
+
+Граф G называется изоморфным графу H, если существует биекция f из множества вершин графа G в множество вершин графа H, обладающая следующим свойством: если в графе G есть ребро из вершины A в вершину B, то в графе H должно быть ребро из вершины f(A) в вершину f(B) и наоборот — если в графе H есть ребро из вершины A в вершину B, то в графе G должно быть ребро из вершины f − 1(A) в вершину f − 1(B). В случае ориентированного графа эта биекция также должна сохранять ориентацию ребра. В случае взвешенного графа биекция также должна сохранять вес ребра. Здесь будут рассмотрены только неориентированные невзвешенные графы.
+
+h4. Полный перебор
+
+Находятся все перестановки вершин одного из графов. Для каждой перестановки сравниваются множества рёбер графов. Если хотя бы одна перестановка даст полное совпадение множеств рёбер – графы изоморфны.
+
+Оптимизация для частных случаев. Очевидно, что нет смысла ставить в соответствие вершины с различными степенями. Тогда перестановки будем делать только для вершин с одинаковыми степенями
+
+bq. Степень вершины – количество рёбер, содержащих данную вершину.
+
+h4. Эвристический алгоритм проверки графов на изоморфность
+
+Алгоритм использует одно из свойств матрицы смежности. Значение в ячейке (i, j) показывает количество различных путей, содержащих ровно одно ребро, по которым можно попасть из i-ой вершины в j-ую вершину. При возведении матрицы в N-ую степень значение в ячейке (i, j) будет показывать количество различных путей длиной в N рёбер, по которым можно попасть из i-ой вершины в j-ую вершину.
+
+bq. Путь в графе G = (V,E) — последовательность вершин  при v ~i~ принадлежащем к V при i = 1, …, k, таких, что две любые последовательные вершины соединены хотя бы одной дугой из E.
+
+Введём несколько понятий.
+
+_Уникальная характеристика ребра_ – набор из N чисел, которые показывают количество путей ведущих из одной вершины ребра в другую вершину ребра и содержащих ровно 1, 2 … N рёбер для каждого из N чисел соответственно.
+
+_Уникальная характеристика вершины_ – сортированный набор из N уникальных характеристик рёбер, содержащих данную вершину и вершины от 1-ой до N-ой вершины соответственно.
+
+_Уникальная характеристика графа_ – сортированный набор из N уникальных характеристик вершин от 1-ой до N-ой вершины соответственно.
+
+Для определения изоморфности двух графов достаточно проверить на равенство их уникальные характеристики.
+
+Сравнение работы переборного и эвристического алгоритма
+
+Переборный алгоритм находит все перестановки вершин. Количество перестановок из N вершин – N! Следовательно, время работы алгоритма прямопропорционально факториалу количества вершин. Дополнительной памяти алгоритм не требует.
+
+Время работы алгоритма с полным перебором:
+
+table(table).
+|Количество вершин|5|6|7|8|9|10|11|12|13|
+|Время проверки|1мс|1мс|3мс|3мс|39мс|281мс|2с 503мс|30с 439мс|6м 28с|
+
+В данном эвристическом алгоритме нам требуется найти N степеней матрицы смежности N x N. Время перемножения матриц пропорционально N ^3^ . Значит, общее время перемножения матриц прямопропорционально N ^4^ . Память, требуемая для хранения матриц прямопропорциональна N ^3^ . Однако, мы не учли экспоненциальный рост элементов матрицы, а, следовательно, и линейный рост длины числа. В грубой оценке будем считать, что использование памяти и времени прямопропорционально N ^4^ и N ^5^ соответственно.
+
+Время работы эвристического алгоритма:
+
+table(table).
+|Количество вершин|10|20|30|40|50|60|70|80|90|100|
+|Время проверки|4мс|113мс|472мс|1с 677мс|4с 624мс|11с|22с|42с|1м 12с|2м 29с|
+
+h4. Проверка корректности работы эвристического алгоритма на персональном компьютере
+
+Если эвристический алгоритм дал отрицательный результат, значит, графы точно не изоморфны. Иначе требуется дополнительная проверка.
+
+_1) Проверка сравнением результатов, полученных полным перебором и эвристическим алгоритмом._
+
+Даёт абсолютно точную оценку. Недостаток метода – невозможность проверки алгоритма на больших графах в связи с медленной работой переборного алгоритма.
+
+_2) Проверка нахождением биекции (перестановки) вершин._
+
+Возьмём две вершины, у которых уникальные характеристики равны. Пусть это будет первая вершина. Следующие вершины будем выбирать так, чтобы они имели одинаковые уникальные характеристики для всех рёбер между уже выбранными вершинами.
+
+Понятно, что если графы не изоморфны, то никакой алгоритм не сможет найти биекцию, ставящую графы в соответствие. Остаётся рассмотреть один случай, когда эвристический алгоритм дал положительный результат, а биекция, ставящая граф в соответствие другому не найдена.
+
+Находились все графы данной размерности, сортировались по уникальным характеристикам, сравнивались между собой только характеристики находящиеся в списке рядом.
+
+Зависимость количества графов, имеющих различные матрицы смежности от количества вершин в графе
+
+table(table).
+|Количество вершин|1|2|3|4|5|6|7|8|9|
+|Количество графов|1|2|8|64|1 024|32 768|2 097 152|268 435 456|68 719 476 736|
+
+Для более эффективной проверки вводились следующие оптимизации:
+
+1) Пред. расчёт уникальных характеристик графа для уменьшения времени проверки (не надо повторно вычислять уникальные характеристики для сравниваемых графов).
+
+2) Проверка наборов графов только с одинаковым возрастающим набором степеней вершин для уменьшения используемой памяти (не надо хранить в памяти все графы одновременно).
+
+table(table).
+||Все графы|Только с одинаковым возрастающим набором степеней вершин|
+|Пред. расчёт уникальных характеристик графа|Метод 1|Метод 3|
+|Сравнение «на лету»|Метод 2|Метод 4|
+
+Время проверки при различных методах:
+
+table(table).
+||1|2|3|4|5|6|7|8|9|
+|Метод 1|5мс|7мс|12мс|34мс|410мс|-память||||
+|Метод 2|3мс|7мс|14мс|53мс|1с 730мс|2м 38с|-память|||
+|Метод 3|6мс|7мс|15мс|20мс|56мс|630мс|19с 687мс|-память||
+|Метод 4|8мс|9мс|14мс|20мс|67мс|1с 230мс|1м 6с|1ч 46м|-время|
+
+При проведении проверки не нашлось ни одной пары графов, для которой бы алгоритм дал неверный результат.
+
+h4. Использование алгоритма на примере решения задачи:
+
+{% highlight java linenos %}
+import java.io.*;
+import java.io.PrintWriter;
+import java.math.BigInteger;
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+public class Main {
+
+
+ class Problem {
+  
+  class Graf {
+   int size;
+   BigInteger[][] m;
+   
+   void init(int sz) {
+    size = sz;
+    m = new BigInteger[size][size];
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      m[i][j] = new BigInteger("0");
+     }
+    }
+   }
+   
+   Graf() {
+    init(0);
+   }
+   
+   Graf(int sz) {
+    init(sz);
+   }
+   
+   void add(int a, int b) {
+    m[a][b] = new BigInteger("1");
+    m[b][a] = new BigInteger("1");
+   }
+   
+   void add3(int a, int b1, int b2, int b3) {
+    add(a, b1);
+    add(a, b2);
+    add(a, b3);
+   }
+   
+   void read(Scanner in) {
+    init(in.nextInt());
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      m[i][j] = in.nextBigInteger();
+     }
+    }
+   }
+   
+   void read_ribs(Scanner in) {
+    init(in.nextInt());
+    int m = in.nextInt();
+    for (int i = 0; i < m; i++) {
+     int a = in.nextInt();
+     int b = in.nextInt();
+     a--;
+     b--;
+     
+     add(a, b);
+    }
+   }
+   
+   void copy(Graf gf) {
+    init(gf.size);
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      m[i][j] = gf.m[i][j];
+     }
+    }
+   }
+   
+   void copy(Graf gf, int[] p) {
+    init(gf.size);
+    for (int i = 0; i < gf.size; i++) {
+     for (int j = 0; j < gf.size; j++) {
+      m[i][j] = gf.m[p[i]][p[j]];
+     }
+    }
+   }
+   
+   void multiply(Graf gf) {
+    Graf temp = new Graf();
+    temp = new Graf(size);
+    BigInteger sum;
+    
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      sum = new BigInteger("0");
+      for (int k = 0; k < size; k++) {
+       sum = sum.add(m[i][k].multiply(gf.m[k][j]));
+      }
+      temp.m[i][j] = sum;
+     }
+    }
+    copy(temp);
+   }
+   
+   void write(PrintWriter out) {
+    int width[] = new int[size];
+    
+    out.println(size);
+    if (size == 0) return;
+    for (int i = 0; i < size; i++) {
+     width[i] = m[0][i].toString().length();
+    }
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      if (width[j] < m[i][j].toString().length()) {
+       width[j] = m[i][j].toString().length();
+      }
+     }
+    }
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      out.print(m[i][j] + " ");
+      for (int k = m[i][j].toString().length(); k < width[j]; k++) {
+       out.print(" ");
+      }
+     }
+     out.println();
+    }
+    out.println();
+   }
+   
+   void write(PrintWriter out, int[] p) {
+    int width[] = new int[size];
+    
+    out.println(size);
+    if (size == 0) return;
+    for (int i = 0; i < size; i++) {
+     width[p[i]] = m[0][p[i]].toString().length();
+    }
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      if (width[p[j]] < m[p[i]][p[j]].toString().length()) {
+       width[p[j]] = m[p[i]][p[j]].toString().length();
+      }
+     }
+    }
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      out.print(m[p[i]][p[j]] + " ");
+      for (int k = m[p[i]][p[j]].toString().length(); k < width[p[j]]; k++) {
+       out.print(" ");
+      }
+     }
+     out.println();
+    }
+    out.println();
+   }
+   
+   int compareTo(Graf gf) {
+    if (size < gf.size) return -1;
+    if (size > gf.size) return 1;
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      if (m[i][j].compareTo(gf.m[i][j]) != 0) {
+       return m[i][j].compareTo(gf.m[i][j]);
+      }
+     }
+    }
+    
+    return 0;
+   }
+   
+   int compareTo(Graf gf, int[] ind) {
+    if (size < gf.size) return -1;
+    if (size > gf.size) return 1;
+    for (int i = 0; i < size; i++) {
+     for (int j = 0; j < size; j++) {
+      if (m[i][j].compareTo(gf.m[ind[i]][ind[j]]) != 0) {
+       return m[i][j].compareTo(gf.m[ind[i]][ind[j]]);
+      }
+     }
+    }
+    
+    return 0;
+   }
+   
+   void swapVertexes(int u, int v) {
+    BigInteger temp;
+    
+    for (int i = 0; i < size; i++) {
+     temp = m[u][i];
+     m[u][i] = m[v][i];
+     m[v][i] = temp;
+    }
+    for (int i = 0; i < size; i++) {
+     temp = m[i][u];
+     m[i][u] = m[i][v];
+     m[i][v] = temp;
+    }
+   }
+  }
+ 
+ 
+  class BijectiveMapping {
+   int size;
+   int p[];
+    
+   private boolean partEqual(PrintWriter out, int n, UniqueGrafProperty gp1, UniqueGrafProperty gp2) {
+    if (gp2.v[p[n]].compareTo(gp1.v[n]) != 0) {
+     return false;
+    }
+    for (int i = 0; i <= n; i++) {
+     if (gp2.v[p[n]].r[p[i]].compareTo(gp1.v[n].r[i]) != 0) {
+      return false;
+     }
+    }
+    
+    return true;
+   }
+   
+   private void swap_order(int[] m, int a, int b) {
+    int t;
+    
+    t = m[a];
+    m[a] = m[b];
+    m[b] = t;
+   }
+   
+   BijectiveMapping(PrintWriter out, Graf gf1, Graf gf2, UniqueGrafProperty gp1, UniqueGrafProperty gp2) {
+    size = gp1.size;
+    p = new int[size];
+    for (int i = 0; i < size; i++) {
+     p[i] = i;
+    }
+    for (int i = 0; i < size; i++) {
+     for (int j = i; j < size; j++) {
+      swap_order(p, i, j);
+      if (partEqual(out, i, gp1, gp2)) {
+       break;
+      }
+     }
+    }
+   }
+  }
+ 
+  class IsomorphusCheck {
+   final int NO = 0;
+   final int YES = 1;
+   final int AMBIGUOUS = -1;
+   
+   int bruteForce(Graf gf1, Graf gf2) {
+    int p[] = new int[gf1.size];
+    
+    for (int i = 0; i < gf1.size; i++) {
+     p[i] = i;
+    }
+    if (gf1.compareTo(gf2, p) == 0) return YES;
+    while (true) {
+     boolean ok = false;
+     
+     for (int i = gf1.size - 1; i > 0; i--) {
+      if (p[i - 1] < p[i]) {
+       int min_ind = i;
+       int temp;
+       int l, r;
+       
+       for (int j = i; j < gf1.size; j++) {
+        if ((p[j] > p[i - 1]) && (p[j] < p[min_ind])) {
+         min_ind = j;
+        }
+       }
+       temp = p[i - 1];
+       p[i - 1] = p[min_ind];
+       p[min_ind] = temp;
+       l = i;
+       r = gf1.size - 1;
+       while (l < r) {
+        temp = p[l];
+        p[l] = p[r];
+        p[r] = temp;
+        l++;
+        r--;
+       }
+       ok = true;
+       break;
+      }
+     }
+     if (!ok) break;
+     if (gf1.compareTo(gf2, p) != 0) {
+      return NO;
+     } else {
+      return YES;
+     }
+    }
+    
+    return NO;
+   }
+   
+   int heuristic(Graf gf1, Graf gf2) {
+    UniqueGrafProperty gp1 = new UniqueGrafProperty(gf1);
+    UniqueGrafProperty gp2 = new UniqueGrafProperty(gf2);
+ //   BijectiveMapping bm = new BijectiveMapping(out, gf1, gf2, gp1, gp2);
+ 
+ //   for (int i = 0; i < bm.size; i++) {
+ //    out.println("" + (i + 1) + " -> " + (bm.p[i] + 1));
+ //   }
+ //   out.println();
+ //   gf1.write(out);
+ //   gf2.write(out, bm.p);
+      
+    if (gp1.size != gp2.size) return NO;
+    if (gp1.compareTo(gp2) != 0) {
+     return NO;
+    } else {
+     return YES;
+ //    Graf gf3 = new Graf();
+ //    gf3.copy(gf2, bm.p);
+ //    if (gf1.compareTo(gf3) == 0) {
+ //     return YES;
+ //    } else {
+ //     return AMBIGUOUS;
+ //    }
+    }
+   }
+  }
+ 
+ 
+  class UniqueRibProperty implements Comparable<uniqueribproperty> {
+   int size;
+   BigInteger a[];
+   
+   UniqueRibProperty(int sz) {
+    size = sz;
+    a = new BigInteger[sz];
+    for (int i = 0; i < size; i++) {
+     a[i] = new BigInteger("0");
+    }
+   }
+   
+   public int compareTo(UniqueRibProperty rp) {
+    for (int i = 0; i < size; i++) {
+     if (a[i].compareTo(rp.a[i]) != 0) {
+      return a[i].compareTo(rp.a[i]);
+     }
+    }
+    
+    return 0;
+   }
+   
+   void write(PrintWriter out) {
+    out.print("{");
+    for (int i = 0; i < size; i++) {
+     out.print(a[i]);
+     if (i < size - 1) {
+      out.print(", ");
+     }
+    }
+    out.print("}");
+   }
+   
+   void write_hash(PrintWriter out) {
+    BigInteger h = new BigInteger("0");
+    
+    for (int i = 0; i < size; i++) {
+     h = h.multiply(new BigInteger("499")).add(a[i]);
+    }
+    h = h.divideAndRemainder(new BigInteger("10000"))[1];
+    if (h.compareTo(new BigInteger("1000")) < 0) {
+     out.print(" ");
+    }
+    if (h.compareTo(new BigInteger("100")) < 0) {
+     out.print(" ");
+    }
+    if (h.compareTo(new BigInteger("10")) < 0) {
+     out.print(" ");
+    }
+    out.print(h.divideAndRemainder(new BigInteger("10000"))[1]);
+   }
+  }
+ 
+  class UniqueVertexProperty implements Comparable<UniqueVertexProperty> {
+   int size;
+   int num;
+   UniqueRibProperty r[];
+   UniqueRibProperty sr[];
+   
+   UniqueVertexProperty(int sz) {
+    size = sz;
+    r = new UniqueRibProperty[size];
+    sr = new UniqueRibProperty[size];
+    for (int i = 0; i < size; i++) {
+     r[i] = new UniqueRibProperty(size);
+    }
+   }
+   
+   public int compareTo(UniqueVertexProperty vp) {
+    for (int i = 0; i < size; i++) {
+     if (sr[i].compareTo(vp.sr[i]) != 0) {
+      return sr[i].compareTo(vp.sr[i]);
+     }
+    }
+ 
+    return 0;
+   }
+   
+   void write(PrintWriter out) {
+    out.print("{");
+    for (int i = 0; i < size; i++) {
+     sr[i].write(out);
+     if (i < size - 1) {
+      out.print(", ");
+     }
+    }
+   }
+  }
+ 
+  class UniqueGrafProperty implements Comparable<UniqueGrafProperty> {
+   int size;
+   UniqueVertexProperty v[];
+   UniqueVertexProperty sv[];
+   
+   UniqueGrafProperty(Graf gf) {
+    size = gf.size;
+    v = new UniqueVertexProperty[size];
+    sv = new UniqueVertexProperty[size];
+    Graf temp = new Graf(gf.size);
+    
+    for (int i = 0; i < size; i++) {
+     v[i] = new UniqueVertexProperty(size);
+     v[i].num = i;
+    }
+    temp.copy(gf);
+    for (int k = 0; k < gf.size; k++) {
+     for (int i = 0; i < gf.size; i++) {
+      for (int j = 0; j < gf.size; j++) {
+       v[i].r[j].a[k] = temp.m[i][j];
+      }
+     }
+     temp.multiply(gf);
+    }
+    for (int i = 0; i < size; i++) {
+     sv[i] = v[i];
+     for (int j = 0; j < size; j++) {
+      sv[i].sr[j] = v[i].r[j];
+     }
+    }
+    for (int i = 0; i < size; i++) {
+     Arrays.sort(sv[i].sr);
+    }
+    Arrays.sort(sv);
+   }
+   
+   public int compareTo(UniqueGrafProperty gp) {
+    for (int i = 0; i < size; i++) {
+     if (sv[i].compareTo(gp.sv[i]) != 0) {
+      return sv[i].compareTo(gp.sv[i]);
+     }
+    }
+    
+    return 0;
+   }
+   
+   void write(PrintWriter out) {
+    for (int i = 0; i < size; i++) {
+     out.print("" + i + ": ");
+     for (int j = 0; j < size; j++) {
+      v[i].r[j].write_hash(out);
+      out.print("   ");
+     }
+     out.println();
+    }
+    out.println();
+   }
+   
+   void write(PrintWriter out, int n) {
+    for (int i = 0; i < n; i++) {
+     out.print("" + i + ": ");
+     for (int j = 0; j < n; j++) {
+      v[i].r[j].write_hash(out);
+      out.print("   ");
+     }
+     out.println();
+    }
+    out.println();
+   }
+   
+   void write(PrintWriter out, int[] p) {
+    for (int i = 0; i < size; i++) {
+     out.print("" + i + ": ");
+     for (int j = 0; j < size; j++) {
+      v[p[i]].r[p[j]].write_hash(out);
+      out.print("   ");
+     }
+     out.println();
+    }
+    out.println();
+   }
+   
+   void write(PrintWriter out, int[] p, int n) {
+    for (int i = 0; i < n; i++) {
+     out.print("" + i + ": ");
+     for (int j = 0; j < n; j++) {
+      v[p[i]].r[p[j]].write_hash(out);
+      out.print("   ");
+     }
+     out.println();
+    }
+    out.println();
+   }
+  }
+
+  class Sky {
+   Graf snark0() {
+    Graf g = new Graf(26);
+
+    g.add3(0, 1, 4, 15);
+    g.add3(1, 0, 2, 6);
+    g.add3(2, 1, 3, 7);
+    g.add3(3, 2, 9, 19);
+    g.add3(4, 0, 5, 10);
+    g.add3(5, 4, 6, 11);
+    g.add3(6, 1, 5, 12);
+    g.add3(7, 2, 8, 12);
+    g.add3(8, 7, 9, 13);
+    g.add3(9, 3, 8, 14);
+    g.add3(10, 4, 16, 20);
+    g.add3(11, 5, 15, 20);
+    g.add3(12, 6, 7, 17);
+    g.add3(13, 8, 19, 23);
+    g.add3(14, 9, 18, 23);
+    g.add3(15, 0, 11, 16);
+    g.add3(16, 10, 15, 21);
+    g.add3(17, 12, 24, 25);
+    g.add3(18, 14, 19, 22);
+    g.add3(19, 3, 13, 18);
+    g.add3(20, 10, 11, 24);
+    g.add3(21, 16, 22, 25);
+    g.add3(22, 18, 21, 24);
+    g.add3(23, 13, 14, 25);
+    g.add3(24, 17, 20, 22);
+    g.add3(25, 17, 21, 23);
+
+    return g;
+   }
+
+   Graf snark1() {
+    Graf g = new Graf(26);
+
+    g.add3(0, 1, 3, 19);
+    g.add3(1, 0, 2, 5);
+    g.add3(2, 1, 6, 22);
+    g.add3(3, 0, 4, 11);
+    g.add3(4, 3, 5, 7);
+    g.add3(5, 1, 4, 25);
+    g.add3(25, 5, 6, 9);
+    g.add3(6, 2, 16, 25);
+    g.add3(7, 4, 8, 13);
+    g.add3(8, 7, 9, 10);
+    g.add3(9, 8, 14, 25);
+    g.add3(10, 8, 17, 18);
+    g.add3(11, 3, 20, 23);
+    g.add3(12, 17, 19, 23);
+    g.add3(13, 7, 14, 18);
+    g.add3(14, 9, 13, 17);
+    g.add3(15, 18, 22, 24);
+    g.add3(16, 6, 21, 24);
+    g.add3(17, 10, 12, 14);
+    g.add3(18, 10, 13, 15);
+    g.add3(19, 0, 12, 20);
+    g.add3(20, 11, 19, 21);
+    g.add3(21, 16, 20, 22);
+    g.add3(22, 2, 15, 21);
+    g.add3(23, 11, 12, 24);
+    g.add3(24, 15, 16, 23);
+
+    return g;
+   }
+
+   Graf snark2() {
+    Graf g = new Graf(18);
+
+    g.add3(0, 1, 16, 17);
+    g.add3(1, 0, 2, 13);
+    g.add3(2, 1, 3, 7);
+    g.add3(3, 2, 4, 17);
+    g.add3(4, 3, 5, 16);
+    g.add3(5, 4, 6, 9);
+    g.add3(6, 5, 7, 11);
+    g.add3(7, 6, 8, 2);
+    g.add3(8, 7, 9, 12);
+    g.add3(9, 8, 10, 5);
+    g.add3(10, 9, 11, 15);
+    g.add3(11, 10, 12, 6);
+    g.add3(12, 11, 13, 8);
+    g.add3(13, 12, 14, 1);
+    g.add3(14, 13, 15, 17);
+    g.add3(15, 14, 16, 10);
+    g.add3(16, 15, 0, 4);
+    g.add3(17, 0, 3, 14);
+
+    return g;
+   }
+
+   Graf snark3() {
+    Graf g = new Graf(30);
+
+    g.add3(0, 1, 8, 11);
+    g.add3(1, 0, 2, 16);
+    g.add3(2, 1, 6, 9);
+    g.add3(3, 4, 11, 14);
+    g.add3(4, 3, 5, 19);
+    g.add3(5, 4, 9, 12);
+    g.add3(6, 2, 7, 14);
+    g.add3(7, 6, 8, 22);
+    g.add3(8, 0, 7, 12);
+    g.add3(9, 2, 5, 10);
+    g.add3(10, 9, 11, 25);
+    g.add3(11, 0, 3, 10);
+    g.add3(12, 5, 8, 13);
+    g.add3(13, 12, 14, 28);
+    g.add3(14, 3, 6, 13);
+    g.add3(15, 29, 16, 20);
+    g.add3(16, 15, 17, 1);
+    g.add3(17, 16, 18, 27);
+    g.add3(18, 17, 19, 23);
+    g.add3(19, 18, 20, 4);
+    g.add3(20, 19, 21, 15);
+    g.add3(21, 20, 22, 26);
+    g.add3(22, 21, 23, 7);
+    g.add3(23, 22, 24, 18);
+    g.add3(24, 23, 25, 29);
+    g.add3(25, 24, 26, 10);
+    g.add3(26, 25, 27, 21);
+    g.add3(27, 26, 28, 17);
+    g.add3(28, 27, 29, 13);
+    g.add3(29, 28, 15, 24);
+
+    return g;
+   }
+
+   Graf snark4() {
+    Graf g = new Graf(22);
+
+    g.add3(0, 1, 2, 20);
+    g.add3(1, 0, 3, 21);
+    g.add3(2, 0, 5, 6);
+    g.add3(3, 1, 4, 6);
+    g.add3(4, 3, 5, 7);
+    g.add3(5, 2, 4, 8);
+    g.add3(6, 2, 3, 9);
+    g.add3(7, 4, 14, 15);
+    g.add3(8, 5, 16, 17);
+    g.add3(9, 6, 11, 12);
+    g.add3(10, 11, 15, 20);
+    g.add3(11, 9, 10, 14);
+    g.add3(12, 9, 13, 17);
+    g.add3(13, 12, 16, 21);
+    g.add3(14, 7, 11, 18);
+    g.add3(15, 7, 10, 16);
+    g.add3(16, 8, 13, 15);
+    g.add3(17, 8, 12, 19);
+    g.add3(18, 14, 19, 20);
+    g.add3(19, 17, 18, 21);
+    g.add3(20, 0, 10, 18);
+    g.add3(21, 1, 13, 19);
+
+    return g;
+   }
+
+   Graf snark5() {
+    Graf g = new Graf(22);
+
+    g.add3(0, 1, 2, 20);
+    g.add3(1, 0, 3, 21);
+    g.add3(2, 0, 5, 6);
+    g.add3(3, 1, 4, 6);
+    g.add3(4, 3, 5, 7);
+    g.add3(5, 2, 4, 8);
+    g.add3(6, 2, 3, 9);
+    g.add3(7, 4, 14, 15);
+    g.add3(8, 5, 16, 17);
+    g.add3(9, 6, 11, 12);
+    g.add3(10, 11, 15, 20);
+    g.add3(11, 9, 10, 14);
+    g.add3(12, 9, 13, 17);
+    g.add3(13, 12, 16, 21);
+    g.add3(14, 7, 11, 18);
+    g.add3(15, 7, 10, 19);
+    g.add3(16, 8, 13, 18);
+    g.add3(17, 8, 12, 19);
+    g.add3(18, 14, 16, 20);
+    g.add3(19, 17, 15, 21);
+    g.add3(20, 0, 10, 18);
+    g.add3(21, 1, 13, 19);
+
+    return g;
+   }
+
+   Graf snark6() {
+    Graf g = new Graf(20);
+
+    g.add3(0, 14, 1, 15);
+    g.add3(1, 0, 2, 11);
+    g.add3(2, 1, 3, 7);
+    g.add3(3, 2, 4, 16);
+    g.add3(4, 3, 5, 14);
+    g.add3(5, 4, 6, 10);
+    g.add3(6, 5, 7, 17);
+    g.add3(7, 6, 8, 2);
+    g.add3(8, 7, 9, 13);
+    g.add3(9, 8, 10, 18);
+    g.add3(10, 9, 11, 5);
+    g.add3(11, 10, 12, 1);
+    g.add3(12, 11, 13, 19);
+    g.add3(13, 12, 14, 8);
+    g.add3(14, 13, 0, 4);
+    g.add3(15, 19, 16, 0);
+    g.add3(16, 15, 17, 3);
+    g.add3(17, 16, 18, 6);
+    g.add3(18, 17, 19, 9);
+    g.add3(19, 18, 15, 12);
+
+    return g;
+   }
+
+   Graf snark7() {
+    Graf g = new Graf(20);
+
+    g.add3(0, 4, 1, 15);
+    g.add3(1, 0, 2, 16);
+    g.add3(2, 1, 3, 17);
+    g.add3(3, 2, 4, 18);
+    g.add3(4, 3, 0, 19);
+    g.add3(5, 6, 14, 15);
+    g.add3(6, 5, 7, 16);
+    g.add3(7, 6, 8, 17);
+    g.add3(8, 7, 9, 18);
+    g.add3(9, 8, 10, 19);
+    g.add3(10, 9, 11, 15);
+    g.add3(11, 10, 12, 16);
+    g.add3(12, 11, 13, 17);
+    g.add3(13, 12, 14, 18);
+    g.add3(14, 13, 5, 19);
+    g.add3(15, 0, 5, 10);
+    g.add3(16, 1, 6, 11);
+    g.add3(17, 2, 7, 12);
+    g.add3(18, 3, 8, 13);
+    g.add3(19, 4, 9, 14);
+
+    return g;
+   }
+  }
+
+  
+  
+  void solve() {
+   Scanner in = new Scanner(System.in);
+   PrintWriter out = new PrintWriter(System.out);
+ //  Graf gf1 = new Graf();
+ //  Graf gf2 = new Graf();
+   //Timer timer = new Timer();
+   int checkResult;
+   Graf[] snark;
+   Graf g = new Graf();
+   String[] name = new String[7];
+   Sky sky = new Sky();
+   IsomorphusCheck isomorphusCheck = new IsomorphusCheck();
+   
+   name[0] = "First Celmins-Swart Snark";
+   name[1] = "Second Celmins-Swart Snark";
+   name[2] = "Blanusa Snark";
+   name[3] = "Double Star Snark";
+   name[4] = "First Loupekine Snark";
+   name[5] = "Second Loupekine Snark";
+   name[6] = "Flower Snark";
+  
+   snark = new Graf[8];
+   snark[0] = sky.snark0();
+   snark[1] = sky.snark1();
+   snark[2] = sky.snark2();
+   snark[3] = sky.snark3();
+   snark[4] = sky.snark4();
+   snark[5] = sky.snark5();
+   snark[6] = sky.snark6();
+   snark[7] = sky.snark7();
+   
+ //  for (int i = 0; i < 7; i++) {
+ //   for (int j = 0; j < snark[i].m.length; j++) {
+ //    int cnt = 0;
+ //    
+ //    for (int k = 0; k < snark[i].m[j].length; k++) {
+ //     if (snark[i].m[j][k].compareTo(BigInteger.ZERO) != 0) cnt++;
+ //    }
+ //    if (cnt != 3) {
+ //     out.print("No balanse in " + name[i] + ": vertex " + j + "\n");
+ //    }
+ //   }
+ //  }
+ //  
+ //  for (int i = 0; i < 18; i++) {
+ //   for (int j = i + 1; j < 18; j++) {
+ //    if (snark[2].m[i][j].compareTo(BigInteger.ZERO) != 0) out.println("" + i + " " + j);
+ //   }
+ //  }
+ //  
+ //  Graf tg = snark[2];
+ //  
+ //  out.println(tg.size);
+ //  for (int i = 0; i < tg.size; i++) {
+ //   for (int j = i + 1; j < tg.size; j++) {
+ //    if (tg.m[i][j].compareTo(BigInteger.ZERO) != 0) {
+ //     out.println("" + i + " " + j);
+ //    }
+ //   }
+ //  }
+   //timer.fixTime();
+   g.read_ribs(in);
+   if (g.size > 30) {
+    out.print("Not a Snark!");
+    out.flush();
+    return;
+   }
+   for (int i = 0; i < g.size; i++) {
+    int cnt = 0;
+    for (int j = 0; j < g.size; j++) {
+     if (g.m[i][j].compareTo(BigInteger.ZERO) != 0) cnt++;
+    }
+    if (cnt != 3) {
+     out.print("Not a Snark!");
+     out.flush();
+     return;
+    }
+   }
+   for (int i = 0; i < 7; i++) {
+    checkResult = isomorphusCheck.heuristic(g, snark[i]);
+    if (checkResult == isomorphusCheck.YES) {
+     out.print(name[i]);
+     out.flush();
+     return;
+    }
+   }
+ //  checkResult = IsomorphusCheck.heuristic(snark[4], snark[5]);
+ //  if (checkResult == IsomorphusCheck.YES) {
+ //   out.println("Grafs are isomorphus!");
+ //  } else if (checkResult == IsomorphusCheck.NO) {
+ //   out.println("Grafs aren't isomorphus.");
+ //  } else {
+ //   out.println("An algoritm isn't able to solve this case...");
+ //  }
+ //  out.println("Heuristic algorithm takes " + timer.getTime() + " ms...");
+   
+   out.print("Not a Snark!");
+   out.flush();
+ 
+  }
+ }
+
+ void func() {
+  Problem problem = new Problem();
+  
+  problem.solve();
+ }
+ 
+ public static void main(String[] args) {
+  (new Main()).func();
+  int a = 2 + 2;
+ }
+}
+{% endhighlight %}
+
+h4. Литература:
+
+http://ru.Wikipedia.org/ :  Определения графа, изоморфизма, пути
