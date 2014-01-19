@@ -1,0 +1,5 @@
+name: n-at site
+markdown: redcarpet
+pygments: true
+
+exclude: ['.git', '.vagrant', 'Vagrantfile', 'provision.sh']
