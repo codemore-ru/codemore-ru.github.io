@@ -7,6 +7,9 @@ layout: base
 <br />
 <h3>Статьи:</h3>
 {% for post in site.posts %}
-<p>{{ post.date | date_to_string }} - <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+<p>{{ post.date | date_to_string }} » <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+{% if post.author %}
+<em class="text-info">({{ post.author }})</em>
+{% endif %}
 </p>
 {% endfor %}
