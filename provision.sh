@@ -1,8 +1,9 @@
 #!/bin/bash
 
 sudo apt-get install -y ruby python-pip g++ make mc apache2
-pip install Pygments
-gem install jekyll
+sudo pip install Pygments
+sudo gem install jekyll
+sudo gem install RedCarpet
 
 mkdir -p /vagrant/_site
 sudo rm -rf /var/www
