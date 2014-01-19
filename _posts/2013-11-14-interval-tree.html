@@ -1,0 +1,315 @@
+---
+layout: post
+title: Дерево отрезков
+author: Valentin Gubarev
+---
+
+Реализация шаблона структуры "Дерево отрезков" на языке C++.<br />
+
+{% highlight cpp linenos %}
+#include<vector>
+#include<iostream>
+#include<fstream>
+#include<cmath>
+#include<algorithm>
+#include<stack>
+using namespace std;
+
+///Структура данных "Дерево отрезков"
+///operat - функция агрегирования (сумма, умножение, минимум, максимум и т.п.)
+///Метод gets возвращает указатель на vector содержащий агрегированные объекты
+
+template <typename T>
+class trade_tree{
+private:
+    vector < vector < T > > v;///Хранит структуру "Дерево отрезка"
+ T (*operat) (const T& t1,const T& t2);
+
+private:
+ void allocation_memory(){
+        for(unsigned i = 0; v[i].size() > 1; ++i){
+            v.push_back( vector<t>() );
+            v[i+1].resize( ( v[i].size()+1 ) >> 1 );
+  }
+ }
+ //Построение дерева за O(N), v[0] - должен содержать N данных
+    void build_tree() {
+  if(v.empty())return;
+        for(unsigned i = 0; v[i].size() > 1; ++i){
+            for(unsigned j = 0; j < v[i].size(); j += 2)
+                v[i+1][j>>1] = v[i][j];
+            for(unsigned j = 1; j < v[i].size(); j += 2)
+                v[i+1][j>>1] = operat( v[i+1][j>>1], v[i][j] );
+        }
+    }
+
+public:
+    trade_tree(const vector<t> &tmp, T operation (const T& t1,const T& t2) ) {
+        v.clear();
+        v.push_back(tmp);
+  operat=operation;
+  allocation_memory();
+        build_tree();
+    }
+ void rebuild_tree(T operation (const T& t1,const T& t2) ) {
+  operat=operation;
+  build_tree();
+ }
+
+ unsigned size(){return v.empty()? 0:v[0].size();}//Возвращает количество элементов в массиве
+    void clear(){v.clear();}
+
+ //Агрегация по индексам с шагом без вектора интервалов
+ bool gets(unsigned start, unsigned delta, unsigned cnt, vector <t> &rez){
+  if( v.empty() || v[0].empty()) return false;
+  if( delta == 0) return false;
+
+  unsigned finish = start + delta;
+  bool need_add_element_to_rez = true;
+
+  //Не рекурсивный обход в глубину
+  stack < pair <unsigned, unsigned>/*, vector < pair <unsigned, unsigned> >*/ > st;
+  st.push(pair <unsigned, unsigned> (v.size()-1,0));
+
+  while( !st.empty() ) {
+   pair <unsigned, unsigned> p = st.top(); st.pop();
+
+   //   [ left, right ) - индексы, покрываемые узлом
+   unsigned left  = (1 << p.first) * p.second;
+   unsigned right = min( left + (1 << p.first), v[0].size() );
+
+   if(right <= start) continue;
+      
+   if(left >= finish) {
+    start  = finish;
+    finish = min(start + delta, v[0].size());
+    if(finish <= start)break;//Больше нет элементов
+    --cnt;
+    if(cnt == 0) break;//Нужное кол-во элементов создано
+    need_add_element_to_rez = true;//Элемент не добавлен
+   }
+
+   if(start <= left && right <= finish) {
+    if(need_add_element_to_rez) {
+     rez.push_back(v[p.first][p.second]);
+     need_add_element_to_rez = false;
+    } else {
+     rez[rez.size()-1] = operat(rez[rez.size()-1], v[p.first][p.second]);
+    }
+   } else {
+    if(p.first == 0)continue;
+    st.push(pair<unsigned, unsigned> (p.first-1, (p.second<<1) + 1) );
+    st.push(pair<unsigned, unsigned> (p.first-1, (p.second<<1)    ) );
+   }
+  }
+  return true;
+ }
+
+ //Агрегация по индексам с шагом по вектору
+ //Элементы indexs должны быть возрастающей последовательностью
+ bool gets(const vector <unsigned> &indexs, vector <t> &rez){
+  if( v.empty() || v[0].empty()) return false;
+  if( indexs.size() <2) return false;
+
+  unsigned t=0;
+  unsigned start  = indexs[t++];
+  unsigned finish = indexs[t];
+  bool need_add_element_to_rez = true;
+
+  //Не рекурсивный обход в глубину
+  stack < pair <unsigned, unsigned>/*, vector < pair <unsigned, unsigned> >*/ > st;
+  st.push(pair <unsigned, unsigned> (v.size()-1,0));
+
+  while( !st.empty() ) {
+   pair <unsigned, unsigned> p = st.top(); st.pop();
+
+   //   [ left, right )
+   unsigned left  = (1 << p.first) * p.second;
+   unsigned right = min( left + (1 << p.first), v[0].size() );
+
+   if(right <= start) continue;
+      
+   if(left >= finish) {
+    start  = indexs[t++];
+    if(t == indexs.size())break;//Запрос полностью обработан
+    finish = indexs[t];
+    need_add_element_to_rez = true;//Элемент не добавлен
+   }
+
+   if(start <= left && right <= finish) {
+    if(need_add_element_to_rez) {
+     rez.push_back(v[p.first][p.second]);
+     need_add_element_to_rez = false;
+    } else {
+     rez[rez.size()-1] = operat(rez[rez.size()-1], v[p.first][p.second]);
+    }
+   } else {
+    if(p.first == 0)continue;
+    st.push(pair<unsigned, unsigned> (p.first-1, (p.second<<1) + 1) );
+    st.push(pair<unsigned, unsigned> (p.first-1, (p.second<<1)    ) );
+   }
+  }
+  return true;
+ }
+
+//-------------------------------------------------
+//За логарифм узнаёт начало и конец одного интервала
+//Возвращает pair индексов с какой по какой индекс надо агрегировать
+template < typename T >
+pair<unsigned, unsigned> get_pair_indexs(
+  const vector < T > &vDate,
+  const T &start,
+  const T &finish) {
+   return pair<unsigned, unsigned>(
+    lower_bound(vDate.begin(), vDate.end(), start ) - vDate.begin(),
+    upper_bound(vDate.begin(), vDate.end(), finish) - vDate.begin());
+}
+
+//-------------------------------------------------
+//За O(cnt) узнаёт cnt интервалов
+//Возвращает vector индексов (как параметр)
+//с какого по какой индекс надо агрегировать
+//Находит индексы массива по старту и шагу (step)
+#define puu pair <unsigned, unsigned>
+template < typename T > // Целый тип
+bool get_vector_indexs_to_right(
+  T start, const T &step, unsigned _cnt,
+  const vector <t> &vDate,// Критерии группировки в отсортированном виде
+  vector <unsigned> &rez) {
+
+  if( vDate.empty() ) return false;
+  T finish = start + step;
+  if(finish == start) return false;// step == 0
+
+  unsigned cnt=_cnt;
+
+  // Не рекурсивный обход в глубину
+  stack < puu/*, vector < puu >*/ > st;
+  st.push(puu ( 0, vDate.size() - 1 ) );// Корень дерева
+
+  puu p;
+  while( !st.empty() ) {
+   p = st.top(); st.pop();
+   if( p.second < p.first ) continue;
+
+   if( vDate[p.second] < start ) continue;
+
+   if( finish <= vDate[p.first] ) {
+    //Перемещаем интервал за O(1)
+    T cnt_step = (vDate[p.first] - start) / step;
+    start += cnt_step * step;
+    finish = start + step;
+   }
+
+   if( start <= vDate[p.first] && vDate[p.second] < finish ) { // Найден узел справа, значит надо подвинуть интервал
+    rez.push_back(p.first);
+    if(cnt-- == 0) break; // Нужное кол-во элементов создано
+    start = finish;//Новый интервал
+    finish += step;
+    continue;
+   } else {
+    unsigned middle = (p.second + p.first) >> 1;
+    st.push(puu (middle+1, p.second) );
+    st.push(puu (p.first , middle  ) );
+   }
+  }
+  if(_cnt >= rez.size() && vDate[p.second] <= finish)
+   rez.push_back( p.second + 1 );
+
+  return true;
+}
+
+//Здесь пример использования trade_tree
+template < typename T >
+T add(const T &a,const T &b){
+    return a+b;
+}
+template < typename T >
+T mul(const T &a,const T &b){
+    return a*b;
+}
+template < typename T >
+T minimum(const T &a,const T &b){
+    return a<b?a:b;
+}
+template < typename T >
+T maximum(const T &a,const T &b){
+    return a>b?a:b;
+}
+
+template < typename T >
+pair <T, T> fun_time(const pair <T, T> &a, const pair <T, T> &b){
+ return pair <T, T> (a.first, b.second);
+}
+
+
+double   date[9]   = {1.0, 2.3, 3.5, 17.2, -5.32, 2.17, 0.1,-0.2,3.24};
+unsigned d_time[9] = { 10,  12,  15,   20,    30,   35,  40,  60,  63};
+
+template <typename T>
+void print_cont(T v);
+
+int main(){
+
+ freopen ("output.txt","wt",stdout);
+
+    vector <double> v;
+    for(unsigned i=0;i<9;++i)
+        v.push_back(date[i]);
+
+ vector < unsigned > vt;
+ for(unsigned i = 0; i < 9; ++i)
+  vt.push_back( d_time[i] );
+
+    trade_tree <double> ttVal(v,add);
+
+ vector<double>ind;
+ puu _p = get_pair_indexs(vt, 11U, 50U);
+ ttVal.gets(_p.first, _p.second - _p.first, 1, ind);
+
+ print_cont(ind);
+
+ ind.clear();
+ ttVal.gets(0,3,3,ind);
+ print_cont(ind);
+
+ vector<unsigned>indexs;
+ indexs.push_back(0);
+ indexs.push_back(3);
+ indexs.push_back(6);
+ indexs.push_back(9);
+ ind.clear();
+ ttVal.gets(indexs,ind);
+ print_cont(ind);
+
+ ttVal.gets(indexs,ind);
+ print_cont(ind);
+
+
+ vector<unsigned> vu;
+ //get_vector_indexs_to_right(37U,7U,2UL,vt,vu);//6,7,9
+ //get_vector_indexs_to_right(37U,7U,1UL,vt,vu);//6,7
+ //get_vector_indexs_to_right(9U,30U,1UL,vt,vu);//0,6
+ //get_vector_indexs_to_right(9U,30U,2UL,vt,vu);//0,6,9
+ //get_vector_indexs_to_right(0U,30U,2UL,vt,vu);//0,4,7
+ //get_vector_indexs_to_right(0U,30U,3UL,vt,vu);//0,4,7,9
+ get_vector_indexs_to_right(60U,3U,2UL,vt,vu);//7,8,9
+
+ print_cont(vu);
+
+    return 0;
+}
+
+// {1.0, 2.3, 3.5, 17.2, -5.32, 2.17, 0.1, -0.2, 3.24} value
+// { 10,  12,  15,   20,    30,   35,  40,   60,   63} time
+// {  0,   1,   2,    3,     4,    5,   6,    7,    8} index
+
+template <typename T>
+void print_cont(T v) {
+ unsigned i=0;
+ for(T::iterator it = v.begin(); it != v.end(); ++it, ++i) {
+  cout << "[" << i << "] = " << (*it) << "\n";
+ }
+ cout << endl;
+}
+{% endhighlight %}
