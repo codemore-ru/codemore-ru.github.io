@@ -8,6 +8,8 @@ h3. Загрузка сайта из репозитория
 
 Этот сайт находится в репозитоии "GitHub":https://github.com/n-at/n-at.github.io  
 
+Для работы с репозиториями рекомендую пользоваться "SoureTree":http://sourcetreeapp.com/
+
 Для тестирования сайта можно использовать "Vagrant":http://www.vagrantup.com/ (Vagrantfile и скрипт настройки ВМ уже в репозитории).
 
 h3. Добавление статей
