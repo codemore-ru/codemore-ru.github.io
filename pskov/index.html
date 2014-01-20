@@ -1,0 +1,23 @@
+---
+layout: base
+title: Олимпиадное программирование в Псков ГУ
+---
+
+<div class="page-header text-center">
+<h2>{{ page.title }}</h2>
+</div>
+
+{% for post in site.posts %}
+	{% if post.section == 'pskov' %}
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			{{ post.date | date_to_string }} » <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+		</div>
+		<div class="panel-body">
+		{{ post.excerpt | markdownify }}
+		</div>
+	</div>
+	<br />
+	<br />
+	{% endif %}
+{% endfor %}
