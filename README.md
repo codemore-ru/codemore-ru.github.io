@@ -1,4 +1,3 @@
-n-at.github.io
-==============
+### n-at.github.io
 
-A new CoreMore site. Currently available at new.codemore.info
+A new "Core More" site. Currently available at [new.codemore.info](http://new.codemore.info)
