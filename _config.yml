@@ -1,5 +1,8 @@
-name: n-at site
+name: Code More
 markdown: redcarpet
 pygments: true
 
 exclude: ['.git', '.vagrant', 'Vagrantfile', 'provision.sh', 'CNAME', 'README.md']
+
+redcarpet:
+    extensions: ['tables']
