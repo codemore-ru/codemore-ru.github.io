@@ -1,3 +1,3 @@
 ### n-at.github.io
 
-A new "Code More" site. Currently available at [new.codemore.info](http://new.codemore.info)
+A new "Code More" site. Currently available at <http://www.codemore.info>
