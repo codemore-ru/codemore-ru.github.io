@@ -1,8 +1,6 @@
 name: Code More
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 
 exclude: ['.git', '.vagrant', 'Vagrantfile', 'provision.sh', 'CNAME', 'README.md']
 
-redcarpet:
-    extensions: ['tables']
