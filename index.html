@@ -5,7 +5,11 @@ title: Code More
 
 {% include info.html %}
 <br />
-<h3>Статьи:</h3>
+<br />
+<h4>Разделы:</h4>
+{% include sections.html %}
+<br/>
+<h4>Статьи:</h4>
 {% for post in site.posts %}
 	{% if post.section == null %}
 	<p>
