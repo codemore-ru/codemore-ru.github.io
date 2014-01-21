@@ -1,0 +1,150 @@
+---
+layout: post
+title: Дерево отрезков на canvas
+author: Valentin Gubarev
+section: experimental
+---
+
+<h3>Структура данных "Дерево отрезков"</h3>
+
+<canvas height="250" id="area" width="400"></canvas><br />
+<script type="text/javascript">
+   var tmp_canva = document.getElementById('area');
+   var canva2d = tmp_canva.getContext('2d');
+   var radius = 8; // Радиус вершины
+   var cnt_V = 10; // Кол-во вершин
+
+   var maxX = 0;
+   var maxY = 0;
+
+   var X = 0;
+   var Y = 0;
+
+   function V(x,y,r) {
+      canva2d.moveTo(x+r,y);
+      canva2d.arc(x,y,r,0,2*Math.PI,false);
+   }
+
+   function pred_E(y,cnt,stepx,stepy) {
+      maxX = 0;
+      maxY = 0;
+      var bord = 10;
+      var x = stepx + radius;
+      for(var i = cnt; i > 0; i -= 2) {
+         if (maxY < bord + y)
+            maxY = bord + y + 2 * stepy;
+         if (maxX < bord + x + stepx)
+            maxX = bord + x + stepx;
+         x += 4 * stepx;
+      }
+      x = stepx + radius + 2 * stepx;
+      for(var i = cnt - 1; i > 0; i -= 2) {
+         if (maxY < bord + y)
+            maxY = bord + y + 2 * stepy;
+         if (maxX < bord + x)
+            maxX = bord + x;
+         x += 4 * stepx;
+      }
+   }
+
+   function E(y,cnt,stepx,stepy) {
+      var bord = 10;
+      var x = stepx + radius;
+      for(var i = cnt; i > 0; i -= 2) {
+         canva2d.moveTo(bord+x,bord+y);
+         canva2d.lineTo(bord+x+stepx,bord+y+2*stepy);
+         x += 4 * stepx;
+      }
+      x = stepx + radius + 2 * stepx;
+      for(var i = cnt - 1; i > 0; i -= 2) {
+         canva2d.moveTo(bord+x,bord+y);
+         canva2d.lineTo(bord+x-stepx,bord+y+2*stepy);
+         x += 4 * stepx;
+      }
+   }
+
+   function vertx(y,cnt,stepx) {
+      var bord = 10;
+      var x = stepx + radius;
+      for(; cnt > 0; --cnt) {
+         V(bord+x, bord+y, radius);
+         x += 2 * stepx;
+      }
+   }
+
+   function resize_canva2d() {
+      var cnt = cnt_V;   // Кол-во вершин
+      var stepx = 2*radius;
+      var stepy = 2*radius;
+      var finish = cnt*2*stepx;
+
+      for(var y = radius; cnt > 1; y += 2*stepy) {
+         pred_E(y,cnt,stepx,stepy);
+         if (maxX > X)
+            X = maxX;
+         if (maxY > Y)
+            Y = maxY;
+         if (cnt == 1) break;
+         cnt += 1;
+         cnt = (cnt / 2);
+         cnt |= 0;
+         stepx = 2*stepx;
+      }
+      tmp_canva.width = +X + 10;
+      tmp_canva.heigth = +Y + 10;
+      var w = +X + 10;
+      var h = +Y + 10;
+      canva2d.clearRect(0, 0, w, h);
+   }
+
+   function tree() {
+      X = 0;
+      Y = 0;
+      resize_canva2d();
+
+      var cnt = cnt_V;   // Кол-во вершин
+      var stepx = 2*radius;
+      var stepy = 2*radius;
+      var finish = cnt*2*stepx;
+
+      for(var y = radius; cnt > 1; y += 2*stepy) {
+         E(y,cnt,stepx,stepy);
+         if (cnt == 1) break;
+         cnt += 1;
+         cnt = (cnt / 2);
+         cnt |= 0;
+         stepx = 2*stepx;
+      }
+
+      cnt = cnt_V;   // Кол-во вершин
+      var stepx = 2*radius;
+      var stepy = 2*radius;
+      var finish = cnt*2*stepx;
+
+      for(var y = radius; cnt > 0; y += 2*stepy) {
+         vertx(y,cnt,stepx);
+         if (cnt == 1) break;
+         cnt = ((cnt+1) / 2);
+         cnt |= 0;
+         stepx = 2*stepx;
+      }
+
+      canva2d.fill();
+      canva2d.stroke();
+   }
+   function go(d) {
+      document.getElementById("cnt_list").value = +document.getElementById("cnt_list").value + d;
+      cnt_V = document.getElementById("cnt_list").value | 0;
+      tree();
+   }
+</script>
+
+<input onclick="go(-1)" type="button" value="A" />
+<input id="cnt_list" type="text" value="10" />
+<input onclick="go(+1)" type="button" value="B" />
+<br />
+<input onclick="go(0)" type="button" value="Нарисовать дерево" />
+
+<script type="text/javascript">
+   go(0);
+</script>
