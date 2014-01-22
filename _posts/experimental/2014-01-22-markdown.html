@@ -15,6 +15,8 @@ section: experimental
 
 <p class="text-center">
 В этом текстовом поле можно поэкспериментировать с markdown:
+<br/>
+<small>(используется диалект <a href="http://maruku.rubyforge.org/maruku.html">maruku</a>)</small>
 </p>
 
 <div class="tocenter">
@@ -39,7 +41,7 @@ Type **Markdown** here.</textarea>
 <script>
   function Editor(input, preview) {
 	this.update = function () {
-	  preview.innerHTML = markdown.toHTML(input.value);
+	  preview.innerHTML = markdown.toHTML(input.value, 'Maruku');
 	};
 	input.editor = this;
 	this.update();
