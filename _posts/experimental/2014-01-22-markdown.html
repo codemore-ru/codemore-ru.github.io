@@ -1,0 +1,49 @@
+---
+layout: post
+title: Markdown Live
+author: Alexey Nurgaliev
+section: experimental
+---
+
+<script src="/js/markdown.min.js"></script>
+<style>
+.tocenter{
+	max-width: 800px; 
+	margin: 0 auto 0;
+}
+</style>
+
+<p class="text-center">
+В этом текстовом поле можно поэкспериментировать с markdown:
+</p>
+
+<div class="tocenter">
+<textarea class="form-control" 
+          id="text-input" 
+		  oninput="this.editor.update()"
+          rows="10" 
+		  >
+Type **Markdown** here.</textarea>
+</div>
+
+<br/>
+
+<div class="panel panel-default tocenter">
+   <div class="panel-body" id="preview"> </div>
+</div>
+
+<br/>
+
+<p class="text-center"><small>Powered by <a href="https://github.com/evilstreak/markdown-js">markdown-js</a></small></p>
+    
+<script>
+  function Editor(input, preview) {
+	this.update = function () {
+	  preview.innerHTML = markdown.toHTML(input.value);
+	};
+	input.editor = this;
+	this.update();
+  }
+  var a0 = function(id){ return document.getElementById(id); };
+  new Editor(a0("text-input"), a0("preview"));
+</script>
