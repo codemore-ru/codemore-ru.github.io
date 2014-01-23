@@ -2,7 +2,9 @@
 layout: base
 ---
 
-<h2>{{ page.title }} <small><span class="label label-default"> {{ page.date | date_to_string }}</span></small></h2>
+<h2>{{ page.title }} <small style="vertical-align: middle;">
+<span class="label label-default" style="vertical-align: middle;"> {{ page.date | date_to_string }}</span>
+</small></h2>
 Автор: <span class="text-info">{{ page.author }}</span><br />
 <hr />
 {{ content }}
