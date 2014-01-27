@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Тренировка 21 декабря
+title: Теория государства и права (ТГП) 28 января 2014
 author: Valentin Gubarev
 date: '2014-01-25'
 ---
