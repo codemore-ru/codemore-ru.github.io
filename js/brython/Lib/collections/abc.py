@@ -1,0 +1,1 @@
+MutableMapping = dict

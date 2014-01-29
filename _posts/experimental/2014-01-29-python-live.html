@@ -1,0 +1,61 @@
+---
+layout: post
+title: Python Live
+author: Alexey Nurgaliev
+section: experimental
+---
+<div class="row center-block">
+    <div class="col-md-8">
+        <p class="text-center">Введите код:</p>
+        <div id="editor" style="height: 400px;"></div>
+        <br>
+        <p class="text-center">
+            <input type="button" class="btn btn-primary" value="Запустить" onclick="run()">
+        </p>
+    </div>
+    <div class="col-md-4">
+        <p class="text-center">Результат:</p>
+        <textarea class="form-control" readonly id="codeoutput" style="height: 400px; cursor: default;"></textarea>
+    </div>
+</div>
+
+<br />
+
+<p class="text-center">
+Powered by <a href="http://ace.c9.io">Ace</a> and <a href="http://www.brython.info">Brython</a>
+</p>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.01/ace.js"></script>
+<script src="/js/brython/brython.js"></script>
+<script>
+    document.body.onload = function(){
+        brython();
+    };
+
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/github");
+    editor.getSession().setMode("ace/mode/python");
+
+    var editWgt = document.getElementById("editor");
+    editWgt.style.fontSize = '14px';
+</script>
+
+<script type="text/python">
+import sys
+import traceback
+from browser import doc
+
+def write(data):
+    doc["codeoutput"].value += str(data)
+
+sys.stdout.write = write
+sys.stderr.write = write
+
+def run():
+    doc['codeoutput'].value = ''
+    src = JSObject(editor).getValue()
+    try:
+        exec(src)
+    except:
+        print('Error')
+</script>
