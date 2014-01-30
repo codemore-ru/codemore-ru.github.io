@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Ввод и вывод данных
 author: Valentin Gubarev
