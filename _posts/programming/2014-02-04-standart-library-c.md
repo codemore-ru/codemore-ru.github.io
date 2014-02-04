@@ -6,7 +6,7 @@ section: programming
 language: 'C/C++'
 ---
 
-##Библиотека `<cstdio>` или `<stdio.h>`
+#`#include <cstdio>` или `#include <stdio.h>`
 
 Определённые типы:
 
@@ -25,7 +25,7 @@ language: 'C/C++'
 
 `clearerr`, `fclose`, `feof`, `ferror`, `fflush`, `fgetc`, `fgetpos`, `fgets`, `fopen`, `fprintf`, `fputc`, `fputs`, `fread`, `freopen`, `fscanf`, `fseek`, `fsetpos`, `ftell`, `fwrite`, `getc`, `getchar`, `gets`, `perror`, `printf`, `putc`, `putchar`, `puts`, `remove`, `rename`, `rewind`, `scanf`, `setbuf`, `setvbuf`, `snprintf`, `sprintf`, `sscanf`, `tmpfile`, `tmpnam`, `ungetc`, `vfprintf`, `vprintf`, `vsnprintf`, `vsprintf`, `vfscanf`, `vscanf`, `vsscanf`
 
-##Библиотека `<string.h>`
+#`#include <string.h>`
 
 Определённые константы:
 
@@ -39,12 +39,7 @@ language: 'C/C++'
 
 `memchr`, `memcmp`, `memcpy`, `memmove`, `memset`, `strcat`, `strchr`, `strcmp`, `strcoll`, `strcpy`, `strcspn`, `strerror`, `strlen`, `strncat`, `strncmp`, `strncpy`, `strpbrk`, `strrchr`, `strspn`, `strstr`, `strtok`, `strxfrm`
 
-
-
-
-##Функции для работы со строками и символами
-
-Определённые функции:
+#Функции для работы со строками и символами
 
 `isalnum`, `isalpha`, `isblank`, `iscntrl`, `isdigit`, `isgraph`, `islower`, `isprint`, `ispunct`, `isspace`, `isupper`, `isxdigit`, `memchr`, `memcmp`, `memcpy`, `memmove`, `memset`, `strcat`, `strchr`, `strcmp`, `strcoll`, `strcpy`, `strcspn`, `strerror`, `strlen`, `strncat`, `strncmp`, `strncpy`, `strpbrk`, `strrchr`, `strspn`, `strstr`, `strtok`, `strxfrm`, `tolower`, `toupper`
 
