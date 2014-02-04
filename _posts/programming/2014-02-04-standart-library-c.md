@@ -6,7 +6,8 @@ section: programming
 language: 'C/C++'
 ---
 
-#`#include <cstdio>` или `#include <stdio.h>`
+
+#`<cstdio>`
 
 Определённые типы:
 
@@ -25,7 +26,23 @@ language: 'C/C++'
 
 `clearerr`, `fclose`, `feof`, `ferror`, `fflush`, `fgetc`, `fgetpos`, `fgets`, `fopen`, `fprintf`, `fputc`, `fputs`, `fread`, `freopen`, `fscanf`, `fseek`, `fsetpos`, `ftell`, `fwrite`, `getc`, `getchar`, `gets`, `perror`, `printf`, `putc`, `putchar`, `puts`, `remove`, `rename`, `rewind`, `scanf`, `setbuf`, `setvbuf`, `snprintf`, `sprintf`, `sscanf`, `tmpfile`, `tmpnam`, `ungetc`, `vfprintf`, `vprintf`, `vsnprintf`, `vsprintf`, `vfscanf`, `vscanf`, `vsscanf`
 
-#`#include <string.h>`
+
+#`<ccmath>`
+
+Определённые константы:
+
+`HUGE_VAL`, `HUGE_VALF`, `HUGE_VALL`, `INFINITY`, `math_errhandling`, `NAN`
+
+Определённые типы:
+
+`double_t`, `float_t`
+
+Определённые функции:
+
+`abs`, `acos`, `acosh`, `asin`, `asinh`, `atan`, `atan2`, `atanh`, `cbrt`, `ceil`, `copysign`, `cos`, `cosh`, `erf`, `erfc`, `exp`, `exp2`, `expm1`, `fabs`, `fdim`, `floor`, `fma`, `fmax`, `fmin`, `fmod`, `fpclassify`, `frexp`, `hypot`, `ilogb`, `isfinite`, `isgreater`, `isgreaterequal`, `isinf`, `isless`, `islessequal`, `islessgreater`, `isnan`, `isnormal`, `isunordered`, `ldexp`, `lgamma', `llrint`, `llround`, `log`, `log10', `log1p`, `log2`, `logb`, `lrint`, `lround`, `modf`, `nan`, `nanf`, `nanl`, `nearbyint`, `nextafter`, `nexttoward`, `pow`, `remainder`, `remquo', `rint`, `round`, `scalbln`, `scalbn`, `signbit`, `sin`, `sinh`, `sqrt`, `tan`, `tanh`, `tgamma`, `trunc`
+
+
+#`<cstring>`
 
 Определённые константы:
 
