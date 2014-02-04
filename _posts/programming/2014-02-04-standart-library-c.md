@@ -39,7 +39,7 @@ language: 'C/C++'
 
 Определённые функции:
 
-`abs`, `acos`, `acosh`, `asin`, `asinh`, `atan`, `atan2`, `atanh`, `cbrt`, `ceil`, `copysign`, `cos`, `cosh`, `erf`, `erfc`, `exp`, `exp2`, `expm1`, `fabs`, `fdim`, `floor`, `fma`, `fmax`, `fmin`, `fmod`, `fpclassify`, `frexp`, `hypot`, `ilogb`, `isfinite`, `isgreater`, `isgreaterequal`, `isinf`, `isless`, `islessequal`, `islessgreater`, `isnan`, `isnormal`, `isunordered`, `ldexp`, `lgamma`, `llrint`, `llround`, `log`, `log10', `log1p`, `log2`, `logb`, `lrint`, `lround`, `modf`, `nan`, `nanf`, `nanl`, `nearbyint`, `nextafter`, `nexttoward`, `pow`, `remainder`, `remquo`, `rint`, `round`, `scalbln`, `scalbn`, `signbit`, `sin`, `sinh`, `sqrt`, `tan`, `tanh`, `tgamma`, `trunc`
+`abs`, `acos`, `acosh`, `asin`, `asinh`, `atan`, `atan2`, `atanh`, `cbrt`, `ceil`, `copysign`, `cos`, `cosh`, `erf`, `erfc`, `exp`, `exp2`, `expm1`, `fabs`, `fdim`, `floor`, `fma`, `fmax`, `fmin`, `fmod`, `fpclassify`, `frexp`, `hypot`, `ilogb`, `isfinite`, `isgreater`, `isgreaterequal`, `isinf`, `isless`, `islessequal`, `islessgreater`, `isnan`, `isnormal`, `isunordered`, `ldexp`, `lgamma`, `llrint`, `llround`, `log`, `log10`, `log1p`, `log2`, `logb`, `lrint`, `lround`, `modf`, `nan`, `nanf`, `nanl`, `nearbyint`, `nextafter`, `nexttoward`, `pow`, `remainder`, `remquo`, `rint`, `round`, `scalbln`, `scalbn`, `signbit`, `sin`, `sinh`, `sqrt`, `tan`, `tanh`, `tgamma`, `trunc`
 
 
 #`<cstring>`
@@ -77,7 +77,7 @@ language: 'C/C++'
 
 non-member overloads:
 
-`getline`, `operator +`, `operator <<`, `operator >>`, `relational operators`, `swap`
+`getline`, `operator +`, `operator <<`, `operator >>`, `operator ==`, `operator !=`, `operator <`, `operator >`, `operator <=`, `operator >=`, `swap`
 
 #Функции для работы со строками и символами
 
