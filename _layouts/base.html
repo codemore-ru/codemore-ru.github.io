@@ -19,14 +19,20 @@
 	{% include title.html %}
 	{% include menu.html %}
 </div>
-<div class="panel panel-default centered">
-	<div class="panel-body">
-	{{ content }}
+
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-body">
+		{{ content }}
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="text-center">
+	{% include footer.html %}
 	</div>
 </div>
-<hr />
-<div class="centered text-center">
-{% include footer.html %}
-</div>
+
 </body>
 </html>
