@@ -6,9 +6,11 @@ section: programming
 language: 'C/C++'
 ---
 
-### Стандартные библиотеки
+##Библиотека `<cstdio>` или `<stdio.h>`
 
-Ввод-вывод `<stdio.h>`
+Определённые типы:
+
+`FILE`, `fpos_t`, `size_t`
 
 Определённые константы:
 
@@ -23,9 +25,24 @@ language: 'C/C++'
 
 `clearerr`, `fclose`, `feof`, `ferror`, `fflush`, `fgetc`, `fgetpos`, `fgets`, `fopen`, `fprintf`, `fputc`, `fputs`, `fread`, `freopen`, `fscanf`, `fseek`, `fsetpos`, `ftell`, `fwrite`, `getc`, `getchar`, `gets`, `perror`, `printf`, `putc`, `putchar`, `puts`, `remove`, `rename`, `rewind`, `scanf`, `setbuf`, `setvbuf`, `snprintf`, `sprintf`, `sscanf`, `tmpfile`, `tmpnam`, `ungetc`, `vfprintf`, `vprintf`, `vsnprintf`, `vsprintf`, `vfscanf`, `vscanf`, `vsscanf`
 
-Строковые и символьные функции `<string.h>`
+##Библиотека `<string.h>`
 
 Определённые константы:
+
+`NULL`
+
+Определённые типы:
+
+`size_t`
+
+Определённые функции:
+
+`memchr`, `memcmp`, `memcpy`, `memmove`, `memset`, `strcat`, `strchr`, `strcmp`, `strcoll`, `strcpy`, `strcspn`, `strerror`, `strlen`, `strncat`, `strncmp`, `strncpy`, `strpbrk`, `strrchr`, `strspn`, `strstr`, `strtok`, `strxfrm`
+
+
+
+
+##Функции для работы со строками и символами
 
 Определённые функции:
 
