@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Ввод и вывод данных
 author: Valentin Gubarev
@@ -137,3 +137,14 @@ int main(void) {
     return 0;
 }
 {% endhighlight %}
+
+Для функций: `scanf()`, `getc()`, `gets()` и `getchar()`, а также функций `printf()`, `putc()` и `puts()` с помощью функции `freopen()` возможно перенаправление потоков в файл, а для функций: `getch()` и `getche()` нет, они определены в `<conio.h>` и предназначены для работы с клавиатурой.
+
+Пример использования `freopen()`
+{% highlight cpp linenos %}
+freopen("first.txt", "rt", stdin);
+char ch;
+scanf("%c", &ch);
+{% endhighlight %}
+
+`scanf("%c", &ch);` в третьей строке не будет ожидать ввода с клавиатуры, а считает один символ из файла `first.txt`, который определён функцией `freopen()` в первой строке.
