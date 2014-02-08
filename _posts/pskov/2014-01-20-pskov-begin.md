@@ -14,4 +14,4 @@ author: Alexey Nurgaliev
     author: Alexey Nurgaliev
     ---
 
-Текст постов должен быть написан на языке разметки Markdown.
+Во вложенном разделе "Результаты" посты оформляются по шаблону `post-pskov`, и в заголовке указывается `section: pskov-achievment`. Текст постов должен быть написан на языке разметки Markdown.
