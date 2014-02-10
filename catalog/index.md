@@ -5,11 +5,15 @@ title: Каталог ссылок
 
 ### Содержание
 
-[Олимпиадное программирование](#div0)
+* [Олимпиадное программирование](#div0)
+* [Алгоритмы и структуры данных](#div1)
+* [Языки и среды программирования](#div2)
+  * [C/C++](#div21)
+  * [Java](#div22)
+  * [Pascal](#div23)
+  * [Python](#div24)
+  * [Web (HTML, CSS, JavaScript, ...)](#div25)
 
-[Алгоритмы и структуры данных](#div1)
-
-[Языки и среды программирования](#div2)
 
 ### Олимпиадное программирование
 {: #div0}
@@ -32,6 +36,7 @@ title: Каталог ссылок
 
 [В начало](#)
 
+
 ### Алгоритмы и структуры данных
 {: #div1}
 
@@ -51,12 +56,17 @@ title: Каталог ссылок
 [Дистанционная подготовка по информатике](http://informatics.mccme.ru/moodle/)|Курсы по алгоритмам и структурам данных. Для многих тем предлагаются практические задачи
 [Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)|Интерактивные визуализации структур данных
 [Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
+[Лекции ШАД](http://shad.yandex.ru/lectures/)|Видеолекции некоторых курсов Школы анализа данных
 {: .table}
 
 [В начало](#)
 
+
 ### Языки и среды программирования
 {: #div2}
+
+### C/C++
+{: #div21}
 
 |-|-|
 [cplusplus.com](http://www.cplusplus.com/)|Подробное описание языка С++ и его стандартной библиотеки (включая последние изменения).<br>На английском языке
@@ -71,17 +81,44 @@ title: Каталог ссылок
 [GCC](http://www.gnu.org/software/gcc/)|Свободно-распространяемый кросс-платформенный компилятор С/С++ от сообщества GNU
 [Clang](http://clang.llvm.org/)|Свободно-распространяемый кросс-платформенный компилятор С/С++
 [Intel C and C++ compiler](http://software.intel.com/en-us/c-compilers)|Компилятор С/С++ от Intel
+{: .table}
+
+
+### Java
+{: #div22}
+
+|-|-|
 [Java 7 SE API Specification](http://docs.oracle.com/javase/7/docs/api/)|Официальная документация по стандартной библиотеке языка Java
 [Oracle Technology Network for Java Developers](http://www.oracle.com/technetwork/java/index.html)|Раздел сайта Oracle, посвященный Java
 [Eclipse JDT](http://projects.eclipse.org/projects/eclipse.jdt)|Кросс-платформенная IDE для Java
 [IntelliJ IDEA](http://www.jetbrains.com/idea/download/index.html)|Кросс-платформенная IDE от JetBrains. Есть бесплатная редакция Community Edition
+{: .table}
+
+
+### Pascal
+{: #div23}
+
 [Free Pascal Compiler](http://www.freepascal.org/)|Свободно распространяемый компилятор языка Pascal
 [Lazarus](http://www.lazarus.freepascal.org/)|Свободно распространяемая кросс-платформанная IDE для языка Pascal
 [Delphi](http://www.embarcadero.com/products/delphi)|IDE для языка Pascal (и Object Pascal)
 [Pascal Central](http://pascal-central.com/)|Сайт, посвященный языку программирования Pascal. Содержит справочник по языку, статьи, ссылки на компиляторы и среды разработки<br>(на английском языке)
+{: .table}
+
+
+### Python
+{: #div24}
+
+|-|-|
 [Python Programming Language](http://python.org/)|Официальный сайт языка программирования Python
 [PyCharm](http://www.jetbrains.com/pycharm/)|IDE для Python от JetBrains. Имеется бесплатная редакция
-[devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
 {: .table}
+
+
+### Web (HTML, CSS, JavaScript, ...)
+{: #div25}
+
+|-|-|
+[devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
+{: .table }
 
 [В начало](#)
