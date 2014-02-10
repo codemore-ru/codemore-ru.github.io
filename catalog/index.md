@@ -30,6 +30,8 @@ title: Каталог ссылок
 [Олимпиады про программированию](http://olympiads.ru/)|Олимпиады школьников по программированию в Москве: анонсы и результаты
 {: .table}
 
+[В начало](#)
+
 ### Алгоритмы и структуры данных
 {: #div1}
 
@@ -50,6 +52,8 @@ title: Каталог ссылок
 [Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)|Интерактивные визуализации структур данных
 [Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
 {: .table}
+
+[В начало](#)
 
 ### Языки и среды программирования
 {: #div2}
@@ -80,3 +84,4 @@ title: Каталог ссылок
 [devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
 {: .table}
 
+[В начало](#)
