@@ -124,6 +124,7 @@ title: Каталог ссылок
 [WebStorm](http://www.jetbrains.com/webstorm/)|Коммерческая IDE от JetBrains для JavaScript
 [javascript.ru](http://javascript.ru/)|Сайт Ильи Кантора, посвященный JavaScript. Содержит учебник и справочник
 [JSFiddle](http://jsfiddle.net/)|Онлайн IDE для небольших проектов на JavaScript. Можно сразу увидеть результат работы
+[W3Schools](http://www.w3schools.com/)|Учебные материалы c интерактивными примерами по HTML, CSS, JavaScript<br>(на английском языке)
 {: .table }
 
 [В начало](#)
