@@ -119,6 +119,11 @@ title: Каталог ссылок
 
 |-|-|
 [devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
+[Aptana Studio](http://www.aptana.com/)|Свободно растпространяемая IDE. Поддерживает JavaScript, PHP, Ruby
+[PhpStorm](http://www.jetbrains.com/phpstorm/)|Коммерческая IDE от JetBrains. Поддерживает JavaScript, PHP
+[WebStorm](http://www.jetbrains.com/webstorm/)|Коммерческая IDE от JetBrains для JavaScript
+[javascript.ru](http://javascript.ru/)|Сайт Ильи Кантора, посвященный JavaScript. Содержит учебник и справочник
+[JSFiddle](http://jsfiddle.net/)|Онлайн IDE для небольших проектов на JavaScript. Можно сразу увидеть результат работы
 {: .table }
 
 [В начало](#)
