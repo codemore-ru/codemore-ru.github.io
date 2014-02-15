@@ -125,6 +125,8 @@ title: Каталог ссылок
 [javascript.ru](http://javascript.ru/)|Сайт Ильи Кантора, посвященный JavaScript. Содержит учебник и справочник
 [JSFiddle](http://jsfiddle.net/)|Онлайн IDE для небольших проектов на JavaScript. Можно сразу увидеть результат работы
 [W3Schools](http://www.w3schools.com/)|Учебные материалы c интерактивными примерами по HTML, CSS, JavaScript<br>(на английском языке)
+[PHP](http://php.net/)|Официальный сайт языка PHP
+[W3C](http://www.w3.org/)|World Wide Web Consortium
 {: .table }
 
 [В начало](#)
