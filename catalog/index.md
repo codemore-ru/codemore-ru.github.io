@@ -111,6 +111,10 @@ title: Каталог ссылок
 |-|-|
 [Python Programming Language](http://python.org/)|Официальный сайт языка программирования Python
 [PyCharm](http://www.jetbrains.com/pycharm/)|IDE для Python от JetBrains. Имеется бесплатная редакция
+[PyDev](http://pydev.org/)|IDE для Python в виде плагина для Eclipse
+[The Jython Project](http://www.jython.org/)|Реализация интерпретатора Python на языке Java
+[IronPython](http://ironpython.net/)|Реализация интерпретатора Python для .NET Framework
+[PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro)|Набор привязок фреймворка Qt для Python
 {: .table}
 
 
