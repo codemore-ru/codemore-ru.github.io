@@ -13,6 +13,9 @@ title: Каталог ссылок
   * [Pascal](#pascal)
   * [Python](#python)
   * [Web (HTML, CSS, JavaScript, ...)](#web)
+    * [HTML, CSS](#html) 
+    * [JavaScript](#js)
+    * [PHP](#php)
 
 
 ### Олимпиадное программирование
@@ -124,13 +127,38 @@ title: Каталог ссылок
 |-|-|
 [devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
 [Aptana Studio](http://www.aptana.com/)|Свободно растпространяемая IDE. Поддерживает JavaScript, PHP, Ruby
-[PhpStorm](http://www.jetbrains.com/phpstorm/)|Коммерческая IDE от JetBrains. Поддерживает JavaScript, PHP
+{: .table }
+
+
+### HTML, CSS
+{: #html}
+
+|-|-|
+[W3C](http://www.w3.org/)|World Wide Web Consortium
+[W3Schools](http://www.w3schools.com/)|Учебные материалы c интерактивными примерами по HTML, CSS, JavaScript<br>(на английском языке)
+[Bootstrap](http://getbootstrap.com)|Свободно распространяемый набор инструментов для создания сайтов и веб-приложений (лицензия Apache License 2.0)
+{: .table }
+
+
+### JavaScript
+{: #js}
+
+|-|-|
 [WebStorm](http://www.jetbrains.com/webstorm/)|Коммерческая IDE от JetBrains для JavaScript
 [javascript.ru](http://javascript.ru/)|Сайт Ильи Кантора, посвященный JavaScript. Содержит учебник и справочник
 [JSFiddle](http://jsfiddle.net/)|Онлайн IDE для небольших проектов на JavaScript. Можно сразу увидеть результат работы
-[W3Schools](http://www.w3schools.com/)|Учебные материалы c интерактивными примерами по HTML, CSS, JavaScript<br>(на английском языке)
+[jQuery](http://jquery.org)|Библиотека, упрощающая работу с DOM. Также предоставляет простой API для AJAX (лицензия MIT)
+[AngularJS](http://angularjs.org)|Фреймворк Google для создания одностраничных приложений (лицензия MIT)
+[Ext.JS](http://www.sencha.com/products/extjs/)|Фреймворк для создания веб-приложений и пользовательских интерфейсов. Распространяется по коммерческой и открытой (GPLv3) лицензии
+{: .table }
+
+
+### PHP
+{: #php}
+
+|-|-|
 [PHP](http://php.net/)|Официальный сайт языка PHP
-[W3C](http://www.w3.org/)|World Wide Web Consortium
+[PhpStorm](http://www.jetbrains.com/phpstorm/)|Коммерческая IDE от JetBrains. Поддерживает JavaScript, PHP и некоторые распространенные фреймворки
 {: .table }
 
 [В начало](#)
