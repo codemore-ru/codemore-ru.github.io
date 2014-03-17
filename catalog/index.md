@@ -5,18 +5,18 @@ title: Каталог ссылок
 
 ### Содержание
 
-* [Олимпиадное программирование](#div0)
-* [Алгоритмы и структуры данных](#div1)
-* [Языки и среды программирования](#div2)
-  * [C/C++](#div21)
-  * [Java](#div22)
-  * [Pascal](#div23)
-  * [Python](#div24)
-  * [Web (HTML, CSS, JavaScript, ...)](#div25)
+* [Олимпиадное программирование](#olympic)
+* [Алгоритмы и структуры данных](#algorithm)
+* [Языки и среды программирования](#lang)
+  * [C/C++](#cpp)
+  * [Java](#java)
+  * [Pascal](#pascal)
+  * [Python](#python)
+  * [Web (HTML, CSS, JavaScript, ...)](#web)
 
 
 ### Олимпиадное программирование
-{: #div0}
+{: #olympic}
 
 |-|-|
 [ACM ICPC](http://acm.baylor.edu/)|Командный студенческий чемпионат мира по программированию
@@ -38,7 +38,7 @@ title: Каталог ссылок
 
 
 ### Алгоритмы и структуры данных
-{: #div1}
+{: #algorithm}
 
 |-|-|
 [MAXimal](http://e-maxx.ru/algo/)|Сборник Максима Иванова. Ко всем алгоритмам даны  описания и программы на C++
@@ -63,10 +63,10 @@ title: Каталог ссылок
 
 
 ### Языки и среды программирования
-{: #div2}
+{: #lang}
 
 ### C/C++
-{: #div21}
+{: #cpp}
 
 |-|-|
 [cplusplus.com](http://www.cplusplus.com/)|Подробное описание языка С++ и его стандартной библиотеки (включая последние изменения).<br>На английском языке
@@ -85,7 +85,7 @@ title: Каталог ссылок
 
 
 ### Java
-{: #div22}
+{: #java}
 
 |-|-|
 [Java 7 SE API Specification](http://docs.oracle.com/javase/7/docs/api/)|Официальная документация по стандартной библиотеке языка Java
@@ -96,7 +96,7 @@ title: Каталог ссылок
 
 
 ### Pascal
-{: #div23}
+{: #pascal}
 
 [Free Pascal Compiler](http://www.freepascal.org/)|Свободно распространяемый компилятор языка Pascal
 [Lazarus](http://www.lazarus.freepascal.org/)|Свободно распространяемая кросс-платформанная IDE для языка Pascal
@@ -106,7 +106,7 @@ title: Каталог ссылок
 
 
 ### Python
-{: #div24}
+{: #python}
 
 |-|-|
 [Python Programming Language](http://python.org/)|Официальный сайт языка программирования Python
@@ -119,7 +119,7 @@ title: Каталог ссылок
 
 
 ### Web (HTML, CSS, JavaScript, ...)
-{: #div25}
+{: #web}
 
 |-|-|
 [devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
