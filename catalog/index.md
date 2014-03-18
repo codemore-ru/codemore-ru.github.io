@@ -7,7 +7,7 @@ title: Каталог ссылок
 
 * [Олимпиадное программирование](#olympic)
 * [Алгоритмы и структуры данных](#algorithm)
-* [Языки и среды программирования](#lang)
+* [Языки, среды и технологии программирования](#lang)
   * [C/C++](#cpp)
   * [Java](#java)
   * [Pascal](#pascal)
@@ -65,7 +65,7 @@ title: Каталог ссылок
 [В начало](#)
 
 
-### Языки и среды программирования
+### Языки, среды и технологии программирования
 {: #lang}
 
 ### C/C++
@@ -118,6 +118,8 @@ title: Каталог ссылок
 [The Jython Project](http://www.jython.org/)|Реализация интерпретатора Python на языке Java
 [IronPython](http://ironpython.net/)|Реализация интерпретатора Python для .NET Framework
 [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro)|Набор привязок фреймворка Qt для Python
+[Django](https://www.djangoproject.com/)|Мощный веб-фреймворк (лицензия BSD)
+[Flask](http://flask.pocoo.org/)|Веб-микрофреймворк (лицензия BSD)
 {: .table}
 
 
@@ -126,6 +128,7 @@ title: Каталог ссылок
 
 |-|-|
 [devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
+[Codecademy](http://www.codecademy.com/)|Интерактивные учебники по языкам веб-программирования<br>На английском языке
 [Aptana Studio](http://www.aptana.com/)|Свободно растпространяемая IDE. Поддерживает JavaScript, PHP, Ruby
 [nginx](http://nginx.org)|Веб-сервер. Наиболее часто применяется для хранилищ статических файлов (лицензия BSD)
 {: .table }
@@ -152,7 +155,7 @@ title: Каталог ссылок
 [AngularJS](http://angularjs.org)|Фреймворк Google для создания одностраничных приложений (лицензия MIT)
 [Ext.JS](http://www.sencha.com/products/extjs/)|Фреймворк для создания веб-приложений и пользовательских интерфейсов. Распространяется по коммерческой и открытой (GPLv3) лицензии
 [Node.js](nodejs.org)|Программная платформа для создания серверных приложений на языке JavaScript (лицензия MIT)
-[]()|
+[Gulp](http://gulpjs.com/)|Система сборки для JavaScript
 {: .table }
 
 
