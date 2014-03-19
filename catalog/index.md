@@ -5,8 +5,6 @@ title: Каталог ссылок
 
 ### Содержание
 
-* [Олимпиадное программирование](#olympic)
-* [Алгоритмы и структуры данных](#algorithm)
 * [Языки, среды и технологии программирования](#lang)
   * [C/C++](#cpp)
   * [Java](#java)
@@ -16,54 +14,11 @@ title: Каталог ссылок
     * [HTML, CSS](#html) 
     * [JavaScript](#js)
     * [PHP](#php)
+  * [Системы управления версиями](#vcs)
+  * [Полезные инструменты](#tools)
 * [Онлайн-обучение](#edu)
-
-
-### Олимпиадное программирование
-{: #olympic}
-
-|-|-|
-[ACM ICPC](http://acm.baylor.edu/)|Командный студенческий чемпионат мира по программированию
-[NEERC](http://neerc.ifmo.ru/)|Северо-Восточный регион ICPC. Северный подрегион NEERC
-[ИКИТ СФУ](http://ikit.sfu-kras.ru/olimpACM)|Восточно-Сибирский подрегион NEERC
-[Московские студенческие олимпиады по программированию](http://http//acm.msu.ru/wp/)|Московский подрегион NEERC
-[СГУ](http://contest.sgu.ru/)|Южный подрегион NEERC
-[Уральские олимпиады](http://acm.urfu.ru/)|Восточный подрегион NEERC. Олимпиады, проходящие в Екатеринбурге
-[РГАТУ](http://www.rsatu.ru/index.php?option=com_content&view=article&id=169&Itemid=54)|Центральный подрегион NEERC
-[ФПМИ БГУ](http://fpmi.bsu.by/ru/main.aspx?guid=19521)|Западный подрегион NEERC
-[ИМКН ДВФУ](http://imcs.dvfu.ru/acm/about.html)|Дальневосточный подрегион NEERC
-[Олимпиадная система НГТУ](http://www.olymp.nstu.ru/main/news)|Западно-Сибирский подрегион NEERC
-[Snarknews](http://snarknews.info/)|Новости олимпиадного программирования
-[Олимпиады по информатике](http://neerc.ifmo.ru/school/information/index.html)|Олимпиады по информатике, проходящие в Санкт-Петербурге
-[Олимпиады про программированию](http://olympiads.ru/)|Олимпиады школьников по программированию в Москве: анонсы и результаты
-{: .table}
-
-[В начало](#)
-
-
-### Алгоритмы и структуры данных
-{: #algorithm}
-
-|-|-|
-[MAXimal](http://e-maxx.ru/algo/)|Сборник Максима Иванова. Ко всем алгоритмам даны  описания и программы на C++
-[Дискретная математика: Алгоритмы](http://rain.ifmo.ru/cat/view.php)|Сборник кафедры Компьютерных технологий факультета Информационных технологий и программирования НИУ ИТМО. Представлены теоретические статьи и визуализаторы
-[AlgoList](http://algolist.manual.ru/)|Сборник алгоритмов Ильи Кантора
-[Habrahabr](http://habrahabr.ru/hub/algorithms/)|Тематический раздел сайта habrahabr.ru, посвященный алгоритмам
-[Список алгоримов](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2)|Список алгоритмов в русской Википедии
-[List of algorithms](http://en.wikipedia.org/wiki/List_of_algorithms)|Список алгоритмов в английской Википедии
-[Список структур данных](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|Список структур данных в русской Википедии
-[List of data structures](http://en.wikipedia.org/wiki/List_of_data_structures)|Список структур данных в английской Википедии
-[Algorithms and Data Structures](http://www.allisons.org/ll/AlgDS/)|Курс по алгоритмам и структурам данных, разработанный Lloyd Allison (Университет Монаша, Австралия). Содержит интерактивные примеры работы некоторых алгоритмов.<br>(на английском языке)
-[Алгоритмы и структуры данных (первый семестр)](http://www.lektorium.tv/course/?id=22823)|Курс видеолекций по алгоритмам и структурам данных (лектор - Александр Куликов)
-[Алгоритмы и структуры данных (второй семестр)](http://www.lektorium.tv/course/?id=22843)|Курс видеолекций по алгоритмам и структурам данных (лекторы - Александр Куликов и Михаил Дворкин)
-[Алгоритмы: построение и анализ](http://www.intuit.ru/studies/courses/534/390/info)|Курс лекций, посвященный теории алгоритмов и элементам дискретной математики
-[Дистанционная подготовка по информатике](http://informatics.mccme.ru/moodle/)|Курсы по алгоритмам и структурам данных. Для многих тем предлагаются практические задачи
-[Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)|Интерактивные визуализации структур данных
-[Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
-[Лекции ШАД](http://shad.yandex.ru/lectures/)|Видеолекции некоторых курсов Школы анализа данных
-{: .table}
-
-[В начало](#)
+* [Алгоритмы и структуры данных](#algorithm)
+* [Олимпиадное программирование](#olympic)
 
 
 ### Языки, среды и технологии программирования
@@ -131,6 +86,7 @@ title: Каталог ссылок
 [devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
 [Aptana Studio](http://www.aptana.com/)|Свободно растпространяемая IDE. Поддерживает JavaScript, PHP, Ruby
 [nginx](http://nginx.org)|Веб-сервер. Наиболее часто применяется для хранилищ статических файлов (лицензия BSD)
+[jekyll](http://jekyllrb.com/)|Генератор статических сайтов (лицензия MIT)
 {: .table }
 
 
@@ -141,6 +97,8 @@ title: Каталог ссылок
 [W3C](http://www.w3.org/)|World Wide Web Consortium
 [W3Schools](http://www.w3schools.com/)|Учебные материалы c интерактивными примерами по HTML, CSS, JavaScript<br>(на английском языке)
 [Bootstrap](http://getbootstrap.com)|Свободно распространяемый набор инструментов для создания сайтов и веб-приложений (лицензия Apache License 2.0)
+[Less](http://lesscss.org/)|Препроцессор CSS (лицензия Apache License 2.0)
+[Sass](http://sass-lang.com/)|Еще один препроцессор CSS (лицензия MIT)
 {: .table }
 
 
@@ -148,14 +106,15 @@ title: Каталог ссылок
 {: #js}
 
 |-|-|
-[WebStorm](http://www.jetbrains.com/webstorm/)|Коммерческая IDE от JetBrains для JavaScript
 [javascript.ru](http://javascript.ru/)|Сайт Ильи Кантора, посвященный JavaScript. Содержит учебник и справочник
+[WebStorm](http://www.jetbrains.com/webstorm/)|Коммерческая IDE от JetBrains для JavaScript
 [JSFiddle](http://jsfiddle.net/)|Онлайн IDE для небольших проектов на JavaScript. Можно сразу увидеть результат работы
 [jQuery](http://jquery.org)|Библиотека, упрощающая работу с DOM. Также предоставляет простой API для AJAX (лицензия MIT)
 [AngularJS](http://angularjs.org)|Фреймворк Google для создания одностраничных приложений (лицензия MIT)
 [Ext.JS](http://www.sencha.com/products/extjs/)|Фреймворк для создания веб-приложений и пользовательских интерфейсов. Распространяется по коммерческой и открытой (GPLv3) лицензии
 [Node.js](nodejs.org)|Программная платформа для создания серверных приложений на языке JavaScript (лицензия MIT)
 [Gulp](http://gulpjs.com/)|Система сборки для JavaScript
+[Grunt](http://gruntjs.com/)|Еще одна система сборки JavaScript проектов 
 {: .table }
 
 
@@ -168,6 +127,30 @@ title: Каталог ссылок
 [Zend Studio](http://www.zend.com/en/products/studio/)|Коммерческая IDE от Zend
 {: .table }
 
+
+### Системы управления версиями
+{: #vcs}
+
+|-|-|
+[Git](http://git-scm.com/)|Свободная распределенная система управления версиями
+[Mercurial](http://mercurial.selenic.com/)|Свободная распределенная система управления версиями
+[Subversion](http://subversion.apache.org/)|Свободная централизованная система управления версиями
+[GitHub](https://github.com/)|Хостинг для хранения исходного кода и совместной разработки. Поддерживает Git и Subversion. Бесплатен для проектов с открытым исходным кодом
+[Bitbucket](https://bitbucket.org/)|Хостинг исходного кода. Поддерживает Git и Mercurial. Есть возможность создания бесплатных публичных и закрытых (с ограниченным числом участников) репозиториев
+[SourceTree](http://sourcetreeapp.com/)|Утилита для управления локальными Git и Mercurial репозиториями<br>Поддерживаются Windows и Mac OS X
+[TortoiseHg](http://tortoisehg.bitbucket.org/)|Утилита для управления репозиториями Mercurial<br>Поддерживаются Windows, Linux и Mac OS X
+[TortoiseSVN](http://tortoisesvn.net/)|Утилита для управления репозиториями Subversion<br>Поддердивается только Windows
+{: .table }
+
+
+### Полезные инструменты
+{: #tools}
+
+|-|-|
+[Vagrant](http://www.vagrantup.com/)|Утилита для создания виртуальных сред разработки (лицензия MIT)<br>Поддерживаются Windows, Linux и Mac OS X
+[Travis CI](https://travis-ci.org/)|Бесплатная платформа непрерывной интеграции для проектов с открытым исходным кодом
+{: .table }
+
 [В начало](#)
 
 
@@ -177,6 +160,56 @@ title: Каталог ссылок
 |-|-|
 [Codecademy](http://www.codecademy.com/)|Интерактивные учебники по языкам веб-программирования<br>На английском языке
 [Code School](https://www.codeschool.com/)|Курсы по веб-разработке с интерактивными заданиями<br>На английском языке
+[Udacity](https://www.udacity.com/)|Онлайн-курсы по различным областям computer science<br>На английском языке
+[Coursera](https://www.coursera.org/)|Курсы по различным областям знаний<br>Есть курсы на русском языке
+[ИНТУИТ](http://www.intuit.ru/)|Курсы по информационным технологиям, математике, физике и другим областям знаний<br>На русском языке
+{: .table}
+
+[В начало](#)
+
+
+### Алгоритмы и структуры данных
+{: #algorithm}
+
+|-|-|
+[MAXimal](http://e-maxx.ru/algo/)|Сборник Максима Иванова. Ко всем алгоритмам даны  описания и программы на C++
+[Дискретная математика: Алгоритмы](http://rain.ifmo.ru/cat/view.php)|Сборник кафедры Компьютерных технологий факультета Информационных технологий и программирования НИУ ИТМО. Представлены теоретические статьи и визуализаторы
+[AlgoList](http://algolist.manual.ru/)|Сборник алгоритмов Ильи Кантора
+[Habrahabr](http://habrahabr.ru/hub/algorithms/)|Тематический раздел сайта habrahabr.ru, посвященный алгоритмам
+[Список алгоримов](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2)|Список алгоритмов в русской Википедии
+[List of algorithms](http://en.wikipedia.org/wiki/List_of_algorithms)|Список алгоритмов в английской Википедии
+[Список структур данных](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|Список структур данных в русской Википедии
+[List of data structures](http://en.wikipedia.org/wiki/List_of_data_structures)|Список структур данных в английской Википедии
+[Algorithms and Data Structures](http://www.allisons.org/ll/AlgDS/)|Курс по алгоритмам и структурам данных, разработанный Lloyd Allison (Университет Монаша, Австралия). Содержит интерактивные примеры работы некоторых алгоритмов.<br>(на английском языке)
+[Алгоритмы и структуры данных (первый семестр)](http://www.lektorium.tv/course/?id=22823)|Курс видеолекций по алгоритмам и структурам данных (лектор - Александр Куликов)
+[Алгоритмы и структуры данных (второй семестр)](http://www.lektorium.tv/course/?id=22843)|Курс видеолекций по алгоритмам и структурам данных (лекторы - Александр Куликов и Михаил Дворкин)
+[Алгоритмы: построение и анализ](http://www.intuit.ru/studies/courses/534/390/info)|Курс лекций, посвященный теории алгоритмов и элементам дискретной математики
+[Дистанционная подготовка по информатике](http://informatics.mccme.ru/moodle/)|Курсы по алгоритмам и структурам данных. Для многих тем предлагаются практические задачи
+[Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)|Интерактивные визуализации структур данных
+[Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
+[Лекции ШАД](http://shad.yandex.ru/lectures/)|Видеолекции некоторых курсов Школы анализа данных
+{: .table}
+
+[В начало](#)
+
+
+### Олимпиадное программирование
+{: #olympic}
+
+|-|-|
+[ACM ICPC](http://acm.baylor.edu/)|Командный студенческий чемпионат мира по программированию
+[NEERC](http://neerc.ifmo.ru/)|Северо-Восточный регион ICPC. Северный подрегион NEERC
+[ИКИТ СФУ](http://ikit.sfu-kras.ru/olimpACM)|Восточно-Сибирский подрегион NEERC
+[Московские студенческие олимпиады по программированию](http://http//acm.msu.ru/wp/)|Московский подрегион NEERC
+[СГУ](http://contest.sgu.ru/)|Южный подрегион NEERC
+[Уральские олимпиады](http://acm.urfu.ru/)|Восточный подрегион NEERC. Олимпиады, проходящие в Екатеринбурге
+[РГАТУ](http://www.rsatu.ru/index.php?option=com_content&view=article&id=169&Itemid=54)|Центральный подрегион NEERC
+[ФПМИ БГУ](http://fpmi.bsu.by/ru/main.aspx?guid=19521)|Западный подрегион NEERC
+[ИМКН ДВФУ](http://imcs.dvfu.ru/acm/about.html)|Дальневосточный подрегион NEERC
+[Олимпиадная система НГТУ](http://www.olymp.nstu.ru/main/news)|Западно-Сибирский подрегион NEERC
+[Snarknews](http://snarknews.info/)|Новости олимпиадного программирования
+[Олимпиады по информатике](http://neerc.ifmo.ru/school/information/index.html)|Олимпиады по информатике, проходящие в Санкт-Петербурге
+[Олимпиады про программированию](http://olympiads.ru/)|Олимпиады школьников по программированию в Москве: анонсы и результаты
 {: .table}
 
 [В начало](#)
