@@ -139,7 +139,7 @@ title: Каталог ссылок
 [Bitbucket](https://bitbucket.org/)|Хостинг исходного кода. Поддерживает Git и Mercurial. Есть возможность создания бесплатных публичных и закрытых (с ограниченным числом участников) репозиториев
 [SourceTree](http://sourcetreeapp.com/)|Утилита для управления локальными Git и Mercurial репозиториями<br>Поддерживаются Windows и Mac OS X
 [TortoiseHg](http://tortoisehg.bitbucket.org/)|Утилита для управления репозиториями Mercurial<br>Поддерживаются Windows, Linux и Mac OS X
-[TortoiseSVN](http://tortoisesvn.net/)|Утилита для управления репозиториями Subversion<br>Поддердивается только Windows
+[TortoiseSVN](http://tortoisesvn.net/)|Утилита для управления репозиториями Subversion<br>Поддерживается только Windows
 {: .table }
 
 
