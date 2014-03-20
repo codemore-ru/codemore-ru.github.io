@@ -6,6 +6,7 @@ title: Каталог ссылок
 ### Содержание
 
 * [Языки, среды и технологии программирования](#lang)
+  * [Универсальные IDE](#ide)
   * [C/C++](#cpp)
   * [Java](#java)
   * [Pascal](#pascal)
@@ -24,17 +25,25 @@ title: Каталог ссылок
 ### Языки, среды и технологии программирования
 {: #lang}
 
+### Универсальные IDE
+{: #ide}
+
+|-|-|
+[Microsoft Visual Studio](http://www.visualstudio.com/ru-ru/downloads)|IDE от Microsoft, поддерживает разработку на С++, C#, Visual Basic. Доступна бесплатная редакция Express
+[NetBeans](https://netbeans.org/downloads/)|IDE от Oracle. Поддерживает множество языков. Распространяется свободно
+[Eclipse](http://eclipse.org/)|Платформа, на которой разработано множество IDE для различных языков
+[Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
+{: .table}
+
+
 ### C/C++
 {: #cpp}
 
 |-|-|
 [cplusplus.com](http://www.cplusplus.com/)|Подробное описание языка С++ и его стандартной библиотеки (включая последние изменения).<br>На английском языке
 [Справочник по языку С++](http://msdn.microsoft.com/ru-ru/library/3bstk3k5.aspx)|Раздел MSDN, посвященный языку С++
-[Microsoft Visual Studio](http://www.visualstudio.com/ru-ru/downloads)|IDE от Microsoft, поддерживает разработку на С++, C#, Visual Basic. Доступна бесплатная редакция Express
-[NetBeans](https://netbeans.org/downloads/)|IDE от Oracle. Поддерживает множество языков. Распространяется свободно
-[Eclipse CDT](http://www.eclipse.org/cdt/downloads.php)|Кросс-платформенная IDE, поддерживающая разработку на С++  
+[Eclipse CDT](http://www.eclipse.org/cdt/downloads.php)|Плагин для Eclipse поддерживающий разработку на С++  
 [Code::Blocks](http://www.codeblocks.org/)|Кросс-платформенная IDE для С++ с открытым исходным кодом
-[Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
 [C++ Builder](http://www.embarcadero.com/ru/products/cbuilder)|IDE для С++ от Embarcadero
 [Qt Creator](http://qt-project.org/downloads#qt-creator)|Свободно-распространяемая кросс-платформенная IDE для С++ от разработчиков библиотеки Qt
 [GCC](http://www.gnu.org/software/gcc/)|Свободно-распространяемый кросс-платформенный компилятор С/С++ от сообщества GNU
@@ -71,6 +80,7 @@ title: Каталог ссылок
 [Python Programming Language](http://python.org/)|Официальный сайт языка программирования Python
 [PyCharm](http://www.jetbrains.com/pycharm/)|IDE для Python от JetBrains. Имеется бесплатная редакция
 [PyDev](http://pydev.org/)|IDE для Python в виде плагина для Eclipse
+[Eric](http://eric-ide.python-projects.org/)|IDE для Python и Ruby (лицензия GPLv3)
 [The Jython Project](http://www.jython.org/)|Реализация интерпретатора Python на языке Java
 [IronPython](http://ironpython.net/)|Реализация интерпретатора Python для .NET Framework
 [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro)|Набор привязок фреймворка Qt для Python
