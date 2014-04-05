@@ -106,7 +106,11 @@ title: Каталог ссылок
 |-|-|
 [W3C](http://www.w3.org/)|World Wide Web Consortium
 [W3Schools](http://www.w3schools.com/)|Учебные материалы c интерактивными примерами по HTML, CSS, JavaScript<br>(на английском языке)
-[Bootstrap](http://getbootstrap.com)|Свободно распространяемый набор инструментов для создания сайтов и веб-приложений (лицензия Apache License 2.0)
+[HTML dog](http://htmldog.com/)|Учебник и справочник по HTML, CSS и JavaScript<br>(на английском языке)
+[Bootstrap](http://getbootstrap.com)|Набор инструментов для создания сайтов и веб-приложений (лицензия Apache License 2.0)
+[UIKit](http://getuikit.com/)|Библиотека для создания веб-интерфейсов (лицензия MIT)
+[Font Awesome](http://fortawesome.github.io/Font-Awesome/)|Иконочный шрифт с большим набором символов (лицензия MIT)
+[HTML5 Boilerplate](http://html5boilerplate.com/)|Шаблон для создания сайтов и веб-приложений (лицензия MIT)
 [Less](http://lesscss.org/)|Препроцессор CSS (лицензия Apache License 2.0)
 [Sass](http://sass-lang.com/)|Еще один препроцессор CSS (лицензия MIT)
 {: .table }
