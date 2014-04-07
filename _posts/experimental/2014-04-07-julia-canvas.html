@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Фрактал Мандельброта на canvas
+title: Фрактал Жюлиа на canvas
 author: Alexey Nurgaliev
 section: experimental
 ---
 
 <link rel="stylesheet" href="/css/fractal.css">
 <script src="/js/fractal/fractal.js"></script>
-<script src="/js/fractal/mandelbrot.js"></script>
+<script src="/js/fractal/julia.js"></script>
 
 <canvas id="drawingCanvas" width="400" height="400">Ваш браузер не поддерживает canvas :(</canvas>
 <br>
@@ -29,6 +29,16 @@ section: experimental
             </div>
             <br>
             <div class="input-group">
+                <span class="input-group-addon">cx</span>
+                <input type="color" id="cx" class="form-control" value="0.36">
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">cy</span>
+                <input type="color" id="cy" class="form-control" value="0.36">
+            </div>
+            <br>
+            <div class="input-group">
                 <span class="input-group-addon">Цвет</span>
                 <input type="color" id="color" class="form-control" value="0000FF">
             </div>
@@ -39,4 +49,3 @@ section: experimental
         </fieldset>
     </form>
 </div>
-
