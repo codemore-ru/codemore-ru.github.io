@@ -1,0 +1,41 @@
+---
+layout: post
+title: Фрактал Мандельброта на canvas
+author: Alexey Nurgaliev
+section: experimental
+---
+
+        <link rel="stylesheet" href="/css/mandelbrot.css">
+        <script src="/js/mandelbrot.js"></script>
+
+        <canvas id="drawingCanvas" width="400" height="400">Ваш браузер не поддерживает canvas :(</canvas>
+        <br>
+        <div class="fractal-params text-center">
+            <form class="form">
+                <fieldset>
+                    <legend>Параметры фрактала</legend>
+
+                    <div id="errors" class="text-danger"></div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">K<sub>max</sub></span>
+                        <input type="text" id="kmax" class="form-control" value="100">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon">R<sub>min</sub></span>
+                        <input type="text" id="rmin" class="form-control" value="2">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon">Цвет</span>
+                        <input type="color" id="color" class="form-control" value="0000FF">
+                    </div>
+                    <br>
+                    <button type="button" id="redraw" class="btn btn-primary">Перерисовать</button>
+                    <button type="button" id="resetForm" class="btn btn-default">Сброс параметров</button>
+
+                </fieldset>
+            </form>
+        </div>
+
