@@ -1,10 +1,11 @@
 
-function FractalGeometry(x_min, x_max, y_min, y_max, k_max) {
+function FractalGeometry(x_min, x_max, y_min, y_max, k_max, n) {
     this.x_min = x_min;
     this.x_max = x_max;
     this.y_min = y_min;
     this.y_max = y_max;
     this.k_max = k_max;
+    this.n = n;
 }
 
 function Color(r, g, b) {

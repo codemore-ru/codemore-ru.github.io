@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Фрактал Мандельброта на canvas
+title: Бассейны Ньютона на canvas
 author: Alexey Nurgaliev
 section: experimental
 ---
 
 <link rel="stylesheet" href="/css/fractal.css">
 <script src="/js/fractal/fractal.js"></script>
-<script src="/js/fractal/mandelbrot.js"></script>
+<script src="/js/fractal/newton.js"></script>
 
 <canvas id="drawingCanvas" width="400" height="400">Ваш браузер не поддерживает canvas :(</canvas>
 <br>
@@ -20,17 +20,17 @@ section: experimental
 
             <div class="input-group">
                 <span class="input-group-addon">K<sub>max</sub></span>
-                <input type="text" id="kmax" class="form-control" value="100">
+                <input type="text" id="kmax" class="form-control" value="50">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon">R<sub>min</sub></span>
-                <input type="text" id="rmin" class="form-control" value="2">
+                <input type="text" id="rmin" class="form-control" value="0.0001">
             </div>
             <br>
             <div class="input-group">
                 <span class="input-group-addon">N</span>
-                <input type="text" id="n" class="form-control" value="2">
+                <input type="text" id="n" class="form-control" value="3">
             </div>
             <br>
             <div class="input-group">
@@ -44,4 +44,3 @@ section: experimental
         </fieldset>
     </form>
 </div>
-

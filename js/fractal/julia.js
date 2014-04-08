@@ -8,7 +8,7 @@ $(function() {
     canvas = document.getElementById('drawingCanvas');
     context = canvas.getContext('2d');
 
-    geom = new FractalGeometry(-1.5, 1.5, -1.5, 1.5, 100);
+    geom = new FractalGeometry(-1.5, 1.5, -1.5, 1.5, 100, 2);
     res_color = new Color(0, 0, 0xFF);
 
     //bind events
@@ -22,12 +22,30 @@ function juliaIteration(x0, y0) {
     var r_sq = r_min * r_min;
     var xk = x0;
     var yk = y0;
+    var pow_x, pow_y, rx, ry, x, y;
     for(var i = 0; i < geom.k_max; i++){
-        var x = (xk * xk) - (yk * yk) + cx;
-        var y = 2 * xk * yk + cy;
+
+        if(geom.n == 2) {
+            x = (xk * xk) - (yk * yk) + cx;
+            y = 2 * xk * yk + cy;
+        } else {
+            //complex way
+            rx = xk;
+            ry = yk;
+            for(var j = 2; j <= geom.n; j++) {
+                pow_x = xk * rx - yk * ry;
+                pow_y = rx * yk + ry * xk;
+                rx = pow_x;
+                ry = pow_y;
+            }
+            x = rx + cx;
+            y = ry + cy;
+        }
+
         if(x * x + y * y > r_sq) {
             return i;
         }
+
         xk = x;
         yk = y;
     }
@@ -37,6 +55,7 @@ function juliaIteration(x0, y0) {
 function resetParams() {
     $('#kmax').val(100);
     $('#rmin').val(2);
+    $('#n').val(2);
     $('#color').val('0000FF');
     $('#cx').val(0.36);
     $('#cy').val(0.36);
@@ -52,6 +71,7 @@ function getParams() {
     $('#errors').children().remove();
 
     geom.k_max = getParam('#kmax', 'K<sub>max</sub>', 100, true);
+    geom.n = getParam('#n', 'N', 2, true);
     r_min = getParam('#rmin', 'R<sub>min</sub>', 2, true);
     cx = getParam('#cx', 'cx', 0.36, false);
     cy = getParam('#cy', 'cy', 0.36, false);
