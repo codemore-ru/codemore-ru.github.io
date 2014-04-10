@@ -1,4 +1,3 @@
-
 var canvas, context, res_color;
 
 var side = 1, eps = 0.5, n = 10;
@@ -9,6 +8,7 @@ var phi1 = 37.7 * Math.PI / 180;
 var phi2 = 36.8 * Math.PI / 180;
 var phi3 = 17.6 * Math.PI / 180;
 var random = false;
+var deviation = 10;
 
 $(function() {
     canvas = document.getElementById('drawingCanvas');
@@ -49,11 +49,12 @@ function drawFern(x0, y0, h, psi, side, rec) {
 }
 
 function randomDeviation() {
-    return (Math.random() * 10 - 5) * Math.PI / 180;
+    return deviation * (Math.random() - 0.5) * Math.PI / 180;
 }
 
 function resetParams() {
     $('#n').val(20);
+    $('#deviation').val(10);
     $('#color').val('#00AA00');
 }
 
@@ -69,4 +70,5 @@ function getParams() {
     n = getParam('#n', 'N', 10, true);
     res_color = $('#color').val();
     random = $('#random:checked').size() != 0;
+    deviation = getParam('#deviation', 'Отклонение', 10);
 }
