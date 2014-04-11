@@ -111,6 +111,7 @@ title: Каталог ссылок
 [UIKit](http://getuikit.com/)|Библиотека для создания веб-интерфейсов (лицензия MIT)
 [Pure](http://purecss.io/)|CSS-библиотека для создания веб-интерфейсов (лицензия BSD)
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/)|Иконочный шрифт с большим набором символов (лицензия MIT)
+[Font squirrel](http://www.fontsquirrel.com/)|Большая коллекция бесплатных веб-шрифтов
 [HTML5 Boilerplate](http://html5boilerplate.com/)|Шаблон для создания сайтов и веб-приложений (лицензия MIT)
 [Less](http://lesscss.org/)|Препроцессор CSS (лицензия Apache License 2.0)
 [Sass](http://sass-lang.com/)|Еще один препроцессор CSS (лицензия MIT)
