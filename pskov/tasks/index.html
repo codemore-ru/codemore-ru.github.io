@@ -1,24 +1,25 @@
 ---
 layout: base
-title: Олимпиадное программирование в Псков ГУ
+title: Задачи
 ---
 
 <div class="page-header text-center">
 <h2>{{ page.title }}</h2>
 </div>
 
-<h3>Разделы:</h3>
-<p><a href="/pskov/achievments">Результаты</a></p>
-<p><a href="/pskov/tasks">Задачи с олимпиад ПсковГУ</a></p>
-<br />
-
 {% for post in site.posts %}
-	{% if post.section == 'pskov' %}
-	<p>
+	{% if post.section == 'pskov-tasks' %}
+	<div class="panel panel-default">
+		<div class="panel-heading">
 			{{ post.date | date_to_string }} » <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
 			{% if post.author %}
 			 - <span class="text-info">{{ post.author }}</span>
 			{% endif %}
-	</p>
+		</div>
+		<div class="panel-body">
+		{{ post.content | markdownify }}
+		</div>
+	</div>
+	<br />
 	{% endif %}
 {% endfor %}
