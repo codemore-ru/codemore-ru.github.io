@@ -1,0 +1,42 @@
+---
+layout: base
+title: Фотографии
+---
+
+<link rel="stylesheet" href="/css/lightbox.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<script src="/js/lightbox.min.js"></script>
+
+<script>
+    var gallery = [
+        {file: "Photo_2005.JPG", title: ""},
+        {file: "Photo_2006.JPG", title: ""},
+        {file: "Photo_2007.JPG", title: ""},
+        {file: "Photo_2008.JPG", title: ""},
+        {file: "Photo_2009_1.JPG", title: ""},
+        {file: "Photo_2009_2.JPG", title: ""},
+        {file: "Photo_2009_3.JPG", title: ""},
+        {file: "Photo_2010.JPG", title: ""},
+        {file: "Photo_2011.JPG", title: ""},
+        {file: "Photo_2012.JPG", title: ""},
+        {file: "Photo_2013_1.JPG", title: ""},
+        {file: "Photo_2013_2.JPG", title: ""},
+    ];
+    $(function(){
+        addImages('gallery', gallery);
+    });
+    function addImages(container, images) {
+        for(var i = 0; i < images.length; i++) {
+            var item = images[i];
+            var pic = $('<a href="/img/pskov/'+item.file+'" data-lightbox="'+container+'" data-title="'+item.title+'">');
+            $('<img class="gallery" src="/img/pskov/preview/' + item.file + '" alt="'+item.title+'">').appendTo(pic);
+            pic.appendTo('#' + container);
+        }
+    }
+</script>
+
+<div class="page-header text-center">
+  <h2>{{ page.title }}</h2>
+</div>
+
+<div id="gallery"></div>
