@@ -8,20 +8,6 @@ title: Результаты
 <script src="/js/lightbox.min.js"></script>
 
 <script>
-    var gallery = [
-        {file: "Photo_2005.JPG", title: ""},
-        {file: "Photo_2006.JPG", title: ""},
-        {file: "Photo_2007.JPG", title: ""},
-        {file: "Photo_2008.JPG", title: ""},
-        {file: "Photo_2009_1.JPG", title: ""},
-        {file: "Photo_2009_2.JPG", title: ""},
-        {file: "Photo_2009_3.JPG", title: ""},
-        {file: "Photo_2010.JPG", title: ""},
-        {file: "Photo_2011.JPG", title: ""},
-        {file: "Photo_2012.JPG", title: ""},
-        {file: "Photo_2013_1.JPG", title: ""},
-        {file: "Photo_2013_2.JPG", title: ""},
-    ];
     var acm = [
         {file: "CertificateOfAchievement_2005_11_30.jpg", title: ""},
         {file: "CertificateOfAchievement_2006_11_05_1.jpg", title: ""},
@@ -109,7 +95,6 @@ title: Результаты
         addImages('administration', administration);
         addImages('izhevsk', izhevsk);
         addImages('gratitude', gratitude);
-        addImages('gallery', gallery);
     });
     function addImages(container, images) {
         for(var i = 0; i < images.length; i++) {
@@ -151,6 +136,3 @@ title: Результаты
 
 <h3>Благодарственные письма</h3>
 <div id="gratitude"></div>
-
-<h3>Фотографии</h3>
-<div id="gallery"></div>
