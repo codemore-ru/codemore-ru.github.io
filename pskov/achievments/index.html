@@ -16,20 +16,6 @@ title: Результаты
         {file: "CertificateInternetOlimpMath_2013_04_14_1.jpg", title: ""},
         {file: "CertificateInternetOlimpMath_2013_04_14_2.jpg", title: ""},
         {file: "CertificateInternetOlimpMath_2013_04_14_3.jpg", title: ""},
-        {file: "CertificateOfAchievement_2005_11_30.jpg", title: ""},
-        {file: "CertificateOfAchievement_2006_11_05_1.jpg", title: ""},
-        {file: "CertificateOfAchievement_2006_11_05_2.jpg", title: ""},
-        {file: "CertificateOfAchievement_2006_11_05_3.jpg", title: ""},
-        {file: "CertificateOfAchievement_2006_11_29_1.jpg", title: ""},
-        {file: "CertificateOfAchievement_2006_11_29_2.jpg", title: ""},
-        {file: "CertificateOfAchievement_2007_10_28.jpg", title: ""},
-        {file: "CertificateOfAchievement_2007_11_28.jpg", title: ""},
-        {file: "CertificateOfAchievement_2008_11_26.jpg", title: ""},
-        {file: "CertificateOfAchievement_2009_11_29.jpg", title: ""},
-        {file: "CertificateOfAchievement_2010_11_24.jpg", title: ""},
-        {file: "CertificateOfAchievement_2011_11_27.jpg", title: ""},
-        {file: "CertificateOfAchievement_2012_12_02_1.jpg", title: ""},
-        {file: "CertificateOfAchievement_2012_12_02_2.jpg", title: ""},
         {file: "CertificatePovolgie_2013_04_07.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_09_Evpatoria_1.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_09_Evpatoria_2.jpg", title: ""},
@@ -61,9 +47,6 @@ title: Результаты
         {file: "DiplomaWinner_2009_6.jpg", title: ""},
         {file: "DiplomaWinner_2011_1.jpg", title: ""},
         {file: "DiplomaWinner_2011_2.jpg", title: ""},
-        {file: "Diploma_2009_11_11.jpg", title: ""},
-        {file: "Diploma_2011_11_27.jpg", title: ""},
-        {file: "Diploma_2012_12_02.jpg", title: ""},
         {file: "Gratitude_2009_02_21.jpg", title: ""},
         {file: "Gratitude_2012_02_16_1.jpg", title: ""},
         {file: "Gratitude_2012_02_16_2.jpg", title: ""},
@@ -79,20 +62,47 @@ title: Результаты
         {file: "Photo_2011.JPG", title: ""},
         {file: "Photo_2012.JPG", title: ""},
         {file: "Photo_2013_1.JPG", title: ""},
-        {file: "Photo_2013_2.JPG", title: ""},
+        {file: "Photo_2013_2.JPG", title: ""}
+    ];
+    var acm = [
+        {file: "CertificateOfAchievement_2005_11_30.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_05_1.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_05_2.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_05_3.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_29_1.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_29_2.jpg", title: ""},
+        {file: "CertificateOfAchievement_2007_10_28.jpg", title: ""},
+        {file: "CertificateOfAchievement_2007_11_28.jpg", title: ""},
+        {file: "CertificateOfAchievement_2008_11_26.jpg", title: ""},
+        {file: "CertificateOfAchievement_2009_11_29.jpg", title: ""},
+        {file: "CertificateOfAchievement_2010_11_24.jpg", title: ""},
+        {file: "CertificateOfAchievement_2011_11_27.jpg", title: ""},
+        {file: "CertificateOfAchievement_2012_12_02_1.jpg", title: ""},
+        {file: "CertificateOfAchievement_2012_12_02_2.jpg", title: ""},
+        {file: "Diploma_2009_11_11.jpg", title: ""},
+        {file: "Diploma_2011_11_27.jpg", title: ""},
+        {file: "Diploma_2012_12_02.jpg", title: ""}
     ];
     $(function(){
-        for(var i = 0; i < gallery.length; i++) {
-            var item = gallery[i];
-            var pic = $('<a href="/img/pskov/'+item.file+'" data-lightbox="pskov" data-title="'+item.title+'">');
-            $('<img class="gallery" src="/img/pskov/preview/' + item.file + '" alt="'+item.title+'">').appendTo(pic);
-            pic.appendTo('#gallery');
-        }
+        addImages('acm', acm);
+        addImages('gallery', gallery);
     });
+    function addImages(container, images) {
+        for(var i = 0; i < images.length; i++) {
+            var item = images[i];
+            var pic = $('<a href="/img/pskov/'+item.file+'" data-lightbox="'+container+'" data-title="'+item.title+'">');
+            $('<img class="gallery" src="/img/pskov/preview/' + item.file + '" alt="'+item.title+'">').appendTo(pic);
+            pic.appendTo('#' + container);
+        }
+    }
 </script>
 
 <div class="page-header text-center">
 <h2>{{ page.title }}</h2>
 </div>
 
+<h3>Сертификаты ACM ICPC</h3>
+<div id="acm"></div>
+
+<h3>Прочее</h3>
 <div id="gallery"></div>
