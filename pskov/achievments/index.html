@@ -6,6 +6,7 @@ title: Достижения
 <link rel="stylesheet" href="/css/lightbox.css">
 <link rel="stylesheet" href="/css/gallery.css">
 <script src="/js/lightbox.min.js"></script>
+<script src="/js/gallery.js"></script>
 
 <script>
     var acm = [
@@ -97,14 +98,6 @@ title: Достижения
         addImages('izhevsk', izhevsk);
         addImages('gratitude', gratitude);
     });
-    function addImages(container, images) {
-        for(var i = 0; i < images.length; i++) {
-            var item = images[i];
-            var pic = $('<a href="/img/pskov/'+item.file+'" data-lightbox="'+container+'" data-title="'+item.title+'">');
-            $('<img class="gallery" src="/img/pskov/preview/' + item.file + '" alt="'+item.title+'">').appendTo(pic);
-            pic.appendTo('#' + container);
-        }
-    }
 </script>
 
 <div class="page-header text-center">
