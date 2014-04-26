@@ -10,12 +10,6 @@ title: Результаты
 <script>
     var gallery = [
         {file: "CertificateIgevsk_2009_02_21.jpg", title: ""},
-        {file: "CertificateInternetOlimpInfo_2013_04_13_1.jpg", title: ""},
-        {file: "CertificateInternetOlimpInfo_2013_04_13_2.jpg", title: ""},
-        {file: "CertificateInternetOlimpInfo_2013_04_13_3.jpg", title: ""},
-        {file: "CertificateInternetOlimpMath_2013_04_14_1.jpg", title: ""},
-        {file: "CertificateInternetOlimpMath_2013_04_14_2.jpg", title: ""},
-        {file: "CertificateInternetOlimpMath_2013_04_14_3.jpg", title: ""},
         {file: "CertificatePovolgie_2013_04_07.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_09_Evpatoria_1.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_09_Evpatoria_2.jpg", title: ""},
@@ -78,13 +72,26 @@ title: Результаты
         {file: "CertificateOfAchievement_2010_11_24.jpg", title: ""},
         {file: "CertificateOfAchievement_2011_11_27.jpg", title: ""},
         {file: "CertificateOfAchievement_2012_12_02_1.jpg", title: ""},
-        {file: "CertificateOfAchievement_2012_12_02_2.jpg", title: ""},
+        {file: "CertificateOfAchievement_2012_12_02_2.jpg", title: ""}
+    ];
+    var acmDiplom = [
         {file: "Diploma_2009_11_11.jpg", title: ""},
         {file: "Diploma_2011_11_27.jpg", title: ""},
         {file: "Diploma_2012_12_02.jpg", title: ""}
     ];
+    var openOlymp = [
+        {file: "CertificateInternetOlimpInfo_2013_04_13_1.jpg", title: ""},
+        {file: "CertificateInternetOlimpInfo_2013_04_13_2.jpg", title: ""},
+        {file: "CertificateInternetOlimpInfo_2013_04_13_3.jpg", title: ""},
+        {file: "CertificateInternetOlimpMath_2013_04_14_1.jpg", title: ""},
+        {file: "CertificateInternetOlimpMath_2013_04_14_2.jpg", title: ""},
+        {file: "CertificateInternetOlimpMath_2013_04_14_3.jpg", title: ""}
+    ];
+    
     $(function(){
         addImages('acm', acm);
+        addImages('acm-diplom', acmDiplom);
+        addImages('open-olymp', openOlymp);
         addImages('gallery', gallery);
     });
     function addImages(container, images) {
@@ -103,6 +110,12 @@ title: Результаты
 
 <h3>Сертификаты ACM ICPC</h3>
 <div id="acm"></div>
+
+<h3>Дипломы ACM ICPC</h3>
+<div id="acm-diplom"></div>
+
+<h3>Сертификаты Открытой международной студенческой Интернет-олимпиады</h3>
+<div id="open-olymp"></div>
 
 <h3>Прочее</h3>
 <div id="gallery"></div>
