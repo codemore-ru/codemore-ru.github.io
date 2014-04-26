@@ -3,23 +3,84 @@ layout: base
 title: Результаты
 ---
 
+<link rel="stylesheet" href="/css/lightbox.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<script src="/js/lightbox.min.js"></script>
+
+<script>
+    var gallery = [
+        {file: "CertificateIgevsk_2009_02_21.jpg", title: ""},
+        {file: "CertificateInternetOlimpInfo_2013_04_13_1.jpg", title: ""},
+        {file: "CertificateInternetOlimpInfo_2013_04_13_2.jpg", title: ""},
+        {file: "CertificateInternetOlimpInfo_2013_04_13_3.jpg", title: ""},
+        {file: "CertificateInternetOlimpMath_2013_04_14_1.jpg", title: ""},
+        {file: "CertificateInternetOlimpMath_2013_04_14_2.jpg", title: ""},
+        {file: "CertificateInternetOlimpMath_2013_04_14_3.jpg", title: ""},
+        {file: "CertificateOfAchievement_2005_11_30.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_05_1.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_05_2.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_05_3.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_29_1.jpg", title: ""},
+        {file: "CertificateOfAchievement_2006_11_29_2.jpg", title: ""},
+        {file: "CertificateOfAchievement_2007_10_28.jpg", title: ""},
+        {file: "CertificateOfAchievement_2007_11_28.jpg", title: ""},
+        {file: "CertificateOfAchievement_2008_11_26.jpg", title: ""},
+        {file: "CertificateOfAchievement_2009_11_29.jpg", title: ""},
+        {file: "CertificateOfAchievement_2010_11_24.jpg", title: ""},
+        {file: "CertificateOfAchievement_2011_11_27.jpg", title: ""},
+        {file: "CertificateOfAchievement_2012_12_02_1.jpg", title: ""},
+        {file: "CertificateOfAchievement_2012_12_02_2.jpg", title: ""},
+        {file: "CertificatePovolgie_2013_04_07.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_1.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_2.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_3.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_4.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_0.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_1.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_2.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_3.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_4.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_coach_1.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_coach_2.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_coach_3.jpg", title: ""},
+        {file: "DiplomaItPlaneta_2013_04_11.jpg", title: ""},
+        {file: "DiplomaMathLog_2011_06_01_1.jpg", title: ""},
+        {file: "DiplomaMathLog_2011_06_01_2.jpg", title: ""},
+        {file: "DiplomaMathLog_2011_08_27.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_1.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_2.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_3.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_4.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_5.jpg", title: ""},
+        {file: "DiplomaPovolgie_2013_04_07.jpg", title: ""},
+        {file: "DiplomaWinner_2009_1.jpg", title: ""},
+        {file: "DiplomaWinner_2009_2.jpg", title: ""},
+        {file: "DiplomaWinner_2009_3.jpg", title: ""},
+        {file: "DiplomaWinner_2009_4.jpg", title: ""},
+        {file: "DiplomaWinner_2009_5.JPG", title: ""},
+        {file: "DiplomaWinner_2009_6.jpg", title: ""},
+        {file: "DiplomaWinner_2011_1.jpg", title: ""},
+        {file: "DiplomaWinner_2011_2.jpg", title: ""},
+        {file: "Diploma_2009_11_11.jpg", title: ""},
+        {file: "Diploma_2011_11_27.jpg", title: ""},
+        {file: "Diploma_2012_12_02.jpg", title: ""},
+        {file: "Gratitude_2009_02_21.jpg", title: ""},
+        {file: "Gratitude_2012_02_16_1.jpg", title: ""},
+        {file: "Gratitude_2012_02_16_2.jpg", title: ""},
+        {file: "SertificateItPlanetaJava_2013_04_11.jpg", title: ""},
+    ];
+    $(function(){
+        for(var i = 0; i < gallery.length; i++) {
+            var item = gallery[i];
+            var pic = $('<a href="/img/pskov/'+item.file+'" data-lightbox="pskov" data-title="'+item.title+'">');
+            $('<img class="gallery" src="/img/pskov/preview/' + item.file + '" alt="'+item.title+'">').appendTo(pic);
+            pic.appendTo('#gallery');
+        }
+    });
+</script>
+
 <div class="page-header text-center">
 <h2>{{ page.title }}</h2>
 </div>
 
-{% for post in site.posts %}
-	{% if post.section == 'pskov-achievment' %}
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			{{ post.date | date_to_string }} » <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
-			{% if post.author %}
-			 - <span class="text-info">{{ post.author }}</span>
-			{% endif %}
-		</div>
-		<div class="panel-body">
-		{{ post.content | markdownify }}
-		</div>
-	</div>
-	<br />
-	{% endif %}
-{% endfor %}
+<div id="gallery"></div>
