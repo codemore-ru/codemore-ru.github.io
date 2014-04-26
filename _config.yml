@@ -3,38 +3,3 @@ markdown: kramdown
 pygments: true
 
 exclude: ['.git', '.vagrant', 'Vagrantfile', 'provision.sh', 'CNAME', 'README.md']
-
-# specially for brython
-include:
-- __init__.py
-- _bootstrap.py
-- _test_warnings.py
-- __main__.py
-- _abcoll.py
-- _codecs.py
-- _collections.py
-- _dummy_thread.py
-- _functools.py
-- _imp.py
-- _markupbase.py
-- _pyio.py
-- _random.py
-- _socket.py
-- _string.py
-- _struct.py
-- _testcapi.py
-- _thread.py
-- _threading_local.py
-- _warnings.py
-- _weakref.py
-- _weakrefset.py
-- __random.js
-- _ajax.js
-- _browser.js
-- _html.js
-- _io.js
-- _os.js
-- _svg.js
-- _sys.js
-- _timer.js
-- _websocket.js
