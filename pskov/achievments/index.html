@@ -10,7 +10,6 @@ title: Результаты
 <script>
     var gallery = [
         {file: "CertificateIgevsk_2009_02_21.jpg", title: ""},
-        {file: "CertificatePovolgie_2013_04_07.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_09_Evpatoria_1.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_09_Evpatoria_2.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_09_Evpatoria_3.jpg", title: ""},
@@ -23,16 +22,6 @@ title: Результаты
         {file: "DiplomaIgevsk_2012_Evpatoria_coach_1.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_Evpatoria_coach_2.jpg", title: ""},
         {file: "DiplomaIgevsk_2012_Evpatoria_coach_3.jpg", title: ""},
-        {file: "DiplomaItPlaneta_2013_04_11.jpg", title: ""},
-        {file: "DiplomaMathLog_2011_06_01_1.jpg", title: ""},
-        {file: "DiplomaMathLog_2011_06_01_2.jpg", title: ""},
-        {file: "DiplomaMathLog_2011_08_27.jpg", title: ""},
-        {file: "DiplomaMathLog_2012_06_01_1.jpg", title: ""},
-        {file: "DiplomaMathLog_2012_06_01_2.jpg", title: ""},
-        {file: "DiplomaMathLog_2012_06_01_3.jpg", title: ""},
-        {file: "DiplomaMathLog_2012_06_01_4.jpg", title: ""},
-        {file: "DiplomaMathLog_2012_06_01_5.jpg", title: ""},
-        {file: "DiplomaPovolgie_2013_04_07.jpg", title: ""},
         {file: "DiplomaWinner_2009_1.jpg", title: ""},
         {file: "DiplomaWinner_2009_2.jpg", title: ""},
         {file: "DiplomaWinner_2009_3.jpg", title: ""},
@@ -41,10 +30,6 @@ title: Результаты
         {file: "DiplomaWinner_2009_6.jpg", title: ""},
         {file: "DiplomaWinner_2011_1.jpg", title: ""},
         {file: "DiplomaWinner_2011_2.jpg", title: ""},
-        {file: "Gratitude_2009_02_21.jpg", title: ""},
-        {file: "Gratitude_2012_02_16_1.jpg", title: ""},
-        {file: "Gratitude_2012_02_16_2.jpg", title: ""},
-        {file: "SertificateItPlanetaJava_2013_04_11.jpg", title: ""},
         {file: "Photo_2005.JPG", title: ""},
         {file: "Photo_2006.JPG", title: ""},
         {file: "Photo_2007.JPG", title: ""},
@@ -56,7 +41,7 @@ title: Результаты
         {file: "Photo_2011.JPG", title: ""},
         {file: "Photo_2012.JPG", title: ""},
         {file: "Photo_2013_1.JPG", title: ""},
-        {file: "Photo_2013_2.JPG", title: ""}
+        {file: "Photo_2013_2.JPG", title: ""},
     ];
     var acm = [
         {file: "CertificateOfAchievement_2005_11_30.jpg", title: ""},
@@ -72,12 +57,12 @@ title: Результаты
         {file: "CertificateOfAchievement_2010_11_24.jpg", title: ""},
         {file: "CertificateOfAchievement_2011_11_27.jpg", title: ""},
         {file: "CertificateOfAchievement_2012_12_02_1.jpg", title: ""},
-        {file: "CertificateOfAchievement_2012_12_02_2.jpg", title: ""}
+        {file: "CertificateOfAchievement_2012_12_02_2.jpg", title: ""},
     ];
     var acmDiplom = [
         {file: "Diploma_2009_11_11.jpg", title: ""},
         {file: "Diploma_2011_11_27.jpg", title: ""},
-        {file: "Diploma_2012_12_02.jpg", title: ""}
+        {file: "Diploma_2012_12_02.jpg", title: ""},
     ];
     var openOlymp = [
         {file: "CertificateInternetOlimpInfo_2013_04_13_1.jpg", title: ""},
@@ -85,13 +70,39 @@ title: Результаты
         {file: "CertificateInternetOlimpInfo_2013_04_13_3.jpg", title: ""},
         {file: "CertificateInternetOlimpMath_2013_04_14_1.jpg", title: ""},
         {file: "CertificateInternetOlimpMath_2013_04_14_2.jpg", title: ""},
-        {file: "CertificateInternetOlimpMath_2013_04_14_3.jpg", title: ""}
+        {file: "CertificateInternetOlimpMath_2013_04_14_3.jpg", title: ""},
     ];
-    
+    var mathLogic = [
+        {file: "DiplomaMathLog_2011_06_01_1.jpg", title: ""},
+        {file: "DiplomaMathLog_2011_06_01_2.jpg", title: ""},
+        {file: "DiplomaMathLog_2011_08_27.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_1.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_2.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_3.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_4.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_5.jpg", title: ""},
+    ];
+    var volga = [
+        {file: "DiplomaPovolgie_2013_04_07.jpg", title: ""},
+        {file: "CertificatePovolgie_2013_04_07.jpg", title: ""},
+    ];
+    var itPlaneta = [
+        {file: "DiplomaItPlaneta_2013_04_11.jpg", title: ""},
+        {file: "SertificateItPlanetaJava_2013_04_11.jpg", title: ""},
+    ];
+    var gratitude = [
+        {file: "Gratitude_2009_02_21.jpg", title: ""},
+        {file: "Gratitude_2012_02_16_1.jpg", title: ""},
+        {file: "Gratitude_2012_02_16_2.jpg", title: ""},
+    ];
     $(function(){
         addImages('acm', acm);
         addImages('acm-diplom', acmDiplom);
         addImages('open-olymp', openOlymp);
+        addImages('math-logic', mathLogic);
+        addImages('volga', volga);
+        addImages('it-planeta', itPlaneta);
+        addImages('gratitude', gratitude);
         addImages('gallery', gallery);
     });
     function addImages(container, images) {
@@ -116,6 +127,18 @@ title: Результаты
 
 <h3>Сертификаты Открытой международной студенческой Интернет-олимпиады</h3>
 <div id="open-olymp"></div>
+
+<h3>Международный чемпионат математических и логических игр</h3>
+<div id="math-logic"></div>
+
+<h3>Открытый командный студенческий чемпионат Поволжья</h3>
+<div id="volga"></div>
+
+<h3>IT-Планета</h3>
+<div id="it-planeta"></div>
+
+<h3>Благодарственные письма</h3>
+<div id="gratitude"></div>
 
 <h3>Прочее</h3>
 <div id="gallery"></div>
