@@ -9,27 +9,6 @@ title: Результаты
 
 <script>
     var gallery = [
-        {file: "CertificateIgevsk_2009_02_21.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_09_Evpatoria_1.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_09_Evpatoria_2.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_09_Evpatoria_3.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_09_Evpatoria_4.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_0.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_1.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_2.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_3.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_4.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_coach_1.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_coach_2.jpg", title: ""},
-        {file: "DiplomaIgevsk_2012_Evpatoria_coach_3.jpg", title: ""},
-        {file: "DiplomaWinner_2009_1.jpg", title: ""},
-        {file: "DiplomaWinner_2009_2.jpg", title: ""},
-        {file: "DiplomaWinner_2009_3.jpg", title: ""},
-        {file: "DiplomaWinner_2009_4.jpg", title: ""},
-        {file: "DiplomaWinner_2009_5.JPG", title: ""},
-        {file: "DiplomaWinner_2009_6.jpg", title: ""},
-        {file: "DiplomaWinner_2011_1.jpg", title: ""},
-        {file: "DiplomaWinner_2011_2.jpg", title: ""},
         {file: "Photo_2005.JPG", title: ""},
         {file: "Photo_2006.JPG", title: ""},
         {file: "Photo_2007.JPG", title: ""},
@@ -95,6 +74,31 @@ title: Результаты
         {file: "Gratitude_2012_02_16_1.jpg", title: ""},
         {file: "Gratitude_2012_02_16_2.jpg", title: ""},
     ];
+    var administration = [
+        {file: "DiplomaWinner_2009_1.jpg", title: ""},
+        {file: "DiplomaWinner_2009_2.jpg", title: ""},
+        {file: "DiplomaWinner_2009_3.jpg", title: ""},
+        {file: "DiplomaWinner_2009_4.jpg", title: ""},
+        {file: "DiplomaWinner_2009_5.JPG", title: ""},
+        {file: "DiplomaWinner_2009_6.jpg", title: ""},
+        {file: "DiplomaWinner_2011_1.jpg", title: ""},
+        {file: "DiplomaWinner_2011_2.jpg", title: ""},
+    ];
+    var izhevsk = [
+        {file: "CertificateIgevsk_2009_02_21.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_1.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_2.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_3.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_09_Evpatoria_4.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_0.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_1.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_2.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_3.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_4.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_coach_1.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_coach_2.jpg", title: ""},
+        {file: "DiplomaIgevsk_2012_Evpatoria_coach_3.jpg", title: ""},
+    ];
     $(function(){
         addImages('acm', acm);
         addImages('acm-diplom', acmDiplom);
@@ -102,6 +106,8 @@ title: Результаты
         addImages('math-logic', mathLogic);
         addImages('volga', volga);
         addImages('it-planeta', itPlaneta);
+        addImages('administration', administration);
+        addImages('izhevsk', izhevsk);
         addImages('gratitude', gratitude);
         addImages('gallery', gallery);
     });
@@ -137,8 +143,14 @@ title: Результаты
 <h3>IT-Планета</h3>
 <div id="it-planeta"></div>
 
+<h3>Сборы в Ижевске и Евпатории</h3>
+<div id="izhevsk"></div>
+
+<h3>Дипломы Администрации Псковской области</h3>
+<div id="administration"></div>
+
 <h3>Благодарственные письма</h3>
 <div id="gratitude"></div>
 
-<h3>Прочее</h3>
+<h3>Фотографии</h3>
 <div id="gallery"></div>
