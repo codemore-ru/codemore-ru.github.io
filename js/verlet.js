@@ -165,8 +165,8 @@ function canvasMouseDown(e) {
     if(e.button === 0) {
         mouseDrag = true;
         pointId = -1;
-        px = e.clientX - canvas.offsetLeft;
-        py = e.clientY - canvas.offsetTop;
+        px = e.pageX - canvas.offsetLeft;
+        py = e.pageY - canvas.offsetTop;
         for(var i = 0; i < x.length; i++) {
             var squareDistance = (x[i].x-px)*(x[i].x-px) + (x[i].y-py)*(x[i].y-py);
             if(squareDistance < maxDistance * maxDistance) {
@@ -179,8 +179,8 @@ function canvasMouseDown(e) {
 
 function canvasMouseMove(e) {
     if(mouseDrag) {
-        px = e.clientX - canvas.offsetLeft;
-        py = e.clientY - canvas.offsetTop;
+        px = e.pageX - canvas.offsetLeft;
+        py = e.pageY - canvas.offsetTop;
     }
 }
 
