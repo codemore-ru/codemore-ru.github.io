@@ -45,3 +45,6 @@ author: Valentin Gubarev
 
 [Условия задач олимпиады ППИ 2007 (doc)](/docs/pskov/Tasks_2007_03_10.doc)
 
+[Условия задач олимпиады ППИ 2006 (pdf)](/docs/pskov/Tasks_2006_05_25.pdf)
+
+[Условия задач олимпиады ППИ 2006 (doc)](/docs/pskov/Tasks_2006_05_25.doc)
