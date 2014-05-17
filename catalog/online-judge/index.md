@@ -42,4 +42,5 @@ layout: base
 Студенческая online-олимпиада по программированию ABBYY Cup
 + [IT-Planeta] (http://world-it-planet.org/) |
 Международная олимпиада в сфере информационных технологий
+{: .table}
 
