@@ -157,6 +157,8 @@ title: Каталог ссылок
 [SourceTree](http://sourcetreeapp.com/)|Утилита для управления локальными Git и Mercurial репозиториями<br>Поддерживаются Windows и Mac OS X
 [TortoiseHg](http://tortoisehg.bitbucket.org/)|Утилита для управления репозиториями Mercurial<br>Поддерживаются Windows, Linux и Mac OS X
 [TortoiseSVN](http://tortoisesvn.net/)|Утилита для управления репозиториями Subversion<br>Поддерживается только Windows
+[Mercurial: The Definitive Guide](http://hgbook.red-bean.com/read/)|Бесплатная книга по Mercurial<br>На английском языке
+[Pro Git](http://git-scm.com/book)|Бесплатная книга по Git<br>На английском языке
 {: .table }
 
 
