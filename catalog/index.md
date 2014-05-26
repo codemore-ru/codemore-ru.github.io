@@ -34,6 +34,8 @@ title: Каталог ссылок
 [NetBeans](https://netbeans.org/downloads/)|IDE от Oracle. Поддерживает множество языков. Распространяется свободно
 [Eclipse](http://eclipse.org/)|Платформа, на которой разработано множество IDE для различных языков
 [Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
+[Komodo IDE](http://komodoide.com/)|Коммерческая кроссплатформенная универсальная IDE
+[Atom](https://atom.io/)|Универсальный текстовый редактор, разрабатывемый GitHub (лицензия MIT)
 {: .table}
 
 
