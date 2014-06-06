@@ -21,7 +21,7 @@ $(function() {
     //scene.add(axes);
 
     var planeGeometry = new THREE.PlaneGeometry(40,40,1,1);
-    var planeMaterial = new THREE.MeshBasicMaterial({color: 0x29F241});
+    var planeMaterial = new THREE.MeshLambertMaterial({color: 0x29F241});
     var plane = new THREE.Mesh(planeGeometry,planeMaterial);
     plane.rotation.x=-0.5*Math.PI;
     plane.position.x = 0;
