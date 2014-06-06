@@ -1,7 +1,3 @@
-/**
- * Created by Деканат ФАИ on 06.06.14.
- */
-
 $(function() {
     var height = 400;
     var width = 400;
