@@ -13,9 +13,6 @@ $(function() {
     renderer.setSize(width, height);
     renderer.shadowMapEnabled = true;
 
-    var axes = new THREE.AxisHelper( 20 );
-    //scene.add(axes);
-
     var planeGeometry = new THREE.PlaneGeometry(40,40,1,1);
     var planeMaterial = new THREE.MeshLambertMaterial({color: 0x29F241});
     var plane = new THREE.Mesh(planeGeometry,planeMaterial);
@@ -98,21 +95,18 @@ $(function() {
 
             cube.position.x = x1;
             cube.position.z = z1;
-
-            var a = 0.001;
-            var x = camera.position.x;
-            var z = camera.position.z;
-            var x1 = x * Math.cos(a) - z * Math.sin(a);
-            var z1 = x * Math.sin(a) + z * Math.cos(a);
-
-            camera.position.x = x1;
-            camera.position.z = z1;
-
-            camera.lookAt(sphere.position);
-
-//            camera.rotation.x += a;
-//            camera.rotation.z += a;
         }
+        
+        var a = 0.001;
+        var x = camera.position.x;
+        var z = camera.position.z;
+        var x1 = x * Math.cos(a) - z * Math.sin(a);
+        var z1 = x * Math.sin(a) + z * Math.cos(a);
+
+        camera.position.x = x1;
+        camera.position.z = z1;
+
+        camera.lookAt(sphere.position);
 
         requestAnimationFrame(renderScene);
         renderer.render(scene, camera);
