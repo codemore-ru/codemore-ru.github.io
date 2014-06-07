@@ -8,8 +8,37 @@ section: experimental
 <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
 <script src="/js/experimental/webgl.js"></script>
 
-<div class="text-center">
 <div id="output" style="width: 400px; height: 400px; margin: 0 auto;"></div>
-<br>
-<div id="fps" class="text-center"></div> 
+
+<p id="fps" class="text-center"></p>
+
+<div style="max-width: 400px; margin: 0 auto;">
+    <form>
+        <fieldset>
+            <legend>Параметры</legend>
+            <div class="form-group">
+                <label for="cubes">Количество кубов:</label>
+                <input type="text" id="cubes" class="form-control" value="10">
+            </div>
+            <div class="form-group">
+                <label for="radius">Радиус:</label>
+                <input type="text" id="radius" class="form-control" value="15">
+            </div>
+            <div class="form-group">
+                <label for="cube-speed">Скорость вращения кубов:</label>
+                <input type="text" id="cube-speed" class="form-control" value="0.002">
+            </div>
+            <div class="form-group">
+                <label for="scene-speed">Скорость вращения камеры:</label>
+                <input type="text" id="scene-speed" class="form-control" value="0.0005">
+            </div>
+            <div class="form-group">
+                <label for="cube-color">Цвет кубов:</label>
+                <input type="text" id="cube-color" class="form-control" value="red">
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" id="apply">Применить</button>
+            </div>
+        </fieldset>
+    </form>
 </div>
