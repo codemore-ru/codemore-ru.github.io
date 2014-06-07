@@ -1,8 +1,8 @@
 var R = 15;
 var cube_num = 10;
 var cube_color = 'red';
-var rot_a = 0.002;
-var cam_rot_a = 0.0005;
+var rot_a = 0.02;
+var cam_rot_a = 0.005;
 
 var cubes = [];
 var scene = new THREE.Scene();
