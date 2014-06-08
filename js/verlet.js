@@ -18,9 +18,8 @@ window.onload = function() {
     ctx.strokeStyle = lineColor;
     ctx.lineWidth = '1px';
 
-    canvas.onmousedown = canvasMouseDown;
-    canvas.onmousemove = canvasMouseMove;
-    canvas.onmouseup = canvas.onmouseout = canvasMouseUp;
+    bindMouseEvents();
+    bindTouchEvents();
 
     //Verlet
     InitCloth();
@@ -159,32 +158,97 @@ function InitCloth() {
     }
 }
 
-//mouse functions
+//mouse&touch functions
+
+function bindMouseEvents() {
+    canvas.addEventListener('mousedown', function(e) {
+        if(e.button === 0) {
+            canvasMouseDown({x: e.pageX, y: e.pageY});
+        }
+    });
+
+    canvas.addEventListener('mousemove', function(e) {
+        canvasMouseMove({x: e.pageX, y: e.pageY});
+    });
+
+    canvas.addEventListener('mouseup', canvasMouseUp);
+    canvas.addEventListener('mouseout', canvasMouseUp);
+}
+
+function bindTouchEvents() {
+    var touchEvents;
+    if(window.navigator.msPointerEnabled) {
+        touchEvents = {
+            touchStart: 'MSPointerDown',
+            touchMove: 'MSPointerMove',
+            touchEnd: 'MSPointerUp'
+        }
+    } else {
+        touchEvents = {
+            touchStart: 'touchstart',
+            touchMove: 'touchmove',
+            touchEnd: 'touchend'
+        }
+    }
+
+    function isOneTouch(e) {
+        return !((!window.navigator.msPointerEnabled && e.touches.length > 1) || e.targetTouches > 1);
+    }
+
+    function touchCords(e) {
+        var touchX, touchY;
+        if (window.navigator.msPointerEnabled) {
+            touchX = e.pageX;
+            touchY = e.pageY;
+        } else {
+            touchX = e.touches[0].clientX;
+            touchY = e.touches[0].clientY;
+        }
+        return {
+            x: touchX,
+            y: touchY
+        };
+    }
+
+    canvas.addEventListener(touchEvents.touchStart, function(e) {
+        if(isOneTouch(e)) {
+            e.preventDefault();
+            canvasMouseDown(touchCords(e));
+        }
+    });
+
+    canvas.addEventListener(touchEvents.touchMove, function(e) {
+        if(isOneTouch(e)) {
+            e.preventDefault();
+            canvasMouseMove(touchCords(e));
+        }
+    });
+
+    canvas.addEventListener(touchEvents.touchEnd, canvasMouseUp);
+}
 
 function canvasMouseDown(e) {
-    if(e.button === 0) {
-        mouseDrag = true;
-        pointId = -1;
-        px = e.pageX - canvas.offsetLeft;
-        py = e.pageY - canvas.offsetTop;
-        for(var i = 0; i < x.length; i++) {
-            var squareDistance = (x[i].x-px)*(x[i].x-px) + (x[i].y-py)*(x[i].y-py);
-            if(squareDistance < maxDistance * maxDistance) {
-                pointId = i;
-                break;
-            }
+    mouseDrag = true;
+    pointId = -1;
+    px = e.x - canvas.offsetLeft;
+    py = e.y - canvas.offsetTop;
+    for(var i = 0; i < x.length; i++) {
+        var squareDistance = (x[i].x-px)*(x[i].x-px) + (x[i].y-py)*(x[i].y-py);
+        if(squareDistance < maxDistance * maxDistance) {
+            pointId = i;
+            break;
         }
     }
 }
 
 function canvasMouseMove(e) {
     if(mouseDrag) {
-        px = e.pageX - canvas.offsetLeft;
-        py = e.pageY - canvas.offsetTop;
+        px = e.x - canvas.offsetLeft;
+        py = e.y - canvas.offsetTop;
     }
 }
 
-function canvasMouseUp(e) {
+function canvasMouseUp() {
     mouseDrag = false;
     pointId = -1;
 }
