@@ -144,6 +144,7 @@ title: Каталог ссылок
 [PHP](http://php.net/)|Официальный сайт языка PHP
 [PhpStorm](http://www.jetbrains.com/phpstorm/)|Коммерческая IDE от JetBrains. Поддерживает JavaScript, PHP и некоторые распространенные фреймворки
 [Zend Studio](http://www.zend.com/en/products/studio/)|Коммерческая IDE от Zend
+[Symfony](http://symfony.com/)|Мощный фреймворк
 {: .table }
 
 
