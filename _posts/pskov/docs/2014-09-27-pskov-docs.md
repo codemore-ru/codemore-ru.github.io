@@ -1,7 +1,7 @@
 ---
 layout: post-pskov
 title: Документация
-section: pskov-docs
+permalink: /pskov/documentation.html
 author: Valentin Gubarev
 ---
 
