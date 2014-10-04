@@ -2,7 +2,7 @@
 layout: base
 title: Документация
 author: Valentin Gubarev
-section: documentation
+section: pskov-documentation
 ---
 
 [Правила Олимпиады ПсковГУ по программированию
