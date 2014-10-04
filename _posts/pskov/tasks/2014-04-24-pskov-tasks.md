@@ -5,9 +5,9 @@ section: pskov-tasks
 author: Valentin Gubarev
 ---
 
-[Условия задач олимпиады ПсковГУ 2014 (pdf)](/docs/pskov/Tasks_2014_03_22.pdf)
-
-[Условия задач олимпиады ПсковГУ 2014 (docx)](/docs/pskov/Tasks_2014_03_22.docx)
+|-|-|-|
+Условия задач олимпиады ПсковГУ 2014|[pdf](/docs/pskov/Tasks_2014_03_22.pdf)|[docx](/docs/pskov/Tasks_2014_03_22.docx)
+{: .table}
 
 [Условия задач олимпиады ПсковГУ 2013 (pdf)](/docs/pskov/Tasks_2013_09_13.pdf)
 
@@ -48,3 +48,4 @@ author: Valentin Gubarev
 [Условия задач олимпиады ППИ 2006 (pdf)](/docs/pskov/Tasks_2006_05_25.pdf)
 
 [Условия задач олимпиады ППИ 2006 (doc)](/docs/pskov/Tasks_2006_05_25.doc)
+{: .table}
