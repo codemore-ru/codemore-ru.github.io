@@ -1,6 +1,7 @@
 ---
 layout: post-pskov
 title: Задачи
+section: pskov-tasks
 author: Valentin Gubarev
 ---
 
