@@ -1,5 +1,5 @@
 ---
-layout: post-pskov
+layout: base
 title: Документация
 author: Valentin Gubarev
 ---
