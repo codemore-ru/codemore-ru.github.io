@@ -183,8 +183,8 @@ title: Каталог ссылок
 |-|-|
 [ejudje](https://ejudge.ru/)|Cистема для автоматической проверки программ
 [PCMS2](http://neerc.ifmo.ru/trains/information/software.html)|Cистема для автоматической проверки программ от ИТМО
-[Contester](http://www.contester.ru/)|Cистема для автоматической проверки программ. Имеется гготовый набор задач
-[PC^2](http://www.ecs.csus.edu/pc2/)|Cистема для автоматической проверки программ. Используется на финале ACM ICPC
+[Contester](http://www.contester.ru/)|Cистема для автоматической проверки программ<br>Имеется готовый набор задач
+[PC^2](http://www.ecs.csus.edu/pc2/)|Cистема для автоматической проверки программ<br>Используется на финале ACM ICPC
 [olympiads.ru](http://olympiads.ru/school/system/index.shtml)|Cистема для автоматической проверки программ
 [DOMjudge](http://www.domjudge.org/)|Cистема для автоматической проверки программ (Голландия)
 [dudge](https://code.google.com/p/dudge/)|Cистема для автоматической проверки программ
