@@ -10,12 +10,12 @@ title: Олимпиадное программирование в Псков Г�
 <h3>Разделы:</h3>
 <p><a href="/pskov/achievments">Достижения</a></p>
 <p><a href="/pskov/photo">Фотографии</a></p>
-<p><a href="/pskov/documentation.html">Документация</a></p>
-<p><a href="/pskov/tasks.html">Задачи</a></p>
+<p><a href="/pskov/documentation">Документация</a></p>
+<p><a href="/pskov/tasks">Задачи</a></p>
 <br />
 
 {% for post in site.posts %}
-	{% if post.section == 'pskov-docs' %}
+	{% if post.section == 'pskov' %}
 	<p>
 			{{ post.date | date_to_string }}
 			» <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
