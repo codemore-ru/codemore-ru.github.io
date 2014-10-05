@@ -1,6 +1,6 @@
 ---
 title: Online Judge
-layout: base
+layout: page-base
 ---
 
 ### Каталог ресурсов с онлайн проверяющей системой

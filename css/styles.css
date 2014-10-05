@@ -1,7 +1,33 @@
 body{
-	background-color: #FCFCFC;
+	background-color: #fcfcfc;
 }
 
 h1,h2,h3,h4,h5,h6{
 	font-family: 'arsenalregular', sans-serif;
+}
+
+.menu-title {
+    color: #000;
+    font-family: 'arsenalregular', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f0f0f0;
+    box-shadow: 0 3px 6px 6px rgba(150, 150, 150, .3);
+}
+
+.index-sections {
+    font-size: 1.2em;
+}
+
+.content-container {
+    padding: 10px;
+    margin: 5px 5px 10px;
+
+    border: 1px #ccc solid;
+    border-radius: 1px;
+
+    background-color: #fff;
+
+    box-shadow: 0 6px 6px 6px rgba(150, 150, 150, .3);
 }

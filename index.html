@@ -3,20 +3,37 @@ layout: base
 title: Code More
 ---
 
-{% include info.html %}
-<br />
-<br />
-<h3>Разделы:</h3>
-{% include sections.html %}
-<br/>
-<h3>Статьи:</h3>
-{% for post in site.posts %}
-	{% if post.section == null %}
-	<p>
-		{{ post.date | date_to_string }} » <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
-		{% if post.author %}
-		<em class="text-info">({{ post.author }})</em>
-		{% endif %}
-	</p>
-	{% endif %}
-{% endfor %}
+<div class="page-header text-center">
+    <h1>Code More!</h1>
+
+    <a href="/catalog">каталог ссылок</a>&nbsp;|
+    <a href="/catalog/online-judge">online judge</a>
+</div>
+
+<div class="container">
+    <div class="content-container">
+
+        <ul class="nav nav-pills nav-justified index-sections">
+            {% include sections.html %}
+        </ul>
+
+        <hr>
+
+        <h3>Статьи:</h3>
+        {% for post in site.posts %}
+        {% if post.section == null %}
+        <p>
+            {{ post.date | date_to_string }} » <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+            {% if post.author %}
+            <em class="text-info">({{ post.author }})</em>
+            {% endif %}
+        </p>
+        {% endif %}
+        {% endfor %}
+
+    </div>
+</div>
+
+<div class="text-center">
+    {% include footer.html %}
+</div>
