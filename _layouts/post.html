@@ -3,9 +3,7 @@ layout: page-base
 ---
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-<h2>{{ page.title }} <small style="vertical-align: middle;">
-<span class="label label-default" style="vertical-align: middle;"> {{ page.date | date_to_string }}</span>
-</small></h2>
+<h2>{{ page.title }} <div class="post-date">{{ page.date | date_to_string }}</div></h2>
 Автор: <span class="text-info">{{ page.author }}</span><br />
 <hr />
 {{ content }}

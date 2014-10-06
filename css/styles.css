@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .content-container {
-    padding: 10px;
+    padding: 20px;
     margin: 5px 5px 10px;
 
     border: 1px #ccc solid;
@@ -34,4 +34,14 @@ h1,h2,h3,h4,h5,h6{
 .index-container {
     padding-top: 0;
     margin-top: 0;
+}
+
+.post-date {
+    display: inline-block;
+    padding: 5px;
+    color: #08c;
+    margin: 5px;
+    font-size: 0.5em;
+    border: 1px #08c solid;
+    border-radius: 5px;
 }
