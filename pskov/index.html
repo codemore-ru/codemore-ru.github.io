@@ -3,24 +3,35 @@ layout: page-base
 title: Олимпиадное программирование в Псков ГУ
 ---
 
-<div class="page-header text-center">
-<h2>{{ page.title }}</h2>
-</div>
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/pskov.css">
 
-<h3>Разделы:</h3>
-<p><a href="/pskov/achievments">Достижения</a></p>
-<p><a href="/pskov/photo">Фотографии</a></p>
-<p><a href="/pskov/documentation">Документация</a></p>
-<p><a href="/pskov/tasks">Задачи</a></p>
-<br />
+<div class="pskov-header">{{ page.title }}</div>
 
+<!-- Разделы -->
+<ul class="nav nav-pills nav-justified index-sections">
+    <li>
+        <a href="/pskov/achievments"><i class="fa fa-certificate"></i> Достижения</a>
+    </li>
+    <li>
+        <a href="/pskov/photo"><i class="fa fa-users"></i> Фотографии</a>
+    </li>
+    <li>
+        <a href="/pskov/documentation"><i class="fa fa-file-text-o"></i> Документация</a>
+    </li>
+    <li>
+        <a href="/pskov/tasks"><i class="fa fa-puzzle-piece"></i> Задачи</a>
+    </li>
+</ul>
+
+<!-- Статьи -->
 {% for post in site.posts %}
 	{% if post.section == 'pskov' %}
-	<p>
-			{{ post.date | date_to_string }}
-			» <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+	<p class="article-item">
+			<span class="post-date">{{ post.date | date_to_string }}</span>
+			<a href="{{ post.url }}">{{ post.title }}</a>
 			{% if post.author %}
-			 - <span class="text-info">{{ post.author }}</span>
+                <span class="text-info"> / {{ post.author }}</span>
 			{% endif %}
 	</p>
 	{% endif %}

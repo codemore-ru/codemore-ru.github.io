@@ -16,6 +16,10 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 0;
 }
 
+.navbar-default .navbar-brand {
+    color: #555;
+}
+
 .content-container {
     padding: 0 20px 20px;
     margin: 0 5px 10px;
