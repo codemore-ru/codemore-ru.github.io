@@ -1,0 +1,57 @@
+.index-sections {
+    font-size: 1.2em;
+}
+
+.index-sections i {
+    font-size: 3em;
+    display: block;
+    margin: 3px;
+}
+
+.index-sections a {
+    min-height: 150px;
+}
+
+.index-sections .programming-section {
+    color: #6359c7;
+}
+
+.index-sections .pskov-section {
+    color: #007f7f;
+}
+
+.index-sections .mathematiques-section {
+    color: #c39044;
+}
+
+.index-sections .experimental-section {
+    color: #9b009b;
+}
+
+/***********************************************************************************************/
+
+.index-minor-sections {
+    margin-top: 30px;
+    max-width: 300px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.index-minor-sections i {
+    font-size: 2em;
+    display: block;
+    margin: 3px;
+}
+
+.index-minor-sections a {
+    color: #555;
+}
+
+/***********************************************************************************************/
+
+.code-more {
+    font-family: 'arsenalregular', Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 15px 15px 30px;
+}
