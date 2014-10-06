@@ -21,7 +21,8 @@ author: Alexey Nurgaliev
 sudo apt-get update
 sudo apt-get install -y bison flex ncurses-base libncurses-dev libncursesw5 \
   libncursesw5-dev expat libexpat1 libexpat1-dev zlib1g-dev libelf-dev \
-  g++ sendmail apache2 gettext fpc mc openjdk-7-jdk openjdk-7-jre
+  g++ sendmail apache2 gettext fpc mc openjdk-7-jdk openjdk-7-jre \
+  libcurl4-openssl-dev libzip-dev
 
 #Установка libdwarf (нет в репозиториях ubuntu)
 wget http://pkgs.fedoraproject.org/repo/pkgs/libdwarf/libdwarf-20130207.tar.gz/64b42692e947d5180e162e46c689dfbf/libdwarf-20130207.tar.gz
