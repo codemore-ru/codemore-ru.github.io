@@ -1,9 +1,9 @@
 .navbar-default {
-    background-color: #bead49;
+    background-color: #d77636;
 }
 
 .navbar-default .navbar-brand {
-    color: #555;
+    color: #fff;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -11,7 +11,7 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-     color: #555;
+     color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
