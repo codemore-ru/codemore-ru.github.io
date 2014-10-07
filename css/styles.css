@@ -11,14 +11,31 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'arsenalregular', Helvetica, Arial, sans-serif;
 }
 
+/***************************************************************************/
+
 .navbar {
     margin: 0 -20px;
     border-radius: 0;
+    background-color: #ddd;
 }
 
 .navbar-default .navbar-brand {
     color: #555;
 }
+
+.navbar-default .navbar-brand:hover {
+    color: #333;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #666;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #333;
+}
+
+/***************************************************************************/
 
 .content-container {
     padding: 0 20px 20px;
@@ -33,19 +50,22 @@ h1,h2,h3,h4,h5,h6{
     box-shadow: 0 6px 6px 6px rgba(150, 150, 150, .3);
 }
 
+/***************************************************************************/
+
 .post-date {
     display: inline-block;
     padding: 5px;
     margin: 5px;
     font-size: 0.5em;
-    color: #08c;
-    border: 1px #08c solid;
+    color: #555;
+    border: 1px #555 solid;
     border-radius: 5px;
 }
 
 .article-item .post-date {
     font-size: 1em;
     color: #059;
+    border-color: #059;
 }
 
 .article-item a {
