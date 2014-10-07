@@ -20,3 +20,21 @@
     font-family: 'arsenalregular', Helvetica, Arial, sans-serif;
     color: #555;
 }
+
+/***************************************************************************/
+
+.navbar-default {
+    background-color: #007f7f;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #333;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+}
