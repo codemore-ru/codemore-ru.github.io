@@ -28,3 +28,9 @@
 .navbar-default .navbar-nav > li > a{
     color: #fff;
 }
+
+/***************************************************************************/
+
+.content-block {
+    border-radius: 0;
+}
