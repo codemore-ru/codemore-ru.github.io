@@ -13,16 +13,6 @@
 
 /***************************************************************************/
 
-.pskov-header {
-    font-size: 2em;
-    margin: 20px 20px 40px;
-    text-align: center;
-    font-family: 'arsenalregular', Helvetica, Arial, sans-serif;
-    color: #555;
-}
-
-/***************************************************************************/
-
 .navbar-default {
     background-color: #007f7f;
 }

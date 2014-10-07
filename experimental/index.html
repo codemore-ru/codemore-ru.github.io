@@ -3,18 +3,19 @@ layout: page-base
 title: Эксперименты
 ---
 
-<div class="page-header text-center">
-<h2>{{ page.title }}</h2>
-</div>
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/experimental.css">
+
+<div class="sub-header">{{ page.title }}</div>
 
 {% for post in site.posts %}
 	{% if post.section == 'experimental' %}
-		<p>
-		{{ post.date | date_to_string }} » 
-		<strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
-		{% if post.author %}
-		 - <span class="text-info">{{ post.author }}</span>
-		{% endif %}
+		<p class="article-item">
+            <span class="post-date">{{ post.date | date_to_string }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            {% if post.author %}
+                <span class="text-info"> / {{ post.author }}</span>
+            {% endif %}
 		</p>
 	{% endif %}
 {% endfor %}
