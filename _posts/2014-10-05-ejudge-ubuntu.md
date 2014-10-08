@@ -11,6 +11,10 @@ author: Alexey Nurgaliev
 
 ##Предварительная настройка
 
+Для возможности выбора русского языка интерфейса может потребоваться установка дополнительной локали. Для этого нужно 
+в файл `/var/lib/locales/supported.d/local` добавить строчку `ru_RU.UTF-8 UTF-8` и запустить команду 
+`sudo dpkg-reconfigure locales`.
+
 Загрузка и установка пакетов (отдельно устанавливается libdwarf, так как его нет в 
 репозиторях Ubuntu. Создается пользователь и группа ejudge. Также создаются рабочие каталоги.
 
@@ -38,6 +42,7 @@ sudo chmod a+r /usr/include/libdwarf/*
 #создание группы и пользователя ejudge
 sudo groupadd ejudge
 sudo useradd ejudge -s /bin/bash -m -d /home/ejudge -g ejudge
+sudo adduser ejudge sudo
 
 #создание рабочего каталога judges
 sudo mkdir -p /home/judges /home/judges/test_work
@@ -74,6 +79,7 @@ cd ejudge
   --with-httpd-cgi-bin-dir=/var/www/ejudge/cgi-bin \
   --with-httpd-htdocs-dir=/var/www/ejudge/htdocs \
   --enable-ajax
+  --enable-charset=utf-8
 
 make
 make install
