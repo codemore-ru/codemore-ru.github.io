@@ -74,6 +74,9 @@ tar -xvzf ejudge-3.0.2.tgz
 
 cd ejudge
 
+#патч импорта из Polygon
+sed -i 's/login=/loginOrEmail=/' ./ej-polygon.c
+
 ./configure --prefix=/home/ejudge/inst-ejudge \
   --enable-contests-home-dir=/home/judges \
   --with-httpd-cgi-bin-dir=/var/www/ejudge/cgi-bin \
