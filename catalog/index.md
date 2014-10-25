@@ -132,7 +132,7 @@ title: Каталог ссылок
 [jQuery](http://jquery.org)|Библиотека, упрощающая работу с DOM. Также предоставляет простой API для AJAX (лицензия MIT)
 [AngularJS](http://angularjs.org)|Фреймворк Google для создания одностраничных приложений (лицензия MIT)
 [Ext.JS](http://www.sencha.com/products/extjs/)|Фреймворк для создания веб-приложений и пользовательских интерфейсов. Распространяется по коммерческой и открытой (GPLv3) лицензии
-[Node.js](nodejs.org)|Программная платформа для создания серверных приложений на языке JavaScript (лицензия MIT)
+[Node.js](http://nodejs.org)|Программная платформа для создания серверных приложений на языке JavaScript (лицензия MIT)
 [Gulp](http://gulpjs.com/)|Система сборки для JavaScript
 [Grunt](http://gruntjs.com/)|Еще одна система сборки JavaScript проектов 
 {: .table }
