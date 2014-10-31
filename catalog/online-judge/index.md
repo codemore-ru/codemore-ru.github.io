@@ -26,6 +26,7 @@ layout: page-base
 + [Портал олимпийского движения ТТИ Южного Федерального Университета](http://contester.tsure.ru/)
 + [Тренировки ИТМО](http://neerc.ifmo.ru/trains/information/index.html)
 + [Юный программист](http://yun.zp.ua/)
++ [KRSU Online Judge](http://olymp.krsu.edu.kg/GeneralProblemset.aspx)
 
 ### Каталог ресурсов с международными онлайн соревнованиями
 
