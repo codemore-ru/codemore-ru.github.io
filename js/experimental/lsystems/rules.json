@@ -1,0 +1,750 @@
+[
+    {
+        "title": "Растение 1",
+        "axiom": "X",
+        "iterations": 5,
+        "startX": 0,
+        "startY": 400,
+        "rotation": -50,
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 25,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -25,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": "5",
+                "rule": "FF"
+            },
+            "X": {
+                "operator": "nothing",
+                "rule": "F-[[X]+X]+F[+FX]-X"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Коха",
+        "axiom": "F",
+        "iterations": 4,
+        "startX": 300,
+        "startY": 200,
+        "rotation": 180,
+        "rules": {
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "F+F--F+F"
+            },
+            "+": {
+                "operator": "rotate",
+                "value": 60,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -60,
+                "rule": "-"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Минковского",
+        "iterations": 4,
+        "startX": 0,
+        "startY": 200,
+        "rotation": 0,
+        "axiom": "F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "F+F-F-FF+F+F-F"
+            }
+        }
+    },
+
+    {
+        "title": "Снежинка Коха",
+        "iterations": 4,
+        "startX": 100,
+        "startY": 200,
+        "axiom": "F--F--F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 60,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -60,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "F+F--F+F"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Дракона",
+        "iterations": 13,
+        "startX": 200,
+        "startY": 200,
+        "rotation": 0,
+        "axiom": "FX",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "X": {
+                "operator": "draw",
+                "value": 1,
+                "rule": "X+YF"
+            },
+            "Y": {
+                "operator": "draw",
+                "value": 1,
+                "rule": "FX-Y"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 1,
+                "rule": "F"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Леви",
+        "iterations": 11,
+        "startX": 150,
+        "startY": 250,
+        "rotation": 225,
+        "axiom": "F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "F+F-"
+            }
+        }
+    },
+
+    {
+        "title": "Треугольник Серпинского",
+        "iterations": 8,
+        "startX": 320,
+        "startY": 300,
+        "rotation": 180,
+        "axiom": "A",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 60,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -60,
+                "rule": "-"
+            },
+            "A": {
+                "operator": "draw",
+                "value": 1,
+                "rule": "B-A-B"
+            },
+            "B": {
+                "operator": "draw",
+                "value": 1,
+                "rule": "A+B+A"
+            }
+        }
+    },
+
+    {
+        "title": "Растение 2",
+        "iterations": 6,
+        "startX": 200,
+        "startY": 400,
+        "rotation": -90,
+        "axiom": "X",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 30,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -30,
+                "rule": "-"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            },
+            "X": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "FX[+FX][-FX]"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "FF"
+            }
+        }
+    },
+
+    {
+        "title": "Растение 3",
+        "iterations": 6,
+        "startX": 200,
+        "startY": 400,
+        "rotation": -90,
+        "axiom": "X",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 27.5,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -27.5,
+                "rule": "-"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            },
+            "X": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "F[+X][-X]FX"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "FF"
+            }
+        }
+    },
+
+    {
+        "title": "Растение 4",
+        "iterations": 4,
+        "startX": 200,
+        "startY": 400,
+        "rotation": -90,
+        "axiom": "F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 22.5,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -22.5,
+                "rule": "-"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 5,
+                "rule": "FF-[-F+F+F]+[+F-F-F]"
+            }
+        }
+    },
+
+    {
+        "title": "Растение 5",
+        "iterations": 10,
+        "startX": 200,
+        "startY": 300,
+        "axiom": "----SLFFF",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 18,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -18,
+                "rule": "-"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            },
+            "G": {
+                "operator": "draw",
+                "value": 10,
+                "rule": "+H[-G]L"
+            },
+            "H": {
+                "operator": "draw",
+                "value": 10,
+                "rule": "-G[+H]L"
+            },
+            "L": {
+                "operator": "draw",
+                "value": 10,
+                "rule": "[-FFF][+FFF]F"
+            },
+            "S": {
+                "operator": "draw",
+                "value": 10,
+                "rule": "[+++G][---G]TS"
+            },
+            "T": {
+                "operator": "draw",
+                "value": 10,
+                "rule": "TL"
+            }
+        }
+    },
+
+    {
+        "title": "Растение 6",
+        "iterations": 5,
+        "startX": 200,
+        "startY": 400,
+        "rotation": -90,
+        "axiom": "F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 27,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -27,
+                "rule": "-"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 5,
+                "rule": "F[-F]F[+F][F]"
+            }
+        }
+    },
+
+    {
+        "title": "Растение 7",
+        "iterations": 5,
+        "startX": 200,
+        "startY": 400,
+        "axiom": "--------C",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 11.25,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -11.25,
+                "rule": "-"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            },
+            "C": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "[--C]N[++C]N+C"
+            },
+            "N": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "NNF"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "F"
+            }
+        }
+    },
+
+    {
+        "title": "Кольца",
+        "iterations": 5,
+        "startX": 0,
+        "startY": 200,
+        "axiom": "F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 60,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -60,
+                "rule": "-"
+            },
+            "[": {
+                "operator": "push",
+                "rule": "["
+            },
+            "]": {
+                "operator": "pop",
+                "rule": "]"
+            },
+            "X": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "[-F+F+F]+F-F-F+"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 2,
+                "rule": "FXF"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Госпера",
+        "iterations": 4,
+        "startX": 200,
+        "startY": 100,
+        "axiom": "XF",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 60,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -60,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "nothing",
+                "rule": "F"
+            },
+            "X": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "X+YF++YF-FX--FXFX-YF+"
+            },
+            "Y": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "-FX+YFYF++YF+FX--FX-Y"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Пеано",
+        "iterations": 4,
+        "startX": 80,
+        "startY": 80,
+        "axiom": "X",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "F"
+            },
+            "X": {
+                "operator": "nothing",
+                "rule": "XFYFX+F+YFXFY-F-XFYFX"
+            },
+            "Y": {
+                "operator": "nothing",
+                "rule": "YFXFY-F-XFYFX+F+YFXFY"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Серпинского",
+        "iterations": 5,
+        "startX": 60,
+        "startY": 60,
+        "rotation": -45,
+        "axiom": "F+XF+F+XF",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "F"
+            },
+            "X": {
+                "operator": "nothing",
+                "rule": "XF-F+F-XF+F+XF-F+F-X"
+            }
+        }
+    },
+
+    {
+        "title": "Кривая Гилберта",
+        "iterations": 6,
+        "startX": 50,
+        "startY": 360,
+        "axiom": "X",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 5,
+                "rule": "F"
+            },
+            "X": {
+                "operator": "nothing",
+                "rule": "-YF+XFX+FY-"
+            },
+            "Y": {
+                "operator": "nothing",
+                "rule": "+XF-YFY-FX+"
+            }
+        }
+    },
+
+    {
+        "title": "Узор 1",
+        "iterations": 2,
+        "startX": 150,
+        "startY": 250,
+        "axiom": "F-F-F-F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "F+FF-FF-F-F+F+FF-F-F+F+FF+FF-F"
+            }
+        }
+    },
+
+    {
+        "title": "Узор 2",
+        "iterations": 2,
+        "startX": 150,
+        "startY": 250,
+        "axiom": "F-F-F-F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "F+f-FF+F+FF+Ff+FF-f+FF-F-FF-Ff-FFF"
+            },
+            "f": {
+                "operator": "move",
+                "value": 3,
+                "rule": "ffffff"
+            }
+        }
+    },
+
+    {
+        "title": "Узор 3",
+        "iterations": 4,
+        "startX": 150,
+        "startY": 250,
+        "axiom": "F-F-F-F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 5,
+                "rule": "FF-F+F-F-FF"
+            }
+        }
+    },
+
+    {
+        "title": "Узор 4",
+        "iterations": 3,
+        "startX": 200,
+        "startY": 300,
+        "axiom": "F-F-F-F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 5,
+                "rule": "FF-F-F-F-F-F+F"
+            }
+        }
+    },
+
+    {
+        "title": "Узор 5",
+        "iterations": 4,
+        "startX": 80,
+        "startY": 320,
+        "axiom": "F-F-F-F",
+        "rules": {
+            "+": {
+                "operator": "rotate",
+                "value": 90,
+                "rule": "+"
+            },
+            "-": {
+                "operator": "rotate",
+                "value": -90,
+                "rule": "-"
+            },
+            "F": {
+                "operator": "draw",
+                "value": 3,
+                "rule": "FF-F-F-F-FF"
+            }
+        }
+    }
+
+]

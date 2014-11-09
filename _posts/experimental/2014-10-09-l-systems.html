@@ -1,0 +1,156 @@
+---
+layout: post
+title: Системы Линденмайера (L-Системы)
+author: Alexey Nurgaliev
+section: experimental
+---
+
+{% raw %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+
+<link rel="stylesheet" href="/js/experimental/lsystems/style.css">
+<script src="/js/experimental/lsystems/app.js"></script>
+<script src="/js/experimental/lsystems/ruleEditor.js"></script>
+
+<div ng-app="Lindenmayer" >
+
+<div class="container">
+
+    <div class="row" ng-controller="LindenmayerCtrl as lsys">
+
+        <!-- Left column (settings) -->
+        <div class="col-sm-5 left-column">
+            <form ng-submit="lsys.draw()">
+                <div class="form-horizontal">
+
+                    <fieldset>
+                        <legend>Шаблоны</legend>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <select id="presets" class="form-control"
+                                        ng-model="lsys.currentPreset"
+                                        ng-options="preset.title for preset in lsys.presets"
+                                        ng-change="lsys.presetChanged()"></select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- L-System options -->
+                    <fieldset>
+                        <legend>L-Система</legend>
+
+                        <!-- Iterations -->
+                        <div class="form-group">
+                            <label for="maxIterations" class="col-sm-6 control-label">Кол-во итераций</label>
+                            <div class="col-sm-6">
+                                <input type="number" min="1" id="maxIterations"
+                                       class="form-control" ng-model="lsys.maxIterations">
+                            </div>
+                        </div>
+
+                        <!-- Axiom -->
+                        <div class="form-group">
+                            <label for="axiom" class="col-sm-6 control-label">Аксиома</label>
+                            <div class="col-sm-6">
+                                <input type="text" id="axiom" class="form-control" ng-model="lsys.axiom">
+                            </div>
+                        </div>
+
+                        <!-- Rules -->
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <p><strong>Правила</strong></p>
+                                <div class="ruleset">
+                                    <p class="rule" ng-repeat="(liter, rule) in lsys.rules">
+                                        <a href="" class="text-danger rule-control" ng-click="lsys.deleteRule(liter)">
+                                            <i class="glyphicon glyphicon-remove"></i>
+                                        </a>
+                                        <a href="" class="text-success rule-control"
+                                           data-toggle="modal" data-target="#addRuleDialog"
+                                           ng-click="lsys.editRule(liter)">
+                                            <i class="glyphicon glyphicon-edit"></i>
+                                        </a>
+                                        {{liter}}
+                                        <i class="glyphicon glyphicon-arrow-right"></i>
+                                        {{rule.rule}}
+                                        {{lsys.ruleDescription(liter, rule)}}
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button"
+                                            class="btn btn-xs btn-success rule-btn"
+                                            data-toggle="modal" data-target="#addRuleDialog"
+                                            ng-click="lsys.newRuleDialog()">Добавить</button>
+                                    <button type="button"
+                                            class="btn btn-xs btn-warning rule-btn"
+                                            ng-click="lsys.resetRules()">Сбросить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!--Drawing options-->
+                    <fieldset>
+                        <legend>Параметры рисования</legend>
+
+                        <!-- Start X -->
+                        <div class="form-group">
+                            <label for="startx" class="col-sm-6 control-label">Старт X</label>
+                            <div class="col-sm-6">
+                                <input type="number" id="startx" class="form-control" ng-model="lsys.startX">
+                            </div>
+                        </div>
+
+                        <!-- Start Y -->
+                        <div class="form-group">
+                            <label for="starty" class="col-sm-6 control-label">Старт Y</label>
+                            <div class="col-sm-6">
+                                <input type="number" id="starty" class="form-control" ng-model="lsys.startY">
+                            </div>
+                        </div>
+
+                        <!-- Line width -->
+                        <div class="form-group">
+                            <label for="lineWidth" class="col-sm-6 control-label">Толщина линии</label>
+                            <div class="col-sm-6">
+                                <input type="number" min="1" id="lineWidth"
+                                       class="form-control" ng-model="lsys.lineWidth">
+                            </div>
+                        </div>
+
+                        <!-- Line color -->
+                        <div class="form-group">
+                            <label for="lineColor" class="col-sm-6 control-label">Цвет линии</label>
+                            <div class="col-sm-6">
+                                <input type="color" id="lineColor" class="form-control" ng-model="lsys.color">
+                            </div>
+                        </div>
+
+                        <!-- Rotation -->
+                        <div class="form-group">
+                            <label for="rotation" class="col-sm-6 control-label">Поворот</label>
+                            <div class="col-sm-6">
+                                <input type="number" id="rotation" class="form-control" ng-model="lsys.rotation">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Нарисовать</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Right column (picture) -->
+        <div class="col-sm-7">
+            <canvas width="400" height="400" id="drawingCanvas"></canvas>
+        </div>
+    </div>
+</div>
+
+<rule-editor modal-id="'addRuleDialog'"></rule-editor>
+
+</div>
+
+{% endraw %}

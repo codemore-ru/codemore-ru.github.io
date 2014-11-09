@@ -1,0 +1,26 @@
+.left-column {
+    border-right: 1px dashed #ededed;
+}
+canvas {
+    border: 1px solid #ededed;
+}
+legend {
+    text-align: center;
+}
+.rule {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.rule-control:hover, .rule-control:focus, .rule-control:active {
+    text-decoration: none;
+}
+.ruleset {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.rule {
+    margin-left: 3px;
+}
+.rule-btn {
+    margin-top: 10px;
+}

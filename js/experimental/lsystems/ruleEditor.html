@@ -1,0 +1,57 @@
+<div class="modal fade" id="{{modalId}}" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">{{windowTitle}} rule</h4>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="newLiter" class="control-label col-sm-4">Символ</label>
+                        <div class="col-sm-8">
+                            <input type="text" id="newLiter" class="form-control"
+                                   ng-model="liter" ng-disabled="editing">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newRule" class="control-label col-sm-4">Правило</label>
+                        <div class="col-sm-8">
+                            <input type="text" id="newRule" class="form-control" ng-model="rule">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newValue" class="control-label col-sm-4">Значение</label>
+                        <div class="col-sm-8">
+                            <input type="number" id="newValue" class="form-control" ng-model="value">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <fieldset class="text-center">
+                                <legend>Тип</legend>
+                                <label class="radio-inline" ng-repeat="currentOperator in ruleOperators">
+                                    <input type="radio" name="newType"
+                                           ng-checked="operator == currentOperator"
+                                           ng-click="setOperator(currentOperator)"> {{ruleNames[currentOperator]}}
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal"
+                        ng-disabled="false">Отмена</button>
+                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal"
+                        ng-click="addRule()" ng-disabled="!validate()">{{okTitle}}</button>
+            </div>
+        </div>
+    </div>
+</div>
