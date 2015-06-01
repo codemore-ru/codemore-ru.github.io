@@ -197,9 +197,9 @@ h3. Программы
 
 Для запуска всех программ нужен .net Framework версии 3.5 или выше.
 
-"Все файлы на Яндекс.Диске":http://yadi.sk/d/5q_a55ESG8sq4
+"Все файлы на Github":https://github.com/n-at/blobs/tree/master/fractals
 
-"Фрактал Мандельброта":http://atnurgaliev.93w.ru/uploads/Mandelbrot.exe
+"Фрактал Мандельброта":https://github.com/n-at/blobs/raw/master/fractals/Mandelbrot.exe
 
 _Параметры:_
 
@@ -211,7 +211,7 @@ _Параметры:_
 * MinX - смещение по X в исходном изображении
 * MinY  - смещение по Y в исходном изображении
 
-"Фрактал Жюлиа":http://atnurgaliev.93w.ru/uploads/Julia.exe
+"Фрактал Жюлиа":https://github.com/n-at/blobs/raw/master/fractals/Julia.exe
 
 _Параметры:_
 
@@ -223,7 +223,7 @@ _Параметры:_
 * MinY - смещение по Y в исходном изображении
 * cx, cy - зафиксированное значение c
 
-"Бассейны Ньютона":http://atnurgaliev.93w.ru/uploads/Newton.exe
+"Бассейны Ньютона":https://github.com/n-at/blobs/raw/master/fractals/Newton.exe
 
 _Параметры:_
 
@@ -235,7 +235,7 @@ _Параметры:_
 * MinX - смещение по X в исходном изображении
 * MinY - смещение по Y в исходном изображении
 
-"L-системы":http://atnurgaliev.93w.ru/uploads/Lindenmayer.exe
+"L-системы":https://github.com/n-at/blobs/raw/master/fractals/Lindenmayer.exe
 
 _Параметры:_
 
@@ -252,6 +252,6 @@ _Добавление/изменение существующего правил
 * Переменная - один символ
 * Правило - любой набор символов (переменных и констант)
 
-"Лист папоротника":http://atnurgaliev.93w.ru/uploads/Fern.exe
+"Лист папоротника":https://github.com/n-at/blobs/raw/master/fractals/Fern.exe
 
-"Исходные коды программ":http://atnurgaliev.93w.ru/uploads/FractalSRC.zip (C#, лицензия BSD)
+"Исходные коды программ":https://github.com/n-at/blobs/raw/master/fractals/FractalSRC.zip (C#, лицензия BSD)
