@@ -11,7 +11,6 @@ section: experimental
 		cnt.beginPath();
 		cnt.moveTo(0,150);
 		cnt.lineTo(100,0);
-		cnt.endPath();
 		cnt.strokeStyle = 'Black';
 		cnt.stroke();
 		cnt.fillRect(50,50,10,10);
@@ -22,6 +21,9 @@ section: experimental
 		cnv.height = '300';
 		cnt = cnv.getContext('2d');
 		cnt.fillRect(10,10,30,15);
+		cnt.lineTo(50,50);
+		cnt.strokeStyle = 'Black';
+		cnt.stroke();
 		OXY(cnt);
 	}
 </script>
