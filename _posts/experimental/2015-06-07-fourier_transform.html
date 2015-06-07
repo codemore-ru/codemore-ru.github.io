@@ -7,12 +7,14 @@ section: experimental
 	
 <script>
 	function OXY(cnt){
+		cnt.fillRect(250,50,10,10);
 		cnt.beginPath();
-		cnt.strokeStyle = 'Black';
 		cnt.moveTo(0,150);
 		cnt.lineTo(100,0);
 		cnt.endPath();
+		cnt.strokeStyle = 'Black';
 		cnt.stroke();
+		cnt.fillRect(50,50,10,10);
 	}
     function Draw(name){
 		cnv = document.getElementById(name);
