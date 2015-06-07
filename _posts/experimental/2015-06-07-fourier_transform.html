@@ -39,6 +39,20 @@ section: experimental
 		cnt.strokeStyle = color;
 		cnt.stroke();
 	}
+	/* arr - массив данных,
+	   cnt_step - сколько шагов выводить,
+	   step - количество пикселей на один шаг
+	*/
+	function DrawFunction(arr, cnt_step, step){
+		cnt.beginPath();
+		cnt.moveTo(10,150);
+		for(var i = 0; i < cnt_step; ++i){
+			cnt.lineTo(10 + i*step, 100 + 50 * arr[i]);
+		}
+		cnt.strokeStyle = color;
+		cnt.stroke();
+		}
+	}
     function Draw(name, frequency, color){
 		cnv = document.getElementById(name);
 		cnv.width = '800';
@@ -55,6 +69,8 @@ section: experimental
 	function fft(arr){
 	}
 </script>
+
+<p>Пробы по программированию</p>
 
 <p>Частота синусоидального сигнала</p>
 <input size='4' maxlength='4' id='frequency' onchange='DrawDraw(this.value)'></input>
