@@ -37,31 +37,31 @@ section: experimental
 		cnt.strokeStyle = color;
 		cnt.stroke();
 	}
-    function Draw(name, frequency, color){
+    function Draw(name, color){
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '300';
 		cnt = cnv.getContext('2d');
 		OX(cnt);
 		OY(cnt);
-		Sin(cnt, frequency, color);
+		Sin(cnt, 2, color);
 	}
 	function DrawDraw(){
 		alert("drawdraw");
 		frequency = getElementById('frequency').value;
 		alert(frequency);
-		Draw('fun_time', 2, 'red');
-		Draw('fun_w', 3, 'blue');
+		Draw('fun_time', 'red');
+		Draw('fun_w', 'blue');
 	}
 </script>
 <p>Частота синусоидального сигнала</p>
 <input size='4' maxlength='4' id='frequency' onchange='DrawDraw()'></input>
 
 <p>Функция амплитуды от времени</p>
-<canvas id='fun_time'>Канвас не поддерживается</canvas>
+<canvas id='fun_time'  onchange='DrawDraw()'>Канвас не поддерживается</canvas>
 
 
 <p>Функция амплитуды от частоты</p>
-<canvas id='fun_w'>Канвас не поддерживается</canvas>
+<canvas id='fun_w'  onchange='DrawDraw()'>Канвас не поддерживается</canvas>
 
 
