@@ -38,6 +38,7 @@ section: experimental
 		cnt.stroke();
 	}
     function Draw(name, color){
+	alert('Draw()');
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '300';
@@ -47,7 +48,7 @@ section: experimental
 		Sin(cnt, 2, color);
 	}
 	function DrawDraw(){
-		alert("drawdraw");
+		alert('DrawDraw()');
 		//var frequency = getElementById('frequency').value;
 		//alert(frequency);
 		Draw('fun_time', 'red');
@@ -58,10 +59,10 @@ section: experimental
 <input size='4' maxlength='4' id='frequency' onchange='DrawDraw()'></input>
 
 <p>Функция амплитуды от времени</p>
-<canvas id='fun_time'  onchange='DrawDraw()'>Канвас не поддерживается</canvas>
+<canvas id='fun_time'>Канвас не поддерживается</canvas>
 
 
 <p>Функция амплитуды от частоты</p>
-<canvas id='fun_w'  onchange='DrawDraw()'>Канвас не поддерживается</canvas>
+<canvas id='fun_w'>Канвас не поддерживается</canvas>
 
 
