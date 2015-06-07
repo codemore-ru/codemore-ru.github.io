@@ -54,6 +54,7 @@ section: experimental
 		}
 	}
     function Draw(name, frequency, color){
+	alert('Draw');
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '200';
@@ -63,6 +64,7 @@ section: experimental
 		Sin(cnt, frequency, color);
 	}
 	function DrawDraw(frequency){
+	alert('DrawDraw');
 		Draw('fun_time', frequency, 'red');
 		Draw('fun_w', frequency, 'blue');
 	}
