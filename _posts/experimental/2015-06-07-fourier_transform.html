@@ -75,7 +75,9 @@ section: experimental
 <p>Пробы по программированию</p>
 
 <p>Частота синусоидального сигнала</p>
-<input size='4' maxlength='4' id='frequency' onchange='DrawDraw(this.value)'></input>
+<input type='text' size='4' maxlength='4' id='frequency' onChange='DrawDraw(this.value)'></input>
+
+<input type='button' value='Ok' id='buttonOk' onClick='DrawDraw(3.14)'></input>
 
 <p>Функция амплитуды от времени</p>
 <canvas id='fun_time'>Канвас не поддерживается</canvas>
