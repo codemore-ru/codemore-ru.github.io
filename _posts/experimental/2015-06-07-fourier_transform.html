@@ -38,7 +38,7 @@ section: experimental
 		cnt.stroke();
 	}
     function Draw(name, color){
-	alert('Draw()');
+		alert('DrawDraw()');
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '300';
@@ -47,16 +47,16 @@ section: experimental
 		OY(cnt);
 		Sin(cnt, 2, color);
 	}
-	function DrawDraw(){
+	function DrawDraw(value){
 		alert('DrawDraw()');
 		//var frequency = getElementById('frequency').value;
-		//alert(frequency);
+		alert(value);
 		Draw('fun_time', 'red');
 		Draw('fun_w', 'blue');
 	}
 </script>
 <p>Частота синусоидального сигнала</p>
-<input size='4' maxlength='4' id='frequency' onchange='DrawDraw()'></input>
+<input size='4' maxlength='4' id='frequency' onchange='DrawDraw(this.value)'></input>
 
 <p>Функция амплитуды от времени</p>
 <canvas id='fun_time'>Канвас не поддерживается</canvas>
