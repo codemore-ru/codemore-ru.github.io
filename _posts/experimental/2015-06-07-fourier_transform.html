@@ -28,35 +28,44 @@ section: experimental
 		cnt.strokeStyle = 'Black';
 		cnt.stroke();
 	}
-	function Sin(cnt, frequency, color){
+	function Sin(cnt, color, frequency_1, frequency_2){
 		cnt.beginPath();
 		cnt.moveTo(10,150);
 		for(var x = 0; x < 700; ++x){
-			cnt.lineTo(10+x,150+100*Math.sin(x*Math.PI/180.0 * frequency));
+			var y1 = Math.sin(x*Math.PI/180.0 * frequency_1);
+			var y2 = Math.sin(x*Math.PI/180.0 * frequency_2);
+			cnt.lineTo(10 + x, 150 + 100 * (y1+y2);
 		}
 		cnt.strokeStyle = color;
 		cnt.stroke();
 	}
-    function Draw(name, frequency, color){
+    function Draw(name, color, frequency_1, frequency_2){
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '300';
 		cnt = cnv.getContext('2d');
 		OX(cnt);
 		OY(cnt);
-		Sin(cnt, frequency, color);
+		Sin(cnt, color, frequency_1, frequency_2);
 	}
 	function DrawDraw(frequency){
-		Draw('fun_time', frequency, 'red');
-		Draw('fun_w', frequency, 'blue');
+		var frequency_1 = document.getElementById('frequency_1').value;
+		var frequency_2 = document.getElementById('frequency_2').value;
+		Draw('fun_time', 'red', frequency_1, frequency_2);
+		//Draw('fun_w', frequency, 'blue');
+	}
+	function fft(arr){
 	}
 </script>
-<p>Частота синусоидального сигнала</p>
-<input size='4' maxlength='4' id='frequency' onchange='DrawDraw(this.value)'></input>
+
+<p>Частота №1 синусоидального сигнала</p>
+<input size='4' maxlength='4' id='frequency_1' onchange='DrawDraw()'></input>
+
+<p>Частота №2 синусоидального сигнала</p>
+<input size='4' maxlength='4' id='frequency_2' onchange='DrawDraw()'></input>
 
 <p>Функция амплитуды от времени</p>
 <canvas id='fun_time'>Канвас не поддерживается</canvas>
-
 
 <p>Функция амплитуды от частоты</p>
 <canvas id='fun_w'>Канвас не поддерживается</canvas>
