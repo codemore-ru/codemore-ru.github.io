@@ -12,13 +12,14 @@ section: experimental
 		cnt.moveTo(0,150);
 		cnt.lineTo(100,0);
 		cnt.endPath();
-		cnt.strike();
+		cnt.stroke();
 	}
     function Draw(name){
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '300';
 		cnt = cnv.getContext('2d');
+		cnt.fillRect(10,10,30,15);
 		OXY(cnt);
 	}
 </script>
