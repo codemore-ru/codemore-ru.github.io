@@ -48,8 +48,8 @@ section: experimental
 		OY(cnt);
 		Sin(cnt, color, frequency_1, frequency_2);
 	}
-	function DrawDraw(){
-		alert('DrawDraw()');
+	function DrawDraw(frequency){
+		alert(frequency);
 		var frequency_1 = document.getElementById('frequency_1').value;
 		var frequency_2 = document.getElementById('frequency_2').value;
 		alert(frequency_1,frequency_2);
@@ -61,7 +61,7 @@ section: experimental
 </script>
 
 <p>Частота №1 синусоидального сигнала</p>
-<input type='text' size='4' maxlength='4' id='frequency_1' onchange='DrawDraw()'></input>
+<input type='text' size='4' maxlength='4' id='frequency_1' onchange='DrawDraw(this.value)'></input>
 
 <p>Частота №2 синусоидального сигнала</p>
 <input type='text' size='4' maxlength='4' id='frequency_2' onchange='DrawDraw()'></input>
