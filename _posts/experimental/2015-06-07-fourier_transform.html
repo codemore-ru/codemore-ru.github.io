@@ -7,23 +7,23 @@ section: experimental
 	
 <script>
 	function OXY(cnt){
-		cnt.fillRect(250,50,10,10);
+		//cnt.fillRect(250,50,10,10);
 		cnt.beginPath();
 		cnt.moveTo(0,150);
-		cnt.lineTo(100,0);
+		cnt.lineTo(400,150);
 		cnt.strokeStyle = 'Black';
 		cnt.stroke();
-		cnt.fillRect(50,50,10,10);
+		//cnt.fillRect(50,50,10,10);
 	}
     function Draw(name){
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '300';
 		cnt = cnv.getContext('2d');
-		cnt.fillRect(10,10,30,15);
-		cnt.lineTo(50,50);
-		cnt.strokeStyle = 'Black';
-		cnt.stroke();
+		//cnt.fillRect(10,10,30,15);
+		//cnt.lineTo(50,50);
+		//cnt.strokeStyle = 'Black';
+		//cnt.stroke();
 		OXY(cnt);
 	}
 </script>
