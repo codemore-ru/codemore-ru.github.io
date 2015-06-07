@@ -37,7 +37,7 @@ section: experimental
 		cnt.strokeStyle = color;
 		cnt.stroke();
 	}
-    function Draw(name, color){
+    function Draw(name, frequency color){
 		alert('DrawDraw()');
 		cnv = document.getElementById(name);
 		cnv.width = '800';
@@ -45,14 +45,11 @@ section: experimental
 		cnt = cnv.getContext('2d');
 		OX(cnt);
 		OY(cnt);
-		Sin(cnt, 2, color);
+		Sin(cnt, frequency, color);
 	}
-	function DrawDraw(value){
-		alert('DrawDraw()');
-		//var frequency = getElementById('frequency').value;
-		alert(value);
-		Draw('fun_time', 'red');
-		Draw('fun_w', 'blue');
+	function DrawDraw(frequency){
+		Draw('fun_time', frequency, 'red');
+		Draw('fun_w', frequency, 'blue');
 	}
 </script>
 <p>Частота синусоидального сигнала</p>
