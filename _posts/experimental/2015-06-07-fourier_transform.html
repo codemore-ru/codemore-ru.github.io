@@ -48,9 +48,11 @@ section: experimental
 		OY(cnt);
 		Sin(cnt, color, frequency_1, frequency_2);
 	}
-	function DrawDraw(frequency){
+	function DrawDraw(){
+	alert('DrawDraw()');
 		var frequency_1 = document.getElementById('frequency_1').value;
 		var frequency_2 = document.getElementById('frequency_2').value;
+		alert(frequency_1,frequency_2);
 		Draw('fun_time', 'red', frequency_1, frequency_2);
 		//Draw('fun_w', frequency, 'blue');
 	}
