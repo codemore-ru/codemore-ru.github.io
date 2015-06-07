@@ -28,31 +28,30 @@ section: experimental
 		cnt.strokeStyle = 'Black';
 		cnt.stroke();
 	}
-	function Sin(cnt){
+	function Sin(cnt, color){
 		cnt.moveTo(10,150);
 		for(var x = 0; x < 700; ++x){
 			cnt.lineTo(10+x,150+100*Math.sin(x*Math.PI/180.0));
 		}
-		cnt.strokeStyle = 'Black';
+		cnt.strokeStyle = color;
 		cnt.stroke();
 	}
-    function Draw(name){
+    function Draw(name, color){
 		cnv = document.getElementById(name);
 		cnv.width = '800';
 		cnv.height = '300';
 		cnt = cnv.getContext('2d');
 		OX(cnt);
 		OY(cnt);
-		Sin(cnt);
+		Sin(cnt,color);
 	}
 </script>
 
 <p>Функция амплитуды от времени</p>
 <canvas id='fun_time'>Канвас не поддерживается</canvas>
-<script>Draw('fun_time');</script>
+<script>Draw('fun_time', 'red');</script>
 
 <p>Функция амплитуды от частоты</p>
 <canvas id='fun_w'>Канвас не поддерживается</canvas>
-<script>Draw('fun_w');</script>
+<script>Draw('fun_w', 'blue');</script>
 
-<script>Draw();</script>
