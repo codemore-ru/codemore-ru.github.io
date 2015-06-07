@@ -49,7 +49,7 @@ section: experimental
 		Sin(cnt, color, frequency_1, frequency_2);
 	}
 	function DrawDraw(){
-	alert('DrawDraw()');
+		alert('DrawDraw()');
 		var frequency_1 = document.getElementById('frequency_1').value;
 		var frequency_2 = document.getElementById('frequency_2').value;
 		alert(frequency_1,frequency_2);
@@ -61,10 +61,10 @@ section: experimental
 </script>
 
 <p>Частота №1 синусоидального сигнала</p>
-<input size='4' maxlength='4' id='frequency_1' onchange='DrawDraw()'></input>
+<input type='text' size='4' maxlength='4' id='frequency_1' onchange='DrawDraw()'></input>
 
 <p>Частота №2 синусоидального сигнала</p>
-<input size='4' maxlength='4' id='frequency_2' onchange='DrawDraw()'></input>
+<input type='text' size='4' maxlength='4' id='frequency_2' onchange='DrawDraw()'></input>
 
 <p>Функция амплитуды от времени</p>
 <canvas id='fun_time'>Канвас не поддерживается</canvas>
