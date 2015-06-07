@@ -1,0 +1,29 @@
+---
+layout: post
+title: Преобразование Фурье
+author: Valentin Gubarev
+section: experimental
+---
+	
+<script>
+	function OXY(cnt){
+		cnt.fillRect(10,10,20,20);
+		cnt.fillRect(50,50,20,20);
+	}
+    function Draw(name){
+		cnv = document.getElementById(name);
+		cnv.width = '800';
+		cnv.height = '300';
+		cnt = cnv.getContext('2d');
+		OXY(cnt);
+	}
+</script>
+
+<p>Функция амплитуды от времени</p>
+<canvas id='fun_time'>Канвас не поддерживается</canvas>
+<script>Draw('fun_time');</script>
+
+<p>Функция амплитуды от частоты</p>
+<canvas id='fun_w'>Канвас не поддерживается</canvas>
+
+<script>Draw();</script>
