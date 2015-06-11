@@ -67,9 +67,24 @@ section: experimental
 	}
 	function fft(arr){
 	}
+	function button(){
+		var real = new Float32Array(2);
+		var imag = new Float32Array(2);
+		real[0] = 0; image[0] = 0;
+		real[1] = 1; image[1] = 0;
+		var ac = new AudioContext();
+		var osc = ac.createOscillator();
+		var wave = ac.createPeriodicWave(real,imag);
+		osc.setPeriodicWave(wave);
+		osc.connect(ac.destination);
+		osc.start();
+		osc.stop(2);
+	}
 </script>
 
 <p>Пробы по программированию</p>
+
+<input type='button' onClick='button()'></input>
 
 <p>Частота синусоидального сигнала</p>
 <input type='text' size='4' maxlength='4' id='frequency_1' onChange='DrawDraw(this.value)'></input>
