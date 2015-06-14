@@ -6,6 +6,64 @@ section: experimental
 ---
 	
 <script>
+
+	var contextClass = (window.AudioContext ||
+						window.webkitAudioContext ||
+						window.mozAudioContext ||
+						window.oAudioContext ||
+						window.msAudioContext);
+						
+	var value = 0.1;
+
+	if (contextClass) {
+		// Web Audio API is available.
+		var context = new contextClass();
+	}
+
+	var oscillator1, oscillator2;
+
+	var dialTone = function(freq1, freq2){
+		oscillator1 = context.createOscillator();
+		oscillator1.type = 0;
+		oscillator1.frequency.value = freq1;
+		gainNode = context.createGain ? context.createGain() : context.createGainNode();
+		oscillator1.connect(gainNode,0,0);
+		gainNode.connect(context.destination);
+		gainNode.gain.value = value;
+		oscillator1.start ? oscillator1.start(0) : oscillator1.noteOn(0)
+
+		oscillator2 = context.createOscillator();
+		oscillator2.type = 0;
+		oscillator2.frequency.value = freq2;
+		gainNode = context.createGain ? context.createGain() : context. createGainNode();
+		oscillator2.connect(gainNode);
+		gainNode.connect(context.destination);
+
+		gainNode.gain.value = value;
+		oscillator2.start ? oscillator2.start(0) : oscillator2.noteOn(0)
+	};
+
+	function start(freq1,freq2) {
+		if (typeof oscillator1 != 'undefined') oscillator1.disconnect();
+		if (typeof oscillator2 != 'undefined') oscillator2.disconnect();
+		dialTone(freq1,freq2);
+	}
+
+	function stop() {
+		oscillator1.disconnect();
+		oscillator2.disconnect();
+	}
+
+	function valueUp(){
+		value += 0.1;
+		if (value > 1.0) value = 1.0;
+	}
+
+	function valueDown(){
+		value -= 0.1;
+		if (value < 0.0) value = 0.0;
+	}
+
 	function OX(cnt){
 		cnt.beginPath();
 		cnt.moveTo(0,100);
@@ -51,6 +109,7 @@ section: experimental
 		}
 		return arr;
 	}
+	
     function Draw(name, frequency, color){
 		cnv = document.getElementById(name);
 		cnv.width = '800';
@@ -65,26 +124,77 @@ section: experimental
 		Draw('fun_time', frequency, 'red');
 		Draw('fun_w', frequency, 'blue');
 	}
+	
 	function fft(arr){
 	}
-	function button(){
-		var real = new Float32Array(2);
-		var imag = new Float32Array(2);
-		real[0] = 0; image[0] = 0;
-		real[1] = 1; image[1] = 0;
-		var ac = new AudioContext();
-		var osc = ac.createOscillator();
-		var wave = ac.createPeriodicWave(real,imag);
-		osc.setPeriodicWave(wave);
-		osc.connect(ac.destination);
-		osc.start();
-		osc.stop(2);
-	}
+
 </script>
 
-<p>Пробы по программированию</p>
+<input type='button' value = '1'
+	onMouseDown='start(1209,697)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '2'
+	onMouseDown='start(1336,697)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '3'
+	onMouseDown='start(1477,697)'
+	onMouseUp='stop()'></input>
+<input type='button' value = 'A'
+	onMouseDown='start(1633,697)'
+	onMouseUp='stop()'></input>
 
-<input type='button' onClick='button()'></input>
+<br>
+	
+<input type='button' value = '4'
+	onMouseDown='start(1209,770)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '5'
+	onMouseDown='start(1336,770)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '6'
+	onMouseDown='start(1477,770)'
+	onMouseUp='stop()'></input>
+<input type='button' value = 'B'
+	onMouseDown='start(1633,770)'
+	onMouseUp='stop()'></input>
+	
+<br>
+	
+<input type='button' value = '7'
+	onMouseDown='start(1209,852)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '8'
+	onMouseDown='start(1336,852)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '9'
+	onMouseDown='start(1477,852)'
+	onMouseUp='stop()'></input>
+<input type='button' value = 'C'
+	onMouseDown='start(1633,852)'
+	onMouseUp='stop()'></input>
+	
+	<br>
+	
+<input type='button' value = '*'
+	onMouseDown='start(1209,941)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '0'
+	onMouseDown='start(1336,941)'
+	onMouseUp='stop()'></input>
+<input type='button' value = '#'
+	onMouseDown='start(1477,941)'
+	onMouseUp='stop()'></input>
+<input type='button' value = 'D'
+	onMouseDown='start(1633,941)'
+	onMouseUp='stop()'></input>
+	
+<br>
+
+<input type='button' value = 'громче'
+	onClick='valueUp()'></input>
+	
+<input type='button' value = 'тише'
+	onClick='valueDown()'></input>
 
 <p>Частота синусоидального сигнала</p>
 <input type='text' size='4' maxlength='4' id='frequency_1' onChange='DrawDraw(this.value)'></input>
