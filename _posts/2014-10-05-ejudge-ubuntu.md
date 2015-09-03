@@ -7,7 +7,7 @@ author: Alexey Nurgaliev
 [ejudge](https://ejudge.ru/) - система для проведения онлайн-соревнований по программированию. 
 [Документация системы](https://ejudge.ru/wiki/index.php/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_ejudge) 
 
-Будет рассмотрена установка версии 3.0.2. Проверено на виртуальных машинах в Vagrant и на облачном сервере DigitalOcean
+Будет рассмотрена установка версии 3.4.1. Проверено на виртуальных машинах в Vagrant и на облачном сервере DigitalOcean
 
 ##Предварительная настройка
 
@@ -26,7 +26,7 @@ sudo apt-get update
 sudo apt-get install -y bison flex ncurses-base libncurses-dev libncursesw5 \
   libncursesw5-dev expat libexpat1 libexpat1-dev zlib1g-dev libelf-dev \
   g++ sendmail apache2 gettext fpc mc openjdk-7-jdk openjdk-7-jre \
-  libcurl4-openssl-dev libzip-dev
+  libcurl4-openssl-dev libzip-dev uuid-dev
 
 #Установка libdwarf (нет в репозиториях ubuntu)
 wget http://pkgs.fedoraproject.org/repo/pkgs/libdwarf/libdwarf-20130207.tar.gz/64b42692e947d5180e162e46c689dfbf/libdwarf-20130207.tar.gz
@@ -47,7 +47,7 @@ sudo adduser ejudge sudo
 #создание рабочего каталога judges
 sudo mkdir -p /home/judges /home/judges/test_work
 sudo chown ejudge:ejudge /home/judges /home/judges/test_work
-sudo chmod 0755 /home/judges /home/jugdes/test_work
+sudo chmod 0755 /home/judges /home/judges/test_work
 
 #каталоги сервера
 sudo mkdir -p /var/www/ejudge/cgi-bin
@@ -69,19 +69,16 @@ sudo service apache2 restart
 cd /home/ejudge
 
 #загрузка ejudge
-wget --no-check-certificate http://www.ejudge.ru/download/ejudge-3.0.2.tgz
-tar -xvzf ejudge-3.0.2.tgz
+wget --no-check-certificate http://www.ejudge.ru/download/ejudge-3.4.1.tgz
+tar -xvzf ejudge-3.4.1.tgz
 
 cd ejudge
-
-#патч импорта из Polygon
-sed -i 's/login=/loginOrEmail=/' ./ej-polygon.c
 
 ./configure --prefix=/home/ejudge/inst-ejudge \
   --enable-contests-home-dir=/home/judges \
   --with-httpd-cgi-bin-dir=/var/www/ejudge/cgi-bin \
   --with-httpd-htdocs-dir=/var/www/ejudge/htdocs \
-  --enable-ajax
+  --enable-ajax \
   --enable-charset=utf-8
 
 make
