@@ -20,7 +20,7 @@ author: Alexey Nurgaliev
 {% highlight sh %}
 #!/bin/bash
 
-#Зависимоти и компиляторы
+#Зависимости и компиляторы
 sudo apt-get update
 sudo apt-get install -y ncurses-base libncurses-dev libncursesw5 \
   libncursesw5-dev expat libexpat1 libexpat1-dev zlib1g-dev libelf-dev \
