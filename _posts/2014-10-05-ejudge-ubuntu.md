@@ -22,10 +22,10 @@ author: Alexey Nurgaliev
 
 #Зависимоти и компиляторы
 sudo apt-get update
-sudo apt-get install -y bison flex gawk ncurses-base libncurses-dev libncursesw5 \
+sudo apt-get install -y ncurses-base libncurses-dev libncursesw5 \
   libncursesw5-dev expat libexpat1 libexpat1-dev zlib1g-dev libelf-dev \
-  g++ sendmail apache2 gettext fpc mc openjdk-7-jdk \
-  libcurl4-openssl-dev libzip-dev uuid-dev \
+  g++ gawk apache2 gettext fpc mc openjdk-7-jdk \
+  libcurl4-openssl-dev libzip-dev uuid-dev bison flex \
   mono-devel mono-runtime mono-vbnc php5-cli perl \
   ruby python python3 gccgo 
 
