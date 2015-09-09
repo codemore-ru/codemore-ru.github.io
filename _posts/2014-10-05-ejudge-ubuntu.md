@@ -15,39 +15,33 @@ author: Alexey Nurgaliev
 в файл `/var/lib/locales/supported.d/local` добавить строчку `ru_RU.UTF-8 UTF-8` и запустить команду 
 `sudo dpkg-reconfigure locales`.
 
-Загрузка и установка пакетов (отдельно устанавливается libdwarf, так как его нет в 
-репозиторях Ubuntu. Создается пользователь и группа ejudge. Также создаются рабочие каталоги.
+Загрузка и установка пакетов. Создается пользователь и группа ejudge. Также создаются рабочие каталоги.
 
 {% highlight sh %}
 #!/bin/bash
 
 #Зависимоти и компиляторы
 sudo apt-get update
-sudo apt-get install -y bison flex ncurses-base libncurses-dev libncursesw5 \
+sudo apt-get install -y bison flex gawk ncurses-base libncurses-dev libncursesw5 \
   libncursesw5-dev expat libexpat1 libexpat1-dev zlib1g-dev libelf-dev \
   g++ sendmail apache2 gettext fpc mc openjdk-7-jdk \
   libcurl4-openssl-dev libzip-dev uuid-dev \
   mono-devel mono-runtime mono-vbnc php5-cli perl \
   ruby python python3 gccgo 
 
-#Установка FreeBASIC (нет в репозитории)
-wget -O freebasic.tar.gz http://downloads.sourceforge.net/fbc/FreeBASIC-1.03.0-linux-x86.tar.gz?download
+#Установка FreeBASIC x86_64 (нет в репозитории)
+wget -O freebasic.tar.gz http://downloads.sourceforge.net/fbc/FreeBASIC-1.03.0-linux-x86_64.tar.gz?download
 sudo tar -xvf freebasic.tar.gz -C /opt/
-cd /opt/FreeBASIC-1.03.0-linux-x86/
+cd /opt/FreeBASIC-1.03.0-linux-x86_64/
 sudo ./install.sh -i
 cd
 
-#Установка libdwarf (нет в репозиториях ubuntu)
-wget http://pkgs.fedoraproject.org/repo/pkgs/libdwarf/libdwarf-20130207.tar.gz/64b42692e947d5180e162e46c689dfbf/libdwarf-20130207.tar.gz
-tar -xvzf libdwarf-20130207.tar.gz
-cd dwarf-20130207
-./configure --enable-shared
-make
-sudo mkdir -p /usr/include/libdwarf
-sudo cp libdwarf/libdwarf.so /usr/lib
-sudo cp libdwarf/*.h /usr/include/libdwarf
-sudo chmod a+r /usr/include/libdwarf/*
-cd
+#Или FreeBASIC x86 для 32-битных ОС
+#wget -O freebasic.tar.gz http://downloads.sourceforge.net/fbc/FreeBASIC-1.03.0-linux-x86.tar.gz?download
+#sudo tar -xvf freebasic.tar.gz -C /opt/
+#cd /opt/FreeBASIC-1.03.0-linux-x86/
+#sudo ./install.sh -i
+#cd
 
 #создание группы и пользователя ejudge
 sudo groupadd ejudge
