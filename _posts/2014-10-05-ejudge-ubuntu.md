@@ -166,7 +166,7 @@ server {
         gzip           off;
         root           /var/www/ejudge/;
         fastcgi_pass   unix:/var/run/fcgiwrap.socket;
-        # include      fastcgi_params;
+
         fastcgi_param  QUERY_STRING       $query_string;
         fastcgi_param  REQUEST_METHOD     $request_method;
         fastcgi_param  CONTENT_TYPE       $content_type;
@@ -186,15 +186,14 @@ server {
         fastcgi_param  REMOTE_PORT        $remote_port;
         fastcgi_param  SERVER_ADDR        $server_addr;
         fastcgi_param  SERVER_PORT        $server_port;
-        # According to RFC3875 (https://tools.ietf.org/html/rfc3875#section-4.1.14) in SERVER_NAME
-        # we should put actual hostname user came to. For nginx it is in $host
-        # This will allow to run multihost instances
         fastcgi_param  SERVER_NAME        $host;
     }
 }
 {% endhighlight %}
 
 Конфигурация основана на статье в [debian wiki](https://wiki.debian.org/ru/nginx/FastCGI).
+
+ejudge также будет доступен по адресу http://localhost:80
 
 ##Проверка установки
 
