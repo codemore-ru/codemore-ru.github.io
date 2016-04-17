@@ -1,5 +1,3 @@
 name: Code More
-markdown: kramdown
-highlighter: pygments
 
 exclude: ['.git', '.vagrant', 'Vagrantfile', 'provision.sh', 'CNAME', 'README.md']
