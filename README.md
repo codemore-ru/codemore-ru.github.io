@@ -1,3 +1,4 @@
-### n-at.github.io
+codemore.ru
+===========
 
-A new "Code More" site. Currently available at <http://www.codemore.info>
+A new "Code More" site.
