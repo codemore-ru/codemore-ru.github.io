@@ -9,7 +9,7 @@ author: Alexey Nurgaliev
 
 Будет рассмотрена установка версии 3.4.2. Проверено на виртуальных машинах в Vagrant и на облачном сервере DigitalOcean
 
-##Предварительная настройка
+## Предварительная настройка
 
 Для возможности выбора русского языка интерфейса может потребоваться установка дополнительной локали. Для этого нужно 
 в файл `/var/lib/locales/supported.d/local` добавить строчку `ru_RU.UTF-8 UTF-8` и запустить команду 
@@ -17,7 +17,7 @@ author: Alexey Nurgaliev
 
 Загрузка и установка пакетов. Создается пользователь и группа ejudge. Также создаются рабочие каталоги.
 
-{% highlight sh %}
+{% highlight bash %}
 #!/bin/bash
 
 #Зависимости и компиляторы
@@ -63,11 +63,11 @@ sudo a2enmod cgi
 sudo service apache2 restart
 {% endhighlight %}
 
-##Сборка ejudge
+## Сборка ejudge
 
 Собирать и устанавливать лучше под пользователем ejudge. Пример, как можно сменить пользователя: `sudo su ejudge`
 
-{% highlight sh %}
+{% highlight bash %}
 #!/bin/bash
 
 cd /home/ejudge
@@ -89,7 +89,7 @@ make
 make install
 {% endhighlight %}
 
-##Конфигурация
+## Конфигурация
 
 Запуск программы конфигурации: `/home/ejudge/ejudge/ejudge-setup`
 
@@ -97,11 +97,11 @@ make install
 
 Также нужно не забыть указать данные администратора в разделе *Administrator identity*
 
-##Установка
+## Установка
 
 Запустить от имени root: `sudo /home/ejudge/ejudge/ejudge-install.sh`
 
-##Запуск
+## Запуск
 
 Запускается система **только** от имени пользователя ejudge!
 
@@ -111,31 +111,30 @@ make install
 
 Запуск ejudge: `./ejudge-control start`
 
-##Настройка apache2
+## Настройка apache2
 
 Пример конфигурации виртуального хоста для apache2 версии 2.4:
 
-{% highlight apache %}
-<VirtualHost *:80>
-	DocumentRoot /var/www/ejudge/htdocs
+    <VirtualHost *:80>
+        DocumentRoot /var/www/ejudge/htdocs
 
-	ScriptAlias /cgi-bin/ "/var/www/ejudge/cgi-bin/"
+        ScriptAlias /cgi-bin/ "/var/www/ejudge/cgi-bin/"
 
-	<Directory "/var/www/ejudge/cgi-bin">
-		Options +ExecCGI +FollowSymLinks +Includes
-		AllowOverride None
-		Require all granted
-	</Directory>
+        <Directory "/var/www/ejudge/cgi-bin">
+            Options +ExecCGI +FollowSymLinks +Includes
+            AllowOverride None
+            Require all granted
+        </Directory>
 
-	<Directory "/var/www/ejudge/htdocs">
-		Require all granted
-	</Directory>
+        <Directory "/var/www/ejudge/htdocs">
+            Require all granted
+        </Directory>
 
-	ErrorLog ${APACHE_LOG_DIR}/error.log
-	CustomLog ${APACHE_LOG_DIR}/access.log combined
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-</VirtualHost>
-{% endhighlight %}
+    </VirtualHost>
+
 
 ejudge будет доступен по адресу http://localhost:80
 
@@ -145,7 +144,7 @@ ejudge будет доступен по адресу http://localhost:80
 
 Установка пакетов:
 
-{% highlight sh %}
+{% highlight bash %}
 #Удаление apache
 sudo apt-get remove --autoremove apache2
 
@@ -155,47 +154,45 @@ sudo apt-get install nginx fcgiwrap
 
 Конфигурация сервера:
 
-{% highlight nginx %}
-server {
+    server {
 
- listen 80;
- server_name localhost;
- root /var/www/ejudge/htdocs/;
+     listen 80;
+     server_name localhost;
+     root /var/www/ejudge/htdocs/;
 
- location ~ ^/cgi-bin/.* {
-        gzip           off;
-        root           /var/www/ejudge/;
-        fastcgi_pass   unix:/var/run/fcgiwrap.socket;
+     location ~ ^/cgi-bin/.* {
+            gzip           off;
+            root           /var/www/ejudge/;
+            fastcgi_pass   unix:/var/run/fcgiwrap.socket;
 
-        fastcgi_param  QUERY_STRING       $query_string;
-        fastcgi_param  REQUEST_METHOD     $request_method;
-        fastcgi_param  CONTENT_TYPE       $content_type;
-        fastcgi_param  CONTENT_LENGTH     $content_length;
+            fastcgi_param  QUERY_STRING       $query_string;
+            fastcgi_param  REQUEST_METHOD     $request_method;
+            fastcgi_param  CONTENT_TYPE       $content_type;
+            fastcgi_param  CONTENT_LENGTH     $content_length;
 
-        fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
-        fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
-        fastcgi_param  REQUEST_URI        $request_uri;
-        fastcgi_param  DOCUMENT_URI       $document_uri;
-        fastcgi_param  DOCUMENT_ROOT      $document_root;
-        fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+            fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+            fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+            fastcgi_param  REQUEST_URI        $request_uri;
+            fastcgi_param  DOCUMENT_URI       $document_uri;
+            fastcgi_param  DOCUMENT_ROOT      $document_root;
+            fastcgi_param  SERVER_PROTOCOL    $server_protocol;
 
-        fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
-        fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
+            fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+            fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
 
-        fastcgi_param  REMOTE_ADDR        $remote_addr;
-        fastcgi_param  REMOTE_PORT        $remote_port;
-        fastcgi_param  SERVER_ADDR        $server_addr;
-        fastcgi_param  SERVER_PORT        $server_port;
-        fastcgi_param  SERVER_NAME        $host;
+            fastcgi_param  REMOTE_ADDR        $remote_addr;
+            fastcgi_param  REMOTE_PORT        $remote_port;
+            fastcgi_param  SERVER_ADDR        $server_addr;
+            fastcgi_param  SERVER_PORT        $server_port;
+            fastcgi_param  SERVER_NAME        $host;
+        }
     }
-}
-{% endhighlight %}
 
 Конфигурация основана на статье в [debian wiki](https://wiki.debian.org/ru/nginx/FastCGI).
 
 ejudge также будет доступен по адресу http://localhost:80
 
-##Проверка установки
+## Проверка установки
 
 Если все сделано правильно, то административный интерфейс ejudge будет доступен по адресу 
 `http://localhost/cgi-bin/serve-control`
