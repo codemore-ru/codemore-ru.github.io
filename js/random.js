@@ -7,10 +7,10 @@
 	];
 	
 	var str = "";
-	str += arr[0];
-	str += arr[1];
-	str += arr[2];
-	str += arr[3];
+	if (document.getElementById('arr0').checked) str += arr[0];
+	if (document.getElementById('arr1').checked) str += arr[1];
+	if (document.getElementById('arr2').checked) str += arr[2];
+	if (document.getElementById('arr3').checked) str += arr[3];
 	
 	var rez = "";
 	for(var i = 0; i < 10; ++i)
