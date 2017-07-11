@@ -13,7 +13,8 @@
 	if (document.getElementById('arr3').checked) str += arr[3];
 	
 	var rez = "";
-	for(var i = 0; i < 10; ++i)
+	var len = document.getElementById('length').value;
+	for(var i = 0; i < len; ++i)
 		rez += str[Math.floor(str.length * Math.random())];
 	document.getElementById('text').value = rez;
 }
