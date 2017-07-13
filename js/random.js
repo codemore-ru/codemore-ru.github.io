@@ -11,6 +11,7 @@
 	if (document.getElementById('arr1').checked) str += arr[1];
 	if (document.getElementById('arr2').checked) str += arr[2];
 	if (document.getElementById('arr3').checked) str += arr[3];
+	if (document.getElementById('arr4').checked) str += document.getElementById('user').value;
 	
 	var rez = "";
 	var len = document.getElementById('length').value;
