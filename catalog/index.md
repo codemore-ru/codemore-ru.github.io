@@ -118,6 +118,7 @@ title: Каталог ссылок
 [WebReference](https://webref.ru)|Универсальный самоучитель и справочник по HTML, CSS. Содержит множественные статьи, в том числе по технологиям. Создатель ресурса Влад Мержевич
 [Шпаргалка Блоггера](http://shpargalkablog.ru/p/html-css-javascript.html)|Содержит шпаргалки, уроки, примеры по HTML, CSS, JavaScript, PHP, SVG и youtube
 [Wisdomweb](http://www.wisdomweb.ru)|На этом ресурсе Вы найдёте бесплатные онлайн учебники и справочники по всем популярным веб-технологиям (JavaScript, HTML, HTML5, XHTML, HDOM, jQuery, AJAX, JSON, CSS), которые используются для создания веб-сайтов
+[html5book](https://html5book.ru)|Универсальный самоучитель и справочник по HTML 5, CSS, JavaScript. Так же содержит разделы по типографике и вёрстке
 {: .table }
 
 
