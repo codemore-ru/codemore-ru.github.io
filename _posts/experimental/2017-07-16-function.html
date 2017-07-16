@@ -1,0 +1,113 @@
+---
+layout: post
+title: Построение графиков аналитической функции
+author: Valentin Gubarev
+section: experimental
+---
+
+<canvas height='550' width='311' id='example'>Обновите браузер</canvas>
+		<br>Размер холста по горизонтали
+		<input type='text' value='311' style='font-family:monospace' size='3em' maxlength='3' id='size_canvas_x'></input>
+		<br>Размер холста по вертикали
+		<input type='text' value='550' style='font-family:monospace' size='3em' maxlength='3' id='size_canvas_y'></input>
+		<br>Функция для расчёта
+		<input type='text' value='x*x*x/3-2*x*x+3*x+1' style='font-family:monospace' size='30em' maxlength='30' id='function'></input>
+		<br>Масштаб по горизонтали
+		<input type='text' value='50' style='font-family:monospace' size='3em' maxlength='3' id='scale_x'></input>
+		<br>Масштаб по вертикали
+		<input type='text' value='50' style='font-family:monospace' size='3em' maxlength='3' id='scale_y'></input>
+		<br>Проекции точек
+		<br>x<sub>1</sub>=<input type='text' value='1' style='font-family:monospace' size='4em' maxlength='4' id='point_1'></input>
+		<br>x<sub>2</sub>=<input type='text' value='3' style='font-family:monospace' size='4em' maxlength='4' id='point_2'></input>
+		
+		<br><input type='button' value='Исполнить' onClick='go()'></input>
+		<script>
+			function go(){
+				var canvas = document.getElementById('example');
+				canvas.width = document.getElementById('size_canvas_x').value;
+				canvas.height = document.getElementById('size_canvas_y').value;
+				draw_grafic();
+			}
+			function y(x){
+				return eval(document.getElementById('function').value);
+			}
+			function Ox(){
+				for(var x = -1; x <= 5; ++x){
+					ctx.moveTo(10+x*sx+.5,7*sy-3+.5);
+					ctx.lineTo(10+x*sx+.5,7*sy+3+.5);
+				}
+				// стрелка вправо (Ox)
+				ctx.moveTo(10+6*sx+.5,7*sy+.5);
+				ctx.lineTo(10+6*sx-10+.5,7*sy-3+.5);
+				ctx.moveTo(10+6*sx+.5,7*sy+.5);
+				ctx.lineTo(10+6*sx-10+.5,7*sy+3+.5);
+			}
+			function Oy(){
+				for(var y = -3; y <= 6; ++y){
+					ctx.moveTo(10+1*sx-3+.5,7*sy-y*sy+.5);
+					ctx.lineTo(10+1*sx+3+.5,7*sy-y*sy+.5);
+				}
+				// стрелка вверх (Oy)
+				ctx.moveTo(10+1*sx+.5,0);
+				ctx.lineTo(10+1*sx+3+.5,10);
+				ctx.moveTo(10+1*sx+.5,0);
+				ctx.lineTo(10+1*sx-3+.5,10);
+			}
+			function point(x,y){
+				var r = 3;
+				ctx.beginPath();
+				ctx.moveTo(10+1*sx+x*sx+.5+r, 7*sy-y*sy+.5);
+				ctx.arc(10+1*sx+x*sx+.5, 7*sy-y*sy+.5, r, 0 * Math.PI, 2 * Math.PI, true);
+				ctx.fillStyle = 'WHITE';
+				ctx.fill();
+				ctx.moveTo(10+1*sx+x*sx+.5+r, 7*sy-y*sy+.5);
+				ctx.arc(10+1*sx+x*sx+.5, 7*sy-y*sy+.5, r, 0 * Math.PI, 2 * Math.PI, true);
+				ctx.stroke();
+			}
+			
+			function proection(x){
+				ctx.beginPath();
+					ctx.moveTo(Math.round(10+sx     )+.5,Math.round(7*sy-y(x)*sy)+.5);
+					ctx.lineTo(Math.round(10+sx+x*sx)+.5,Math.round(7*sy-y(x)*sy)+.5);
+					ctx.moveTo(Math.round(10+sx+x*sx)+.5,Math.round(7*sy        )+.5);
+					ctx.lineTo(Math.round(10+sx+x*sx)+.5,Math.round(7*sy-y(x)*sy)+.5);
+				ctx.stroke();
+				point(x,y(x));
+				point(x,0);
+				point(0,y(x));
+			}
+			function draw_grafic(){
+				var example = document.getElementById('example');
+				ctx = example.getContext('2d');
+				sx = parseFloat(document.getElementById('scale_x').value);
+				sy = parseFloat(document.getElementById('scale_y').value);
+				ctx.beginPath();
+					ctx.moveTo(10+1*sx+.5,0+.5);
+					ctx.lineTo(10+1*sx+.5,11*sy+.5);
+					ctx.moveTo(0+.5,7*sy+.5);
+					ctx.lineTo(10+6*sx+.5,7*sy+.5);
+					Ox();
+					Oy();
+				ctx.stroke();
+				
+				draw_function();
+				
+				// Отображение точек и их проекций
+				ctx.lineWidth=1;
+				proection(parseFloat(document.getElementById('point_1').value));
+				proection(parseFloat(document.getElementById('point_2').value));				
+			}
+			function draw_function(){
+				// отображение функции (толщина линии другая)
+				ctx.beginPath();
+				var x0 = 10+1*sx+.5;
+				var y0 =  0+7*sy+.5;
+				ctx.lineWidth=3;
+				ctx.moveTo(x0+(-.9)*sx,y0-y(-.9)*sy);
+				for (var x = -.9+1/100.0; x < 5; x += 1/100){
+					ctx.lineTo(x0+x*sx,y0-y(x)*sy);
+				}
+				ctx.stroke();
+			}
+			draw_grafic();
+		</script>
