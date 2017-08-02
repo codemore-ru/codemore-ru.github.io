@@ -8,108 +8,31 @@ title: Международный чемпионат математически�
 
 <div class="sub-header">{{ page.title }}</div>
 
-<p><a href="http://nveg.ru">Официальный сайт чемпионата математических и логических игр в России</a></p>
-<p><a href="http://www.vinc17.org/cijml/index.fr.html">Французский сайт vinc17.org</a></p>
-<p><a href="http://www.ffjm.org">Французский сайт ffjm.org</a></p>
-
-<p>Категории участников:</p>
-<ul>
-    <li>CE – учащиеся 1 и 2 классов</li>
-    <li>CE – учащиеся 1 и 2 классов</li>
-    <li>CM – учащиеся 3, 4 и 5 классов</li>
-    <li>C1 – учащиеся 6 и 7 классов</li>
-    <li>C2 – учащиеся 8 и 9 классов</li>
-    <li>L1 – учащиеся 10 и 11 классов</li>
-    <li>L2 – студенты высших учебных заведений 4-5(6) курсов</li>
-    <li>GP – студенты 1-3 курсов высших учебных заведений; учащиеся техникумов, лицеев, колледжей; взрослые, не имеющие специального математического образования</li>
-    <li>HC – взрослые, имеющие математическое образование</li>
+<!-- Разделы -->
+<ul class="nav nav-pills nav-justified index-sections">
+    <li>
+        <a href="/mathematiques/achievments"><i class="fa fa-certificate"></i> Достижения</a>
+    </li>
+    <li>
+        <a href="/mathematiques/photo"><i class="fa fa-users"></i> Фотографии</a>
+    </li>
+    <li>
+        <a href="/mathematiques/other"><i class="fa fa-file-text-o"></i> Прочее</a>
+    </li>
+    <li>
+        <a href="/mathematiques/tasks"><i class="fa fa-puzzle-piece"></i> Задачи</a>
+    </li>
 </ul>
 
-<table class="table table-hover">
-	<tr>
-		<th text-align='center'>Название тура</th>
-		<th>Задание</th>
-		<th>Бланк</th>
-		<th>Ответы</th>
-		<th>Разбор</th>
-	</tr>
-	<tr>
-		<td>2015-2016 год. 2-й тур (заочный)</td>
-		<td><a href="/docs/mathematiques/2016_zadania_2tur.pdf">pdf</a></td>
-		<td><a href="/docs/mathematiques/2016_blank_2tur.pdf">pdf</a> <br>
-		    <a href="/docs/mathematiques/2016_blank_2tur.doc">doc</a></td>
-		<td><a href="/docs/mathematiques/2016_ansvers_2tur.pdf">pdf</a></td>
-		<td><a href="/docs/mathematiques/2016_solutions_2tur_original.pdf">pdf (оригинал)</a></td>
-	</tr>
-	<tr>
-		<td>2015-2016 год. 1-й тур (заочный)</td>
-		<td><a href="/docs/mathematiques/2016_zadania_1tur.pdf">pdf</a></td>
-		<td><a href="/docs/mathematiques/2016_blank_1tur.pdf">pdf</a> <br>
-		    <a href="/docs/mathematiques/2016_blank_1tur.doc">doc</a></td>
-		<td><a href="/docs/mathematiques/2016_ansvers_1tur.pdf">pdf</a></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>2014-2015 год. 2-й тур (заочный)</td>
-		<td><a href="/docs/mathematiques/2015_zadania_2tur.pdf">pdf</a> <br>
-		    <a href="/docs/mathematiques/2015_zadania_2tur_original.pdf">pdf (оригинал)</a></td>
-		<td><a href="/docs/mathematiques/2015_blank_2tur.pdf">pdf</a> <br>
-		    <a href="/docs/mathematiques/2015_zadania_2tur_original.pdf">pdf (оригинал)</a></td>
-		<td><a href="/docs/mathematiques/2015_ansvers_2tur.docx">docx</a></td>
-		<td><a href="/docs/mathematiques/2015_solutions_2tur_original.pdf">pdf (оригинал)</a></td>
-	</tr>
-	<tr>
-		<td>2014-2015 год. 1-й тур (заочный)</td>
-		<td><a href="/docs/mathematiques/2015_zadania_1tur.pdf">pdf</a></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>2013-2014 год. 4-й тур 2-ой день(очный)</td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>2013-2014 год. 4-й тур 1-ый день (очный)</td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>2013-2014 год. 3-й тур (очный)</td>
-		<td></td>
-		<td></td>
-		<td><a href="/docs/mathematiques/2014_ansvers_3tur.pdf">pdf</a></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>2013-2014 год. 2-й тур (заочный)</td>
-		<td><a href="/docs/mathematiques/2014_zadania_2tur.pdf">pdf</a></td>
-		<td><a href="/docs/mathematiques/2014_blank_2tur.pdf">pdf</a></td>
-		<td><a href="/docs/mathematiques/2014_ansvers_2tur.pdf">pdf</a></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>2013-2014 год. 1-й тур (заочный)</td>
-		<td><a href="/docs/mathematiques/2014_zadania_1tur.pdf">pdf</a></td>
-		<td><a href="/docs/mathematiques/2014_blank_1tur.pdf">pdf</a></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
+<!-- Статьи -->
 {% for post in site.posts %}
 	{% if post.section == 'mathematiques' %}
-		<p class="article-item">
-        <span class="post-date">{{ post.date | date_to_string }}</span>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-		{% if post.author %}
-            <span class="text-info"> / {{ post.author }}</span>
-		{% endif %}
-		</p>
+	<p class="article-item">
+			<span class="post-date">{{ post.date | date_to_string }}</span>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			{% if post.author %}
+                <span class="text-info"> / {{ post.author }}</span>
+			{% endif %}
+	</p>
 	{% endif %}
 {% endfor %}

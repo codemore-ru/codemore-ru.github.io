@@ -1,3 +1,17 @@
+.index-sections {
+    margin-bottom: 20px;
+}
+
+.index-sections a {
+    min-height: 50px;
+    color: #d77636;
+}
+
+.index-sections i {
+    margin-bottom: 10px;
+}
+
+
 .navbar-default {
     background-color: #d77636;
 }

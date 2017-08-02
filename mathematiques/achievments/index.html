@@ -1,0 +1,53 @@
+---
+layout: page-base
+title: Достижения
+---
+
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/mathematiques.css">
+
+<link rel="stylesheet" href="/css/lightbox.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<script src="/js/lightbox.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script>
+    var mathLogic = [
+        {file: "DiplomaMathLog_2011_06_01_1.jpg", title: ""},
+        {file: "DiplomaMathLog_2011_06_01_2.jpg", title: ""},
+        {file: "DiplomaMathLog_2011_08_27.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_1.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_2.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_3.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_4.jpg", title: ""},
+        {file: "DiplomaMathLog_2012_06_01_5.jpg", title: ""},
+		{file: "DiplomaMathLog_2013_08_29.jpg", title: ""},
+		{file: "DiplomaMathLog_2014_06_01_1.jpg", title: ""},
+		{file: "DiplomaMathLog_2014_06_01_2.jpg", title: ""},
+		{file: "DiplomaMathLog_2014_06_01_3.jpg", title: ""},
+		{file: "DiplomaMathLog_2014_06_01_4.jpg", title: ""},
+		{file: "DiplomaMathLog_2014_06_01_5.jpg", title: ""},
+		{file: "DiplomaMathLog_2014_08_28_1.jpg", title: ""},
+		{file: "DiplomaMathLog_2014_08_28_2.jpg", title: ""},
+		{file: "DiplomaMathLog_2015_06_09_1.jpg", title: ""},
+		{file: "DiplomaMathLog_2015_06_09_2.jpg", title: ""},
+		{file: "DiplomaMathLog_2016_06_03_1.jpg", title: ""},
+		{file: "DiplomaMathLog_2016_06_03_2.jpg", title: ""},
+		{file: "DiplomaMathLog_2016_06_03_3.jpg", title: ""},
+    ];
+    var gratitude = [
+		{file: "DiplomaMathLog_2014_06_01_6.jpg", title: ""},
+    ];
+    $(function(){
+        addImages('math-logic', mathLogic);
+        addImages('gratitude', gratitude);
+    });
+</script>
+
+<div class="sub-header">{{ page.title }}</div>
+
+<h3>Международный чемпионат математических и логических игр</h3>
+<div id="math-logic"></div>
+
+<h3>Благодарственные письма</h3>
+<div id="gratitude"></div>
