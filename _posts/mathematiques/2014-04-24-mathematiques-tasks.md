@@ -5,9 +5,10 @@ section: mathematiques-tasks
 author: Nadezhda Motina
 ---
 
-### Условия Задач Международного Чемпионата Математических и Логических Игр (на французском)
+### Условия Задач Международного Чемпионата Математических и Логических Игр 2002 - 2017 (на французском)
 
-Источник: [http://homepage.hispeed.ch/FSJM/archives.htm](http://homepage.hispeed.ch/FSJM/archives.htm)
+Источник: [http://homepage.hispeed.ch/FSJM/archives.htm](http://homepage.hispeed.ch/FSJM/archives.htm)  
+[http://www.vinc17.org/cijml/index.fr.html#liens1](http://www.vinc17.org/cijml/index.fr.html#liens1) 
 
 ### 2016 - 2017
 
@@ -177,3 +178,169 @@ author: Nadezhda Motina
 Международный финал (день 2, часть 1)|[условия](/docs/mathematiques/MathLog_2002_FinalInternationale_2_1.pdf)
 Международный финал (день 2, часть 2)|[условия](/docs/mathematiques/MathLog_2002_FinalInternationale_2_2.pdf)
 {: .table}
+
+### Условия Задач Международного Чемпионата Математических и Логических Игр 1988 - 2001 (на французском)
+
+Источник: [http://www.vinc17.org/cijml/index.fr.html#liens1](http://www.vinc17.org/cijml/index.fr.html#liens1) 
+
+### 2001  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_2001_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_2001_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_2001_Demi.doc)|[pdf](/docs/mathematiques/MathLog_2001_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_2001_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_2001_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_2001_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_2001_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_2001_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_2001_FinalInternationale_2.pdf)
+{: .table}
+
+### 2000  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_2000_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_2000_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_2000_Demi.doc)|[pdf](/docs/mathematiques/MathLog_2000_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_2000_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_2000_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_2000_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_2000_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_2000_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_2000_FinalInternationale_2.pdf)
+{: .table}
+
+### 1999  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1999_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1999_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1999_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1999_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1999_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1999_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1999_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1999_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1999_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1999_FinalInternationale_2.pdf)
+{: .table}
+
+### 1998  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1998_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1998_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1998_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1998_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1998_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1998_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1998_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1998_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1998_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1998_FinalInternationale_2.pdf)
+{: .table}
+
+### 1997  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1997_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1997_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1997_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1997_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1997_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1997_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1997_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1997_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1997_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1997_FinalInternationale_2.pdf)
+{: .table}
+
+### 1996  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1996_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1996_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1996_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1996_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1996_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1996_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1996_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1996_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1996_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1996_FinalInternationale_2.pdf)
+{: .table}
+
+### 1995  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1995_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1995_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1995_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1995_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1995_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1995_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1995_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1995_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1995_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1995_FinalInternationale_2.pdf)
+{: .table}
+
+### 1994  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1994_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1994_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1994_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1994_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1994_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1994_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1994_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1994_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1994_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1994_FinalInternationale_2.pdf)
+{: .table}
+
+### 1993  
+
+|-|-|-|
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1993_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1993_Quarts.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1993_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1993_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1993_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1993_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1993_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1993_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1993_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1993_FinalInternationale_2.pdf)
+{: .table}
+
+### 1992  
+
+|-|-|-|
+Четвертьфинал (часть 1)|[doc](/docs/mathematiques/MathLog_1992_Quarts_1.doc)|[pdf](/docs/mathematiques/MathLog_1992_Quarts_1.pdf)
+Четвертьфинал (часть 2)|[doc](/docs/mathematiques/MathLog_1992_Quarts_2.doc)|[pdf](/docs/mathematiques/MathLog_1992_Quarts_2.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1992_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1992_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1992_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1992_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1992_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1992_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1992_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1992_FinalInternationale_2.pdf)
+{: .table}
+
+### 1991  
+
+|-|-|-|
+1/8 финала|[doc](/docs/mathematiques/MathLog_1991_Eight.doc)|[pdf](/docs/mathematiques/MathLog_1991_Eight.pdf)
+Четвертьфинал (часть 1)|[doc](/docs/mathematiques/MathLog_1991_Quarts_1.doc)|[pdf](/docs/mathematiques/MathLog_1991_Quarts_1.pdf)
+Четвертьфинал (часть 2)|[doc](/docs/mathematiques/MathLog_1991_Quarts_2.doc)|[pdf](/docs/mathematiques/MathLog_1991_Quarts_2.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1991_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1991_Demi.pdf)
+Региональные финалы|[doc](/docs/mathematiques/MathLog_1991_FinalRegionale.doc)|[pdf](/docs/mathematiques/MathLog_1991_FinalRegionale.pdf)
+Международый финал (часть 1)|[doc](/docs/mathematiques/MathLog_1991_FinalInternationale_1.doc)|[pdf](/docs/mathematiques/MathLog_1991_FinalInternationale_1.pdf)
+Международый финал (часть 2)|[doc](/docs/mathematiques/MathLog_1991_FinalInternationale_2.doc)|[pdf](/docs/mathematiques/MathLog_1991_FinalInternationale_2.pdf)
+{: .table}
+
+### 1990  
+
+|-|-|-|
+Четвертьфинал (часть 1)|[doc](/docs/mathematiques/MathLog_1990_Quarts_1.doc)|[pdf](/docs/mathematiques/MathLog_1990_Quarts_1.pdf)
+Четвертьфинал (часть 2)|[doc](/docs/mathematiques/MathLog_1990_Quarts_2.doc)|[pdf](/docs/mathematiques/MathLog_1990_Quarts_2.pdf)
+Четвертьфинал (часть 3)|[doc](/docs/mathematiques/MathLog_1990_Quarts_3.doc)|[pdf](/docs/mathematiques/MathLog_1990_Quarts_3.pdf)
+Четвертьфинал (часть 4)|[doc](/docs/mathematiques/MathLog_1990_Quarts_4.doc)|[pdf](/docs/mathematiques/MathLog_1990_Quarts_4.pdf)
+Полуфинал|[doc](/docs/mathematiques/MathLog_1990_Demi.doc)|[pdf](/docs/mathematiques/MathLog_1990_Demi.pdf)
+Финал (часть 1)|[doc](/docs/mathematiques/MathLog_1990_Final_1.doc)|[pdf](/docs/mathematiques/MathLog_1990_Final_1.pdf)
+Финал (часть 2)|[doc](/docs/mathematiques/MathLog_1990_Final_2.doc)|[pdf](/docs/mathematiques/MathLog_1990_Final_2.pdf)
+{: .table}
+
+### 1989  
+
+|-|-|-|
+1/8 финала (часть 1)|[doc](/docs/mathematiques/MathLog_1989_Eight_1.doc)|[pdf](/docs/mathematiques/MathLog_1989_Eight_1.pdf)
+1/8 финала (часть 2)|[doc](/docs/mathematiques/MathLog_1989_Eight_2.doc)|[pdf](/docs/mathematiques/MathLog_1989_Eight_2.pdf)
+1/8 финала (часть 3)|[doc](/docs/mathematiques/MathLog_1989_Eight_3.doc)|[pdf](/docs/mathematiques/MathLog_1989_Eight_3.pdf)
+1/8 финала (часть 4)|[doc](/docs/mathematiques/MathLog_1989_Eight_4.doc)|[pdf](/docs/mathematiques/MathLog_1989_Eight_4.pdf)
+1/8 финала (часть 5)|[doc](/docs/mathematiques/MathLog_1989_Eight_5.doc)|[pdf](/docs/mathematiques/MathLog_1989_Eight_5.pdf)
+Четвертьфинал|[doc](/docs/mathematiques/MathLog_1989_Quarts.doc)|[pdf](/docs/mathematiques/MathLog_1989_Quarts.pdf)
+Полуфинал (часть 1)|[doc](/docs/mathematiques/MathLog_1989_Demi_1.doc)|[pdf](/docs/mathematiques/MathLog_1989_Demi_1.pdf)
+Полуфинал (часть 2)|[doc](/docs/mathematiques/MathLog_1989_Demi_2.doc)|[pdf](/docs/mathematiques/MathLog_1989_Demi_2.pdf)
+Финал (часть 1)|[doc](/docs/mathematiques/MathLog_1989_Final_1.doc)|[pdf](/docs/mathematiques/MathLog_1989_Final_1.pdf)
+Финал (часть 2)|[doc](/docs/mathematiques/MathLog_1989_Final_2.doc)|[pdf](/docs/mathematiques/MathLog_1989_Final_2.pdf)
+{: .table}
+
+### 1988  
+
+|-|-|-|
+Четвертьфинал (часть 1)|[doc](/docs/mathematiques/MathLog_1988_Quarts_1.doc)|[pdf](/docs/mathematiques/MathLog_1988_Quarts_1.pdf)
+Четвертьфинал (часть 2)|[doc](/docs/mathematiques/MathLog_1988_Quarts_2.doc)|[pdf](/docs/mathematiques/MathLog_1988_Quarts_2.pdf)
+Четвертьфинал (часть 3)|[doc](/docs/mathematiques/MathLog_1988_Quarts_3.doc)|[pdf](/docs/mathematiques/MathLog_1988_Quarts_3.pdf)
+Четвертьфинал (часть 4)|[doc](/docs/mathematiques/MathLog_1988_Quarts_4.doc)|[pdf](/docs/mathematiques/MathLog_1988_Quarts_4.pdf)
+Четвертьфинал (часть 5)|[doc](/docs/mathematiques/MathLog_1988_Quarts_5.doc)|[pdf](/docs/mathematiques/MathLog_1988_Quarts_5.pdf)
+Полуфинал (часть 1)|[doc](/docs/mathematiques/MathLog_1988_Demi_1.doc)|[pdf](/docs/mathematiques/MathLog_1988_Demi_1.pdf)
+Полуфинал (часть 2)|[doc](/docs/mathematiques/MathLog_1988_Demi_2.doc)|[pdf](/docs/mathematiques/MathLog_1988_Demi_2.pdf)
+Финал|[doc](/docs/mathematiques/MathLog_1988_Final.doc)|[pdf](/docs/mathematiques/MathLog_1988_Final.pdf)
+{: .table}
+
+
+
+
+
+
+
+
+
