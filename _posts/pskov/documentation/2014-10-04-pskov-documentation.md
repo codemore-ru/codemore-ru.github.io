@@ -12,4 +12,5 @@ section: pskov-documentation
 Тренировочные задачи|[pdf](/docs/pskov/Docs_4.pdf)|[doc](/docs/pskov/Docs_4.doc)
 Создание консольного приложения в Microsoft Visual Studio 2008|[pdf](/docs/pskov/Docs_5.pdf)|[doc](/docs/pskov/Docs_5.doc)
 Создание консольного приложения в Delphi 7|[pdf](/docs/pskov/Docs_6.pdf)|[doc](/docs/pskov/Docs_6.doc)
+Создание консольного приложения в Free Pascal 3.0.2|[pdf](/docs/pskov/ConsoleFreePascal.pdf)|[doc](/docs/pskov/ConsoleFreePascal.doc)
 {: .table}
