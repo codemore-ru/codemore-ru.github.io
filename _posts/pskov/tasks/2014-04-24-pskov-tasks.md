@@ -6,6 +6,7 @@ author: Valentin Gubarev
 ---
 
 |-|-|-|
+Условия задач олимпиады ПсковГУ 2017|[pdf](/docs/pskov/Tasks_2017_09_22.pdf)|[docx](/docs/pskov/Tasks_2017_09_22.docx)
 Условия задач олимпиады ПсковГУ 2016|[pdf](/docs/pskov/Tasks_2016_04_02.pdf)|[docx](/docs/pskov/Tasks_2016_04_02.docx)
 Условия задач олимпиады ПсковГУ 2014|[pdf](/docs/pskov/Tasks_2014_03_22.pdf)|[docx](/docs/pskov/Tasks_2014_03_22.docx)
 Условия задач олимпиады ПсковГУ 2013|[pdf](/docs/pskov/Tasks_2013_09_13.pdf)|[docx](/docs/pskov/Tasks_2013_09_13.docx)
