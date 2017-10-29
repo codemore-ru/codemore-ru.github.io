@@ -67,6 +67,6 @@ function getParams() {
 
     n = getParam('#n', 'N', 10, true);
     res_color = $('#color').val();
-    random = $('#random:checked').size() != 0;
+    random = $('#random:checked').length !== 0;
     deviation = getParam('#deviation', 'Отклонение', 10);
 }
