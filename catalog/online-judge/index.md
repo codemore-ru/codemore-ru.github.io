@@ -27,6 +27,7 @@ layout: page-base
 + [Тренировки ИТМО](http://neerc.ifmo.ru/trains/information/index.html)
 + [Юный программист](http://yun.zp.ua/)
 + [KRSU Online Judge](http://olymp.krsu.edu.kg/GeneralProblemset.aspx)
++ [CS Academy](https://csacademy.com/)
 
 ### Каталог ресурсов с международными онлайн соревнованиями
 
