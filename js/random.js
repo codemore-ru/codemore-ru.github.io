@@ -13,9 +13,10 @@ function start_random() {
 	if (document.getElementById('arr3').checked) str += arr[3];
 	if (document.getElementById('arr4').checked) str += document.getElementById('user').value;
 	
-	var value_count = document.getElementById('length').value;
+	var value_length = document.getElementById('length').value;
+	var value_count = document.getElementById('count').value;
 	
-	if (!isFinite(parseFloat(value_count))){
+	if (!isFinite(parseFloat(value_length))){
 		document.getElementById('text').value = 'Задайте длину последовательности - целое число от 1 до 99 включительно';
 		return;
 	}
@@ -25,14 +26,16 @@ function start_random() {
 		return;
 	}
 	
-	var rez = "";
-	for(var i = 0; i < value_count; ++i){
-		var ch = str[Math.floor(str.length * Math.random())];
-		if (ch == '<') ch = '&lt';
-		if (ch == '&') ch = '&amp';
-		rez += ch;
-	}
+	for(var j = 0; j < value_count; ++j){
+		var rez = "";
+		for(var i = 0; i < value_length; ++i){
+			var ch = str[Math.floor(str.length * Math.random())];
+			if (ch == '<') ch = '&lt';
+			if (ch == '&') ch = '&amp';
+			rez += ch;
+		}
 	
-	var table = document.getElementById('table');
-	table.innerHTML = '<tr><td bordercolor=black style="height:5px">' + rez + '</td></tr>' + table.innerHTML;
+		var table = document.getElementById('table');
+		table.innerHTML = '<tr><td bordercolor=black style="height:5px">' + rez + '</td></tr>' + table.innerHTML;
+	}
 }
