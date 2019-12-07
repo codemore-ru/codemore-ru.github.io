@@ -5,9 +5,9 @@ author: Valentin Gubarev
 section: experimental
 ---
 
-<br>Введите натуральное число [2,10<sub>15</sub>)
+<br>Введите натуральное число [2,10<sub>15</sub>) без ведущих нулей
 <input type='text' value='2' style='font-family:monospace' size='15em' maxlength='15' id='number'></input>
-<input type='button' value='Разложить' onClick='go()'></input>
+<input type='button' value='Факторизовать' onClick='go()'></input>
 <br>
 <table id='table' style='white-space:pre-wrap' border='1px'>
 </table>
@@ -16,6 +16,7 @@ section: experimental
   var body_table = '';
 	
   function is_natural_number(input_value){
+    if (input_value[0] == '0') return false;
     for (var i = 0; i < input_value.length; ++i)
       if (input_value[i] < '0' || input_value[i] > '9')
 	 return false;
