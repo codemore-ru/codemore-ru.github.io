@@ -49,9 +49,8 @@ section: experimental
     if (is_natural_number(input_value)){
       var factorization = integer_factorization(input_value);
       var table = document.getElementById('table');
-      alert(table.innerHTML);
       if (table.innerHTML == '')
-	      table.innerHTML = '<th><td>Число</td><td>Через запятую</td><td>Арифметика</td></th>';
+	      table.innerHTML = '<tr><th>Число</th><th>Через запятую</th><th>Арифметика</th></tr>';
       var str_arithmetic = factorization[0];
       for(var i = 1; i < factorization.length; ++i)
 	      str_arithmetic += ' &times; ' + factorization[i];
