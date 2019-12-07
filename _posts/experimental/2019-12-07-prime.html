@@ -38,18 +38,18 @@ section: experimental
         input_value /= i;
       }else i += 2;
     }
-    //if (input_value > 1)
+    if (input_value > 1)
       rez.push(input_value);
     return rez;
   }
 
   function go(){
     var input_value = document.getElementById('number').value;
+	  
     if (is_natural_number(input_value)){
       var factorization = integer_factorization(input_value);
       var table = document.getElementById('table');
       table.innerHTML = '<tr><td bordercolor=black style="height:5px">' + factorization + '</td></tr>' + table.innerHTML;
-      alert(factorization);
     }else alert('Не натуральное число из указанного диапазона!');
   }
 </script>
