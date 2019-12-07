@@ -8,6 +8,7 @@ section: experimental
 <br>Введите натуральное число [2,10<sub>15</sub>)
 <input type='text' value='2' style='font-family:monospace' size='15em' maxlength='15' id='number'></input>
 <input type='button' value='Разложить' onClick='go()'></input>
+<br>
 <table id='table' style='white-space:pre-wrap' border='1px'>
 </table>
 		
@@ -49,7 +50,8 @@ section: experimental
     if (is_natural_number(input_value)){
       var factorization = integer_factorization(input_value);
       var table = document.getElementById('table');
-      if (table.innerHTML == '')
+      alert(table.rows.length);
+      if (table.rows.length == 1)
 	      table.innerHTML = '<tr><th>Число</th><th>Через запятую</th><th>Арифметика</th></tr>';
       var str_arithmetic = factorization[0];
       for(var i = 1; i < factorization.length; ++i)
