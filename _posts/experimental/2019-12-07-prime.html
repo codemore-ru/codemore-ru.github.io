@@ -8,6 +8,8 @@ section: experimental
 <br>Введите натуральное число [2,10<sub>15</sub>)
 <input type='text' value='2' style='font-family:monospace' size='15em' maxlength='15' id='number'></input>
 <input type='button' value='Разложить' onClick='go()'></input>
+<table id='table' style='white-space:pre-wrap' border='1px'>
+</table>
 		
 <script>
   function is_natural_number(input_value){
@@ -45,6 +47,8 @@ section: experimental
     var input_value = document.getElementById('number').value;
     if (is_natural_number(input_value)){
       var factorization = integer_factorization(input_value);
+      var table = document.getElementById('table');
+      table.innerHTML = '<tr><td bordercolor=black style="height:5px">' + factorization + '</td></tr>' + table.innerHTML;
       alert(factorization);
     }else alert('Не натуральное число из указанного диапазона!');
   }
