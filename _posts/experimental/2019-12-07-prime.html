@@ -49,7 +49,17 @@ section: experimental
     if (is_natural_number(input_value)){
       var factorization = integer_factorization(input_value);
       var table = document.getElementById('table');
-      table.innerHTML = '<tr><td bordercolor=black style="height:5px">' + factorization + '</td></tr>' + table.innerHTML;
+      if (table.innerHTML == '')
+	      table.innerHTML = '<th><td>Число</td><td>Через запятую</td><td>Арифметика</td></th>';
+      var str_arithmetic = factorization[0];
+      for(var i = 1; i < factorization.length; ++i)
+	      str_arithmetic += ' &times; ' + factorization[i];
+      str_arithmetic += ' = ' + input_value;
+      table.innerHTML = '<tr>' +
+	      '<td bordercolor=black style="height:5px">' + input_value + '</td>' +
+	      '<td bordercolor=black style="height:5px">' + factorization + '</td></tr>' +
+	      '<td bordercolor=black style="height:5px">' + str_arithmetic + '</td>' +
+	      table.innerHTML;
     }else alert('Не натуральное число из указанного диапазона!');
   }
 </script>
