@@ -11,13 +11,12 @@ section: experimental
 		
 <script>
   function is_natural_number(input_value){
-    for (var i = 0; i < input_value.lenght; ++i)
+    for (var i = 0; i < input_value.length; ++i)
       if (input_value[i] < '0' || input_value[i] > '9')
-      {alert("input_value[i] < '0' || input_value[i] > '9'"); return false;}
-    if (input_value.lenght >= 16) {alert("input_value.lenght >= 16");return false;}
-    if (input_value[0] >= '2') {alert("input_value[0] >= '2'");return true;}
-    if (input_value.lenght > 1) return true;
-    alert(input_value.lenght);
+	 return false;
+    if (input_value.length >= 16) return false;
+    if (input_value[0] >= '2') return true;
+    if (input_value.length > 1) return true;
     return false;
   }
       
@@ -47,6 +46,6 @@ section: experimental
     if (is_natural_number(input_value)){
       var factorization = integer_factorization(input_value);
       alert(factorization);
-    }else alert('not natural');
+    }else alert('Не натуральное число из указанного диапазона!');
   }
 </script>
