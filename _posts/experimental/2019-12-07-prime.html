@@ -13,6 +13,8 @@ section: experimental
 </table>
 		
 <script>
+  var table = '';
+	
   function is_natural_number(input_value){
     for (var i = 0; i < input_value.length; ++i)
       if (input_value[i] < '0' || input_value[i] > '9')
@@ -50,18 +52,16 @@ section: experimental
     if (is_natural_number(input_value)){
       var factorization = integer_factorization(input_value);
       var table = document.getElementById('table');
-      alert(table.rows.length);
-      if (table.rows.length == 1)
-	      table.innerHTML = '<tr><th>Число</th><th>Через запятую</th><th>Арифметика</th></tr>';
       var str_arithmetic = factorization[0];
       for(var i = 1; i < factorization.length; ++i)
 	      str_arithmetic += ' &times; ' + factorization[i];
       str_arithmetic += ' = ' + input_value;
-      table.innerHTML = '<tr>' +
+      table = '<tr>' +
 	      '<td bordercolor=black style="height:5px">' + input_value + '</td>' +
 	      '<td bordercolor=black style="height:5px">' + factorization + '</td>' +
 	      '<td bordercolor=black style="height:5px">' + str_arithmetic + '</td>' +
-	      '</tr>' + table.innerHTML;
+	      '</tr>' + table;
+      table.innerHTML = '<tr><th>Число</th><th>Через запятую</th><th>Арифметика</th></tr>' + table;
     }else alert('Не натуральное число из указанного диапазона!');
   }
 </script>
