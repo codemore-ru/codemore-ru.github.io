@@ -1,0 +1,80 @@
+---
+layout: post
+title: Решение логических выражений
+author: Valentin Gubarev
+section: experimental
+---
+
+Для какого целого наименьшего неотрицательного числа A, выражение
+<br>
+<input type='text' value='imp((x&49)!=0,imp((x&41)==0,(x&A)!=0))' style='font-family:monospace' size='50em' id='function'></input>
+тождественно равно
+<input type='text' value='1' style='font-family:monospace' size='2em' id='value'></input>
+
+<br><br>Диапазон X от
+<input type='text' value='1' style='font-family:monospace' size='5em' id='x_min'></input>
+до 
+<input type='text' value='1000' style='font-family:monospace' size='5em' id='x_max'></input>
+
+<br>Диапазон A от
+<input type='text' value='1' style='font-family:monospace' size='5em' id='a_min'></input>
+до 
+<input type='text' value='1000' style='font-family:monospace' size='5em' id='a_max'></input>
+
+<br><br>
+<input type='button' value='Найти решение' onClick='go()'></input>
+<br><br>
+
+<table id='table' style='white-space:pre-wrap' border='1px'>
+</table>
+		
+<script>
+  var body_table = '';
+  
+  function imp(a,b){
+	return +((!a)||b);
+  }
+  
+  function go_fun(fun, A, x){
+	return +eval(fun);
+  }
+  
+  function find_solution(fun, A, x_min, x_max, value){
+	for(var x = x_min; x <= x_max; ++x)
+		if (go_fun(fun, A, x) != value) return false;
+	return true;
+  }
+	
+  function go(){
+    var fun = document.getElementById('function').value;
+	var value = document.getElementById('value').value;
+	var table = document.getElementById('table');
+	
+	var x_min = document.getElementById('x_min').value;
+	var x_max = document.getElementById('x_max').value;
+	var a_min = document.getElementById('a_min').value;
+	var a_max = document.getElementById('a_max').value;
+	
+	var result = -1;
+	for(var a = a_min; a <= a_max; ++a){
+		if (find_solution(fun,a,x_min,x_max,value)){
+			result = a;
+			break;
+		}
+	}
+	
+	if (result == -1){
+	  body_table = '<tr>' +
+	  '<td bordercolor=black style="height:5px">' + fun + '</td>' +
+	  '<td bordercolor=black style="height:5px">' + 'нет решения' + '</td>' +
+	  '</tr>' + body_table;
+	} else {
+	  body_table = '<tr>' +
+	  '<td bordercolor=black style="height:5px">' + fun + '</td>' +
+	  '<td bordercolor=black style="height:5px">' + result + '</td>' +
+	  '</tr>' + body_table;
+	}
+	
+	table.innerHTML = '<tr><th>Выражение</th><th>Значение A</th></tr>' + body_table;
+  }
+</script>
