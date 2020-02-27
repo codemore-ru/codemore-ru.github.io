@@ -4,6 +4,9 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="yandex-verification" content="173be2348be82a4a" />
+	{% if page.description %}
+	    <meta name="description" content="{{ page.description }}">
+	{% endif %}
 
 	<link href="/favicon.png" rel="icon" type="image/x-png"/>
 
