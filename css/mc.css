@@ -8,7 +8,7 @@
 }
 
 .navbar-default .navbar-brand:hover {
-    color: #999;
+    color: #ffc852;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -16,5 +16,5 @@
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-    color: #999;
+    color: #ffc852;
 }
