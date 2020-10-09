@@ -35,12 +35,14 @@ title: Каталог ссылок
 {: #ide}
 
 |-|-|
+[IntelliJ IDEA](http://www.jetbrains.com/idea/)|Кросс-платформенная IDE от JetBrains. Есть бесплатная редакция Community Edition
 [Microsoft Visual Studio](http://www.visualstudio.com/ru-ru/downloads)|IDE от Microsoft, поддерживает разработку на С++, C#, Visual Basic. Доступна бесплатная редакция Express
-[NetBeans](https://netbeans.org/downloads/)|IDE от Oracle. Поддерживает множество языков. Распространяется свободно
+[Apache NetBeans](https://netbeans.apache.org/)|Поддерживает множество языков. Распространяется свободно
 [Eclipse](http://eclipse.org/)|Платформа, на которой разработано множество IDE для различных языков
 [Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
 [Komodo IDE](http://komodoide.com/)|Коммерческая кроссплатформенная универсальная IDE
 [Atom](https://atom.io/)|Универсальный текстовый редактор, разрабатывемый GitHub (лицензия MIT)
+[Visual Studio Code](https://code.visualstudio.com/)|Универсальный текстовый редактор, разрабатывемый Microsoft (лицензия MIT)
 {: .table}
 
 [В начало](#)
@@ -55,11 +57,9 @@ title: Каталог ссылок
 [Eclipse CDT](http://www.eclipse.org/cdt/downloads.php)|Плагин для Eclipse поддерживающий разработку на С++  
 [Code::Blocks](http://www.codeblocks.org/)|Кросс-платформенная IDE для С++ с открытым исходным кодом
 [C++ Builder](http://www.embarcadero.com/ru/products/cbuilder)|IDE для С++ от Embarcadero
-[Qt Creator](http://qt-project.org/downloads#qt-creator)|Свободно-распространяемая кросс-платформенная IDE для С++ от разработчиков библиотеки Qt
 [GCC](http://www.gnu.org/software/gcc/)|Свободно-распространяемый кросс-платформенный компилятор С/С++ от сообщества GNU
 [Clang](http://clang.llvm.org/)|Свободно-распространяемый кросс-платформенный компилятор С/С++
 [Intel C and C++ compiler](http://software.intel.com/en-us/c-compilers)|Компилятор С/С++ от Intel
-[Справочник по Си](http://lord-n.narod.ru/download/books/walla/programming/Spr_po_C/main.htm#25)|Утверждается, что содержит полный справочник по СИ
 {: .table}
 
 [В начало](#)
@@ -69,10 +69,8 @@ title: Каталог ссылок
 {: #java}
 
 |-|-|
-[Java 7 SE API Specification](http://docs.oracle.com/javase/7/docs/api/)|Официальная документация по стандартной библиотеке языка Java
-[Oracle Technology Network for Java Developers](http://www.oracle.com/technetwork/java/index.html)|Раздел сайта Oracle, посвященный Java
-[Eclipse JDT](http://projects.eclipse.org/projects/eclipse.jdt)|Кросс-платформенная IDE для Java
-[IntelliJ IDEA](http://www.jetbrains.com/idea/download/index.html)|Кросс-платформенная IDE от JetBrains. Есть бесплатная редакция Community Edition
+[Java 11 API Specification](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)|Официальная документация по стандартной библиотеке языка Java
+[Spring](https://spring.io/)|Фреймфорк для создания приложений на Java
 {: .table}
 
 [В начало](#)
@@ -131,6 +129,7 @@ title: Каталог ссылок
 [Шпаргалка Блоггера](http://shpargalkablog.ru/p/html-css-javascript.html)|Содержит шпаргалки, уроки, примеры по HTML, CSS, JavaScript, PHP, SVG и youtube
 [Wisdomweb](http://www.wisdomweb.ru)|На этом ресурсе Вы найдёте бесплатные онлайн учебники и справочники по всем популярным веб-технологиям (JavaScript, HTML, HTML5, XHTML, HDOM, jQuery, AJAX, JSON, CSS), которые используются для создания веб-сайтов
 [html5book](https://html5book.ru)|Универсальный самоучитель и справочник по HTML 5, CSS, JavaScript. Так же содержит разделы по типографике и вёрстке
+[MDN](https://developer.mozilla.org/ru/)|Ресурсы для веб-разработчиков от mozilla
 {: .table }
 
 [В начало](#)
@@ -148,7 +147,6 @@ title: Каталог ссылок
 [Pure](http://purecss.io/)|CSS-библиотека для создания веб-интерфейсов (лицензия BSD)
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/)|Иконочный шрифт с большим набором символов (лицензия MIT)
 [Font squirrel](http://www.fontsquirrel.com/)|Большая коллекция бесплатных веб-шрифтов
-[HTML5 Boilerplate](http://html5boilerplate.com/)|Шаблон для создания сайтов и веб-приложений (лицензия MIT)
 [Less](http://lesscss.org/)|Препроцессор CSS (лицензия Apache License 2.0)
 [Sass](http://sass-lang.com/)|Еще один препроцессор CSS (лицензия MIT)
 {: .table }
@@ -164,11 +162,13 @@ title: Каталог ссылок
 [WebStorm](http://www.jetbrains.com/webstorm/)|Коммерческая IDE от JetBrains для JavaScript
 [JSFiddle](http://jsfiddle.net/)|Онлайн IDE для небольших проектов на JavaScript. Можно сразу увидеть результат работы
 [jQuery](http://jquery.org)|Библиотека, упрощающая работу с DOM. Также предоставляет простой API для AJAX (лицензия MIT)
-[AngularJS](http://angularjs.org)|Фреймворк Google для создания одностраничных приложений (лицензия MIT)
-[Ext.JS](http://www.sencha.com/products/extjs/)|Фреймворк для создания веб-приложений и пользовательских интерфейсов. Распространяется по коммерческой и открытой (GPLv3) лицензии
+[Angular](https://angular.io/)|Фреймворк от Google для создания одностраничных приложений (лицензия MIT)
+[React](https://reactjs.org/)|Библиотека от Facebook для создания одностраничных приложений (лицензия MIT)
+[Vue.js](https://vuejs.org/)|Фреймворк для создания одностраничных приложений (лицензия MIT)
 [Node.js](http://nodejs.org)|Программная платформа для создания серверных приложений на языке JavaScript (лицензия MIT)
 [Gulp](http://gulpjs.com/)|Система сборки для JavaScript
 [Grunt](http://gruntjs.com/)|Еще одна система сборки JavaScript проектов 
+[webpack](https://webpack.github.io/)|И еще одна система сборки для web
 {: .table }
 
 [В начало](#)
@@ -204,8 +204,8 @@ title: Каталог ссылок
 [Git](http://git-scm.com/)|Свободная распределенная система управления версиями
 [Mercurial](http://mercurial.selenic.com/)|Свободная распределенная система управления версиями
 [Subversion](http://subversion.apache.org/)|Свободная централизованная система управления версиями
-[GitHub](https://github.com/)|Хостинг для хранения исходного кода и совместной разработки. Поддерживает Git и Subversion. Бесплатен для проектов с открытым исходным кодом
-[Bitbucket](https://bitbucket.org/)|Хостинг исходного кода. Поддерживает Git и Mercurial. Есть возможность создания бесплатных публичных и закрытых (с ограниченным числом участников) репозиториев
+[GitHub](https://github.com/)|Хостинг для хранения исходного кода и совместной разработки. Бесплатен для проектов с открытым исходным кодом
+[Bitbucket](https://bitbucket.org/)|Хостинг исходного кода. Есть возможность создания бесплатных публичных и закрытых (с ограниченным числом участников) репозиториев
 [SourceTree](http://sourcetreeapp.com/)|Утилита для управления локальными Git и Mercurial репозиториями<br>Поддерживаются Windows и Mac OS X
 [TortoiseHg](http://tortoisehg.bitbucket.org/)|Утилита для управления репозиториями Mercurial<br>Поддерживаются Windows, Linux и Mac OS X
 [TortoiseSVN](http://tortoisesvn.net/)|Утилита для управления репозиториями Subversion<br>Поддерживается только Windows
@@ -220,6 +220,7 @@ title: Каталог ссылок
 |-|-|
 [Vagrant](http://www.vagrantup.com/)|Утилита для создания виртуальных сред разработки (лицензия MIT)<br>Поддерживаются Windows, Linux и Mac OS X
 [Travis CI](https://travis-ci.org/)|Бесплатная платформа непрерывной интеграции для проектов с открытым исходным кодом
+[docker](https://www.docker.com/)|Программа для запуска приложений в изолированных контейнерах
 {: .table }
 
 [В начало](#)
@@ -231,11 +232,9 @@ title: Каталог ссылок
 |-|-|
 [ejudje](https://ejudge.ru/)|Cистема для автоматической проверки программ
 [PCMS2](http://neerc.ifmo.ru/trains/information/software.html)|Cистема для автоматической проверки программ от ИТМО
-[Contester](http://www.contester.ru/)|Cистема для автоматической проверки программ<br>Имеется готовый набор задач
 [PC^2](http://www.ecs.csus.edu/pc2/)|Cистема для автоматической проверки программ<br>Используется на финале ACM ICPC
 [olympiads.ru](http://olympiads.ru/school/system/index.shtml)|Cистема для автоматической проверки программ
 [DOMjudge](http://www.domjudge.org/)|Cистема для автоматической проверки программ (Голландия)
-[dudge](https://code.google.com/p/dudge/)|Cистема для автоматической проверки программ
 {: .table}
 
 [В начало](#)
@@ -262,8 +261,8 @@ title: Каталог ссылок
 [MAXimal](http://e-maxx.ru/algo/)|Сборник Максима Иванова. Ко всем алгоритмам даны  описания и программы на C++
 [Дискретная математика: Алгоритмы](http://rain.ifmo.ru/cat/view.php)|Сборник кафедры Компьютерных технологий факультета Информационных технологий и программирования НИУ ИТМО. Представлены теоретические статьи и визуализаторы
 [AlgoList](http://algolist.manual.ru/)|Сборник алгоритмов Ильи Кантора
-[Habrahabr](http://habrahabr.ru/hub/algorithms/)|Тематический раздел сайта habrahabr.ru, посвященный алгоритмам
-[Список алгоримов](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2)|Список алгоритмов в русской Википедии
+[Habr](https://habr.com/ru/hub/algorithms/)|Тематический раздел сайта habrahabr.ru, посвященный алгоритмам
+[Список алгоритмов](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2)|Список алгоритмов в русской Википедии
 [List of algorithms](http://en.wikipedia.org/wiki/List_of_algorithms)|Список алгоритмов в английской Википедии
 [Список структур данных](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|Список структур данных в русской Википедии
 [List of data structures](http://en.wikipedia.org/wiki/List_of_data_structures)|Список структур данных в английской Википедии
