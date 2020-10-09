@@ -139,11 +139,14 @@ section: experimental
    }
 </script>
 
-<input onclick="go(-1)" type="button" value="A" />
-<input id="cnt_list" type="text" value="10" />
-<input onclick="go(+1)" type="button" value="B" />
-<br />
-<input onclick="go(0)" type="button" value="Нарисовать дерево" />
+<p>
+    <button type="button" class="btn btn-default" onclick="go(-1)">Убрать вершину</button>
+    <input id="cnt_list" type="text" value="10" class="form-control" style="display:inline-block; width: 50px">
+    <button type="button" class="btn btn-default" onclick="go(+1)">Добавить вершину</button>
+</p>
+<p>
+    <button type="button" class="btn btn-default" onclick="go(0)">Нарисовать дерево</button>
+</p>
 
 <script type="text/javascript">
    go(0);
