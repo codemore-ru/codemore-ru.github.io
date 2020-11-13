@@ -11,7 +11,7 @@ layout: page-base
 + [CATS Archive](http://imcs.dvfu.ru/cats/)
 + [Codechef](http://www.codechef.com/)
 + [Codeforces](http://codeforces.ru/)
-+ [Informatics, Programming, Contests](http://ipc.susu.ac.ru/index.html)
++ [Informatics, Programming, Contests](https://ipc.susu.ru/index.html)
 + [Sphere Online Judge](http://spoj.com/)
 + [Timus](http://acm.timus.ru/)
 + [TopCoder](http://topcoder.com/)
