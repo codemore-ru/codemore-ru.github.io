@@ -264,7 +264,7 @@ title: Каталог ссылок
 [Habr](https://habr.com/ru/hub/algorithms/)|Тематический раздел сайта habrahabr.ru, посвященный алгоритмам
 [Список алгоритмов](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2)|Список алгоритмов в русской Википедии
 [List of algorithms](http://en.wikipedia.org/wiki/List_of_algorithms)|Список алгоритмов в английской Википедии
-[Список структур данных](http://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|Список структур данных в русской Википедии
+[Список структур данных](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|Список структур данных в русской Википедии
 [List of data structures](http://en.wikipedia.org/wiki/List_of_data_structures)|Список структур данных в английской Википедии
 [Algorithms and Data Structures](http://www.allisons.org/ll/AlgDS/)|Курс по алгоритмам и структурам данных, разработанный Lloyd Allison (Университет Монаша, Австралия). Содержит интерактивные примеры работы некоторых алгоритмов.<br>(на английском языке)
 [Алгоритмы и структуры данных (первый семестр)](http://www.lektorium.tv/course/?id=22823)|Курс видеолекций по алгоритмам и структурам данных (лектор - Александр Куликов)
