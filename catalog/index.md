@@ -60,6 +60,7 @@ title: Каталог ссылок
 [GCC](http://www.gnu.org/software/gcc/)|Свободно-распространяемый кросс-платформенный компилятор С/С++ от сообщества GNU
 [Clang](http://clang.llvm.org/)|Свободно-распространяемый кросс-платформенный компилятор С/С++
 [Intel C and C++ compiler](http://software.intel.com/en-us/c-compilers)|Компилятор С/С++ от Intel
+[IOCCC](http://www.ioccc.org/)|Международный Конкурс запутывания кода на Си
 {: .table}
 
 [В начало](#)
