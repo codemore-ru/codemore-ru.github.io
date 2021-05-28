@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Потоковое воспроизведение видео в браузере с помощью FFmpeg
+description: Здесь описываются разные способы реализации воспроизведения видео в браузере: тег video, JS-плеер, DASH с полным кодированием и с кодированием по запросу
+preview_image: /img/video-streaming-thumbnail.png
 author: Alexey Nurgaliev
 ---
 
