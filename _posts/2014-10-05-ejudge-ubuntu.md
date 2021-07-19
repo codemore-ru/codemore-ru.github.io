@@ -23,7 +23,7 @@ sudo apt-get install -y sendmail ncurses-base libncurses-dev libncursesw5 \
   libncursesw5-dev expat libexpat1 libexpat1-dev zlib1g-dev libelf-dev \
   g++ gawk apache2 gettext fpc mc openjdk-8-jdk \
   libcurl4-openssl-dev libzip-dev uuid-dev bison flex \
-  mono-devel mono-runtime mono-vbnc php5-cli perl \
+  mono-devel mono-runtime mono-vbnc php7.4-cli perl \
   ruby python python3 gccgo locales net-tools
 
 sudo locale-gen en_US.UTF-8 ru_RU.UTF-8
@@ -73,8 +73,8 @@ sudo service apache2 restart
 cd /home/ejudge
 
 #Загрузка ejudge
-wget --no-check-certificate http://www.ejudge.ru/download/ejudge-3.4.2.tgz
-tar -xvzf ejudge-3.4.2.tgz
+wget --no-check-certificate http://www.ejudge.ru/download/ejudge-3.8.0.tgz
+tar -xvzf ejudge-3.8.0.tgz
 
 cd ejudge
 
@@ -100,6 +100,8 @@ make install
 Нужно указать *Test Working Dir* - `/home/judges/test_work`
 
 Также нужно не забыть указать данные администратора в разделе *Administrator identity*
+
+Сохранить конфигурацию в файл `ejudge-install.sh`.
 
 ## Установка
 
