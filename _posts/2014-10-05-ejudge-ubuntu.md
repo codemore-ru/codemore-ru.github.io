@@ -1,33 +1,32 @@
 ---
 layout: post
-title: Установка ejudge в Ubuntu 14.04 LTS
+title: Установка ejudge в Ubuntu 20.04 LTS
 author: Alexey Nurgaliev
 ---
 
 [ejudge](https://ejudge.ru/) - система для проведения онлайн-соревнований по программированию. 
 [Документация системы](https://ejudge.ru/wiki/index.php/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_ejudge) 
 
-Будет рассмотрена установка версии 3.4.2. Проверено на виртуальных машинах в Vagrant и на облачном сервере DigitalOcean
+Будет рассмотрена установка версии 3.8.0.
 
 ## Предварительная настройка
 
-Для возможности выбора русского языка интерфейса может потребоваться установка дополнительной локали. Для этого нужно 
-в файл `/var/lib/locales/supported.d/local` добавить строчку `ru_RU.UTF-8 UTF-8` и запустить команду 
-`sudo dpkg-reconfigure locales`.
+Загрузка и установка пакетов. Создается пользователь и группа ejudge. 
+Также создаются рабочие каталоги.
 
-Загрузка и установка пакетов. Создается пользователь и группа ejudge. Также создаются рабочие каталоги.
-
-{% highlight bash %}
+```bash
 #!/bin/bash
 
 #Зависимости и компиляторы
 sudo apt-get update
 sudo apt-get install -y sendmail ncurses-base libncurses-dev libncursesw5 \
   libncursesw5-dev expat libexpat1 libexpat1-dev zlib1g-dev libelf-dev \
-  g++ gawk apache2 gettext fpc mc openjdk-7-jdk \
+  g++ gawk apache2 gettext fpc mc openjdk-8-jdk \
   libcurl4-openssl-dev libzip-dev uuid-dev bison flex \
   mono-devel mono-runtime mono-vbnc php5-cli perl \
-  ruby python python3 gccgo 
+  ruby python python3 gccgo locales net-tools
+
+sudo locale-gen en_US.UTF-8 ru_RU.UTF-8
 
 #Установка FreeBASIC x86_64 (нет в репозитории)
 wget -O freebasic.tar.gz http://downloads.sourceforge.net/fbc/FreeBASIC-1.03.0-linux-x86_64.tar.gz?download
@@ -43,51 +42,56 @@ cd
 #sudo ./install.sh -i
 #cd
 
-#создание группы и пользователя ejudge
+#Создание группы и пользователя ejudge
 sudo groupadd ejudge
 sudo useradd ejudge -s /bin/bash -m -d /home/ejudge -g ejudge
 sudo adduser ejudge sudo
 
-#создание рабочего каталога judges
+#Создание рабочего каталога judges
 sudo mkdir -p /home/judges /home/judges/test_work
 sudo chown ejudge:ejudge /home/judges /home/judges/test_work
 sudo chmod 0755 /home/judges /home/judges/test_work
 
-#каталоги сервера
+#Каталоги сервера
 sudo mkdir -p /var/www/ejudge/cgi-bin
 sudo mkdir -p /var/www/ejudge/htdocs
 sudo chmod 0777 /var/www/ejudge/cgi-bin /var/www/ejudge/htdocs
 
-#включение модуля CGI
+#Включение модуля CGI
 sudo a2enmod cgi
 sudo service apache2 restart
-{% endhighlight %}
+```
 
 ## Сборка ejudge
 
-Собирать и устанавливать лучше под пользователем ejudge. Пример, как можно сменить пользователя: `sudo su ejudge`
+Собирать и устанавливать лучше под пользователем ejudge. 
+Пример, как можно сменить пользователя: `sudo su ejudge`
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 
 cd /home/ejudge
 
-#загрузка ejudge
+#Загрузка ejudge
 wget --no-check-certificate http://www.ejudge.ru/download/ejudge-3.4.2.tgz
 tar -xvzf ejudge-3.4.2.tgz
 
 cd ejudge
 
+#Сборка
 ./configure --prefix=/home/ejudge/inst-ejudge \
-  --enable-contests-home-dir=/home/judges \
-  --with-httpd-cgi-bin-dir=/var/www/ejudge/cgi-bin \
-  --with-httpd-htdocs-dir=/var/www/ejudge/htdocs \
-  --enable-ajax \
-  --enable-charset=utf-8
+            --enable-contests-home-dir=/home/judges \
+            --with-httpd-cgi-bin-dir=/var/www/ejudge/cgi-bin \
+            --with-httpd-htdocs-dir=/var/www/ejudge/htdocs \
+            --with-primary-user="ejudge" \
+            --with-exec-user="ejudge" \
+            --with-compile-user="ejudge" \
+            --enable-ajax \
+            --enable-charset=utf-8
 
 make
 make install
-{% endhighlight %}
+```
 
 ## Конфигурация
 
@@ -113,30 +117,34 @@ make install
 
 ## Настройка apache2
 
-Пример конфигурации виртуального хоста для apache2 версии 2.4:
+Пример конфигурации виртуального хоста для apache2 версии 2.4 
+(файл `/etc/apache2/sites-enabled/ejudge.conf`, возможно потребуется удалить существующую конфигурацию):
 
-    <VirtualHost *:80>
-        DocumentRoot /var/www/ejudge/htdocs
+```apacheconf
+<VirtualHost *:80>
+    DocumentRoot /var/www/ejudge/htdocs
 
-        ScriptAlias /cgi-bin/ "/var/www/ejudge/cgi-bin/"
+    ScriptAlias /cgi-bin/ "/var/www/ejudge/cgi-bin/"
 
-        <Directory "/var/www/ejudge/cgi-bin">
-            Options +ExecCGI +FollowSymLinks +Includes
-            AllowOverride None
-            Require all granted
-        </Directory>
+    <Directory "/var/www/ejudge/cgi-bin">
+        Options +ExecCGI +FollowSymLinks +Includes
+        AllowOverride None
+        Require all granted
+    </Directory>
 
-        <Directory "/var/www/ejudge/htdocs">
-            Require all granted
-        </Directory>
+    <Directory "/var/www/ejudge/htdocs">
+        Require all granted
+    </Directory>
 
-        ErrorLog ${APACHE_LOG_DIR}/error.log
-        CustomLog ${APACHE_LOG_DIR}/access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-    </VirtualHost>
+</VirtualHost>
+```
 
+Перезапустить apache: `service apache2 restart`
 
-ejudge будет доступен по адресу http://localhost:80
+ejudge будет доступен по адресу http://localhost/cgi-bin/serve-control
 
 ## Настройка nginx
 
@@ -144,16 +152,17 @@ ejudge будет доступен по адресу http://localhost:80
 
 Установка пакетов:
 
-{% highlight bash %}
+```bash
 #Удаление apache
 sudo apt-get remove --autoremove apache2
 
 #Установка nginx
 sudo apt-get install nginx fcgiwrap
-{% endhighlight %}
+````
 
-Конфигурация сервера:
+Конфигурация сервера (файл `/etc/nginx/sites-enabled/ejudge`):
 
+```nginx
     server {
 
      listen 80;
@@ -187,6 +196,7 @@ sudo apt-get install nginx fcgiwrap
             fastcgi_param  SERVER_NAME        $host;
         }
     }
+```
 
 Конфигурация основана на статье в [debian wiki](https://wiki.debian.org/ru/nginx/FastCGI).
 
