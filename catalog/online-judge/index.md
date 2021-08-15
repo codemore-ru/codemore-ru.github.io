@@ -28,6 +28,9 @@ layout: page-base
 + [Юный программист](http://yun.zp.ua/)
 + [KRSU Online Judge](http://olymp.krsu.edu.kg/GeneralProblemset.aspx)
 + [CS Academy](https://csacademy.com/)
++ [Яндекс.Контест](https://contest.yandex.ru/contest-list/)
++ [HakerRank](https://www.hackerrank.com)
++ [codewars](https://www.codewars.com/)
 
 ### Каталог ресурсов с международными онлайн соревнованиями
 

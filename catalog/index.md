@@ -273,6 +273,7 @@ title: Каталог ссылок
 [Алгоритмы: построение и анализ](http://www.intuit.ru/studies/courses/534/390/info)|Курс лекций, посвященный теории алгоритмов и элементам дискретной математики
 [Дистанционная подготовка по информатике](http://informatics.mccme.ru/moodle/)|Курсы по алгоритмам и структурам данных. Для многих тем предлагаются практические задачи
 [Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)|Интерактивные визуализации структур данных
+[Algorithm Visualizer](https://algorithm-visualizer.org/)|Интерактивная визуализация алгоритмов
 [Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
 [Лекции ШАД](http://shad.yandex.ru/lectures/)|Видеолекции некоторых курсов Школы анализа данных
 {: .table}
