@@ -274,6 +274,7 @@ title: Каталог ссылок
 [Дистанционная подготовка по информатике](http://informatics.mccme.ru/moodle/)|Курсы по алгоритмам и структурам данных. Для многих тем предлагаются практические задачи
 [Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)|Интерактивные визуализации структур данных
 [Algorithm Visualizer](https://algorithm-visualizer.org/)|Интерактивная визуализация алгоритмов
+[TensorFlow Playground](https://playground.tensorflow.org)|Визуальное моделирование нейронной сети в браузере
 [Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
 [Лекции ШАД](http://shad.yandex.ru/lectures/)|Видеолекции некоторых курсов Школы анализа данных
 {: .table}
