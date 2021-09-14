@@ -61,6 +61,7 @@ title: Каталог ссылок
 [Clang](http://clang.llvm.org/)|Свободно-распространяемый кросс-платформенный компилятор С/С++
 [Intel C and C++ compiler](http://software.intel.com/en-us/c-compilers)|Компилятор С/С++ от Intel
 [IOCCC](http://www.ioccc.org/)|Международный Конкурс запутывания кода на Си
+[Compiler Explorer](https://godbolt.org/)|Позволяет посмотреть, какой ассемблерный код генерируют разные компиляторы
 {: .table}
 
 [В начало](#)
