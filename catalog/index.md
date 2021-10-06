@@ -41,7 +41,7 @@ title: Каталог ссылок
 [Eclipse](http://eclipse.org/)|Платформа, на которой разработано множество IDE для различных языков
 [Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
 [Komodo IDE](http://komodoide.com/)|Коммерческая кроссплатформенная универсальная IDE
-[Atom](https://atom.io/)|Универсальный текстовый редактор, разрабатывемый GitHub (лицензия MIT)
+[Atom](https://atom.io/)|Универсальный текстовый редактор, разрабатываемый GitHub (лицензия MIT)
 [Visual Studio Code](https://code.visualstudio.com/)|Универсальный текстовый редактор, разрабатывемый Microsoft (лицензия MIT)
 {: .table}
 
@@ -73,6 +73,10 @@ title: Каталог ссылок
 |-|-|
 [Java 11 API Specification](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)|Официальная документация по стандартной библиотеке языка Java
 [Spring](https://spring.io/)|Фреймфорк для создания приложений на Java
+[OpenJDK](http://openjdk.java.net/)|Основной сайт разработки JDK
+[JDK](https://github.com/openjdk/jdk)|Главный репозиторий с исходным кодом JDK
+[Apache Maven](http://maven.apache.org/)|Система сборки и основной репозиторий библиотек для Java
+[Gradle](https://gradle.org/)|Система сборки для Java (и не только)
 {: .table}
 
 [В начало](#)
@@ -82,7 +86,7 @@ title: Каталог ссылок
 {: #pascal}
 
 [Free Pascal Compiler](http://www.freepascal.org/)|Свободно распространяемый компилятор языка Pascal
-[Lazarus](http://www.lazarus.freepascal.org/)|Свободно распространяемая кросс-платформанная IDE для языка Pascal
+[Lazarus](http://www.lazarus.freepascal.org/)|Свободно распространяемая кросс-платформенная IDE для языка Pascal
 [Delphi](http://www.embarcadero.com/products/delphi)|IDE для языка Pascal (и Object Pascal)
 [Pascal Central](http://pascal-central.com/)|Сайт, посвященный языку программирования Pascal. Содержит справочник по языку, статьи, ссылки на компиляторы и среды разработки<br>(на английском языке)
 {: .table}
