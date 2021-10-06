@@ -27,7 +27,7 @@ description: Code More - сайт о программировании
         {% for post in site.posts %}
             {% if post.section == null %}
                 <p class="article-item">
-                    <span class="post-date">{{ post.date | date_to_string }}</span>
+                    <span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
                     <a href="{{ post.url }}">{{ post.title }}</a>
                     {% if post.author %}
                         <em class="text-info"> / {{ post.author }}</em>

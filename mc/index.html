@@ -11,7 +11,7 @@ title: Микроконтроллеры
 {% for post in site.posts %}
 	{% if post.section == 'mc' %}
 		<p class="article-item">
-            <span class="post-date">{{ post.date | date_to_string }}</span>
+            <span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
             <a href="{{ post.url }}">{{ post.title }}</a>
             {% if post.author %}
                 <span class="text-info"> / {{ post.author }}</span>
