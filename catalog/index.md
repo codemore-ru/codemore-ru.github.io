@@ -278,6 +278,7 @@ title: Каталог ссылок
 [TensorFlow Playground](https://playground.tensorflow.org)|Визуальное моделирование нейронной сети в браузере
 [Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
 [Лекции ШАД](http://shad.yandex.ru/lectures/)|Видеолекции некоторых курсов Школы анализа данных
+[VISUALGO.NET](https://visualgo.net/ru)|Анимированные визуализации структур данных
 {: .table}
 
 [В начало](#)
