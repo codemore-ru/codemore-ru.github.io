@@ -39,10 +39,10 @@ title: Каталог ссылок
 [Microsoft Visual Studio](http://www.visualstudio.com/ru-ru/downloads)|IDE от Microsoft, поддерживает разработку на С++, C#, Visual Basic. Доступна бесплатная редакция Express
 [Apache NetBeans](https://netbeans.apache.org/)|Поддерживает множество языков. Распространяется свободно
 [Eclipse](http://eclipse.org/)|Платформа, на которой разработано множество IDE для различных языков
-[Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
 [Komodo IDE](http://komodoide.com/)|Коммерческая кроссплатформенная универсальная IDE
-[Atom](https://atom.io/)|Универсальный текстовый редактор, разрабатывемый GitHub (лицензия MIT)
+[Atom](https://atom.io/)|Универсальный текстовый редактор, разрабатываемый GitHub (лицензия MIT)
 [Visual Studio Code](https://code.visualstudio.com/)|Универсальный текстовый редактор, разрабатывемый Microsoft (лицензия MIT)
+[Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
 {: .table}
 
 [В начало](#)
@@ -73,6 +73,10 @@ title: Каталог ссылок
 |-|-|
 [Java 11 API Specification](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)|Официальная документация по стандартной библиотеке языка Java
 [Spring](https://spring.io/)|Фреймфорк для создания приложений на Java
+[OpenJDK](http://openjdk.java.net/)|Основной сайт разработки JDK
+[JDK](https://github.com/openjdk/jdk)|Главный репозиторий с исходным кодом JDK
+[Apache Maven](http://maven.apache.org/)|Система сборки и основной репозиторий библиотек для Java
+[Gradle](https://gradle.org/)|Система сборки для Java (и не только)
 {: .table}
 
 [В начало](#)
@@ -82,7 +86,7 @@ title: Каталог ссылок
 {: #pascal}
 
 [Free Pascal Compiler](http://www.freepascal.org/)|Свободно распространяемый компилятор языка Pascal
-[Lazarus](http://www.lazarus.freepascal.org/)|Свободно распространяемая кросс-платформанная IDE для языка Pascal
+[Lazarus](http://www.lazarus.freepascal.org/)|Свободно распространяемая кросс-платформенная IDE для языка Pascal
 [Delphi](http://www.embarcadero.com/products/delphi)|IDE для языка Pascal (и Object Pascal)
 [Pascal Central](http://pascal-central.com/)|Сайт, посвященный языку программирования Pascal. Содержит справочник по языку, статьи, ссылки на компиляторы и среды разработки<br>(на английском языке)
 {: .table}
@@ -151,6 +155,7 @@ title: Каталог ссылок
 [Font squirrel](http://www.fontsquirrel.com/)|Большая коллекция бесплатных веб-шрифтов
 [Less](http://lesscss.org/)|Препроцессор CSS (лицензия Apache License 2.0)
 [Sass](http://sass-lang.com/)|Еще один препроцессор CSS (лицензия MIT)
+[Can I Use](https://caniuse.com/)|Справочник по реализации web-стандартов в различных браузерах
 {: .table }
 
 [В начало](#)
@@ -206,13 +211,15 @@ title: Каталог ссылок
 [Git](http://git-scm.com/)|Свободная распределенная система управления версиями
 [Mercurial](http://mercurial.selenic.com/)|Свободная распределенная система управления версиями
 [Subversion](http://subversion.apache.org/)|Свободная централизованная система управления версиями
-[GitHub](https://github.com/)|Хостинг для хранения исходного кода и совместной разработки. Бесплатен для проектов с открытым исходным кодом
+[GitHub](https://github.com/)|Хостинг для хранения исходного кода и совместной разработки. Бесплатен как для публичных так и для закрытых проектов
 [Bitbucket](https://bitbucket.org/)|Хостинг исходного кода. Есть возможность создания бесплатных публичных и закрытых (с ограниченным числом участников) репозиториев
+[GitLab](https://about.gitlab.com/)|Хостинг исходного кода. Бесплатен как для публичных, так и для закрытых проектов. Есть OpenSource-версия с возможностью установить на собственный сервер
 [SourceTree](http://sourcetreeapp.com/)|Утилита для управления локальными Git и Mercurial репозиториями<br>Поддерживаются Windows и Mac OS X
 [TortoiseHg](http://tortoisehg.bitbucket.org/)|Утилита для управления репозиториями Mercurial<br>Поддерживаются Windows, Linux и Mac OS X
 [TortoiseSVN](http://tortoisesvn.net/)|Утилита для управления репозиториями Subversion<br>Поддерживается только Windows
 [Mercurial: The Definitive Guide](http://hgbook.red-bean.com/read/)|Бесплатная книга по Mercurial<br>На английском языке
 [Pro Git](http://git-scm.com/book)|Бесплатная книга по Git<br>На английском языке
+[Gitea](https://gitea.io/en-us/)|OpenSource система для хостинга git-репозиториев
 {: .table }
 
 
@@ -223,6 +230,7 @@ title: Каталог ссылок
 [Vagrant](http://www.vagrantup.com/)|Утилита для создания виртуальных сред разработки (лицензия MIT)<br>Поддерживаются Windows, Linux и Mac OS X
 [Travis CI](https://travis-ci.org/)|Бесплатная платформа непрерывной интеграции для проектов с открытым исходным кодом
 [docker](https://www.docker.com/)|Программа для запуска приложений в изолированных контейнерах
+[regular expressions 101](https://regex101.com/)|Редактор регулярных выражений
 {: .table }
 
 [В начало](#)
