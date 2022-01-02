@@ -7,16 +7,17 @@ title: Каталог ссылок
 
 * [Языки, среды и технологии программирования](#lang)
   * [Универсальные IDE](#ide)
+  * [Стандарты написания кода](#coding-standards)
   * [C/C++](#cpp)
   * [Java](#java)
   * [Pascal](#pascal)
   * [Python](#python)
   * [Web (HTML, CSS, JavaScript, ...)](#web)
-	* [Универсальные самоучители и справочники](#universal_web)
+    * [Универсальные самоучители и справочники](#universal_web)
     * [HTML, CSS](#html) 
     * [JavaScript](#js)
     * [PHP](#php)
-	* [Движки](#engine)
+    * [Движки](#engine)
   * [Системы управления версиями](#vcs)
   * [Полезные инструменты](#tools)
 * [Тестирующие системы](#ejudge)
@@ -47,6 +48,21 @@ title: Каталог ссылок
 
 [В начало](#)
 
+### Стандарты написания кода
+{: #coding-standards}
+
+|-|-|
+[Linux kernel coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)|Стандарт для разработчиков ядра Linux
+[ISO C++ Coding Standards](https://isocpp.org/wiki/faq/coding-standards)|Стандарты написания кода на С++ от ISO
+[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)|Стандарт написания кода на С++ от Google
+[PEP 8](https://www.python.org/dev/peps/pep-0008/)|Официальный стандарт написания кода на Python
+[gofmt](https://pkg.go.dev/cmd/gofmt)|Стандартная утилита для форматирования исходного кода на Go
+[Prettier](https://prettier.io/)|Одна из утилит (библиотек) для форматирования кода на JavaScript
+[PSR-1](https://www.php-fig.org/psr/psr-1/)|Базовый официальный стандарт форматирования кода на PHP
+[Code Conventions for the Java Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)|Довольно старый (1999 года) стандарт написания кода на Java от Sun Microsystems
+{: .table}
+
+[В начало](#)
 
 ### C/C++
 {: #cpp}
