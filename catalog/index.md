@@ -10,6 +10,7 @@ title: Каталог ссылок
   * [Стандарты написания кода](#coding-standards)
   * [C/C++](#cpp)
   * [Java](#java)
+  * [Go](#go)
   * [Pascal](#pascal)
   * [Python](#python)
   * [Web (HTML, CSS, JavaScript, ...)](#web)
@@ -97,6 +98,19 @@ title: Каталог ссылок
 
 [В начало](#)
 
+### Go
+{: #go}
+
+|-|-|
+[go.dev](https://go.dev/)|Официальный сайт
+[doc](https://go.dev/doc/)|Официальная документация
+[tour](https://go.dev/tour/)|Интерактивный учебник и онлайн-среда для запуска программ на Go
+[pkg](https://pkg.go.dev/)|Официальный справочник по встроенным и сторонним модулям 
+[Go by Example](https://gobyexample.com/)|Учебник на основе примеров
+[Awesome Go](https://awesome-go.com/)|Большой список библиотек и проектов на Go
+{: .table}
+
+[В начало](#)
 
 ### Pascal
 {: #pascal}
