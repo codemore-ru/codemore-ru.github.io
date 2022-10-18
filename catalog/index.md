@@ -79,6 +79,8 @@ title: Каталог ссылок
 [Intel C and C++ compiler](http://software.intel.com/en-us/c-compilers)|Компилятор С/С++ от Intel
 [IOCCC](http://www.ioccc.org/)|Международный Конкурс запутывания кода на Си
 [Compiler Explorer](https://godbolt.org/)|Позволяет посмотреть, какой ассемблерный код генерируют разные компиляторы
+[OnlineGDB](https://www.onlinegdb.com/)|Онлайн-компилятор и отладчик для C/C++
+[C++ Insights](https://cppinsights.io/)|Онлайн-компилятор C/C++, показывающий код в том виде, как его "видит" компилятор
 {: .table}
 
 [В начало](#)
