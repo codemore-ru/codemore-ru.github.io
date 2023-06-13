@@ -81,6 +81,7 @@ title: Каталог ссылок
 [Compiler Explorer](https://godbolt.org/)|Позволяет посмотреть, какой ассемблерный код генерируют разные компиляторы
 [OnlineGDB](https://www.onlinegdb.com/)|Онлайн-компилятор и отладчик для C/C++
 [C++ Insights](https://cppinsights.io/)|Онлайн-компилятор C/C++, показывающий код в том виде, как его "видит" компилятор
+[C++ на Runebook.dev](https://runebook.dev/ru/docs/cpp/-index-)|Перевод на русский язык документации по языку и стандартной библиотеке
 {: .table}
 
 [В начало](#)
