@@ -44,11 +44,18 @@ STL string
 struct Book{
 	string title, author;
 	int num_pages;
-	
-	ostream& operator<<(ostream& s){
-		return (s << author << " " << title << " (" << num_pages << ")");
-	}
 };
+
+std::ostream& operator<<(std::ostream &s, const Book &b){
+	return (s << b.author << " " << b.title << " (" << b.num_pages << ")");
+}
+
+//используется оператор таким образом:
+Book b;
+b.title = "the book";
+b.author = "the author";
+b.num_pages = 128;
+std::cout << b << std::endl;
 {% endhighlight %}
 
 Некоторые методы класса ostream:
