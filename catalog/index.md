@@ -42,9 +42,7 @@ title: Каталог ссылок
 [Microsoft Visual Studio](http://www.visualstudio.com/ru-ru/downloads)|IDE от Microsoft, поддерживает разработку на С++, C#, Visual Basic. Доступна бесплатная редакция Express
 [Apache NetBeans](https://netbeans.apache.org/)|Поддерживает множество языков. Распространяется свободно
 [Eclipse](http://eclipse.org/)|Платформа, на которой разработано множество IDE для различных языков
-[Komodo IDE](http://komodoide.com/)|Коммерческая кроссплатформенная универсальная IDE
-[Atom](https://atom.io/)|Универсальный текстовый редактор, разрабатываемый GitHub (лицензия MIT)
-[Visual Studio Code](https://code.visualstudio.com/)|Универсальный текстовый редактор, разрабатывемый Microsoft (лицензия MIT)
+[Visual Studio Code](https://code.visualstudio.com/)|Универсальный текстовый редактор, разрабатываемый Microsoft (лицензия MIT)
 [Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
 {: .table}
 
