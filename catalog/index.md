@@ -13,6 +13,7 @@ title: Каталог ссылок
   * [Go](#go)
   * [Pascal](#pascal)
   * [Python](#python)
+  * [SQL](#sql)
   * [Web (HTML, CSS, JavaScript, ...)](#web)
     * [Универсальные самоучители и справочники](#universal_web)
     * [HTML, CSS](#html) 
@@ -140,6 +141,21 @@ title: Каталог ссылок
 [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro)|Набор привязок фреймворка Qt для Python
 [Django](https://www.djangoproject.com/)|Мощный веб-фреймворк (лицензия BSD)
 [Flask](http://flask.pocoo.org/)|Веб-микрофреймворк (лицензия BSD)
+{: .table}
+
+[В начало](#)
+
+
+### SQL
+{: #sql}
+
+|-|-|
+[Упражнения по SQL](https://www.sql-ex.ru/)|Практическое владение языком SQL - задачи и проверяющая система по языку SQL
+[OneCompiler (PostgreSQL)](https://onecompiler.com/postgresql)|Онлайн запуск запросов к PostgreSQL
+[SQL Fiddle](http://sqlfiddle.com/)|Онлайн запуск запросов к различным СУБД
+[Интерактивный тренажер по SQL](https://stepik.org/course/63054/promo)|Курс по SQL
+[SQL Academy](https://sql-academy.org/ru)|Еще один интерактивный курс по SQL
+[SQL 50](https://leetcode.com/studyplan/top-sql-50/)|Задачи по SQL на LeetCode
 {: .table}
 
 [В начало](#)
@@ -374,9 +390,6 @@ title: Каталог ссылок
 [Логические задачи и головоломки](http://www.smekalka.pp.ru/)|Содержит старинные и занимательные головоломки, задачи с подвохом, загадки, физические и математические задачи, логические трюки и парадоксы
 [Metanit](https://metanit.com)|Ресурс посвящен различным языкам и технологиям программирования, компьютерам, мобильным платформам и ИТ-технологиям. Приоритетные направления - язык C# и семейство технологий .NET (ASP.NET MVC, WPF, Xamarin, Entity Framework и т.д.), технологии на базе Java ( Java SE, программирование под ОС Андроид и т.д.), Python, работа с базами данных (MS SQL Server, MySQL, MongoDB) а также WEB-технологии, такие как HTML5, AJAX, jQuery, Node.js, ExtJS, Angular, React и др.
 [Игры разума](http://www.braingames.ru/)|Сборник логических задач
-[Упражнения по SQL](https://www.sql-ex.ru/)|Практическое владение языком SQL - задачи и проверяющая система по языку SQL
-[OneCompiler (PostgreSQL)](https://onecompiler.com/postgresql)|Онлайн запуск запросов к PostgreSQL
-[SQL Fiddle](http://sqlfiddle.com/)|Онлайн запуск запросов к различным СУБД
 [Nandgame](https://nandgame.com/)|Игра-головоломка, цель которой - сборка компьютера из логических компонентов
 {: .table}
 
