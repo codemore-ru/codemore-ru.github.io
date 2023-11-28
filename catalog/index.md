@@ -108,8 +108,13 @@ title: Каталог ссылок
 [doc](https://go.dev/doc/)|Официальная документация
 [tour](https://go.dev/tour/)|Интерактивный учебник и онлайн-среда для запуска программ на Go
 [pkg](https://pkg.go.dev/)|Официальный справочник по встроенным и сторонним модулям 
+[play](https://go.dev/play/)|The Go Playground - официальный онлайн-компилятор go
 [Go by Example](https://gobyexample.com/)|Учебник на основе примеров
+[Go by Example (RU)](https://gobyexample.ru/)|Учебник на основе примеров (на русском языке)
 [Awesome Go](https://awesome-go.com/)|Большой список библиотек и проектов на Go
+[Введение в программирование на Go](http://golang-book.ru/)|Учебник go на русском языке
+[Effective Go (RU)](https://github.com/Konstantin8105/Effective_Go_RU)|Перевод раздела документации на русский язык
+[Go Online Compiler](https://www.programiz.com/golang/online-compiler/)|Онлайн-компилятор go
 {: .table}
 
 [В начало](#)
