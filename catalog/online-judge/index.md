@@ -31,6 +31,7 @@ layout: page-base
 + [Яндекс.Контест](https://contest.yandex.ru/contest-list/)
 + [HakerRank](https://www.hackerrank.com)
 + [codewars](https://www.codewars.com/)
++ [LeetCode](https://leetcode.com/)
 
 ### Каталог ресурсов с международными онлайн соревнованиями
 

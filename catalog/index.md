@@ -394,6 +394,7 @@ title: Каталог ссылок
 [Metanit](https://metanit.com)|Ресурс посвящен различным языкам и технологиям программирования, компьютерам, мобильным платформам и ИТ-технологиям. Приоритетные направления - язык C# и семейство технологий .NET (ASP.NET MVC, WPF, Xamarin, Entity Framework и т.д.), технологии на базе Java ( Java SE, программирование под ОС Андроид и т.д.), Python, работа с базами данных (MS SQL Server, MySQL, MongoDB) а также WEB-технологии, такие как HTML5, AJAX, jQuery, Node.js, ExtJS, Angular, React и др.
 [Игры разума](http://www.braingames.ru/)|Сборник логических задач
 [Nandgame](https://nandgame.com/)|Игра-головоломка, цель которой - сборка компьютера из логических компонентов
+[Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)|Подборка задач для подготовки к собеседованию
 {: .table}
 
 [В начало](#)
