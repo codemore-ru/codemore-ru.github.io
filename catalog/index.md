@@ -395,6 +395,8 @@ title: Каталог ссылок
 [Игры разума](http://www.braingames.ru/)|Сборник логических задач
 [Nandgame](https://nandgame.com/)|Игра-головоломка, цель которой - сборка компьютера из логических компонентов
 [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)|Подборка задач для подготовки к собеседованию
+[Grind 75 questions](https://www.techinterviewhandbook.org/grind75)|Подборка из задач, сгруппированных в виде учебного плана
+[NeetCode](https://neetcode.io/courses)|Учебные курсы по программированию
 {: .table}
 
 [В начало](#)
