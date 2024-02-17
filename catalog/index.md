@@ -339,6 +339,10 @@ title: Каталог ссылок
 [Data Structures and Algorithms](http://www.youtube.com/playlist?list=PLE621E25B3BF8B9D1)|Курс видеолекций Richard Buckland (Университет Нового Южного Уэльса).<br>(на английском языке)
 [Лекции ШАД](http://shad.yandex.ru/lectures/)|Видеолекции некоторых курсов Школы анализа данных
 [VISUALGO.NET](https://visualgo.net/ru)|Анимированные визуализации структур данных
+[Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)|Подборка задач для подготовки к собеседованию
+[Grind 75 questions](https://www.techinterviewhandbook.org/grind75)|Подборка из задач, сгруппированных в виде учебного плана
+[NeetCode](https://neetcode.io/courses)|Учебные курсы по программированию
+[Информатикс](https://informatics.msk.ru/)|Обучение программированию, алгоритмам и структурам данных
 {: .table}
 
 [В начало](#)
@@ -394,9 +398,9 @@ title: Каталог ссылок
 [Metanit](https://metanit.com)|Ресурс посвящен различным языкам и технологиям программирования, компьютерам, мобильным платформам и ИТ-технологиям. Приоритетные направления - язык C# и семейство технологий .NET (ASP.NET MVC, WPF, Xamarin, Entity Framework и т.д.), технологии на базе Java ( Java SE, программирование под ОС Андроид и т.д.), Python, работа с базами данных (MS SQL Server, MySQL, MongoDB) а также WEB-технологии, такие как HTML5, AJAX, jQuery, Node.js, ExtJS, Angular, React и др.
 [Игры разума](http://www.braingames.ru/)|Сборник логических задач
 [Nandgame](https://nandgame.com/)|Игра-головоломка, цель которой - сборка компьютера из логических компонентов
-[Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)|Подборка задач для подготовки к собеседованию
-[Grind 75 questions](https://www.techinterviewhandbook.org/grind75)|Подборка из задач, сгруппированных в виде учебного плана
-[NeetCode](https://neetcode.io/courses)|Учебные курсы по программированию
+[Google Академия](https://scholar.google.com/)|Поиск научных статей
+libgen|Научная литература (актуальный адрес и домен см. в поисковике)
+sci-hub|Научные статьи (актуальный адрес и домен см. в поисковике)
 {: .table}
 
 [В начало](#)
