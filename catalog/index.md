@@ -159,6 +159,7 @@ title: Каталог ссылок
 [Интерактивный тренажер по SQL](https://stepik.org/course/63054/promo)|Курс по SQL
 [SQL Academy](https://sql-academy.org/ru)|Еще один интерактивный курс по SQL
 [SQL 50](https://leetcode.com/studyplan/top-sql-50/)|Задачи по SQL на LeetCode
+[Базы данных. Вводный курс](http://citforum.ru/database/advanced_intro/)|Учебный курс по базам данных
 {: .table}
 
 [В начало](#)
