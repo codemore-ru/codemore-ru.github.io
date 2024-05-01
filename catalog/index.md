@@ -344,6 +344,12 @@ title: Каталог ссылок
 [Grind 75 questions](https://www.techinterviewhandbook.org/grind75)|Подборка из задач, сгруппированных в виде учебного плана
 [NeetCode](https://neetcode.io/courses)|Учебные курсы по программированию
 [Информатикс](https://informatics.msk.ru/)|Обучение программированию, алгоритмам и структурам данных
+[peltorator](https://peltorator.ru/)|Сборник алгоритмов
+[Algorithms for Competitive Programming](https://cp-algorithms.com/)|Сборник алгоритмов для олимпиадного программирования (на английском языке), создан на основе e-maxx.ru
+[Дискретная математика, алгоритмы и структуры данных](https://neerc.ifmo.ru/wiki/index.php?title=Дискретная_математика,_алгоритмы_и_структуры_данных)|Большой сборник материалов от ИТМО
+[Algorithmica](https://ru.algorithmica.org/)|Материалы различных CS-курсов, проводящихся в Tinkoff Generation
+[USACO Guide](https://usaco.guide/problems/)|Сборник задач и материалы от USACO - олимпиады по информатике США
+[brestprog](https://brestprog.by/topics/)|Олимпиадное программирование в Бресте и Беларуси (сборник материалов по алгоритмам и структурам данных)
 {: .table}
 
 [В начало](#)
