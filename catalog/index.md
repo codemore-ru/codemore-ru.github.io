@@ -44,6 +44,7 @@ title: Каталог ссылок
 [Eclipse](http://eclipse.org/)|Платформа, на которой разработано множество IDE для различных языков
 [Visual Studio Code](https://code.visualstudio.com/)|Универсальный текстовый редактор, разрабатываемый Microsoft (лицензия MIT)
 [Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
+[myCompiler](https://www.mycompiler.io/)|Онлайн компилятор, поддерживающий языки программирования и СУБД
 {: .table}
 
 [В начало](#)
