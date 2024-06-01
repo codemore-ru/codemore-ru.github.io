@@ -313,6 +313,8 @@ title: Каталог ссылок
 [Udacity](https://www.udacity.com/)|Онлайн-курсы по различным областям computer science<br>На английском языке
 [Coursera](https://www.coursera.org/)|Курсы по различным областям знаний<br>Есть курсы на русском языке
 [ИНТУИТ](http://www.intuit.ru/)|Курсы по информационным технологиям, математике, физике и другим областям знаний<br>На русском языке
+[Brilliant](https://brilliant.org/)|Интерактивные учебные курсы
+[Jared Owen](https://www.youtube.com/@JaredOwen)|3D-анимация, показывающая как работают разные вещи
 {: .table}
 
 [В начало](#)
