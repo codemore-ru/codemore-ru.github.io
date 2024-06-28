@@ -32,6 +32,7 @@ layout: page-base
 + [HakerRank](https://www.hackerrank.com)
 + [codewars](https://www.codewars.com/)
 + [LeetCode](https://leetcode.com/)
++ [CodeRun](https://coderun.yandex.ru/catalog)
 
 ### Каталог ресурсов с международными онлайн соревнованиями
 
