@@ -7,36 +7,50 @@ description: Code More - сайт о программировании
 <link rel="stylesheet" href="css/index.css">
 
 <div class="container">
-    <div class="content-container">
 
-        <h1 class="code-more">Code More!</h1>
+    <h1 class="code-more">Code More!</h1>
 
-        <!-- Разделы -->
-        <ul class="nav nav-pills nav-justified index-sections">
-            {% include sections.html %}
-        </ul>
-
-        <!-- Дополнительные разделы -->
-        <ul class="nav nav-pills center-block index-minor-sections">
-            <li><a href="/catalog"><i class="fa fa-globe"></i>Каталог ссылок</a></li>
-            <li><a href="/catalog/online-judge"><i class="fa fa-laptop"></i>Online judge</a></li>
-        </ul>
-
-        <hr>
-
-        {% for post in site.posts %}
-            {% if post.section == null %}
-                <p class="article-item">
-                    <span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    {% if post.author %}
-                        <em class="text-info"> / {{ post.author }}</em>
-                    {% endif %}
-                </p>
-            {% endif %}
-        {% endfor %}
-
+    <!-- Дополнительные разделы -->
+    <div class="text-center mb-5">
+        <div>
+            <a href="/catalog" class="text-secondary">Каталог ссылок</a>
+            &middot;
+            <a href="/catalog/online-judge" class="text-secondary">Online judge</a>
+        </div>
+        <div>
+            <a href="/pskov" class="text-success">Олимпиадное программирование в ПсковГУ</a>
+        </div>
     </div>
+
+    <ul class="list-group mb-5">
+        {% for post in site.posts %}
+            <li class="list-group-item">
+                <div>
+                    <a href="{{ post.url }}" class="text-secondary">{{ post.title }}</a>
+                </div>
+                <div class="text-secondary">
+                    {{ post.date | date: '%d.%m.%Y' }}
+                    {% if post.author %}
+                        - {{ post.author }}
+                    {% endif %}
+                    {% if post.section %}
+                        -
+                        {% if post.section == "experimental" %}
+                            <span class="text-info">Эксперименты</span>
+                        {% elsif post.section == "mathematiques-tasks" or post.section == "mathematiques-tasks-other" %}
+                            <span class="text-secondary">Международный Чемпионат Математических и Логических Игр</span>
+                        {% elsif post.section == "mc" %}
+                            <span class="text-primary">Микроконтроллеры</span>
+                        {% elsif post.section == "programming" %}
+                            <span class="text-primary">Программирование - {{ post.language }}</span>
+                        {% elsif post.section == "pskov" or post.section == "pskov-tasks" or post.section == "pskov-documentation" or post.section == "pskov-achievments" %}
+                            <span class="text-success">Олимпиадное программирование в Псков ГУ</span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
 
 <div class="text-center">

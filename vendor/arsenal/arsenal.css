@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'arsenalregular';
+    src: url('/vendor/arsenal/arsenal-regular.eot');
+    src: url('/vendor/arsenal/arsenal-regular.eot?#iefix') format('embedded-opentype'),
+         url('/vendor/arsenal/arsenal-regular.woff') format('woff'),
+         url('/vendor/arsenal/arsenal-regular.ttf.gz') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

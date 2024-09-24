@@ -1,5 +1,5 @@
 name: Code More
-exclude: ['.git', '.vagrant', 'Vagrantfile', 'provision.sh', 'CNAME', 'README.md']
+exclude: ['.git', 'CNAME', 'README.md']
 plugins:
   - jekyll-sitemap
  
