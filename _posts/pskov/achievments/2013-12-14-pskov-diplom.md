@@ -1,5 +1,5 @@
 ---
-layout: post-pskov
+layout: post-simple
 title: Дипломы
 section: pskov-achievments
 author: Valentin Gubarev

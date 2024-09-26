@@ -4,29 +4,17 @@ title: Code More
 description: Code More - сайт о программировании
 ---
 
-<link rel="stylesheet" href="css/index.css">
-
 <div class="container">
 
-    <h1 class="code-more">Code More!</h1>
-
-    <!-- Дополнительные разделы -->
-    <div class="text-center mb-5">
-        <div>
-            <a href="/catalog" class="text-secondary">Каталог ссылок</a>
-            &middot;
-            <a href="/catalog/online-judge" class="text-secondary">Online judge</a>
-        </div>
-        <div>
-            <a href="/pskov" class="text-success">Олимпиадное программирование в ПсковГУ</a>
-        </div>
+    <div class="mt-5">
+        {% include navigation.html %}
     </div>
 
-    <ul class="list-group mb-5">
+    <ul class="list-group list-group-flush mb-5">
         {% for post in site.posts %}
-            <li class="list-group-item">
+            <li class="list-group-item list-group-item-action">
                 <div>
-                    <a href="{{ post.url }}" class="text-secondary">{{ post.title }}</a>
+                    <a href="{{ post.url }}" class="section-catalog">{{ post.title }}</a>
                 </div>
                 <div class="text-secondary">
                     {{ post.date | date: '%d.%m.%Y' }}
@@ -36,15 +24,15 @@ description: Code More - сайт о программировании
                     {% if post.section %}
                         -
                         {% if post.section == "experimental" %}
-                            <span class="text-info">Эксперименты</span>
+                            <span class="section-experimental">Эксперименты</span>
                         {% elsif post.section == "mathematiques-tasks" or post.section == "mathematiques-tasks-other" %}
-                            <span class="text-secondary">Международный Чемпионат Математических и Логических Игр</span>
+                            <span class="section-mathematiques">Международный Чемпионат Математических и Логических Игр</span>
                         {% elsif post.section == "mc" %}
-                            <span class="text-primary">Микроконтроллеры</span>
+                            <span class="section-programming">Микроконтроллеры</span>
                         {% elsif post.section == "programming" %}
-                            <span class="text-primary">Программирование - {{ post.language }}</span>
+                            <span class="section-programming">Программирование - {{ post.language }}</span>
                         {% elsif post.section == "pskov" or post.section == "pskov-tasks" or post.section == "pskov-documentation" or post.section == "pskov-achievments" %}
-                            <span class="text-success">Олимпиадное программирование в Псков ГУ</span>
+                            <span class="section-pskov">Олимпиадное программирование в Псков ГУ</span>
                         {% endif %}
                     {% endif %}
                 </div>

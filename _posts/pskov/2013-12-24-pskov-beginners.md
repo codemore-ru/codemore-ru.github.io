@@ -1,5 +1,5 @@
 ---
-layout: post-pskov
+layout: post-simple
 title: Информация для начинающих!
 section: pskov
 author: Valentin Gubarev

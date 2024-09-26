@@ -45,5 +45,5 @@ layout: page-base
 [Facebook Hacker Cup](https://www.facebook.com/hackercup)|Чемпионат по программированию, проводимый Facebook
 [ABBYY Cup](http://www.abbyy.ru/science/students/cup/)|Студенческая online-олимпиада по программированию ABBYY Cup
 [IT-Планета](http://world-it-planet.org/)|Международная олимпиада в сфере информационных технологий
-{: .table}
+{: .table .table-hover}
 

@@ -3,7 +3,9 @@ layout: page-base
 title: Каталог ссылок
 ---
 
-### Содержание
+# Каталог ссылок
+
+## Содержание
 
 * [Языки, среды и технологии программирования](#lang)
   * [Универсальные IDE](#ide)
@@ -31,11 +33,11 @@ title: Каталог ссылок
 * [Обработка бинарных данных](#hex)
 
 
-### Языки, среды и технологии программирования
-{: #lang}
+## Языки, среды и технологии программирования
+{: #lang .mt-5}
 
-### Универсальные IDE
-{: #ide}
+## Универсальные IDE
+{: #ide .mt-5}
 
 |-|-|
 [IntelliJ IDEA](http://www.jetbrains.com/idea/)|Кросс-платформенная IDE от JetBrains. Есть бесплатная редакция Community Edition
@@ -45,12 +47,13 @@ title: Каталог ссылок
 [Visual Studio Code](https://code.visualstudio.com/)|Универсальный текстовый редактор, разрабатываемый Microsoft (лицензия MIT)
 [Ideone.com](http://ideone.com/)|Онлайн компилятор, поддерживающий множество языков
 [myCompiler](https://www.mycompiler.io/)|Онлайн компилятор, поддерживающий языки программирования и СУБД
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
-### Стандарты написания кода
-{: #coding-standards}
+
+## Стандарты написания кода
+{: #coding-standards .mt-5}
 
 |-|-|
 [Linux kernel coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)|Стандарт для разработчиков ядра Linux
@@ -61,12 +64,13 @@ title: Каталог ссылок
 [Prettier](https://prettier.io/)|Одна из утилит (библиотек) для форматирования кода на JavaScript
 [PSR-1](https://www.php-fig.org/psr/psr-1/)|Базовый официальный стандарт форматирования кода на PHP
 [Code Conventions for the Java Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)|Довольно старый (1999 года) стандарт написания кода на Java от Sun Microsystems
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
-### C/C++
-{: #cpp}
+
+## C/C++
+{: #cpp .mt-5}
 
 |-|-|
 [cplusplus.com](http://www.cplusplus.com/)|Подробное описание языка С++ и его стандартной библиотеки (включая последние изменения).<br>На английском языке
@@ -82,13 +86,13 @@ title: Каталог ссылок
 [OnlineGDB](https://www.onlinegdb.com/)|Онлайн-компилятор и отладчик для C/C++
 [C++ Insights](https://cppinsights.io/)|Онлайн-компилятор C/C++, показывающий код в том виде, как его "видит" компилятор
 [C++ на Runebook.dev](https://runebook.dev/ru/docs/cpp/-index-)|Перевод на русский язык документации по языку и стандартной библиотеке
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Java
-{: #java}
+## Java
+{: #java .mt-5}
 
 |-|-|
 [Java 11 API Specification](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)|Официальная документация по стандартной библиотеке языка Java
@@ -97,12 +101,13 @@ title: Каталог ссылок
 [JDK](https://github.com/openjdk/jdk)|Главный репозиторий с исходным кодом JDK
 [Apache Maven](http://maven.apache.org/)|Система сборки и основной репозиторий библиотек для Java
 [Gradle](https://gradle.org/)|Система сборки для Java (и не только)
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
-### Go
-{: #go}
+
+## Go
+{: #go .mt-5}
 
 |-|-|
 [go.dev](https://go.dev/)|Официальный сайт
@@ -116,24 +121,25 @@ title: Каталог ссылок
 [Введение в программирование на Go](http://golang-book.ru/)|Учебник go на русском языке
 [Effective Go (RU)](https://github.com/Konstantin8105/Effective_Go_RU)|Перевод раздела документации на русский язык
 [Go Online Compiler](https://www.programiz.com/golang/online-compiler/)|Онлайн-компилятор go
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
-### Pascal
-{: #pascal}
+
+## Pascal
+{: #pascal .mt-5}
 
 [Free Pascal Compiler](http://www.freepascal.org/)|Свободно распространяемый компилятор языка Pascal
 [Lazarus](http://www.lazarus.freepascal.org/)|Свободно распространяемая кросс-платформенная IDE для языка Pascal
 [Delphi](http://www.embarcadero.com/products/delphi)|IDE для языка Pascal (и Object Pascal)
 [Pascal Central](http://pascal-central.com/)|Сайт, посвященный языку программирования Pascal. Содержит справочник по языку, статьи, ссылки на компиляторы и среды разработки<br>(на английском языке)
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Python
-{: #python}
+## Python
+{: #python .mt-5}
 
 |-|-|
 [Python Programming Language](http://python.org/)|Официальный сайт языка программирования Python
@@ -145,13 +151,13 @@ title: Каталог ссылок
 [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro)|Набор привязок фреймворка Qt для Python
 [Django](https://www.djangoproject.com/)|Мощный веб-фреймворк (лицензия BSD)
 [Flask](http://flask.pocoo.org/)|Веб-микрофреймворк (лицензия BSD)
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### SQL
-{: #sql}
+## SQL
+{: #sql .mt-5}
 
 |-|-|
 [Упражнения по SQL](https://www.sql-ex.ru/)|Практическое владение языком SQL - задачи и проверяющая система по языку SQL
@@ -161,26 +167,26 @@ title: Каталог ссылок
 [SQL Academy](https://sql-academy.org/ru)|Еще один интерактивный курс по SQL
 [SQL 50](https://leetcode.com/studyplan/top-sql-50/)|Задачи по SQL на LeetCode
 [Базы данных. Вводный курс](http://citforum.ru/database/advanced_intro/)|Учебный курс по базам данных
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Web (HTML, CSS, JavaScript, ...)
-{: #web}
+## Web (HTML, CSS, JavaScript, ...)
+{: #web .mt-5}
 
 |-|-|
 [devdocs.io](http://devdocs.io/)|Документация по интернет-технологиям и не только.<br>На английском языке
 [Aptana Studio](http://www.aptana.com/)|Свободно растпространяемая IDE. Поддерживает JavaScript, PHP, Ruby
 [nginx](http://nginx.org)|Веб-сервер. Наиболее часто применяется для хранилищ статических файлов (лицензия BSD)
 [jekyll](http://jekyllrb.com/)|Генератор статических сайтов (лицензия MIT)
-{: .table }
+{: .table .table-hover }
 
 [В начало](#)
 
 
-### Универсальные самоучители и справочники
-{: #universal_web}
+## Универсальные самоучители и справочники
+{: #universal_web .mt-5}
 
 |-|-|
 [puzzleweb](https://puzzleweb.ru)|Универсальный самоучитель и справочник по HTML 5, CSS, JavaScript и PHP
@@ -190,13 +196,13 @@ title: Каталог ссылок
 [Wisdomweb](http://www.wisdomweb.ru)|На этом ресурсе Вы найдёте бесплатные онлайн учебники и справочники по всем популярным веб-технологиям (JavaScript, HTML, HTML5, XHTML, HDOM, jQuery, AJAX, JSON, CSS), которые используются для создания веб-сайтов
 [html5book](https://html5book.ru)|Универсальный самоучитель и справочник по HTML 5, CSS, JavaScript. Так же содержит разделы по типографике и вёрстке
 [MDN](https://developer.mozilla.org/ru/)|Ресурсы для веб-разработчиков от mozilla
-{: .table }
+{: .table .table-hover }
 
 [В начало](#)
 
 
-### HTML, CSS
-{: #html}
+## HTML, CSS
+{: #html .mt-5}
 
 |-|-|
 [W3C](http://www.w3.org/)|World Wide Web Consortium
@@ -210,13 +216,13 @@ title: Каталог ссылок
 [Less](http://lesscss.org/)|Препроцессор CSS (лицензия Apache License 2.0)
 [Sass](http://sass-lang.com/)|Еще один препроцессор CSS (лицензия MIT)
 [Can I Use](https://caniuse.com/)|Справочник по реализации web-стандартов в различных браузерах
-{: .table }
+{: .table .table-hover }
 
 [В начало](#)
 
 
-### JavaScript
-{: #js}
+## JavaScript
+{: #js .mt-5}
 
 |-|-|
 [javascript.ru](http://javascript.ru/)|Сайт Ильи Кантора, посвященный JavaScript. Содержит учебник и справочник
@@ -230,36 +236,36 @@ title: Каталог ссылок
 [Gulp](http://gulpjs.com/)|Система сборки для JavaScript
 [Grunt](http://gruntjs.com/)|Еще одна система сборки JavaScript проектов 
 [webpack](https://webpack.github.io/)|И еще одна система сборки для web
-{: .table }
+{: .table .table-hover }
 
 [В начало](#)
 
 
-### PHP
-{: #php}
+## PHP
+{: #php .mt-5}
 
 |-|-|
 [PHP](http://php.net/)|Официальный сайт языка PHP
 [PhpStorm](http://www.jetbrains.com/phpstorm/)|Коммерческая IDE от JetBrains. Поддерживает JavaScript, PHP и некоторые распространенные фреймворки
 [Zend Studio](http://www.zend.com/en/products/studio/)|Коммерческая IDE от Zend
 [Symfony](http://symfony.com/)|Мощный фреймворк
-{: .table }
+{: .table .table-hover }
 
 [В начало](#)
 
 
-### Движки
-{: #engine}
+## Движки
+{: #engine .mt-5}
 
 |-|-|
 [PointJS](http://pointjs.ru)|Игровой движок, позволяющий создавать игры для браузеров любых платформ и операционных систем. Единственное требование к устройству - возможность воспроизводить HTML5 страницы посредством браузера или других программных средств и исполнять JavaScript код. <br>Ресурс содержит ссылки для скачивания движка и дополнительных модулей, описание API, уроки и примеры
-{: .table }
+{: .table .table-hover }
 
 [В начало](#)
 
 
-### Системы управления версиями
-{: #vcs}
+## Системы управления версиями
+{: #vcs .mt-5}
 
 |-|-|
 [Git](http://git-scm.com/)|Свободная распределенная система управления версиями
@@ -274,24 +280,24 @@ title: Каталог ссылок
 [Mercurial: The Definitive Guide](http://hgbook.red-bean.com/read/)|Бесплатная книга по Mercurial<br>На английском языке
 [Pro Git](http://git-scm.com/book)|Бесплатная книга по Git<br>На английском языке
 [Gitea](https://gitea.io/en-us/)|OpenSource система для хостинга git-репозиториев
-{: .table }
+{: .table .table-hover }
 
 
-### Полезные инструменты
-{: #tools}
+## Полезные инструменты
+{: #tools .mt-5}
 
 |-|-|
 [Vagrant](http://www.vagrantup.com/)|Утилита для создания виртуальных сред разработки (лицензия MIT)<br>Поддерживаются Windows, Linux и Mac OS X
 [Travis CI](https://travis-ci.org/)|Бесплатная платформа непрерывной интеграции для проектов с открытым исходным кодом
 [docker](https://www.docker.com/)|Программа для запуска приложений в изолированных контейнерах
 [regular expressions 101](https://regex101.com/)|Редактор регулярных выражений
-{: .table }
+{: .table .table-hover }
 
 [В начало](#)
 
 
-### Тестирующие системы
-{: #ejudge}
+## Тестирующие системы
+{: #ejudge .mt-5}
 
 |-|-|
 [ejudje](https://ejudge.ru/)|Cистема для автоматической проверки программ
@@ -299,13 +305,13 @@ title: Каталог ссылок
 [PC^2](http://www.ecs.csus.edu/pc2/)|Cистема для автоматической проверки программ<br>Используется на финале ACM ICPC
 [olympiads.ru](http://olympiads.ru/school/system/index.shtml)|Cистема для автоматической проверки программ
 [DOMjudge](http://www.domjudge.org/)|Cистема для автоматической проверки программ (Голландия)
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Онлайн-обучение
-{: #edu}
+## Онлайн-обучение
+{: #edu .mt-5}
 
 |-|-|
 [Codecademy](http://www.codecademy.com/)|Интерактивные учебники по языкам веб-программирования<br>На английском языке
@@ -316,13 +322,13 @@ title: Каталог ссылок
 [Brilliant](https://brilliant.org/)|Интерактивные учебные курсы
 [Jared Owen](https://www.youtube.com/@JaredOwen)|3D-анимация, показывающая как работают разные вещи
 [Девстанция!](https://dev-station.ru/)|Вопросы для подготовки к собеседованиям
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Алгоритмы и структуры данных
-{: #algorithm}
+## Алгоритмы и структуры данных
+{: #algorithm .mt-5}
 
 |-|-|
 [MAXimal](http://e-maxx.ru/algo/)|Сборник Максима Иванова. Ко всем алгоритмам даны  описания и программы на C++
@@ -354,13 +360,13 @@ title: Каталог ссылок
 [Algorithmica](https://ru.algorithmica.org/)|Материалы различных CS-курсов, проводящихся в Tinkoff Generation
 [USACO Guide](https://usaco.guide/problems/)|Сборник задач и материалы от USACO - олимпиады по информатике США
 [brestprog](https://brestprog.by/topics/)|Олимпиадное программирование в Бресте и Беларуси (сборник материалов по алгоритмам и структурам данных)
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Олимпиадное программирование
-{: #olympic}
+## Олимпиадное программирование
+{: #olympic .mt-5}
 
 |-|-|
 [ACM ICPC](http://acm.baylor.edu/)|Командный студенческий чемпионат мира по программированию
@@ -376,13 +382,13 @@ title: Каталог ссылок
 [Snarknews](http://snarknews.info/)|Новости олимпиадного программирования
 [Олимпиады по информатике](http://neerc.ifmo.ru/school/information/index.html)|Олимпиады по информатике, проходящие в Санкт-Петербурге
 [Олимпиады про программированию](http://olympiads.ru/)|Олимпиады школьников по программированию в Москве: анонсы и результаты
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Свалка ссылок
-{: #dump}
+## Свалка ссылок
+{: #dump .mt-5}
 
 |-|-|
 [Единая коллекция цифровых образовательных ресурсов](http://school-collection.edu.ru/)|Ресурс посвящен школьной программе, некоторые материалы поданы очень качественно, например: "Основы компьютерных сетей"
@@ -412,30 +418,30 @@ title: Каталог ссылок
 [Google Академия](https://scholar.google.com/)|Поиск научных статей
 libgen|Научная литература (актуальный адрес и домен см. в поисковике)
 sci-hub|Научные статьи (актуальный адрес и домен см. в поисковике)
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Обработка звука
-{: #sound}
+## Обработка звука
+{: #sound .mt-5}
 
 |-|-|
 [Электронный журнал WebSound.Ru](http://websound.ru/)|Посвящён компьютерному звуку, технологиям, музыке и цифровому аудио-музыкальному творчеству. Здесь вы найдете новости, статьи, размышления, анонсы, программное обеспечение, информацию и полезные ссылки, тем или иным образом связанные с цифровым аудио
 [Генератор тональных сигналов](http://onlinetonegenerator.com/)|Онлайн генератор тональных сигналов, использует возможности HTML5 Web Audio API
 [Генератор сигналов](http://www.audiocheck.net/)|Генератор сигналов и тестов. Содержит теоретический материал
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)
 
 
-### Обработка бинарных данных
-{: #hex}
+## Обработка бинарных данных
+{: #hex .mt-5}
 
 |-|-|
 [HexEd](https://hexed.it)|Анализ и редактирование бинарных файлов
 [hex-works](http://hex-works.com/rus)|Редактор предназначен для редактирования и анализа небольших двоичных файлов, например дампов EEPROM, Flash-памяти микроконтроллеров
 [foxtools](http://foxtools.ru/Hex)|Обработка шестнадцатеричных данных (HEX)
-{: .table}
+{: .table .table-hover}
 
 [В начало](#)

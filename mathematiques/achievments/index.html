@@ -3,12 +3,10 @@ layout: page-base
 title: Достижения
 ---
 
-<link rel="stylesheet" href="/css/index.css">
-<link rel="stylesheet" href="/css/mathematiques.css">
-
-<link rel="stylesheet" href="/css/lightbox.css">
+<link rel="stylesheet" href="/vendor/lightbox/lightbox.css">
 <link rel="stylesheet" href="/css/gallery.css">
-<script src="/js/lightbox.min.js"></script>
+<script src="/vendor/jquery-2.2.4/jquery.min.js"></script>
+<script src="/vendor/lightbox/lightbox.min.js"></script>
 <script src="/js/gallery.js"></script>
 
 <script>
@@ -44,10 +42,10 @@ title: Достижения
     });
 </script>
 
-<div class="sub-header">{{ page.title }}</div>
+<h1>{{ page.title }}</h1>
 
-<h3>Международный чемпионат математических и логических игр</h3>
-<div id="math-logic"></div>
+<h2>Международный чемпионат математических и логических игр</h2>
+<div id="math-logic" class="mb-5"></div>
 
-<h3>Благодарственные письма</h3>
-<div id="gratitude"></div>
+<h2>Благодарственные письма</h2>
+<div id="gratitude" class="mb-3"></div>

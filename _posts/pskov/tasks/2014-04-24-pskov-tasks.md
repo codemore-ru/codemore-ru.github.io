@@ -1,5 +1,5 @@
 ---
-layout: post-pskov
+layout: post-simple
 title: Задачи
 section: pskov-tasks
 author: Valentin Gubarev
