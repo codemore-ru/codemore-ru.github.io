@@ -5,13 +5,13 @@ description: Code More - сайт о программировании
 ---
 
 <div class="container">
+    <div class="content-container index-container">
+        <div>
+            {% include navigation.html %}
+        </div>
 
-    <div class="mt-5">
-        {% include navigation.html %}
-    </div>
-
-    <ul class="list-group list-group-flush mb-5">
-        {% for post in site.posts %}
+        <ul class="list-group list-group-flush mb-5">
+            {% for post in site.posts %}
             <li class="list-group-item list-group-item-action">
                 <div>
                     <a href="{{ post.url }}" class="section-catalog">{{ post.title }}</a>
@@ -19,26 +19,29 @@ description: Code More - сайт о программировании
                 <div class="text-secondary">
                     {{ post.date | date: '%d.%m.%Y' }}
                     {% if post.author %}
-                        - {{ post.author }}
+                    - {{ post.author }}
                     {% endif %}
                     {% if post.section %}
-                        -
-                        {% if post.section == "experimental" %}
-                            <span class="section-experimental">Эксперименты</span>
-                        {% elsif post.section == "mathematiques" %}
-                            <span class="section-mathematiques">Международный Чемпионат Математических и Логических Игр</span>
-                        {% elsif post.section == "mc" %}
-                            <span class="section-programming">Микроконтроллеры</span>
-                        {% elsif post.section == "programming" %}
-                            <span class="section-programming">Программирование - {{ post.language }}</span>
-                        {% elsif post.section == "pskov" %}
-                            <span class="section-pskov">Олимпиадное программирование в Псков ГУ</span>
-                        {% endif %}
+                    -
+                    {% if post.section == "experimental" %}
+                    <span class="section-experimental">Эксперименты</span>
+                    {% elsif post.section == "mathematiques" %}
+                    <span class="section-mathematiques">Международный Чемпионат Математических и Логических Игр</span>
+                    {% elsif post.section == "mc" %}
+                    <span class="section-programming">Микроконтроллеры</span>
+                    {% elsif post.section == "programming" %}
+                    <span class="section-programming">Программирование - {{ post.language }}</span>
+                    {% elsif post.section == "pskov" %}
+                    <span class="section-pskov">Олимпиадное программирование в Псков ГУ</span>
+                    {% endif %}
                     {% endif %}
                 </div>
             </li>
-        {% endfor %}
-    </ul>
+            {% endfor %}
+        </ul>
+    </div>
+
+
 </div>
 
 <div class="text-center">
