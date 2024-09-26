@@ -2,7 +2,7 @@
 layout: post-simple
 title: Документация
 author: Valentin Gubarev
-section: pskov-documentation
+section: pskov
 ---
 
 |-|-|-|
@@ -17,4 +17,4 @@ section: pskov-documentation
 Создание консольного приложения в Borland C++ 3.1|[pdf](/docs/pskov/ConsoleBorlandC++.pdf)|[doc](/docs/pskov/ConsoleBorlandC++.doc)
 Создание консольного приложения в Turbo Pascal 7.1|[pdf](/docs/pskov/ConsoleTurboPascal.pdf)|[doc](/docs/pskov/ConsoleTurboPascal.doc)
 Создание консольного приложения в PascalABC.NET 3.2|[pdf](/docs/pskov/ConsolePascalABC.pdf)|[doc](/docs/pskov/ConsolePascalABC.doc)
-{: .table}
+{: .table .table-hover}

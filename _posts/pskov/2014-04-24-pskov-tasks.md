@@ -1,7 +1,7 @@
 ---
 layout: post-simple
 title: Задачи
-section: pskov-tasks
+section: pskov
 author: Valentin Gubarev
 ---
 
@@ -23,8 +23,7 @@ author: Valentin Gubarev
 Условия задач олимпиады ППИ 2008|[pdf](/docs/pskov/Tasks_2008_03_22.pdf)|[doc](/docs/pskov/Tasks_2008_03_22.doc)
 Условия задач олимпиады ППИ 2007|[pdf](/docs/pskov/Tasks_2007_03_10.pdf)|[doc](/docs/pskov/Tasks_2007_03_10.doc)
 Условия задач олимпиады ППИ 2006|[pdf](/docs/pskov/Tasks_2006_05_25.pdf)|[doc](/docs/pskov/Tasks_2006_05_25.doc)
-{: .table}
-
+{: .table .table-hover}
 
 ### Задачи Финалов Чемпионата Мира по Программированию (на английском)
 
@@ -75,4 +74,4 @@ author: Valentin Gubarev
 1979|[pdf](/docs/icpc/icpc1979.pdf)
 1978|[pdf](/docs/icpc/icpc1978.pdf)
 1974|[pdf](/docs/icpc/icpc1974.pdf)
-{: .table}
+{: .table .table-hover}

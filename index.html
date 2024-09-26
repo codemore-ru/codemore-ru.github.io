@@ -25,13 +25,13 @@ description: Code More - сайт о программировании
                         -
                         {% if post.section == "experimental" %}
                             <span class="section-experimental">Эксперименты</span>
-                        {% elsif post.section == "mathematiques-tasks" or post.section == "mathematiques-tasks-other" %}
+                        {% elsif post.section == "mathematiques" %}
                             <span class="section-mathematiques">Международный Чемпионат Математических и Логических Игр</span>
                         {% elsif post.section == "mc" %}
                             <span class="section-programming">Микроконтроллеры</span>
                         {% elsif post.section == "programming" %}
                             <span class="section-programming">Программирование - {{ post.language }}</span>
-                        {% elsif post.section == "pskov" or post.section == "pskov-tasks" or post.section == "pskov-documentation" or post.section == "pskov-achievments" %}
+                        {% elsif post.section == "pskov" %}
                             <span class="section-pskov">Олимпиадное программирование в Псков ГУ</span>
                         {% endif %}
                     {% endif %}
