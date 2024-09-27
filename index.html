@@ -16,7 +16,7 @@ description: Code More - сайт о программировании
                 <div>
                     <a href="{{ post.url }}" class="section-catalog">{{ post.title }}</a>
                 </div>
-                <div class="text-secondary">
+                <div class="text-secondary small">
                     {{ post.date | date: '%d.%m.%Y' }}
                     {% if post.author %}
                     - {{ post.author }}
@@ -25,7 +25,7 @@ description: Code More - сайт о программировании
                     -
                     {% if post.section == "experimental" %}
                     <span class="section-experimental">Эксперименты</span>
-                    {% elsif post.section == "mathematiques" %}
+                    {% elsif post.section == "mathematiques" or post.section == 'mathematiques-tasks' %}
                     <span class="section-mathematiques">Международный Чемпионат Математических и Логических Игр</span>
                     {% elsif post.section == "mc" %}
                     <span class="section-programming">Микроконтроллеры</span>
