@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	{% include meta.html %}
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/vendor/bootstrap-3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/vendor/arsenal/arsenal.css">
+	<link rel="stylesheet" href="/vendor/syntax.css">
+	<link rel="stylesheet" href="/css/styles.css">
+
+	<!-- JavaScript -->
+	<script src="/vendor/jquery-2.2.4/jquery.min.js"></script>
+	<script src="/vendor/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+	<script src="/vendor/mathjax-3.2.2/tex-mml-chtml.js"></script>
+	
+	<title>{{ page.title }}</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="content-container index-container">
+		{% include navigation.html %}
+		{% include post-title.html %}
+		{{ content }}
+	</div>
+</div>
+
+<div class="text-center">
+	{% include footer.html %}
+</div>
+
+{% include metrika.html %}
+
+</body>
+</html>

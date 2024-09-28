@@ -11,7 +11,7 @@ section: experimental
 
 Содержимое Vagrantfile:
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -31,7 +31,7 @@ end
 
 Содержимое файла `prov.sh`:
 
-{% highlight sh %}
+{% highlight sh linenos %}
 #!/bin/bash
 
 sudo apt-get update
@@ -54,7 +54,7 @@ sudo service apache2 restart
 
 Содержимое файла `default`:
 
-{% highlight text %}
+{% highlight text linenos %}
 <VirtualHost *:80>
 
 WSGIScriptAlias / /vagrant/test_deploy/test_deploy/wsgi.py
@@ -86,7 +86,7 @@ ErrorLog /vagrant/error.log
 
 Чтобы модули проекта были видны для mod_wsgi, в файл `test_deploy/test_deploy/wsgi.py` нужно добавить строки:
 
-{% highlight python %}
+{% highlight python linenos %}
 import sys
 ...
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -94,6 +94,6 @@ sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 Чтобы статические файлы собирались в каталог `test_deploy/static/`, нужно в файл `test_deploy/test_deploy/settings.py` добавить строку:
 
-{% highlight python %}
+{% highlight python linenos %}
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 {% endhighlight %}

@@ -2,9 +2,9 @@ $(function() {
     $('.solution').each(function(){
         var cur = $(this);
         var text = cur.html();
-        cur.text(' ').addClass('panel panel-default');
-        $('<div class="panel-heading"></div>').text('Решение').click(BlockClick).appendTo(cur);
-        var blockBody = $('<div class="panel-body"></div>').html(coolFormat(text)).appendTo(cur);
+        cur.text(' ').addClass('card card-default');
+        $('<div class="card-header"></div>').text('Решение').click(BlockClick).appendTo(cur);
+        var blockBody = $('<div class="card-body"></div>').html(coolFormat(text)).appendTo(cur);
         blockBody.hide();
     });
 });
@@ -19,5 +19,5 @@ function coolFormat(text) {
 }
 
 function BlockClick() {
-    $(this).next('div.panel-body').slideToggle();
+    $(this).next('.card-body').slideToggle();
 }

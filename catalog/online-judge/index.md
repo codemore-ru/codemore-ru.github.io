@@ -1,9 +1,7 @@
 ---
 title: Online Judge
-layout: page-base
+layout: post-simple
 ---
-
-{% include post-title.html %}
 
 ### Каталог ресурсов с онлайн проверяющей системой
 

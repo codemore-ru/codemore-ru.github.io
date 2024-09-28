@@ -14,7 +14,7 @@ author: Alexey Nurgaliev
 Загрузка и установка пакетов. Создается пользователь и группа ejudge. 
 Также создаются рабочие каталоги.
 
-```bash
+{% highlight bash linenos %}
 #!/bin/bash
 
 #Зависимости и компиляторы
@@ -60,14 +60,14 @@ sudo chmod 0777 /var/www/ejudge/cgi-bin /var/www/ejudge/htdocs
 #Включение модуля CGI
 sudo a2enmod cgi
 sudo service apache2 restart
-```
+{% endhighlight %}
 
 ## Сборка ejudge
 
 Собирать и устанавливать лучше под пользователем ejudge. 
 Пример, как можно сменить пользователя: `sudo su ejudge`
 
-```bash
+{% highlight bash linenos %}
 #!/bin/bash
 
 cd /home/ejudge
@@ -91,7 +91,7 @@ cd ejudge
 
 make
 make install
-```
+{% endhighlight %}
 
 ## Конфигурация
 
@@ -122,7 +122,7 @@ make install
 Пример конфигурации виртуального хоста для apache2 версии 2.4 
 (файл `/etc/apache2/sites-enabled/ejudge.conf`, возможно потребуется удалить существующую конфигурацию):
 
-```apacheconf
+{% highlight apacheconf linenos %}
 <VirtualHost *:80>
     DocumentRoot /var/www/ejudge/htdocs
 
@@ -142,7 +142,7 @@ make install
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 </VirtualHost>
-```
+{% endhighlight %}
 
 Перезапустить apache: `service apache2 restart`
 
@@ -154,17 +154,17 @@ ejudge будет доступен по адресу http://localhost/cgi-bin/se
 
 Установка пакетов:
 
-```bash
+{% highlight bash linenos %}
 #Удаление apache
 sudo apt-get remove --autoremove apache2
 
 #Установка nginx
 sudo apt-get install nginx fcgiwrap
-````
+{% endhighlight %}
 
 Конфигурация сервера (файл `/etc/nginx/sites-enabled/ejudge`):
 
-```nginx
+{% highlight nginx linenos %}
     server {
 
      listen 80;
@@ -198,7 +198,7 @@ sudo apt-get install nginx fcgiwrap
             fastcgi_param  SERVER_NAME        $host;
         }
     }
-```
+{% endhighlight %}
 
 Конфигурация основана на статье в [debian wiki](https://wiki.debian.org/ru/nginx/FastCGI).
 

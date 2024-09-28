@@ -1,9 +1,7 @@
 ---
-layout: page-base
+layout: post-simple
 title: Каталог ссылок
 ---
-
-{% include post-title.html %}
 
 ## Содержание
 

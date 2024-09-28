@@ -1,9 +1,17 @@
 ---
-layout: page-base
+layout: base
 ---
 
-{% include post-title.html %}
+<div class="container">
+    <div class="content-container index-container">
+        {% include navigation.html %}
+        {% include post-title.html %}
+        {{ content }}
+    </div>
+</div>
 
-{{ content }}
+<div class="text-center">
+    {% include footer.html %}
+</div>
 
 <script src="/vendor/mathjax-3.2.2/tex-mml-chtml.js"></script>

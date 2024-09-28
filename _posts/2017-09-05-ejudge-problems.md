@@ -21,7 +21,7 @@ _В руководстве будут рассматриваться тольк�
 
 Условие задачи хранится в файле `statement.xml`. Примерное его содержание:
 
-{% highlight xml %}
+{% highlight xml linenos %}
 <?xml version="1.0" encoding="utf-8" ?>
 <problem
         package="ru.codemore.contest"
@@ -86,7 +86,7 @@ _В руководстве будут рассматриваться тольк�
 
 Пример `statement.xml` реальной задачи:
 
-{% highlight xml %}
+{% highlight xml linenos %}
 <?xml version="1.0" encoding="utf-8" ?>
 <problem
         package="ru.pskovedu.contest"
@@ -163,7 +163,7 @@ Uryyb, jbeyq!
 
 Пример решения (для задачи, описанной выше):
 
-{% highlight java %}
+{% highlight java linenos %}
 package rot13;
 
 import java.util.Scanner;
@@ -246,7 +246,7 @@ testlib предоставляет [несколько стандартных ч
 
 Пример чекера для задачи, описанной выше (используется стандартный `fcmp.cpp`):
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 #include "testlib.h"
 #include <string>
 #include <vector>
@@ -291,21 +291,23 @@ int main(int argc, char * argv[])
 
 Для задания общих настроек для всех задач используются "абстрактные" задачи. Пример настройки такой задачи:
 
-    [problem]
-    abstract
-    short_name = "PskovGeneric"
-    use_stdin
-    use_stdout
-    use_corr
-    xml_file = "statement.xml"
-    test_pat = "%02d"
-    corr_pat = "%02d.a"
-    time_limit = 5
-    real_time_limit = 10
-    max_vm_size = 256M
-    max_stack_size = 256M
-    max_file_size = 256M
-    check_cmd = "check"
+{% highlight ini linenos %}
+[problem]
+abstract
+short_name = "PskovGeneric"
+use_stdin
+use_stdout
+use_corr
+xml_file = "statement.xml"
+test_pat = "%02d"
+corr_pat = "%02d.a"
+time_limit = 5
+real_time_limit = 10
+max_vm_size = 256M
+max_stack_size = 256M
+max_file_size = 256M
+check_cmd = "check"
+{% endhighlight %}
 
 Здесь определены настройки:
 
@@ -321,11 +323,13 @@ int main(int argc, char * argv[])
 
 Пример настройки для задачи. описанной выше:
 
-    [problem]
-    super = PskovGeneric
-    internal_name = "rot13"
-    short_name = "B"
-    long_name = "Шифр ROT13"
+{% highlight ini linenos %}
+[problem]
+super = PskovGeneric
+internal_name = "rot13"
+short_name = "B"
+long_name = "Шифр ROT13"
+{% endhighlight %}
 
 Здесь определены настройки:
 
