@@ -2,15 +2,7 @@
 layout: legacy-page-base
 ---
 
-<div class="article-date">
-    <span class="post-date">{{ page.date | date: '%d.%m.%Y' }}</span>
-</div>
-
-<div class="article-header">
-    <span class="article-title">{{ page.title }}</span> / <span class="text-info">{{ page.author }}</span>
-</div>
-
-<hr>
+{% include post-title.html %}
 
 {{ content }}
 

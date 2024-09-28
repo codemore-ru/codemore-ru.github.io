@@ -10,38 +10,36 @@ description: Code More - сайт о программировании
             {% include navigation.html %}
         </div>
 
-        <ul class="list-group list-group-flush mb-5">
+        <ul id="code-more-articles" class="list-group list-group-flush">
             {% for post in site.posts %}
-            <li class="list-group-item list-group-item-action pt-2 pb-2">
+            <li class="list-group-item list-group-item-action pt-3 pb-3">
                 <div>
                     <a href="{{ post.url }}" class="section-catalog">{{ post.title }}</a>
                 </div>
                 <div class="text-secondary small">
                     {{ post.date | date: '%d.%m.%Y' }}
                     {% if post.author %}
-                    - {{ post.author }}
+                        - {{ post.author }}
                     {% endif %}
                     {% if post.section %}
-                    -
-                    {% if post.section == "experimental" %}
-                    <span class="section-experimental">Эксперименты</span>
-                    {% elsif post.section == "mathematiques" or post.section == 'mathematiques-tasks' %}
-                    <span class="section-mathematiques">Международный Чемпионат Математических и Логических Игр</span>
-                    {% elsif post.section == "mc" %}
-                    <span class="section-programming">Микроконтроллеры</span>
-                    {% elsif post.section == "programming" %}
-                    <span class="section-programming">Программирование - {{ post.language }}</span>
-                    {% elsif post.section == "pskov" %}
-                    <span class="section-pskov">Олимпиадное программирование в Псков ГУ</span>
-                    {% endif %}
+                        -
+                        {% if post.section == "experimental" %}
+                            <span class="section-experimental">Эксперименты</span>
+                        {% elsif post.section == "mathematiques" or post.section == 'mathematiques-tasks' %}
+                            <span class="section-mathematiques">Международный Чемпионат Математических и Логических Игр</span>
+                        {% elsif post.section == "mc" %}
+                            <span class="section-programming">Микроконтроллеры</span>
+                        {% elsif post.section == "programming" %}
+                            <span class="section-programming">Программирование - {{ post.language }}</span>
+                        {% elsif post.section == "pskov" %}
+                            <span class="section-pskov">Олимпиадное программирование в Псков ГУ</span>
+                        {% endif %}
                     {% endif %}
                 </div>
             </li>
             {% endfor %}
         </ul>
     </div>
-
-
 </div>
 
 <div class="text-center">

@@ -1,5 +1,5 @@
 ---
-layout: page-base
+layout: post-simple
 title: Задачи
 section: mathematiques
 author: Nadezhda Motina

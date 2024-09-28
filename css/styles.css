@@ -1,4 +1,4 @@
-.code-more {
+#code-more-title a {
     font-family: 'arsenalregular', Helvetica, Arial, sans-serif;
     font-size: 3em;
     text-align: center;
@@ -7,12 +7,25 @@
     text-decoration: none;
 }
 
-.sub-header {
-    font-size: 2em;
-    margin: 20px 20px 40px;
-    text-align: center;
-    font-family: 'arsenalregular', Helvetica, Arial, sans-serif;
-    color: #555;
+#code-more-menu {
+    margin-bottom: 3rem;
+}
+
+#code-more-post-title {
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #007f7f;
+}
+#code-more-post-title div {
+    color: #fff !important;
+    text-shadow: 1px 1px 2px #555;
+}
+
+#code-more-articles {
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 h1, h2, h3, h4, h5, h6 {

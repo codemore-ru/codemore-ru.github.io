@@ -3,6 +3,8 @@ title: Online Judge
 layout: page-base
 ---
 
+{% include post-title.html %}
+
 ### Каталог ресурсов с онлайн проверяющей системой
 
 + [ACM Контестер](http://acm.lviv.ua/)

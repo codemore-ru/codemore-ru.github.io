@@ -3,7 +3,7 @@ layout: page-base
 title: Каталог ссылок
 ---
 
-# Каталог ссылок
+{% include post-title.html %}
 
 ## Содержание
 

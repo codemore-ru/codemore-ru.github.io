@@ -1,0 +1,27 @@
+<div id="code-more-post-title" data-section="{{page.section}}">
+    <div>
+        <h1>{{ page.title }}</h1>
+    </div>
+    <div class="small text-small">
+        {{ page.date | date: '%d.%m.%Y' }}
+        {% if page.author %}
+            - {{ page.author }}
+            {% if page.section %}
+                -
+                {% if page.section == "experimental" %}
+                    Эксперименты
+                {% elsif page.section == "mathematiques" or page.section == 'mathematiques-tasks' %}
+                    Международный Чемпионат Математических и Логических Игр
+                {% elsif page.section == "mc" %}
+                    Микроконтроллеры
+                {% elsif page.section == "programming" %}
+                    Программирование - {{ page.language }}
+                {% elsif page.section == "pskov" %}
+                    Олимпиадное программирование в Псков ГУ
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+<script src="/vendor/geopattern-1.2.3.min.js"></script>
+<script src="/js/post-title.js"></script>
