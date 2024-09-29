@@ -1,0 +1,125 @@
+---
+layout: post
+title: GeoPattern
+author: Alexey Nurgaliev
+section: experimental
+---
+
+<div class="mb-3">
+    Генерация геометрических узоров, таких же, какие используются для заголовков страниц.
+    Используется библиотека <a href="https://github.com/btmills/geopattern" target="_blank">btmills/geopattern</a>.
+</div>
+
+<div id="pattern" class="mb-3" style="width: 100%; height: 15rem; background-color: #1b6d85"></div>
+
+<div class="mb-3 form-floating">
+    <select id="pattern-type" class="form-select">
+        <option value="">Случайный</option>
+        <option value="octogons">Octogons</option>
+        <option value="overlappingCircles">Overlapping circles</option>
+        <option value="plusSigns">Plus signs</option>
+        <option value="xes">Xes</option>
+        <option value="sineWaves">Sine waves</option>
+        <option value="hexagons">Hexagons</option>
+        <option value="overlappingRings">Overlapping rings</option>
+        <option value="plaid">Plaid</option>
+        <option value="triangles">Triangles</option>
+        <option value="squares">Squares</option>
+        <option value="concentricCircles">Concentric circles</option>
+        <option value="diamonds">Diamonds</option>
+        <option value="tessellation">Tessellation</option>
+        <option value="nestedSquares">Nested squares</option>
+        <option value="mosaicSquares">Mosaic squares</option>
+        <option value="chevrons">Chevrons</option>
+    </select>
+    <label for="pattern-type">Шаблон</label>
+</div>
+
+<div class="row mb-3">
+    <div class="col-3">
+        <div class="form-check">
+            <input type="checkbox" id="pattern-random-color" value="1" class="form-check-input" checked>
+            <label for="pattern-random-color" class="form-check-label">Случайный цвет</label>
+        </div>
+    </div>
+    <div class="col-9">
+        <div id="pattern-color-container" class="form-floating d-none">
+            <input type="color" id="pattern-color" class="form-control" value="#1b6d85" placeholder="Color">
+            <label for="pattern-color">Цвет</label>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-3">
+        <div class="form-check">
+            <input type="checkbox" id="pattern-random-base-color" value="1" class="form-check-input" checked>
+            <label for="pattern-random-base-color" class="form-check-label">Случайный базовый цвет</label>
+        </div>
+    </div>
+    <div class="col-9">
+        <div id="pattern-base-color-container" class="form-floating d-none">
+            <input type="color" id="pattern-base-color" class="form-control" value="#1b6d85" placeholder="Base Color">
+            <label for="pattern-base-color">Базовый цвет</label>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3 form-floating">
+    <input type="text" id="pattern-init" class="form-control" placeholder="Init" value="Поменяйте строку для генерации нового изображения">
+    <label for="pattern-init">Строка для инициализации генератора</label>
+</div>
+
+<script>
+    (() => {
+        const typeEl = document.getElementById('pattern-type');
+        const randomColorEl = document.getElementById('pattern-random-color');
+        const colorContainerEl = document.getElementById('pattern-color-container');
+        const colorEl = document.getElementById('pattern-color');
+        const randomBaseColorEl = document.getElementById('pattern-random-base-color');
+        const baseColorContainerEl = document.getElementById('pattern-base-color-container');
+        const baseColorEl = document.getElementById('pattern-base-color');
+        const initEl = document.getElementById('pattern-init');
+        const patternEl = document.getElementById('pattern');
+
+        function refresh() {
+            const options = {};
+
+            const type = typeEl.value;
+            if (type) {
+                options.generator = type;
+            }
+            if (!randomColorEl.checked) {
+                options.color = colorEl.value;
+            }
+            if (!randomBaseColorEl.checked) {
+                options.baseColor = baseColorEl.value;
+            }
+
+            patternEl.style.backgroundImage = GeoPattern.generate(initEl.value, options).toDataUrl();
+        }
+
+        typeEl.addEventListener('change', refresh);
+        randomColorEl.addEventListener('change', () => {
+            if (randomColorEl.checked) {
+                colorContainerEl.classList.add('d-none');
+            } else {
+                colorContainerEl.classList.remove('d-none');
+            }
+            refresh();
+        });
+        colorEl.addEventListener('change', refresh);
+        randomBaseColorEl.addEventListener('change', () => {
+            if (randomBaseColorEl.checked) {
+                baseColorContainerEl.classList.add('d-none');
+            } else {
+                baseColorContainerEl.classList.remove('d-none');
+            }
+            refresh();
+        });
+        baseColorEl.addEventListener('change', refresh);
+        initEl.addEventListener('keypress', refresh);
+
+        refresh();
+    })();
+</script>
