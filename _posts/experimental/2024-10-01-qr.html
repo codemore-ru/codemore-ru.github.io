@@ -1,0 +1,56 @@
+---
+layout: post
+title: Генератор QR-кодов
+author: Alexey Nurgaliev
+section: experimental
+---
+
+<div class="text-center mb-5">
+    <img id="output" src="" alt="QR" class="img-fluid">
+</div>
+<div class="mb-3 form-floating">
+    <input type="text" id="text" class="form-control" placeholder="Text" value="Sample">
+    <label for="text">Текст QR-кода</label>
+</div>
+<div class="mb-3 form-floating">
+    <input type="color" id="dark-color" class="form-control" placeholder="Dark color" value="#1b6d85">
+    <label for="dark-color">Цвет рисунка</label>
+</div>
+<div class="mb-3 form-floating">
+    <input type="color" id="light-color" class="form-control" placeholder="Light color" value="#ffffff">
+    <label for="light-color">Цвет фона</label>
+</div>
+<div class="mb-3 form-floating">
+    <input type="number" id="size" class="form-control" placeholder="Size" value="300">
+    <label for="size">Размер изображения в пикселях</label>
+</div>
+
+<script src="/vendor/awesome-qr.js"></script>
+<script>
+    (() => {
+        const textEl = document.getElementById('text');
+        const darkColorEl = document.getElementById('dark-color');
+        const lightColorEl = document.getElementById('light-color');
+        const sizeEl = document.getElementById('size');
+        const outputEl = document.getElementById('output');
+
+        function render() {
+            new AwesomeQR.AwesomeQR({
+                text: textEl.value,
+                size: sizeEl.value,
+                colorDark: darkColorEl.value,
+                colorLight: lightColorEl.value,
+            }).draw().then(dataUrl => {
+                outputEl.src = dataUrl;
+            });
+        }
+
+        textEl.addEventListener('change', render);
+        textEl.addEventListener('keyup', render);
+        darkColorEl.addEventListener('change', render);
+        lightColorEl.addEventListener('change', render);
+        sizeEl.addEventListener('change', render);
+        sizeEl.addEventListener('keyup', render);
+        render();
+    })();
+</script>
