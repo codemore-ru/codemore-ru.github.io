@@ -63,67 +63,67 @@ author: "Alexey Nurgaliev"
 
 1. Да: [https://2x.antdv.com/components/typography](https://2x.antdv.com/components/typography)
 2. Да:
-   * сетка: [https://2x.antdv.com/components/grid](https://2x.antdv.com/components/typography)
-   * контейнер: [https://2x.antdv.com/components/layout](https://2x.antdv.com/components/typography)
-3. Да: [https://2x.antdv.com/components/form](https://2x.antdv.com/components/typography)
-4. Да: [https://2x.antdv.com/components/date-picker](https://2x.antdv.com/components/typography)
-5. Да, есть многое, например модальное окно: [https://2x.antdv.com/components/modal](https://2x.antdv.com/components/typography)
+   * сетка: [https://2x.antdv.com/components/grid](https://2x.antdv.com/components/grid)
+   * контейнер: [https://2x.antdv.com/components/grid](https://2x.antdv.com/components/gridy)
+3. Да: [https://2x.antdv.com/components/form](https://2x.antdv.com/components/form)
+4. Да: [https://2x.antdv.com/components/date-picker](https://2x.antdv.com/components/date-picker)
+5. Да, есть многое, например модальное окно: [https://2x.antdv.com/components/modal](https://2x.antdv.com/components/modal)
 6. Да, например:
-   * таблицы достаточно мощные, чтобы заменить Data Table: [https://2x.antdv.com/components/table](https://2x.antdv.com/components/typography)
-   * деревья: [https://2x.antdv.com/components/tree](https://2x.antdv.com/components/typography)
-7. Да, русский язык стандартно поддерживается: [https://2x.antdv.com/docs/vue/i18n](https://2x.antdv.com/components/typography)
+   * таблицы достаточно мощные, чтобы заменить Data Table: [https://2x.antdv.com/components/table](https://2x.antdv.com/components/table)
+   * деревья: [https://2x.antdv.com/components/tree](https://2x.antdv.com/components/tree)
+7. Да, русский язык стандартно поддерживается: [https://2x.antdv.com/docs/vue/i18n](https://2x.antdv.com/docs/vue/i18n)
 8. Да, здесь своя дизайн-система (Ant Design, разработана в Ant Financial, используется в Alibaba), выглядит неплохо
-9. 50/50, можно настроить цвета: [https://2x.antdv.com/docs/vue/customize-theme](https://2x.antdv.com/components/typography) и некоторые мелочи, но кажется, отойти от дизайн-системы по внешнему виду компонентов не получится
+9. 50/50, можно настроить цвета: [https://2x.antdv.com/docs/vue/customize-theme](https://2x.antdv.com/docs/vue/customize-theme) и некоторые мелочи, но кажется, отойти от дизайн-системы по внешнему виду компонентов не получится
 10. Да, проект развивается достаточно активно
 
 Итог: хороший фреймворк, может подойти на замену Bootstrap.
 
 ## Vuetify
 
-Официальный сайт: [https://vuetifyjs.com](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://vuetifyjs.com](https://vuetifyjs.com)
 
-Исходный код: [https://github.com/vuetifyjs/vuetify](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/vuetifyjs/vuetify](https://github.com/vuetifyjs/vuetify)
 
 Лицензия: MIT
 
-1. Да: [https://vuetifyjs.com/en/styles/text-and-typography/](https://2x.antdv.com/components/typography)
-2. Да: [https://vuetifyjs.com/en/components/grids/](https://2x.antdv.com/components/typography)
-3. Да: [https://vuetifyjs.com/en/components/forms/](https://2x.antdv.com/components/typography)
-4. Да: [https://vuetifyjs.com/en/components/date-pickers/](https://2x.antdv.com/components/typography)
-5. Да, есть практически всё, например модальные окна: [https://vuetifyjs.com/en/components/dialogs/](https://2x.antdv.com/components/typography)
+1. Да: [https://vuetifyjs.com/en/styles/text-and-typography/](https://vuetifyjs.com/en/styles/text-and-typography/)
+2. Да: [https://vuetifyjs.com/en/components/grids/](https://vuetifyjs.com/en/components/grids/)
+3. Да: [https://vuetifyjs.com/en/components/forms/](https://vuetifyjs.com/en/components/forms/)
+4. Да: [https://vuetifyjs.com/en/components/date-pickers/](https://vuetifyjs.com/en/components/date-pickers/)
+5. Да, есть практически всё, например модальные окна: [https://vuetifyjs.com/en/components/dialogs/](https://vuetifyjs.com/en/components/dialogs/)
 6. Да, например:
-   * DataTable: [https://vuetifyjs.com/en/components/data-tables/](https://2x.antdv.com/components/typography)
-   * полноценный календарь: [https://vuetifyjs.com/en/components/calendars/](https://2x.antdv.com/components/typography)
-   * просмотр данных в виде деревьев: [https://vuetifyjs.com/en/components/treeview/](https://2x.antdv.com/components/typography)
-7. Да, строки и календари локализованы [https://vuetifyjs.com/en/features/internationalization/](https://2x.antdv.com/components/typography)
+   * DataTable: [https://vuetifyjs.com/en/components/data-tables/](https://vuetifyjs.com/en/components/data-tables/)
+   * полноценный календарь: [https://vuetifyjs.com/en/components/calendars/](https://vuetifyjs.com/en/components/calendars/)
+   * просмотр данных в виде деревьев: [https://vuetifyjs.com/en/components/treeview/](https://vuetifyjs.com/en/components/treeview/)
+7. Да, строки и календари локализованы [https://vuetifyjs.com/en/features/internationalization/](https://vuetifyjs.com/en/features/internationalization/)
 8. 50/50, с одной стороны это надоевший Material Design (см. описание критериев), но сделан очень хорошо
-9. Да, есть стандартное переопределение тем и цветов [https://vuetifyjs.com/en/features/theme/](https://2x.antdv.com/components/typography) или можно переопределить SCSS-переменные [https://vuetifyjs.com/en/features/sass-variables/](https://2x.antdv.com/components/typography)
+9. Да, есть стандартное переопределение тем и цветов [https://vuetifyjs.com/en/features/theme/](https://vuetifyjs.com/en/features/theme/) или можно переопределить SCSS-переменные [https://vuetifyjs.com/en/features/sass-variables/](https://vuetifyjs.com/en/features/sass-variables/)
 10. Да, проект развивается достаточно активно. Но количество открытых issues довольно большое (>1000)
 
 Итог: хороший фреймворк, если нет возражений против Material Design. Как замена Bootstrap вполне подходит.
 
 ## Quasar
 
-Официальный сайт: [https://quasar.dev/](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://quasar.dev/](https://quasar.dev/)
 
-Исходный код: [https://github.com/quasarframework/quasar](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/quasarframework/quasar](https://github.com/quasarframework/quasar)
 
 Лицензия: MIT
 
-1. Да: [https://quasar.dev/style/typography](https://2x.antdv.com/components/typography)
+1. Да: [https://quasar.dev/style/typography](https://quasar.dev/style/typography)
 2. Да:
-   * сетка на основе flexbox: [https://quasar.dev/layout/grid/introduction-to-flexbox](https://2x.antdv.com/components/typography)
-   * контейнер: [https://quasar.dev/layout/layout](https://2x.antdv.com/components/typography)
-3. Да: [https://quasar.dev/vue-components/form](https://2x.antdv.com/components/typography)
-4. Да: [https://quasar.dev/vue-components/date](https://2x.antdv.com/components/typography)
-5. Да, есть практически всё, например модальные окна: [https://quasar.dev/vue-components/dialog](https://2x.antdv.com/components/typography)
-   вместо заголовка есть аналог: [https://quasar.dev/vue-components/toolbar](https://2x.antdv.com/components/typography)
+   * сетка на основе flexbox: [https://quasar.dev/layout/grid/introduction-to-flexbox](https://quasar.dev/layout/grid/introduction-to-flexbox)
+   * контейнер: [https://quasar.dev/layout/layout](https://quasar.dev/layout/layout)
+3. Да: [https://quasar.dev/vue-components/form](https://quasar.dev/vue-components/form)
+4. Да: [https://quasar.dev/vue-components/date](https://quasar.dev/vue-components/date)
+5. Да, есть практически всё, например модальные окна: [https://quasar.dev/vue-components/dialog](https://quasar.dev/vue-components/dialog)
+   вместо заголовка есть аналог: [https://quasar.dev/vue-components/toolbar](https://quasar.dev/vue-components/toolbar)
 6. Да, например:
-   * WYSIWYG редактор: [https://quasar.dev/vue-components/editor](https://2x.antdv.com/components/typography)
-   * стандартный компонент таблиц достаточно мощный, чтобы быть заменой Data Table: [https://quasar.dev/vue-components/table](https://2x.antdv.com/components/typography)
+   * WYSIWYG редактор: [https://quasar.dev/vue-components/editor](https://quasar.dev/vue-components/editor)
+   * стандартный компонент таблиц достаточно мощный, чтобы быть заменой Data Table: [https://quasar.dev/vue-components/table](https://quasar.dev/vue-components/table)
 7. Да, есть стандартная поддержка русского языка
 8. 50/50, это Material Design, но сделан неплохо
-9. Да, есть редактор тем: [https://quasar.dev/style/theme-builder](https://2x.antdv.com/components/typography) и руководство по стандартным цветам: [https://quasar.dev/style/color-palette](https://2x.antdv.com/components/typography)
+9. Да, есть редактор тем: [https://quasar.dev/style/theme-builder](https://quasar.dev/style/theme-builder) и руководство по стандартным цветам: [https://quasar.dev/style/color-palette](https://quasar.dev/style/color-palette)
 10. Да, проект развивается активно
 
 Итог: хороший набор компонентов, но это Material Design. Может быть заменой Bootstrap.
@@ -134,100 +134,100 @@ author: "Alexey Nurgaliev"
 
 ## PrimeVue
 
-Официальный сайт: [https://www.primefaces.org/primevue/](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://www.primefaces.org/primevue/](https://www.primefaces.org/primevue/)
 
-Исходный код: [https://github.com/primefaces/primevue](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/primefaces/primevue](https://github.com/primefaces/primevue)
 
 Лицензия: MIT
 
 1. Нет
-2. Да, сетка: [https://www.primefaces.org/primevue/showcase/#/grid](https://2x.antdv.com/components/typography)
-3. Да, например поле ввода текста: [https://www.primefaces.org/primevue/showcase/#/inputtext](https://2x.antdv.com/components/typography)
-4. Да: [https://www.primefaces.org/primevue/showcase/#/calendar](https://2x.antdv.com/components/typography)
+2. Да, сетка: [https://www.primefaces.org/primevue/showcase/#/grid](https://www.primefaces.org/primevue/showcase/#/grid)
+3. Да, например поле ввода текста: [https://www.primefaces.org/primevue/showcase/#/inputtext](https://www.primefaces.org/primevue/showcase/#/inputtext)
+4. Да: [https://www.primefaces.org/primevue/showcase/#/calendar](https://www.primefaces.org/primevue/showcase/#/calendar)
 5. Да, есть практически все, например:
-   * модальные окна: [https://www.primefaces.org/primevue/showcase/#/dialog](https://2x.antdv.com/components/typography)
-   * заголовок страницы: [https://www.primefaces.org/primevue/showcase/#/menubar](https://2x.antdv.com/components/typography)
+   * модальные окна: [https://www.primefaces.org/primevue/showcase/#/dialog](https://www.primefaces.org/primevue/showcase/#/dialog)
+   * заголовок страницы: [https://www.primefaces.org/primevue/showcase/#/menubar](https://www.primefaces.org/primevue/showcase/#/menubar)
 6. Да, например:
-   * DataTable: [https://www.primefaces.org/primevue/showcase/#/datatable](https://2x.antdv.com/components/typography)
-   * календарь: [https://www.primefaces.org/primevue/showcase/#/fullcalendar](https://2x.antdv.com/components/typography)
-   * диаграммы, через интеграцию с chart.js: [https://www.primefaces.org/primevue/showcase/#/chart/bar](https://2x.antdv.com/components/typography)
-   * WYSIWYG редактор, интеграция с Quill: [https://www.primefaces.org/primevue/showcase/#/editor](https://2x.antdv.com/components/typography)
-7. 50/50, стандартной поддержки русского языка нет, но есть документация по локализации: [https://www.primefaces.org/primevue/showcase/#/locale](https://2x.antdv.com/components/typography)
+   * DataTable: [https://www.primefaces.org/primevue/showcase/#/datatable](https://www.primefaces.org/primevue/showcase/#/datatable)
+   * календарь: [https://www.primefaces.org/primevue/showcase/#/fullcalendar](https://www.primefaces.org/primevue/showcase/#/fullcalendar)
+   * диаграммы, через интеграцию с chart.js: [https://www.primefaces.org/primevue/showcase/#/chart/bar](https://www.primefaces.org/primevue/showcase/#/chart/bar)
+   * WYSIWYG редактор, интеграция с Quill: [https://www.primefaces.org/primevue/showcase/#/editor](https://www.primefaces.org/primevue/showcase/#/editor)
+7. 50/50, стандартной поддержки русского языка нет, но есть документация по локализации: [https://www.primefaces.org/primevue/showcase/#/locale](https://www.primefaces.org/primevue/showcase/#/locale)
 8. Да, стандартные темы выглядят неплохо
-9. Да, поддерживаются темы, есть собственный редактор тем: [https://www.primefaces.org/designer-vue/#/](https://2x.antdv.com/components/typography)
+9. Да, поддерживаются темы, есть собственный редактор тем: [https://www.primefaces.org/designer-vue/#/](https://www.primefaces.org/designer-vue/#/)
 10. Да, проект развивается активно
 
 Итог: хороший набор компонентов, но для полноценной замены Bootstrap не хватает типографики (можно попробовать использовать совместно с Milligram).
 
 ## Element+ (beta)
 
-Официальный сайт: [https://element-plus.org](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://element-plus.org](https://element-plus.org)
 
-Исходный код: [https://github.com/element-plus/element-plus](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/element-plus/element-plus](https://github.com/element-plus/element-plus)
 
 Лицензия: MIT
 
 1. Нет
 2. Да:
-   * сетка: [https://element-plus.org/#/en-US/component/layout](https://2x.antdv.com/components/typography)
-   * контейнер: [https://element-plus.org/#/en-US/component/container](https://2x.antdv.com/components/typography)
-3. Да: [https://element-plus.org/#/en-US/component/form](https://2x.antdv.com/components/typography)
-4. Да: [https://element-plus.org/#/en-US/component/date-picker](https://2x.antdv.com/components/typography)
-5. Да, есть практически всё, например модальные окна: [https://element-plus.org/#/en-US/component/dialog](https://2x.antdv.com/components/typography)
+   * сетка: [https://element-plus.org/#/en-US/component/layout](https://element-plus.org/#/en-US/component/layout)
+   * контейнер: [https://element-plus.org/#/en-US/component/container](https://element-plus.org/#/en-US/component/container)
+3. Да: [https://element-plus.org/#/en-US/component/form](https://element-plus.org/#/en-US/component/form)
+4. Да: [https://element-plus.org/#/en-US/component/date-picker](https://element-plus.org/#/en-US/component/date-picker)
+5. Да, есть практически всё, например модальные окна: [https://element-plus.org/#/en-US/component/dialog](https://element-plus.org/#/en-US/component/dialog)
 6. Да, например:
-   * календарь: [https://element-plus.org/#/en-US/component/calendar](https://2x.antdv.com/components/typography)
-   * стандартный компонент для таблиц достаточно мощный, чтобы выполнять функции DataTable: [https://element-plus.org/#/en-US/component/table](https://2x.antdv.com/components/typography)
+   * календарь: [https://element-plus.org/#/en-US/component/calendar](https://element-plus.org/#/en-US/component/calendar)
+   * стандартный компонент для таблиц достаточно мощный, чтобы выполнять функции DataTable: [https://element-plus.org/#/en-US/component/table](https://element-plus.org/#/en-US/component/tabl)
 7. Да, есть стандартная локализация для русского языка
 8. Да, стандартная тема достаточно нейтральна
-9. Да, можно настроить SCSS-переменные: [https://element-plus.org/#/en-US/component/custom-theme](https://2x.antdv.com/components/typography)
+9. Да, можно настроить SCSS-переменные: [https://element-plus.org/#/en-US/component/custom-theme](https://element-plus.org/#/en-US/component/custom-theme)
 10. Да, проект развивается достаточно активно
 
 Итог: неплохой набор компонентов, но отсутствие типографики не позволяет сделать его полноценной заменой Bootstrap (но можно собрать или найти простую CSS-библиотеку для типографики самостоятельно).
 
 ## Vuestic
 
-Официальный сайт: [https://vuestic.dev/](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://vuestic.dev/](https://vuestic.dev/)
 
-Исходный код: [https://github.com/epicmaxco/vuestic-ui](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/epicmaxco/vuestic-ui](https://github.com/epicmaxco/vuestic-ui)
 
 Лицензия: MIT
 
-1. Да: [https://vuestic.dev/ru/styles/typography](https://2x.antdv.com/components/typography)
-2. Да: [https://vuestic.dev/ru/styles/grid](https://2x.antdv.com/components/typography)
-3. Да: [https://vuestic.dev/ru/ui-elements/form](https://2x.antdv.com/components/typography)
-4. Да: [https://vuestic.dev/ru/ui-elements/date-picker](https://2x.antdv.com/components/typography)
+1. Да: [https://vuestic.dev/ru/styles/typography](https://vuestic.dev/ru/styles/typography)
+2. Да: [https://vuestic.dev/ru/styles/grid](https://vuestic.dev/ru/styles/grid)
+3. Да: [https://vuestic.dev/ru/ui-elements/form](https://vuestic.dev/ru/ui-elements/form])
+4. Да: [https://vuestic.dev/ru/ui-elements/date-picker](https://vuestic.dev/ru/ui-elements/date-picker)
 5. Да, многое есть, например:
-   * модальное окно: [https://vuestic.dev/ru/ui-elements/modal](https://2x.antdv.com/components/typography)
-   * заголовок страницы: [https://vuestic.dev/ru/ui-elements/navbar](https://2x.antdv.com/components/typography)
+   * модальное окно: [https://vuestic.dev/ru/ui-elements/modal](https://vuestic.dev/ru/ui-elements/modal)
+   * заголовок страницы: [https://vuestic.dev/ru/ui-elements/navbar](https://vuestic.dev/ru/ui-elements/navbar)
 6. Нет, особо интересного нет, Data Table пока в разработке
 7. Нет, у календаря можно настроить названия месяцев и дней недели
 8. Да, свой дизайн, не похож на остальные проекты
-9. Да, можно настроить цвета: [https://vuestic.dev/ru/getting-started/configuration-guide#color-themes](https://2x.antdv.com/components/typography) и некоторые настройки компонентов [https://vuestic.dev/ru/getting-started/configuration-guide#components-config](https://2x.antdv.com/components/typography)
+9. Да, можно настроить цвета: [https://vuestic.dev/ru/getting-started/configuration-guide#color-themes](https://vuestic.dev/ru/getting-started/configuration-guide#color-themes) и некоторые настройки компонентов [https://vuestic.dev/ru/getting-started/configuration-guide#components-config](https://vuestic.dev/ru/getting-started/configuration-guide#components-config)
 10. Да, проект развивается
 
 Итог: неплохой фреймворк, но есть только базовые компоненты, не хватает что-то вроде Data Table
 
 ## Inkline (beta)
 
-Официальный сайт: [https://inkline.io/](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://inkline.io/](https://inkline.io/)
 
-Исходный код: [https://github.com/inkline/inkline](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/inkline/inkline](https://github.com/inkline/inkline)
 
 Лицензия: MIT
 
-1. Да: [https://inkline.io/docs/core/typography](https://2x.antdv.com/components/typography)
+1. Да: [https://inkline.io/docs/core/typography](https://inkline.io/docs/core/typography)
 2. Да:
-   * сетка: [https://inkline.io/docs/core/grid](https://2x.antdv.com/components/typography)
-   * контейнер: [https://inkline.io/docs/core/layout](https://2x.antdv.com/components/typography)
-3. Да: [https://inkline.io/docs/forms/form](https://2x.antdv.com/components/typography)
+   * сетка: [https://inkline.io/docs/core/grid](https://inkline.io/docs/core/grid)
+   * контейнер: [https://inkline.io/docs/core/layout](https://inkline.io/docs/core/layout)
+3. Да: [https://inkline.io/docs/forms/form](https://inkline.io/docs/forms/form)
 4. Нет
 5. Да, есть многое, например:
-   * заголовок: [https://inkline.io/docs/components/navbar](https://2x.antdv.com/components/typography)
-   * модальное окно: [https://inkline.io/docs/components/modal](https://2x.antdv.com/components/typography)
-6. Да, например Data Table: [https://inkline.io/docs/components/datatable/introduction](https://2x.antdv.com/components/typography)
-7. 50/50, календаря нет, а для локализации строк в Data Table есть руководство: [https://inkline.io/docs/components/datatable/api](https://2x.antdv.com/components/typography)
+   * заголовок: [https://inkline.io/docs/components/navbar](https://inkline.io/docs/components/navbar)
+   * модальное окно: [https://inkline.io/docs/components/modal](https://inkline.io/docs/components/modal)
+6. Да, например Data Table: [https://inkline.io/docs/components/datatable/introduction](https://inkline.io/docs/components/datatable/introduction)
+7. 50/50, календаря нет, а для локализации строк в Data Table есть руководство: [https://inkline.io/docs/components/datatable/api](https://inkline.io/docs/components/datatable/api)
 8. Да, свой дизайн, напоминающий Bootstrap 4
-9. 50/50, легкого изменения тем нет6 но можно настроить SCSS-переменные: [https://inkline.io/docs/core/sass-variables](https://2x.antdv.com/components/typography)
+9. 50/50, легкого изменения тем нет6 но можно настроить SCSS-переменные: [https://inkline.io/docs/core/sass-variables](https://inkline.io/docs/core/sass-variables)
 10. 50/50, какая-то активность есть, но не особо большая
 
 Итог: неплохой фреймворк, с какой-то степени может заменить Bootstrap (и по дизайну похож), но не хватает календаря.
@@ -236,39 +236,39 @@ author: "Alexey Nurgaliev"
 
 ## Wave UI
 
-Официальный сайт: [https://antoniandre.github.io/wave-ui/](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://antoniandre.github.io/wave-ui/](https://antoniandre.github.io/wave-ui/)
 
-Исходный код: [https://github.com/antoniandre/wave-ui](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/antoniandre/wave-ui](https://github.com/antoniandre/wave-ui)
 
 Лицензия: MIT
 
-1. Да: [https://antoniandre.github.io/wave-ui/typography](https://2x.antdv.com/components/typography)
-2. Да: [https://antoniandre.github.io/wave-ui/layout--grid-system](https://2x.antdv.com/components/typography)
-3. Да: [https://antoniandre.github.io/wave-ui/w-input](https://2x.antdv.com/components/typography)
+1. Да: [https://antoniandre.github.io/wave-ui/typography](https://antoniandre.github.io/wave-ui/typography)
+2. Да: [https://antoniandre.github.io/wave-ui/layout--grid-system](https://antoniandre.github.io/wave-ui/layout--grid-system)
+3. Да: [https://antoniandre.github.io/wave-ui/w-input](https://antoniandre.github.io/wave-ui/w-input)
 4. Нет, предполагается использовать системный календарь
-5. 50/50, есть многое, но не хватает мелочей, вроде Button Group. Но есть модальные окна: [https://antoniandre.github.io/wave-ui/w-dialog](https://2x.antdv.com/components/typography)
+5. 50/50, есть многое, но не хватает мелочей, вроде Button Group. Но есть модальные окна: [https://antoniandre.github.io/wave-ui/w-dialog](https://antoniandre.github.io/wave-ui/w-dialog)
 6. Нет, набор компонентов очень базовый
 7. Нет, но она и не требуется - компонента выбора дат или Data Table здесь нет
 8. 50/50, довольно минималистичный и, кажется, свой собственный дизайн
-9. Да, можно настроить цвета: [https://antoniandre.github.io/wave-ui/colors](https://2x.antdv.com/components/typography) можно переопределить SCSS-переменные: [https://antoniandre.github.io/wave-ui/customization](https://2x.antdv.com/components/typography)
+9. Да, можно настроить цвета: [https://antoniandre.github.io/wave-ui/colors](https://antoniandre.github.io/wave-ui/colors) можно переопределить SCSS-переменные: [https://antoniandre.github.io/wave-ui/customization](https://antoniandre.github.io/wave-ui/customization)
 10. Да, активность в репозитории есть
 
 Итог: минималистичный фреймворк, с очень базовым набором компонентов. Почему-то создает впечатление чего-то из 2010 года (из времен jQuery UI). Наверное как замена Bootstrap не подойдет.
 
 ## Equal
 
-Официальный сайт: [https://quatrochan.github.io/Equal/](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://quatrochan.github.io/Equal/](https://quatrochan.github.io/Equal/)
 
-Исходный код: [https://github.com/quatrochan/Equal](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/quatrochan/Equal](https://github.com/quatrochan/Equal)
 
 Лицензия: MIT
 
 1. Нет
 2. Нет
-3. Да, например ввод текста: [https://quatrochan.github.io/Equal/components/input](https://2x.antdv.com/components/typography)
+3. Да, например ввод текста: [https://quatrochan.github.io/Equal/components/input](https://quatrochan.github.io/Equal/components/input)
 4. Нет
-5. Нет, набор компонентов довольно небольшой, много чего не хватает, но, например, есть модальное окно: [https://quatrochan.github.io/Equal/components/modal](https://2x.antdv.com/components/typography)
-6. Нет, особых интересных компонентов здесь нет, наверное можно отметить уведомления: [https://quatrochan.github.io/Equal/components/notification](https://2x.antdv.com/components/typography)
+5. Нет, набор компонентов довольно небольшой, много чего не хватает, но, например, есть модальное окно: [https://quatrochan.github.io/Equal/components/modal](https://quatrochan.github.io/Equal/components/modal)
+6. Нет, особых интересных компонентов здесь нет, наверное можно отметить уведомления: [https://quatrochan.github.io/Equal/components/notification](https://quatrochan.github.io/Equal/components/notification)
 7. Нет, но локализация и не требуется - строк или календаря нет
 8. Да, стандартная тема оформления сделана аккуратно и производит хорошее впечатление
 9. Нет, официального руководства по изменению стандартного стиля нет, вероятно, изменение возможно только через модификацию исходного кода
@@ -278,23 +278,23 @@ author: "Alexey Nurgaliev"
 
 ## BalmUI
 
-Официальный сайт: [https://next-material.balmjs.com/](https://2x.antdv.com/components/typography)
+Официальный сайт: [https://next-material.balmjs.com/](https://next-material.balmjs.com/)
 
-Исходный код: [https://github.com/balmjs/balm-ui](https://2x.antdv.com/components/typography)
+Исходный код: [https://github.com/balmjs/balm-ui](https://github.com/balmjs/balm-ui)
 
 Лицензия: MIT
 
-1. Да: [https://next-material.balmjs.com/#/theme/typography](https://2x.antdv.com/components/typography)
-2. Да, сетка: [https://next-material.balmjs.com/#/layout/grid](https://2x.antdv.com/components/typography)
-3. Да: [https://next-material.balmjs.com/#/data-input/textfield](https://2x.antdv.com/components/typography)
-4. Да, на основе flatpikr: [https://next-material.balmjs.com/#/data-input/datepicker](https://2x.antdv.com/components/typography)
+1. Да: [https://next-material.balmjs.com/#/theme/typography](https://next-material.balmjs.com/#/theme/typography)
+2. Да, сетка: [https://next-material.balmjs.com/#/layout/grid](https://next-material.balmjs.com/#/layout/grid)
+3. Да: [https://next-material.balmjs.com/#/data-input/textfield](https://next-material.balmjs.com/#/data-input/textfield)
+4. Да, на основе flatpikr: [https://next-material.balmjs.com/#/data-input/datepicker](https://next-material.balmjs.com/#/data-input/datepicker)
 5. 50/50, не хватает заголовка (или его аналогов)
 6. Да, например:
-   * Data Table: [https://next-material.balmjs.com/#/data-display/table](https://2x.antdv.com/components/typography)
-   * WYSISYG редактор: [https://next-material.balmjs.com/#/data-input/editor](https://2x.antdv.com/components/typography)
+   * Data Table: [https://next-material.balmjs.com/#/data-display/table](https://next-material.balmjs.com/#/data-display/table)
+   * WYSISYG редактор: [https://next-material.balmjs.com/#/data-input/editor](https://next-material.balmjs.com/#/data-input/editor)
 7. Нет, у flatpikr есть своя поддержка локализации, строки перевести нельзя (руководства на эту тему нет)
 8. Нет, это Material Design, но производит не особо хорошее впечатление (в отличие от Vuetify или Quasar)
-9. Нет, можно настроить цвета [https://next-material.balmjs.com/#/theme/color](https://2x.antdv.com/components/typography) но кажется, на этом всё
+9. Нет, можно настроить цвета [https://next-material.balmjs.com/#/theme/color](https://next-material.balmjs.com/#/theme/color) но кажется, на этом всё
 10. 50/50, какая-то активность есть, но мало
 
 Итог: довольно простой набор компонентов. Material Design. Отсутствие локализации. По общему впечатлению, не подходит на замену Bootstrap.
