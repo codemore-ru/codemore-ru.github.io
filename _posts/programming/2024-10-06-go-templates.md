@@ -15,7 +15,7 @@ language: Go
 
 + `template.New("name")` - пустой шаблон с данным именем
 + `template.ParseFiles(fileNames...)` - шаблон из списка файлов. Имя шаблона, созданного из соответствующего файла - имя файла (если есть файлы с одинаковыми именами, добавляется последний)
-+ `template.ParseGlob("pattern")` - шаблон из файлов, найденных по шаблону пути, работает аналогично `ParseFiles`.
++ `template.ParseGlob("pattern")` - шаблон из файлов, найденных по шаблону пути, работает аналогично `ParseFiles`. Есть ограничение - поиск не рекурсивный, т.е. будут найдены только файлы, соответствующие маске, в одном каталоге. Для рекурсивного поиска файлов можно воспользоваться [filepath.WalkDir](https://pkg.go.dev/path/filepath@go1.23.2#WalkDir), чтобы собрать все соответствующие шаблону файлы и затем передать их в `template.ParseFiles`.
 
 Выполнить шаблон можно при помощи `Execute` или `ExecuteTemplate`. Первый метод выполняет шаблон по умолчанию, второй - ищет нужный по имени. Результат выводится в io.Writer.
 
@@ -119,3 +119,55 @@ language: Go
 `html/template` не требует явного экранирования выводимых значений. Более того, он умеет распознавать, где выводится значение (HTML, CSS, URL) и применять соответствующее экранирование. Более подробно описано в [документации](https://pkg.go.dev/html/template#hdr-Contexts-1).
 
 [https://masterminds.github.io/sprig/](https://masterminds.github.io/sprig/) - проект по расширению функциональности шаблонов. Добавляет ряд полезных функций.
+
+## Рекурсивный поиск шаблонов
+
+```go
+func searchTemplates(rootPath, pattern string) ([]string, error) {
+    var foundTemplates []string
+
+    err := filepath.Walk(rootPath, func (path string, info fs.FileInfo, err error) error {
+        if err != nil {
+            return err
+        }
+        if info.IsDir() {
+            return nil
+        }
+        base := filepath.Base(path)
+        ok, err := filepath.Match(pattern, base)
+        if err != nil {
+            return err
+        }
+        if ok {
+            foundTemplates = append(foundTemplates, path)
+        }
+        return nil
+    })
+
+    if err != nil {
+        return nil, err
+    }
+
+    return foundTemplates, nil
+}
+```
+
+Здесь нужно обратить внимание, что имя шаблона (для выполнения либо для включения) - это имя файла, без пути. Т.е. файл `templates/includes/part.tmpl` надо использовать как `part.tmpl`.
+
+Использование функции:
+
+```go
+templates, err := searchTemplates("templates", "*.tmpl")
+if err != nil {
+    return err
+}
+
+t, err := template.ParseFiles(templates...)
+if err != nil {
+    return err
+}
+
+if err := t.ExecuteTemplate(w, "name.tmpl", ctx); err != nil {
+    return err
+}
+```
