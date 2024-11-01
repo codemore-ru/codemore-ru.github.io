@@ -358,6 +358,7 @@ title: Каталог ссылок
 [Algorithmica](https://ru.algorithmica.org/)|Материалы различных CS-курсов, проводящихся в Tinkoff Generation
 [USACO Guide](https://usaco.guide/problems/)|Сборник задач и материалы от USACO - олимпиады по информатике США
 [brestprog](https://brestprog.by/topics/)|Олимпиадное программирование в Бресте и Беларуси (сборник материалов по алгоритмам и структурам данных)
+[Алгоритмическое программирование](https://algoprog.ru/)|Курс по алгоритмическому программированию
 {: .table .table-hover}
 
 [В начало](#)
