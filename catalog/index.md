@@ -403,6 +403,7 @@ title: Каталог ссылок
 [Kern Type](https://type.method.ac/)|Тренажер расстановки символов
 [Color Game](https://color.method.ac/)|Тренажер сопоставления цветов
 [The Boolean Game](https://boolean.method.ac/)|Тренажер операций над множествами
+[Command Challenge](https://cmdchallenge.com/)|Тренажер работы в командной строке
 {: .table .table-hover}
 
 [В начало](#)
