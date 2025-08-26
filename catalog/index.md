@@ -364,6 +364,7 @@ title: Каталог ссылок
 [brestprog](https://brestprog.by/topics/)|Олимпиадное программирование в Бресте и Беларуси (сборник материалов по алгоритмам и структурам данных)
 [Алгоритмическое программирование](https://algoprog.ru/)|Курс по алгоритмическому программированию
 [Software optimization resources](https://www.agner.org/optimize/)|Сборник материалов по оптимизации кода
+[samwho](https://samwho.dev/)|Визуализации нескольких алгоритмов
 {: .table .table-hover}
 
 [В начало](#)
