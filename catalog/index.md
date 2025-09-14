@@ -365,6 +365,7 @@ title: Каталог ссылок
 [Алгоритмическое программирование](https://algoprog.ru/)|Курс по алгоритмическому программированию
 [Software optimization resources](https://www.agner.org/optimize/)|Сборник материалов по оптимизации кода
 [samwho](https://samwho.dev/)|Визуализации нескольких алгоритмов
+[Red Blob Games](https://www.redblobgames.com/)|Визуализацииу алгоритмов
 {: .table .table-hover}
 
 [В начало](#)
