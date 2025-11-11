@@ -325,6 +325,7 @@ title: Каталог ссылок
 [Brilliant](https://brilliant.org/)|Интерактивные учебные курсы
 [Девстанция!](https://dev-station.ru/)|Вопросы для подготовки к собеседованиям
 [Linux Journey](https://linuxjourney.com/)|Уроки по Linux
+[Яндекс Лицей](https://lyceum.yandex.ru/)|Бесплатные курсы по программированию
 {: .table .table-hover}
 
 [В начало](#)
