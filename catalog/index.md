@@ -390,6 +390,8 @@ title: Каталог ссылок
 [Snarknews](http://snarknews.info/)|Новости олимпиадного программирования
 [Олимпиады по информатике](http://neerc.ifmo.ru/school/information/index.html)|Олимпиады по информатике, проходящие в Санкт-Петербурге
 [Олимпиады про программированию](http://olympiads.ru/)|Олимпиады школьников по программированию в Москве: анонсы и результаты
+[RuCode](https://rucode.net/)|Всероссийский фестиваль RuCode
+[dmkz/competitive-programming](https://github.com/dmkz/competitive-programming)|Сборник решений задач олимпиадного программирования
 {: .table .table-hover}
 
 [В начало](#)
@@ -506,6 +508,7 @@ title: Каталог ссылок
 [HighLoad Channel](https://www.youtube.com/@HighLoadChannel)|Канал с видео конференции HighLoad++
 [GoFunc](https://www.youtube.com/@GoFuncConf)|Канал с видео конференции GoFunc (посвященной языку программирования Go)
 [JUG.ru](https://www.youtube.com/@JUGru)|Канал с видео конференций, организованных JUG.ru (в основном посвященные языку программирования Java)
+[Спортивное программирование МИРЭА](https://vk.com/mireacoding)|Видеолекции по мпортивному программированию от МИРЭА
 {: .table .table-hover}
 
 [В начало](#)
