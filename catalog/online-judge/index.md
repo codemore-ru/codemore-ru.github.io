@@ -37,13 +37,9 @@ layout: post-simple
 ### Каталог ресурсов с международными онлайн соревнованиями
 
 |-|-|
-[Russion Code Cup](http://www.russiancodecup.ru/)|Крупнейшая в России ежегодная олимпиада по спортивному программированию, проходящая под эгидой Mail.Ru Group
+[Russian Code Cup](http://www.russiancodecup.ru/)|Крупнейшая в России ежегодная олимпиада по спортивному программированию, проходящая под эгидой Mail.Ru Group
 [Russian AI Cup](http://russianaicup.ru/)|Соревнование по программированию искусственного интеллекта
-[Google Code Jam](https://code.google.com/codejam/)|Международное соревнование по программированию, проводимое Google
 [Yandex algorithm](http://contest2.yandex.ru/)|Открытый чемпионат по программированию с оригинальными правилами
 [TopCoder](http://community.topcoder.com/tc)|Соревнования по спортивному программированию. Разновидности соревнований: Алгоритмы, Проектирование и разработка, Марафоны
-[Facebook Hacker Cup](https://www.facebook.com/hackercup)|Чемпионат по программированию, проводимый Facebook
-[ABBYY Cup](http://www.abbyy.ru/science/students/cup/)|Студенческая online-олимпиада по программированию ABBYY Cup
 [IT-Планета](http://world-it-planet.org/)|Международная олимпиада в сфере информационных технологий
 {: .table .table-hover}
-

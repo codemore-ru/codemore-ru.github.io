@@ -234,7 +234,7 @@ title: Каталог ссылок
 [JSFiddle](http://jsfiddle.net/)|Онлайн IDE для небольших проектов на JavaScript. Можно сразу увидеть результат работы
 [jQuery](http://jquery.org)|Библиотека, упрощающая работу с DOM. Также предоставляет простой API для AJAX (лицензия MIT)
 [Angular](https://angular.io/)|Фреймворк от Google для создания одностраничных приложений (лицензия MIT)
-[React](https://reactjs.org/)|Библиотека от Facebook для создания одностраничных приложений (лицензия MIT)
+[React](https://reactjs.org/)|Библиотека для создания одностраничных приложений (лицензия MIT)
 [Vue.js](https://vuejs.org/)|Фреймворк для создания одностраничных приложений (лицензия MIT)
 [Node.js](http://nodejs.org)|Программная платформа для создания серверных приложений на языке JavaScript (лицензия MIT)
 [Gulp](http://gulpjs.com/)|Система сборки для JavaScript
