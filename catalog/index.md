@@ -32,6 +32,7 @@ title: Каталог ссылок
 * [Обработка бинарных данных](#hex)
 * [Обработка текста и регулярные выражения](#text)
 * [Видео](#video)
+* [Программирование для школьников](#school)
 * [Свалка ссылок](#dump)
 
 
@@ -509,6 +510,28 @@ title: Каталог ссылок
 [GoFunc](https://www.youtube.com/@GoFuncConf)|Канал с видео конференции GoFunc (посвященной языку программирования Go)
 [JUG.ru](https://www.youtube.com/@JUGru)|Канал с видео конференций, организованных JUG.ru (в основном посвященные языку программирования Java)
 [Спортивное программирование МИРЭА](https://vk.com/mireacoding)|Видеолекции по мпортивному программированию от МИРЭА
+{: .table .table-hover}
+
+[В начало](#)
+
+
+## Программирование для школьников
+{: #school .mt-5}
+
+|-|-|
+[https://ntcontest.ru](https://ntcontest.ru/)|Всероссийская междисциплинарная олимпиада школьников 8-11 классов «Национальная технологическая олимпиада»
+[https://olymp.hse.ru/mmo](https://olymp.hse.ru/mmo)|Всероссийская олимпиада школьников «Высшая проба»
+[https://olymp-online.mipt.ru](https://olymp-online.mipt.ru/)|Олимпиада школьников «Физтех»
+[https://nerc.itmo.ru/school](https://nerc.itmo.ru/school)|Олимпиада школьников по информатике и программированию
+[https://techno-cup.ru](https://techno-cup.ru/)|Олимпиада школьников по программированию «ТехноКубок»
+[https://inf-open.ru](https://inf-open.ru/)|Открытая олимпиада школьников по программированию
+[https://olymp.misis.ru](https://olymp.misis.ru/)|Открытая олимпиада школьников по программированию «Когнитивные технологии»
+[ЛекториУМ](https://sochisirius.ru/video_lectures?course=106)|Лекции по информатике от «Сириус»
+[Дополнительные главы алгоритмов](https://compscicenter.ru/courses/advanced-algo/2021-autumn/classes/)|Лекции по алгоритмам от Computer Science Center
+[Virtual Judge](https://vjudge.net/)|Конструктор контестов по задачам из разных онлайн-сборников
+[CodeChef](https://www.codechef.com/)|Курсы по программированию
+[AtCoder](https://atcoder.jp/)|Онлайн-контесты
+[МШП](https://informatics.ru/)|Московская Школа программистов
 {: .table .table-hover}
 
 [В начало](#)
