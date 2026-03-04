@@ -532,6 +532,13 @@ title: Каталог ссылок
 [CodeChef](https://www.codechef.com/)|Курсы по программированию
 [AtCoder](https://atcoder.jp/)|Онлайн-контесты
 [МШП](https://informatics.ru/)|Московская Школа программистов
+[https://algocode.ru](https://algocode.ru/)|Яндекс Кружок
+[https://wiki.algocode.ru](https://wiki.algocode.ru)|Вики-справочник алгоритмов
+[https://algocourses.ru](https://algocourses.ru/)|Алгоритмы
+[https://inf.mosolymp.ru](https://inf.mosolymp.ru/)|Подготовка к облимпиадам по информатике
+[https://edu.sirius.online](https://edu.sirius.online/)|Сириус.Курсы
+[МКОШП](https://mkoshp.ru/)|Московская командная олимпиада школьников по программированию
+[https://mos-inf.olimpiada.ru](https://mos-inf.olimpiada.ru/info_olymp6-9)|Московская олимпиада школьников по информатике
 {: .table .table-hover}
 
 [В начало](#)
