@@ -539,6 +539,9 @@ title: Каталог ссылок
 [https://edu.sirius.online](https://edu.sirius.online/)|Сириус.Курсы
 [МКОШП](https://mkoshp.ru/)|Московская командная олимпиада школьников по программированию
 [https://mos-inf.olimpiada.ru](https://mos-inf.olimpiada.ru/info_olymp6-9)|Московская олимпиада школьников по информатике
+[NeetCode](https://neetcode.io/)|Подготовка к техническим собеседованиям
+[LeetCode](https://leetcode.com)|Подготовка к техническим собеседованиям
+[CodeRun](https://coderun.yandex.ru/catalog)|Сборник задач по программированию от Яндекса
 {: .table .table-hover}
 
 [В начало](#)
