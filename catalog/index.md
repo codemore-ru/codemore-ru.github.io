@@ -578,6 +578,7 @@ libgen|Научная литература (актуальный адрес и �
 sci-hub|Научные статьи (актуальный адрес и домен см. в поисковике)
 [Международная Математическая Oлимпиада](https://www.imo-official.org/problems.aspx)|Сборник задач Международной математической олимпиады
 [Hexlet Codebattle](https://codebattle.hexlet.io/)|Соревнования по программированию от Hexlet
+[Редактор графов](https://mangooste.ru/apps/graph-editor)|Визуализация графов
 {: .table .table-hover}
 
 [В начало](#)
