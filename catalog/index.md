@@ -579,6 +579,7 @@ sci-hub|Научные статьи (актуальный адрес и доме
 [Международная Математическая Oлимпиада](https://www.imo-official.org/problems.aspx)|Сборник задач Международной математической олимпиады
 [Hexlet Codebattle](https://codebattle.hexlet.io/)|Соревнования по программированию от Hexlet
 [Редактор графов](https://mangooste.ru/apps/graph-editor)|Визуализация графов
+[Mozaik Education](https://www.mozaweb.com/ru/)|Цифровые образовательные ресурсы
 {: .table .table-hover}
 
 [В начало](#)
