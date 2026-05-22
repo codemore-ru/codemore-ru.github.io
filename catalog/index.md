@@ -580,6 +580,9 @@ sci-hub|Научные статьи (актуальный адрес и доме
 [Hexlet Codebattle](https://codebattle.hexlet.io/)|Соревнования по программированию от Hexlet
 [Редактор графов](https://mangooste.ru/apps/graph-editor)|Визуализация графов
 [Mozaik Education](https://www.mozaweb.com/ru/)|Цифровые образовательные ресурсы
+[Виртуальный музей информатики](https://informat444.narod.ru/museum/)|
+[Коллекция отечественной цифровой электроники](http://www.leningrad.su/museum/)|
+[Rechenmaschinen Illustrated](https://www.rechenmaschinen-illustrated.com/)|
 {: .table .table-hover}
 
 [В начало](#)
