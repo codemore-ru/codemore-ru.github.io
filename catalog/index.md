@@ -90,6 +90,7 @@ title: Каталог ссылок
 [C++ Insights](https://cppinsights.io/)|Онлайн-компилятор C/C++, показывающий код в том виде, как его "видит" компилятор
 [C++ на Runebook.dev](https://runebook.dev/ru/docs/cpp/-index-)|Перевод на русский язык документации по языку и стандартной библиотеке
 [Wokwi](https://wokwi.com/)|Онлайн-симулятор ESP32
+[CppStudio](http://cppstudio.com/)|Основы программирования на языках Си и C++ для начинающих
 {: .table .table-hover}
 
 [В начало](#)
@@ -583,6 +584,7 @@ sci-hub|Научные статьи (актуальный адрес и доме
 [Виртуальный музей информатики](https://informat444.narod.ru/museum/)|
 [Коллекция отечественной цифровой электроники](http://www.leningrad.su/museum/)|
 [Rechenmaschinen Illustrated](https://www.rechenmaschinen-illustrated.com/)|
+[Большая РОссийская Энциклопедия](https://bigenc.ru/)|
 {: .table .table-hover}
 
 [В начало](#)
