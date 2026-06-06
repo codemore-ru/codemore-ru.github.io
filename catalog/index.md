@@ -91,6 +91,9 @@ title: Каталог ссылок
 [C++ на Runebook.dev](https://runebook.dev/ru/docs/cpp/-index-)|Перевод на русский язык документации по языку и стандартной библиотеке
 [Wokwi](https://wokwi.com/)|Онлайн-симулятор ESP32
 [CppStudio](http://cppstudio.com/)|Основы программирования на языках Си и C++ для начинающих
+[Embarcadero Dev-C++](https://github.com/Embarcadero/Dev-Cpp)|Форк Dev-C++, развиваемый Embarcadero
+[RedPanda C++](https://github.com/royqh1979/RedPanda-CPP)|Другой форк Dev-C++
+[Replit](https://replit.com/languages/cpp)|Онлайн-IDE
 {: .table .table-hover}
 
 [В начало](#)
