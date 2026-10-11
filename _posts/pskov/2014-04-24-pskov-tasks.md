@@ -6,6 +6,7 @@ author: Valentin Gubarev
 ---
 
 |-|-|-|
+Условия задач олимпиады по программированию ПсковГУ среди учащихся 1-2 курсов - 10.10.2026|[pdf](/docs/pskov/Tasks_2026_10_10.pdf)|[docx](/docs/pskov/Tasks_2026_10_10.docx)
 Условия задач олимпиады ПсковГУ – 10.12.2022|[pdf](/docs/pskov/Tasks_2022_12_10.pdf)|[docx](/docs/pskov/Tasks_2022_12_10.docx)
 Условия задач квалификационного тура олимпиады ПсковГУ по программированию – 25.12.2021|[pdf](/docs/pskov/Tasks_2021_12_25.pdf)|[docx](/docs/pskov/Tasks_2021_12_25.docx)
 Условия задач олимпиады ПсковГУ – 16.10.2021|[pdf](/docs/pskov/Tasks_2021_10_16.pdf)|[docx](/docs/pskov/Tasks_2021_10_16.docx)
