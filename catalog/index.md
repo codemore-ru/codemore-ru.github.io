@@ -154,6 +154,7 @@ title: Каталог ссылок
 [PyCharm](http://www.jetbrains.com/pycharm/)|IDE для Python от JetBrains. Имеется бесплатная редакция
 [PyDev](http://pydev.org/)|IDE для Python в виде плагина для Eclipse
 [Eric](http://eric-ide.python-projects.org/)|IDE для Python и Ruby (лицензия GPLv3)
+[Koddo Python Playground](https://koddo.ru/playground/python)|Онлайн-среда для Python с русским интерфейсом и пошаговым выполнением; запуск кода бесплатный и без регистрации
 [The Jython Project](http://www.jython.org/)|Реализация интерпретатора Python на языке Java
 [IronPython](http://ironpython.net/)|Реализация интерпретатора Python для .NET Framework
 [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro)|Набор привязок фреймворка Qt для Python
